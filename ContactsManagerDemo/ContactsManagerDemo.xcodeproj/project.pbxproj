@@ -33,7 +33,6 @@
 			isa = PBXGroup;
 			children = (
 				FC99187A2D78F0FC00E950FD /* ContactsManagerDemo */,
-				FC9918A92D79036C00E950FD /* Frameworks */,
 				FC9918792D78F0FC00E950FD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,13 +43,6 @@
 				FC9918782D78F0FC00E950FD /* ContactsManagerDemo.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		FC9918A92D79036C00E950FD /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
