@@ -6,28 +6,8 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		FC9918CA2D79085700E950FD /* ContactsManager.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC9918C92D79085700E950FD /* ContactsManager.xcframework */; };
-		FC9918CB2D79085700E950FD /* ContactsManager.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FC9918C92D79085700E950FD /* ContactsManager.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-/* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		FC9918CC2D79085700E950FD /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				FC9918CB2D79085700E950FD /* ContactsManager.xcframework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		FC9918782D78F0FC00E950FD /* ContactsManagerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactsManagerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FC9918C92D79085700E950FD /* ContactsManager.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ContactsManager.xcframework; path = ../../ios/ContactsManager/ContactsManager.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -43,7 +23,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC9918CA2D79085700E950FD /* ContactsManager.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,7 +49,6 @@
 		FC9918A92D79036C00E950FD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FC9918C92D79085700E950FD /* ContactsManager.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -85,7 +63,6 @@
 				FC9918742D78F0FC00E950FD /* Sources */,
 				FC9918752D78F0FC00E950FD /* Frameworks */,
 				FC9918762D78F0FC00E950FD /* Resources */,
-				FC9918CC2D79085700E950FD /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

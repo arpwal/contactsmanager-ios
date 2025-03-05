@@ -2,26 +2,29 @@
 import PackageDescription
 
 let package = Package(
-    name: "ContactManagerKit",
+    name: "ContactsManager",
     platforms: [
         .iOS(.v13)
     ],
     products: [
         .library(
-            name: "ContactManagerKit",
-            targets: ["ContactManagerKit"]),
+            name: "ContactsManager",
+            targets: ["ContactsManager"]),
+        .library(
+            name: "ContactsManagerBinary",
+            targets: ["ContactsManagerBinary"])
     ],
     dependencies: [
         // Add any dependencies here
     ],
     targets: [
+        .binaryTarget(
+            name: "ContactsManagerBinary",
+            path: "ContactsManager.xcframework"
+        ),
         .target(
-            name: "ContactManagerKit",
-            dependencies: [],
-            path: "../ios/Sources/ContactManagerKit"),
-        .testTarget(
-            name: "ContactManagerKitTests",
-            dependencies: ["ContactManagerKit"],
-            path: "../ios/Tests/ContactManagerKitTests"),
+            name: "ContactsManager",
+            dependencies: ["ContactsManagerBinary"],
+            path: "Sources/ContactsManager")
     ]
-) 
+)
