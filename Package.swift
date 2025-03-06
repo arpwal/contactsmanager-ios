@@ -3,7 +3,6 @@ import PackageDescription
 
 let package = Package(
     name: "ContactsManager",
-    version: "0.2.0",
     platforms: [
         .iOS(.v13)
     ],
@@ -16,16 +15,9 @@ let package = Package(
         // Add any dependencies here
     ],
     targets: [
-        // Binary framework target
         .binaryTarget(
-            name: "ContactsManagerBinary",
-            path: "ContactsManager.xcframework"
-        ),
-        // Swift source code target that wraps the binary
-        .target(
             name: "ContactsManager",
-            dependencies: ["ContactsManagerBinary"],
-            path: "Sources/ContactsManager"
+            path: "ContactsManager.xcframework"
         )
     ]
 )
