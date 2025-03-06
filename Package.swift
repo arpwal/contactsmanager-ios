@@ -12,7 +12,8 @@ let package = Package(
             targets: ["ContactsManager"])
     ],
     dependencies: [
-        .package(url: "https://github.com/realm/realm-swift.git", from: "20.0.1")
+        .package(url: "https://www.github.com/realm/realm-swift.git", from: "20.0.1"),
+        .package(url: "https://www.github.com/marmelroy/PhoneNumberKit.git", from: "3.7.0")
     ],
     targets: [
         .binaryTarget(
