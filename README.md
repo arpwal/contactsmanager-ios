@@ -2,7 +2,7 @@
 
 [![Swift](https://img.shields.io/badge/Swift-5.5+-orange.svg)](https://swift.org)
 [![iOS](https://img.shields.io/badge/iOS-13.0+-blue.svg)](https://developer.apple.com/ios/)
-[![Version](https://img.shields.io/badge/version-0.0.1-green.svg)](https://github.com/arpwal/contactsmanager-ios/releases)
+[![Version](https://img.shields.io/badge/version-0.1.1-green.svg)](https://github.com/arpwal/contactsmanager-ios/releases)
 
 A powerful contacts management framework for iOS business applications.
 
@@ -14,7 +14,7 @@ Add the following to your `Package.swift` dependencies:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/arpwal/contactsmanager-ios.git", .exact("0.0.1"))
+    .package(url: "https://github.com/arpwal/contactsmanager-ios.git", .exact("0.1.1"))
 ]
 ```
 
@@ -50,7 +50,7 @@ This project is licensed under the terms specified in the LICENSE file.
 
 ## Latest Release
 
-Current Version: 0.0.1
+Current Version: 0.1.1
 Release Date: 2025-03-06
 [Release Notes](https://github.com/arpwal/contactsmanager-ios/releases)
 
