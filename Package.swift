@@ -10,24 +10,22 @@ let package = Package(
     products: [
         .library(
             name: "ContactsManager",
-            targets: ["ContactsManager"]),
-        .library(
-            name: "ContactsManagerBinary",
-            targets: ["ContactsManagerBinary"])
+            targets: ["ContactsManager"])
     ],
     dependencies: [
         // Add any dependencies here
     ],
     targets: [
-        // Swift source code target that wraps the binary
-        .target(
-            name: "ContactsManager",
-            dependencies: [],
-        ),
         // Binary framework target
         .binaryTarget(
             name: "ContactsManagerBinary",
             path: "ContactsManager.xcframework"
+        ),
+        // Swift source code target that wraps the binary
+        .target(
+            name: "ContactsManager",
+            dependencies: ["ContactsManagerBinary"],
+            path: "Sources/ContactsManager"
         )
     ]
 )
