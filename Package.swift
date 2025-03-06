@@ -4,7 +4,7 @@ import PackageDescription
 let package = Package(
     name: "ContactsManager",
     platforms: [
-        .iOS(.v13)
+        .iOS(.v15)
     ],
     products: [
         .library(
@@ -12,7 +12,7 @@ let package = Package(
             targets: ["ContactsManager"])
     ],
     dependencies: [
-        // Add any dependencies here
+        .package(url: "https://github.com/realm/realm-swift.git", from: "20.0.1")
     ],
     targets: [
         .binaryTarget(
