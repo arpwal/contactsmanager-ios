@@ -51,6 +51,6 @@ This project is licensed under the terms specified in the LICENSE file.
 ## Latest Release
 
 Current Version: 0.0.1
-Release Date: [Auto-updated by CI]
+Release Date: 2025-03-06
 [Release Notes](https://github.com/arpwal/contactsmanager-ios/releases)
 
