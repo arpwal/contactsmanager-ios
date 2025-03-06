@@ -19,13 +19,16 @@ let package = Package(
         // Add any dependencies here
     ],
     targets: [
+        // Binary framework target
         .binaryTarget(
             name: "ContactsManagerBinary",
             path: "ContactsManager.xcframework"
         ),
+        // Swift source code target
         .target(
             name: "ContactsManager",
             dependencies: ["ContactsManagerBinary"],
-            path: "ContactsManager.xcframework")
+            path: "Sources/ContactsManager"
+        )
     ]
 )
