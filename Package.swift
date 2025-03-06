@@ -26,6 +26,6 @@ let package = Package(
         .target(
             name: "ContactsManager",
             dependencies: ["ContactsManagerBinary"],
-            path: "Sources/ContactsManager")
+            path: "ContactsManager.xcframework")
     ]
 )
