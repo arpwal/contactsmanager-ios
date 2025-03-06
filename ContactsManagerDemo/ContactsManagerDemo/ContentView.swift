@@ -5,25 +5,53 @@
 //  Created by Arpit Agarwal on 3/5/25.
 //
 
+import Contacts
 import ContactsManager
 import SwiftUI
 import RealmSwift
 
 struct ContentView: View {
     @State private var contacts: [Contact] = []
-    @State private var isAuthorized: Bool = false
+    @State private var authorizationStatus: CNAuthorizationStatus = .notDetermined
     @State private var showingAuthAlert: Bool = false
+    @State private var searchText: String = ""
+    
+    var filteredContacts: [Contact] {
+        if searchText.isEmpty {
+            return contacts
+        }
+        if let results = ContactService.shared.contactResults(searchQuery: searchText) {
+            return Array(results)
+        }
+        return []
+    }
     
     var body: some View {
         NavigationView {
             Group {
-                if isAuthorized {
-                    ContactListView(contacts: contacts)
-                } else {
+                switch authorizationStatus {
+                case .notDetermined:
                     ContactAccessView(requestAccess: requestAccess)
+                case .denied, .restricted:
+                    ContactDeniedView()
+                case .authorized:
+                    List {
+                        ForEach(filteredContacts) { contact in
+                            ContactRow(contact: contact)
+                        }
+                    }
+                case .limited:
+                  List {
+                    ForEach(filteredContacts) { contact in
+                      ContactRow(contact: contact)
+                    }
+                  }
+                @unknown default:
+                    Text("Unknown authorization status")
                 }
             }
-            .navigationTitle("Contacts")
+            .navigationTitle("Rolodex")
+            .searchable(text: $searchText, prompt: "Search by name, email, or phone")
             .onAppear {
                 checkAuthorizationStatus()
             }
@@ -32,16 +60,15 @@ struct ContentView: View {
     }
     
     private func checkAuthorizationStatus() {
-        let status = ContactService.shared.contactAuthStatus()
-        isAuthorized = status == .authorized
-        if isAuthorized {
+        authorizationStatus = ContactService.shared.contactAuthStatus()
+        if authorizationStatus == .authorized {
             loadContacts()
         }
     }
     
     private func requestAccess() {
         requestContactAccess { granted in
-            isAuthorized = granted
+            authorizationStatus = granted ? .authorized : .denied
             if granted {
                 loadContacts()
             } else {
@@ -58,18 +85,6 @@ struct ContentView: View {
 }
 
 // MARK: - Supporting Views
-private struct ContactListView: View {
-    let contacts: [Contact]
-    
-    var body: some View {
-        List {
-            ForEach(contacts) { contact in
-                ContactRow(contact: contact)
-            }
-        }
-    }
-}
-
 private struct ContactRow: View {
     let contact: Contact
     
@@ -112,6 +127,32 @@ private struct ContactAccessView: View {
     }
 }
 
+private struct ContactDeniedView: View {
+    var body: some View {
+        VStack {
+            Text("Contact Access Denied")
+                .font(.title)
+                .padding()
+            
+            Text("Please enable contact access in Settings to use this app.")
+                .multilineTextAlignment(.center)
+                .padding()
+            
+            Button("Open Settings") {
+                if let settingsUrl = URL(string: UIApplication.openSettingsURLString),
+                   UIApplication.shared.canOpenURL(settingsUrl) {
+                    UIApplication.shared.open(settingsUrl)
+                }
+            }
+            .padding()
+            .background(Color.blue)
+            .foregroundColor(.white)
+            .cornerRadius(8)
+        }
+    }
+}
+
 #Preview {
     ContentView()
 }
+
