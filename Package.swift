@@ -3,7 +3,7 @@ import PackageDescription
 
 let package = Package(
     name: "ContactsManager",
-    version: "0.2.0",
+    version: "0.3.0",
     platforms: [
         .iOS(.v13)
     ],
@@ -25,7 +25,7 @@ let package = Package(
         .target(
             name: "ContactsManager",
             dependencies: ["ContactsManagerBinary"],
-            path: "Sources/ContactsManager"
+            path: "ContactsManager.xcframework"
         )
     ]
 )
