@@ -91,63 +91,65 @@ private struct ContactRow: View {
     let contact: Contact
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 0) {
-            HStack(spacing: 16) {
-                // Profile Image
-                Group {
-                    if contact.imageDataAvailable,
-                       let thumbnailData = contact.thumbnailImageData,
-                       let uiImage = UIImage(data: thumbnailData) {
-                        Image(uiImage: uiImage)
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                    } else {
-                        Image(systemName: "person.circle.fill")
-                            .resizable()
-                            .foregroundStyle(.gray)
-                    }
+        HStack(spacing: 16) {
+            // Profile Image
+            Group {
+                if contact.imageDataAvailable,
+                   let thumbnailData = contact.thumbnailImageData,
+                   let uiImage = UIImage(data: thumbnailData) {
+                    Image(uiImage: uiImage)
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                } else {
+                    Image(systemName: "person.circle.fill")
+                        .resizable()
+                        .foregroundStyle(.gray.opacity(0.8))
                 }
-                .frame(width: 40, height: 40)
-                .clipShape(Circle())
-                
-                // Contact Info
-                VStack(alignment: .leading, spacing: 4) {
-                    Text(contact.displayName ?? "No Name")
-                        .font(.headline)
-                    
-                    Group {
-                        if let firstPhone = contact.phoneNumbers.first,
-                           let phoneNumber = firstPhone.value {
-                            Text(phoneNumber)
-                                .font(.subheadline)
-                                .foregroundColor(.gray)
-                        } else if let firstEmail = contact.emailAddresses.first,
-                                 let email = firstEmail.value {
-                            Text(email)
-                                .font(.subheadline)
-                                .foregroundColor(.gray)
-                        } else if let firstAddress = contact.addresses.first {
-                            Text(firstAddress.display())
-                                .font(.subheadline)
-                                .foregroundColor(.gray)
-                        }
-                    }
-                }
-                
-                Spacer()
-                
-                // Chevron
-                Image(systemName: "chevron.right")
-                    .foregroundStyle(.gray)
-                    .font(.system(size: 14, weight: .semibold))
             }
-            .padding(.vertical, 8)
+            .frame(width: 40, height: 40)
+            .clipShape(Circle())
+            .background(
+                Circle()
+                    .fill(Color(.systemBackground))
+            )
+            .overlay(
+                Circle()
+                    .stroke(Color(.systemGray5), lineWidth: 0.5)
+            )
             
-            Divider()
-                .frame(maxWidth: .infinity)
+            // Contact Info
+            VStack(alignment: .leading, spacing: 4) {
+                Text(contact.displayName ?? "No Name")
+                    .font(.headline)
+                
+                Group {
+                    if let firstPhone = contact.phoneNumbers.first,
+                       let phoneNumber = firstPhone.value {
+                        Text(phoneNumber)
+                            .font(.subheadline)
+                            .foregroundColor(.gray)
+                    } else if let firstEmail = contact.emailAddresses.first,
+                             let email = firstEmail.value {
+                        Text(email)
+                            .font(.subheadline)
+                            .foregroundColor(.gray)
+                    } else if let firstAddress = contact.addresses.first {
+                        Text(firstAddress.display())
+                            .font(.subheadline)
+                            .foregroundColor(.gray)
+                    }
+                }
+            }
+            
+            Spacer()
+            
+            // Chevron
+            Image(systemName: "chevron.right")
+                .foregroundStyle(.gray)
+                .font(.system(size: 14, weight: .semibold))
         }
-        .listRowInsets(EdgeInsets())
-        .padding(.horizontal)
+        .padding(.vertical, 8)
+        .padding(.horizontal, 16)
     }
 }
 
