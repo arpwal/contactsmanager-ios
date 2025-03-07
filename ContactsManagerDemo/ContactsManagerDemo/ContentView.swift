@@ -8,6 +8,7 @@
 import Contacts
 import ContactsManager
 import SwiftUI
+import Combine
 
 struct ContentView: View {
     @State private var contacts: [Contact] = []
@@ -15,6 +16,7 @@ struct ContentView: View {
     @State private var showingAuthAlert: Bool = false
     @State private var searchText: String = ""
     @State private var selectedContact: Contact? = nil
+    @State private var cancellable: Set<AnyCancellable> = []
     
     var filteredContacts: [Contact] {
         if searchText.isEmpty {
@@ -53,6 +55,7 @@ struct ContentView: View {
             .searchable(text: $searchText, prompt: "Search by name, email, or phone")
             .onAppear {
                 checkAuthorizationStatus()
+                setupContactsSubscription()
             }
             .sheet(item: $selectedContact) { contact in
                 ContactDetailView(contact: contact)
@@ -83,6 +86,20 @@ struct ContentView: View {
         if let results = ContactService.shared.contactResults() {
             contacts = Array(results)
         }
+    }
+    
+    private func setupContactsSubscription() {
+        // Clear existing subscriptions
+        cancellable.removeAll()
+        
+        // Subscribe to contact updates
+        ContactService.shared.contactsPublisher
+            .receive(on: DispatchQueue.main)
+            .sink { _ in
+                print("Received contact update notification")
+                loadContacts()
+            }
+            .store(in: &cancellable)
     }
 }
 
