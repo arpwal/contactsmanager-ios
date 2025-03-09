@@ -2,22 +2,22 @@
 import PackageDescription
 
 let package = Package(
-    name: "ContactsManager",
+    name: "ContactsManagerPackage",
     platforms: [
         .iOS(.v17)
     ],
     products: [
         .library(
-            name: "ContactsManager",
-            targets: ["ContactsManager"])
+            name: "ContactsManagerPackage",
+            targets: ["ContactsManagerPackage"])
     ],
     dependencies: [
         // No dependencies
     ],
     targets: [
         .binaryTarget(
-            name: "ContactsManager",
-            path: "contactsmanagerpackage.xcframework"
+            name: "ContactsManagerPackage",
+            path: "ContactsManagerPackage.xcframework"
         )
     ]
 )
