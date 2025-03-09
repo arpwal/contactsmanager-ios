@@ -4,7 +4,7 @@ import PackageDescription
 let package = Package(
     name: "ContactsManager",
     platforms: [
-        .iOS(.v15)
+        .iOS(.v17)
     ],
     products: [
         .library(
@@ -12,13 +12,12 @@ let package = Package(
             targets: ["ContactsManager"])
     ],
     dependencies: [
-        .package(url: "https://www.github.com/realm/realm-swift.git", from: "20.0.1"),
-        .package(url: "https://www.github.com/marmelroy/PhoneNumberKit.git", from: "3.7.0")
+        // No dependencies
     ],
     targets: [
         .binaryTarget(
             name: "ContactsManager",
-            path: "ContactsManager.xcframework"
+            path: "contactsmanagerpackage.xcframework"
         )
     ]
 )
