@@ -21,7 +21,7 @@ struct ContentView: View {
                 // Show selected contacts if any
                 if !selectedContacts.isEmpty {
                     List(selectedContacts, id: \.id) { contact in
-                        ContactRow(contact: contact)
+                            ContactRow(contact: contact)
                     }
                 } else {
                     ContentUnavailableView(
@@ -135,8 +135,8 @@ private struct ContactRow: View {
                 
                 if let firstPhone = contact.phoneNumbers.first?.value {
                     Text(firstPhone)
-                        .font(.subheadline)
-                        .foregroundColor(.gray)
+                            .font(.subheadline)
+                            .foregroundColor(.gray)
                 }
             }
             
