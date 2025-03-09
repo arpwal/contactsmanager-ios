@@ -6,14 +6,9 @@
 //
 
 import SwiftUI
-import ContactsManager
 
 @main
 struct ContactsManagerDemoApp: App {
-    init() {
-      ContactService.configure(withApiKey: "cm_live_12345abcdef")
-    }
-    
     var body: some Scene {
         WindowGroup {
             ContentView()

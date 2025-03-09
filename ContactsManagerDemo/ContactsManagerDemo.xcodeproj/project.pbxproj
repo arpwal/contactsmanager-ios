@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC08B3932D7E07F700EFB260 /* ContactsManager in Frameworks */ = {isa = PBXBuildFile; productRef = FC08B3922D7E07F700EFB260 /* ContactsManager */; };
+		FC08B3962D7E0C6B00EFB260 /* ContactsManager in Frameworks */ = {isa = PBXBuildFile; productRef = FC08B3952D7E0C6B00EFB260 /* ContactsManager */; };
 		FC45063A2D7B6B68009DDF20 /* ContactsManager in Frameworks */ = {isa = PBXBuildFile; productRef = FC4506392D7B6B68009DDF20 /* ContactsManager */; };
 		FC9919272D79924000E950FD /* ContactsManager in Frameworks */ = {isa = PBXBuildFile; productRef = FC9919262D79924000E950FD /* ContactsManager */; };
 		FC99192D2D7A09DB00E950FD /* ContactsManager in Frameworks */ = {isa = PBXBuildFile; productRef = FC99192C2D7A09DB00E950FD /* ContactsManager */; };
@@ -33,10 +35,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC9919272D79924000E950FD /* ContactsManager in Frameworks */,
+				FC08B3962D7E0C6B00EFB260 /* ContactsManager in Frameworks */,
 				FC9919362D7A1C7400E950FD /* ContactsManager in Frameworks */,
 				FC9919332D7A0F4700E950FD /* ContactsManager in Frameworks */,
 				FC99192D2D7A09DB00E950FD /* ContactsManager in Frameworks */,
 				FC9919302D7A0A4D00E950FD /* ContactsManager in Frameworks */,
+				FC08B3932D7E07F700EFB260 /* ContactsManager in Frameworks */,
 				FC45063A2D7B6B68009DDF20 /* ContactsManager in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -86,6 +90,8 @@
 				FC9919322D7A0F4700E950FD /* ContactsManager */,
 				FC9919352D7A1C7400E950FD /* ContactsManager */,
 				FC4506392D7B6B68009DDF20 /* ContactsManager */,
+				FC08B3922D7E07F700EFB260 /* ContactsManager */,
+				FC08B3952D7E0C6B00EFB260 /* ContactsManager */,
 			);
 			productName = ContactsManagerDemo;
 			productReference = FC9918782D78F0FC00E950FD /* ContactsManagerDemo.app */;
@@ -116,7 +122,7 @@
 			mainGroup = FC99186F2D78F0FC00E950FD;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				FC4506382D7B6B68009DDF20 /* XCLocalSwiftPackageReference "../../ios" */,
+				FC08B3942D7E0C6B00EFB260 /* XCLocalSwiftPackageReference "../../ios" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = FC9918792D78F0FC00E950FD /* Products */;
@@ -354,13 +360,21 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		FC4506382D7B6B68009DDF20 /* XCLocalSwiftPackageReference "../../ios" */ = {
+		FC08B3942D7E0C6B00EFB260 /* XCLocalSwiftPackageReference "../../ios" */ = {
 			isa = XCLocalSwiftPackageReference;
 			relativePath = ../../ios;
 		};
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		FC08B3922D7E07F700EFB260 /* ContactsManager */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ContactsManager;
+		};
+		FC08B3952D7E0C6B00EFB260 /* ContactsManager */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ContactsManager;
+		};
 		FC4506392D7B6B68009DDF20 /* ContactsManager */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = ContactsManager;
