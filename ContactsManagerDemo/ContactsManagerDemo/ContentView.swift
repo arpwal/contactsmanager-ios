@@ -6,7 +6,7 @@
 //
 
 import Contacts
-import ContactsManager
+import ContactsManagerBinary
 import SwiftUI
 import Combine
 

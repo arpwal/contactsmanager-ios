@@ -41,7 +41,7 @@ Or in Xcode:
 Import the framework in your Swift file:
 
 ```swift
-import ContactsManager
+import ContactsManagerBinary
 ```
 
 ## License

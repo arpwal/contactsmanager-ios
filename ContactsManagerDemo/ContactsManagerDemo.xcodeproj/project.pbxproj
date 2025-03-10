@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FC02B3572D7EBC4F00F6EF08 /* ContactsManager in Frameworks */ = {isa = PBXBuildFile; productRef = FC02B3562D7EBC4F00F6EF08 /* ContactsManager */; };
+		FCDC6D6B2D7F5D7C006C568C /* ContactsManagerBinary in Frameworks */ = {isa = PBXBuildFile; productRef = FCDC6D6A2D7F5D7C006C568C /* ContactsManagerBinary */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC02B3572D7EBC4F00F6EF08 /* ContactsManager in Frameworks */,
+				FCDC6D6B2D7F5D7C006C568C /* ContactsManagerBinary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,7 +70,7 @@
 			);
 			name = ContactsManagerDemo;
 			packageProductDependencies = (
-				FC02B3562D7EBC4F00F6EF08 /* ContactsManager */,
+				FCDC6D6A2D7F5D7C006C568C /* ContactsManagerBinary */,
 			);
 			productName = ContactsManagerDemo;
 			productReference = FC9918782D78F0FC00E950FD /* ContactsManagerDemo.app */;
@@ -101,7 +101,7 @@
 			mainGroup = FC99186F2D78F0FC00E950FD;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				FC02B3552D7EBC4F00F6EF08 /* XCLocalSwiftPackageReference "../../ios" */,
+				FCDC6D692D7F5D7C006C568C /* XCLocalSwiftPackageReference "../../ios-package" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = FC9918792D78F0FC00E950FD /* Products */;
@@ -347,16 +347,16 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		FC02B3552D7EBC4F00F6EF08 /* XCLocalSwiftPackageReference "../../ios" */ = {
+		FCDC6D692D7F5D7C006C568C /* XCLocalSwiftPackageReference "../../ios-package" */ = {
 			isa = XCLocalSwiftPackageReference;
-			relativePath = ../../ios;
+			relativePath = "../../ios-package";
 		};
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		FC02B3562D7EBC4F00F6EF08 /* ContactsManager */ = {
+		FCDC6D6A2D7F5D7C006C568C /* ContactsManagerBinary */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = ContactsManager;
+			productName = ContactsManagerBinary;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

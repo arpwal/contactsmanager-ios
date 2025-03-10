@@ -1,0 +1,695 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
+// swift-module-flags: -target arm64-apple-ios18.2 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name ContactsManagerBinary
+import Combine
+import Contacts
+import CryptoKit
+import Foundation
+import OSLog
+import Swift
+import SwiftData
+import SwiftUI
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+import _SwiftData_SwiftUI
+@_hasMissingDesignatedInitializers public class CNContactMapper {
+  @objc deinit
+}
+public enum ContactsSchemaVersions {
+  public static let v1: ContactsManagerBinary.SchemaVersion
+  public static let v2: ContactsManagerBinary.SchemaVersion
+}
+public enum ContactsMigrationStages {
+  public static let v1ToV2: ContactsManagerBinary.MigrationStage
+}
+public struct ContactsMigrationPlan {
+  public static let current: ContactsManagerBinary.SchemaMigrationPlan
+}
+extension ContactsManagerBinary.MigrationManager {
+  public static var contacts: ContactsManagerBinary.MigrationManager {
+    get
+  }
+  public static func contacts(databaseName: Swift.String, shouldHideDatabase: Swift.Bool = true) -> ContactsManagerBinary.MigrationManager
+}
+final public class MigrationManager {
+  public init(migrationPlan: ContactsManagerBinary.SchemaMigrationPlan, userDefaults: Foundation.UserDefaults = .standard, versionKey: Swift.String = "com.contactsmanager.schema.version", databaseName: Swift.String = "ContactsManager.store", shouldHideDatabase: Swift.Bool = true)
+  final public func createModelContainer() throws -> SwiftData.ModelContainer
+  @objc deinit
+}
+public enum MigrationError : Foundation.LocalizedError {
+  case invalidSchemaVersion(Swift.Int)
+  case noMigrationPath(fromVersion: Swift.Int, toVersion: Swift.Int)
+  case databaseCreationFailed(any Swift.Error)
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+public struct SchemaVersion {
+  public let version: Swift.Int
+  public let models: [any SwiftData.PersistentModel.Type]
+  public init(version: Swift.Int, models: [any SwiftData.PersistentModel.Type])
+}
+public struct MigrationStage {
+  public let fromVersion: Swift.Int
+  public let toVersion: Swift.Int
+  public let migrationHandler: (SwiftData.ModelContainer) async throws -> Swift.Void
+  public init(fromVersion: Swift.Int, toVersion: Swift.Int, migrationHandler: @escaping (SwiftData.ModelContainer) async throws -> Swift.Void)
+}
+public struct SchemaMigrationPlan {
+  public let schemaVersions: [ContactsManagerBinary.SchemaVersion]
+  public let migrationStages: [ContactsManagerBinary.MigrationStage]
+  public let currentVersion: Swift.Int
+  public init(schemaVersions: [ContactsManagerBinary.SchemaVersion], migrationStages: [ContactsManagerBinary.MigrationStage], currentVersion: Swift.Int)
+  public func migrationPath(fromVersion: Swift.Int, toVersion: Swift.Int) -> [ContactsManagerBinary.MigrationStage]
+  public func schemaVersion(for version: Swift.Int) -> ContactsManagerBinary.SchemaVersion?
+}
+public let SECTIONNONAME: Swift.String
+final public class Contact {
+  final public var identifier: Swift.String {
+    get
+    set
+  }
+  final public var id: Swift.String {
+    get
+  }
+  final public var contactType: Swift.Int {
+    get
+    set
+  }
+  final public var namePrefix: Swift.String? {
+    get
+    set
+  }
+  final public var givenName: Swift.String? {
+    get
+    set
+  }
+  final public var middleName: Swift.String? {
+    get
+    set
+  }
+  final public var familyName: Swift.String? {
+    get
+    set
+  }
+  final public var previousFamilyName: Swift.String? {
+    get
+    set
+  }
+  final public var nameSuffix: Swift.String? {
+    get
+    set
+  }
+  final public var nickname: Swift.String? {
+    get
+    set
+  }
+  final public var contactSection: Swift.String? {
+    get
+    set
+  }
+  final public var displayName: Swift.String? {
+    get
+    set
+  }
+  final public var organizationName: Swift.String? {
+    get
+    set
+  }
+  final public var departmentName: Swift.String? {
+    get
+    set
+  }
+  final public var jobTitle: Swift.String? {
+    get
+    set
+  }
+  final public var notes: Swift.String? {
+    get
+    set
+  }
+  final public var bio: Swift.String? {
+    get
+    set
+  }
+  final public var location: Swift.String? {
+    get
+    set
+  }
+  final public var imageUrl: Swift.String? {
+    get
+    set
+  }
+  final public var imageData: Foundation.Data? {
+    get
+    set
+  }
+  final public var thumbnailImageData: Foundation.Data? {
+    get
+    set
+  }
+  final public var imageDataAvailable: Swift.Bool {
+    get
+    set
+  }
+  final public var phoneNumbers: [ContactsManagerBinary.ContactLabelledValue] {
+    get
+    set
+  }
+  final public var emailAddresses: [ContactsManagerBinary.ContactLabelledValue] {
+    get
+    set
+  }
+  final public var urlAddresses: [ContactsManagerBinary.ContactLabelledValue] {
+    get
+    set
+  }
+  final public var socialProfiles: [ContactsManagerBinary.ContactSocial] {
+    get
+    set
+  }
+  final public var addresses: [ContactsManagerBinary.ContactAddress] {
+    get
+    set
+  }
+  final public var education: [ContactsManagerBinary.ContactEducation] {
+    get
+    set
+  }
+  final public var organizations: [ContactsManagerBinary.ContactOrganization] {
+    get
+    set
+  }
+  final public var interests: [Swift.String] {
+    get
+    set
+  }
+  final public var avatars: [Swift.String] {
+    get
+    set
+  }
+  final public var birthday: Foundation.Date? {
+    get
+    set
+  }
+  final public var createdAt: Swift.Double {
+    get
+    set
+  }
+  final public var matchString: Swift.String? {
+    get
+    set
+  }
+  final public var isDeleted: Swift.Bool {
+    get
+    set
+  }
+  final public var parentContactId: Swift.String? {
+    get
+    set
+  }
+  public init(identifier: Swift.String = UUID().uuidString)
+  final public var persistentBackingData: any SwiftData.BackingData<ContactsManagerBinary.Contact> {
+    get
+    set
+  }
+  public static var schemaMetadata: [SwiftData.Schema.PropertyMetadata] {
+    get
+  }
+  public init(backingData: any SwiftData.BackingData<ContactsManagerBinary.Contact>)
+  @objc deinit
+}
+extension ContactsManagerBinary.Contact : Swift.Codable {
+  final public func encode(to encoder: any Swift.Encoder) throws
+  convenience public init(from decoder: any Swift.Decoder) throws
+}
+extension ContactsManagerBinary.Contact {
+  final public func updateDisplayInfo()
+}
+extension ContactsManagerBinary.Contact {
+  final public func setPhoneNumbers(_ numbers: [ContactsManagerBinary.ContactLabelledValue])
+  final public func setEmailAddresses(_ emails: [ContactsManagerBinary.ContactLabelledValue])
+  final public func setUrlAddresses(_ urls: [ContactsManagerBinary.ContactLabelledValue])
+  final public func setSocialProfiles(_ profiles: [ContactsManagerBinary.ContactSocial])
+  final public func setAddresses(_ addresses: [ContactsManagerBinary.ContactAddress])
+  final public func setEducation(_ education: [ContactsManagerBinary.ContactEducation])
+  final public func setOrganizations(_ organizations: [ContactsManagerBinary.ContactOrganization])
+  final public func setInterests(_ interests: [Swift.String])
+  final public func setAvatars(_ avatars: [Swift.String])
+}
+extension ContactsManagerBinary.Contact : SwiftData.PersistentModel {
+  public typealias ID = Swift.String
+  final public var hashValue: Swift.Int {
+    get
+  }
+}
+extension ContactsManagerBinary.Contact : Observation.Observable {
+}
+final public class ContactAddress : Swift.Comparable {
+  final public var addressId: Swift.String {
+    get
+    set
+  }
+  final public var address1: Swift.String? {
+    get
+    set
+  }
+  final public var address2: Swift.String? {
+    get
+    set
+  }
+  final public var city: Swift.String? {
+    get
+    set
+  }
+  final public var county: Swift.String? {
+    get
+    set
+  }
+  final public var state: Swift.String? {
+    get
+    set
+  }
+  final public var country: Swift.String? {
+    get
+    set
+  }
+  final public var postalCode: Swift.String? {
+    get
+    set
+  }
+  final public var countryCode: Swift.String? {
+    get
+    set
+  }
+  final public var type: Swift.String? {
+    get
+    set
+  }
+  final public var emoji: Swift.String? {
+    get
+    set
+  }
+  public init(contactId: Swift.String?, address1: Swift.String?, address2: Swift.String?, city: Swift.String?, county: Swift.String?, state: Swift.String?, country: Swift.String?, postalCode: Swift.String?, countryCode: Swift.String?, type: Swift.String?, emoji: Swift.String? = "")
+  public static func < (lhs: ContactsManagerBinary.ContactAddress, rhs: ContactsManagerBinary.ContactAddress) -> Swift.Bool
+  final public func display(separator: Swift.String = ", ") -> Swift.String
+  final public var persistentBackingData: any SwiftData.BackingData<ContactsManagerBinary.ContactAddress> {
+    get
+    set
+  }
+  public static var schemaMetadata: [SwiftData.Schema.PropertyMetadata] {
+    get
+  }
+  public init(backingData: any SwiftData.BackingData<ContactsManagerBinary.ContactAddress>)
+  @objc deinit
+}
+extension ContactsManagerBinary.ContactAddress : Swift.Codable {
+  final public func encode(to encoder: any Swift.Encoder) throws
+  convenience public init(from decoder: any Swift.Decoder) throws
+}
+extension ContactsManagerBinary.ContactAddress {
+  public static func create(from item: Contacts.CNLabeledValue<Contacts.CNPostalAddress>, contactId: Swift.String?) -> ContactsManagerBinary.ContactAddress
+}
+extension ContactsManagerBinary.ContactAddress : SwiftData.PersistentModel {
+  public typealias ID = SwiftData.PersistentIdentifier
+  final public var hashValue: Swift.Int {
+    get
+  }
+}
+extension ContactsManagerBinary.ContactAddress : Observation.Observable {
+}
+final public class ContactEducation : Swift.Comparable {
+  final public var educationId: Swift.String {
+    get
+    set
+  }
+  final public var schoolName: Swift.String? {
+    get
+    set
+  }
+  final public var degree: Swift.String? {
+    get
+    set
+  }
+  final public var year: Swift.String? {
+    get
+    set
+  }
+  final public var type: Swift.String? {
+    get
+    set
+  }
+  final public var emoji: Swift.String? {
+    get
+    set
+  }
+  public init(contactId: Swift.String?, schoolName: Swift.String?, degree: Swift.String?, year: Swift.String?, type: Swift.String?, emoji: Swift.String? = "")
+  public static func < (lhs: ContactsManagerBinary.ContactEducation, rhs: ContactsManagerBinary.ContactEducation) -> Swift.Bool
+  final public func display() -> Swift.String
+  final public var persistentBackingData: any SwiftData.BackingData<ContactsManagerBinary.ContactEducation> {
+    get
+    set
+  }
+  public static var schemaMetadata: [SwiftData.Schema.PropertyMetadata] {
+    get
+  }
+  public init(backingData: any SwiftData.BackingData<ContactsManagerBinary.ContactEducation>)
+  @objc deinit
+}
+extension ContactsManagerBinary.ContactEducation : Swift.Codable {
+  final public func encode(to encoder: any Swift.Encoder) throws
+  convenience public init(from decoder: any Swift.Decoder) throws
+}
+extension ContactsManagerBinary.ContactEducation : SwiftData.PersistentModel {
+  public typealias ID = SwiftData.PersistentIdentifier
+  final public var hashValue: Swift.Int {
+    get
+  }
+}
+extension ContactsManagerBinary.ContactEducation : Observation.Observable {
+}
+final public class ContactLabelledValue : Swift.Comparable {
+  final public var labelId: Swift.String {
+    get
+    set
+  }
+  final public var value: Swift.String? {
+    get
+    set
+  }
+  final public var _value: Swift.String? {
+    get
+    set
+  }
+  final public var type: Swift.String? {
+    get
+    set
+  }
+  final public var emoji: Swift.String? {
+    get
+    set
+  }
+  public init(contactId: Swift.String?, value: Swift.String?, type: Swift.String?, emoji: Swift.String?)
+  public static func < (lhs: ContactsManagerBinary.ContactLabelledValue, rhs: ContactsManagerBinary.ContactLabelledValue) -> Swift.Bool
+  final public var persistentBackingData: any SwiftData.BackingData<ContactsManagerBinary.ContactLabelledValue> {
+    get
+    set
+  }
+  public static var schemaMetadata: [SwiftData.Schema.PropertyMetadata] {
+    get
+  }
+  public init(backingData: any SwiftData.BackingData<ContactsManagerBinary.ContactLabelledValue>)
+  @objc deinit
+}
+extension ContactsManagerBinary.ContactLabelledValue : Swift.Codable {
+  final public func encode(to encoder: any Swift.Encoder) throws
+  convenience public init(from decoder: any Swift.Decoder) throws
+}
+extension ContactsManagerBinary.ContactLabelledValue : SwiftData.PersistentModel {
+  public typealias ID = SwiftData.PersistentIdentifier
+  final public var hashValue: Swift.Int {
+    get
+  }
+}
+extension ContactsManagerBinary.ContactLabelledValue : Observation.Observable {
+}
+final public class ContactOrganization : Swift.Comparable {
+  final public var organizationId: Swift.String {
+    get
+    set
+  }
+  final public var organizationName: Swift.String? {
+    get
+    set
+  }
+  final public var role: Swift.String? {
+    get
+    set
+  }
+  final public var department: Swift.String? {
+    get
+    set
+  }
+  final public var type: Swift.String? {
+    get
+    set
+  }
+  final public var emoji: Swift.String? {
+    get
+    set
+  }
+  public init(contactId: Swift.String?, organizationName: Swift.String?, role: Swift.String?, department: Swift.String?, type: Swift.String?, emoji: Swift.String? = "")
+  public static func < (lhs: ContactsManagerBinary.ContactOrganization, rhs: ContactsManagerBinary.ContactOrganization) -> Swift.Bool
+  final public func display() -> Swift.String
+  final public var persistentBackingData: any SwiftData.BackingData<ContactsManagerBinary.ContactOrganization> {
+    get
+    set
+  }
+  public static var schemaMetadata: [SwiftData.Schema.PropertyMetadata] {
+    get
+  }
+  public init(backingData: any SwiftData.BackingData<ContactsManagerBinary.ContactOrganization>)
+  @objc deinit
+}
+extension ContactsManagerBinary.ContactOrganization : Swift.Codable {
+  final public func encode(to encoder: any Swift.Encoder) throws
+  convenience public init(from decoder: any Swift.Decoder) throws
+}
+extension ContactsManagerBinary.ContactOrganization : SwiftData.PersistentModel {
+  public typealias ID = SwiftData.PersistentIdentifier
+  final public var hashValue: Swift.Int {
+    get
+  }
+}
+extension ContactsManagerBinary.ContactOrganization : Observation.Observable {
+}
+public enum ContactDataRestriction : Swift.String, Swift.CaseIterable {
+  case notes
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [ContactsManagerBinary.ContactDataRestriction]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [ContactsManagerBinary.ContactDataRestriction] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct ContactsManagerOptions {
+  public let restrictedKeysToFetch: Swift.Set<ContactsManagerBinary.ContactFieldType>
+  public static let `default`: ContactsManagerBinary.ContactsManagerOptions
+  public init(restrictedKeysToFetch: Swift.Set<ContactsManagerBinary.ContactFieldType>)
+}
+final public class ContactSocial : Swift.Comparable {
+  final public var socialId: Swift.String {
+    get
+    set
+  }
+  final public var urlString: Swift.String? {
+    get
+    set
+  }
+  final public var username: Swift.String? {
+    get
+    set
+  }
+  final public var userIdentifier: Swift.String? {
+    get
+    set
+  }
+  final public var service: Swift.String? {
+    get
+    set
+  }
+  final public var type: Swift.String? {
+    get
+    set
+  }
+  final public var emoji: Swift.String? {
+    get
+    set
+  }
+  public init(contactId: Swift.String?, urlString: Swift.String?, username: Swift.String?, userIdentifier: Swift.String?, service: Swift.String?, type: Swift.String?, emoji: Swift.String? = "")
+  public static func < (lhs: ContactsManagerBinary.ContactSocial, rhs: ContactsManagerBinary.ContactSocial) -> Swift.Bool
+  final public func display() -> Swift.String?
+  final public var persistentBackingData: any SwiftData.BackingData<ContactsManagerBinary.ContactSocial> {
+    get
+    set
+  }
+  public static var schemaMetadata: [SwiftData.Schema.PropertyMetadata] {
+    get
+  }
+  public init(backingData: any SwiftData.BackingData<ContactsManagerBinary.ContactSocial>)
+  @objc deinit
+}
+extension ContactsManagerBinary.ContactSocial : Swift.Codable {
+  final public func encode(to encoder: any Swift.Encoder) throws
+  convenience public init(from decoder: any Swift.Decoder) throws
+}
+extension ContactsManagerBinary.ContactSocial : SwiftData.PersistentModel {
+  public typealias ID = SwiftData.PersistentIdentifier
+  final public var hashValue: Swift.Int {
+    get
+  }
+}
+extension ContactsManagerBinary.ContactSocial : Observation.Observable {
+}
+public enum ContactsAccessStatus : Swift.Equatable {
+  case notDetermined
+  case authorized
+  case limitedAuthorized
+  case denied
+  case restricted
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: ContactsManagerBinary.ContactsAccessStatus, b: ContactsManagerBinary.ContactsAccessStatus) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers final public class ContactSearchService {
+  public static let shared: ContactsManagerBinary.ContactSearchService
+  final public func initialize(with container: any ContactsManagerBinary.ContactDatabaseContainer)
+  final public func searchContacts(query: Swift.String, searchFields: Swift.Set<ContactsManagerBinary.ContactSearchService.SearchField> = Set(SearchField.allCases), offset: Swift.Int = 0, limit: Swift.Int = 50) async throws -> [ContactsManagerBinary.Contact]
+  public enum SearchField : Swift.CaseIterable {
+    case name
+    case email
+    case phone
+    case address
+    case organization
+    case notes
+    public static func == (a: ContactsManagerBinary.ContactSearchService.SearchField, b: ContactsManagerBinary.ContactSearchService.SearchField) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public typealias AllCases = [ContactsManagerBinary.ContactSearchService.SearchField]
+    nonisolated public static var allCases: [ContactsManagerBinary.ContactSearchService.SearchField] {
+      get
+    }
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  @objc deinit
+}
+public protocol ContactDatabaseContainer {
+  var mainContext: SwiftData.ModelContext { get }
+}
+@_hasMissingDesignatedInitializers final public class ContactService {
+  public static let shared: ContactsManagerBinary.ContactService
+  final public var contactsPublisher: Combine.AnyPublisher<Swift.Void, Swift.Never> {
+    get
+  }
+  final public func initialize(with container: any ContactsManagerBinary.ContactDatabaseContainer)
+  final public func requestAccess() async -> Swift.Bool
+  final public func authorizationStatus() -> ContactsManagerBinary.ContactsAccessStatus
+  final public func requestFullAccess() async -> Swift.Bool
+  final public func fetchContacts(query: Swift.String? = nil, section: Swift.Character? = nil, offset: Swift.Int = 0, limit: Swift.Int = 50) async throws -> [ContactsManagerBinary.Contact]
+  @objc deinit
+}
+extension SwiftData.ModelContainer : ContactsManagerBinary.ContactDatabaseContainer {
+}
+public enum ContactsManagerEvent : Swift.String {
+  case appDidBecomeActive
+  case appDidEnterBackground
+  case contactStoreDidChange
+  case appWasTerminated
+  case contactsAccessChanged
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public typealias EventHandler = () -> Swift.Void
+@_hasMissingDesignatedInitializers final public class EventWrapperService : Foundation.ObservableObject {
+  public static let shared: ContactsManagerBinary.EventWrapperService
+  final public func subscribe(to event: ContactsManagerBinary.ContactsManagerEvent, identifier: Swift.String, handler: @escaping ContactsManagerBinary.EventHandler)
+  final public func unsubscribe(from event: ContactsManagerBinary.ContactsManagerEvent, identifier: Swift.String)
+  final public func startObserving()
+  final public func stopObserving()
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+extension ContactsManagerBinary.ContactsManagerEvent : Swift.CaseIterable {
+  public typealias AllCases = [ContactsManagerBinary.ContactsManagerEvent]
+  nonisolated public static var allCases: [ContactsManagerBinary.ContactsManagerEvent] {
+    get
+  }
+}
+extension SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public func onContactsManagerEvent(_ event: ContactsManagerBinary.ContactsManagerEvent, identifier: Swift.String, perform action: @escaping () -> Swift.Void) -> some SwiftUICore.View
+  
+}
+public enum ContactSelectionMode {
+  case single
+  case multiple
+  public static func == (a: ContactsManagerBinary.ContactSelectionMode, b: ContactsManagerBinary.ContactSelectionMode) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum ContactFieldType {
+  case notes
+  case phone
+  case email
+  case any
+  public static func == (a: ContactsManagerBinary.ContactFieldType, b: ContactsManagerBinary.ContactFieldType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct ContactSelectionOptions {
+  public let selectionMode: ContactsManagerBinary.ContactSelectionMode
+  public let fieldType: ContactsManagerBinary.ContactFieldType
+  public let maxSelectionCount: Swift.Int?
+  public init(selectionMode: ContactsManagerBinary.ContactSelectionMode = .single, fieldType: ContactsManagerBinary.ContactFieldType = .any, maxSelectionCount: Swift.Int? = nil)
+}
+@_hasMissingDesignatedInitializers @available(iOS 13.0, *)
+public class ContactsManagerUI {
+  public static func getInstance() -> ContactsManagerBinary.ContactsManagerUI
+  public func searchContacts(from viewController: UIKit.UIViewController, options: ContactsManagerBinary.ContactSelectionOptions, completion: @escaping (Swift.Result<[ContactsManagerBinary.Contact], any Swift.Error>) -> Swift.Void)
+  @objc deinit
+}
+public enum ContactsManagerError : Foundation.LocalizedError {
+  case invalidAPIKey
+  case initializationFailed(any Swift.Error)
+  case databaseError(any Swift.Error)
+  case notInitialized
+  case contactsAccessDenied
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers final public class ContactsManager {
+  public static let shared: ContactsManagerBinary.ContactsManager
+  final public func initialize(withAPIKey apiKey: Swift.String, options: ContactsManagerBinary.ContactsManagerOptions = .default) async throws
+  final public var isInitialized: Swift.Bool {
+    get
+  }
+  final public var currentState: Swift.String {
+    get
+  }
+  final public func reset() async throws
+  final public var settingsAlert: some SwiftUICore.View {
+    get
+  }
+  @objc deinit
+}
+extension ContactsManagerBinary.ContactsManager {
+  final public func fetchContacts(fieldType: ContactsManagerBinary.ContactFieldType) async throws -> [ContactsManagerBinary.Contact]
+  final public func fetchContact(withId id: Swift.String) async throws -> ContactsManagerBinary.Contact?
+}
+extension ContactsManagerBinary.ContactDataRestriction : Swift.Equatable {}
+extension ContactsManagerBinary.ContactDataRestriction : Swift.Hashable {}
+extension ContactsManagerBinary.ContactDataRestriction : Swift.RawRepresentable {}
+extension ContactsManagerBinary.ContactsAccessStatus : Swift.Hashable {}
+extension ContactsManagerBinary.ContactSearchService.SearchField : Swift.Equatable {}
+extension ContactsManagerBinary.ContactSearchService.SearchField : Swift.Hashable {}
+extension ContactsManagerBinary.ContactsManagerEvent : Swift.Equatable {}
+extension ContactsManagerBinary.ContactsManagerEvent : Swift.Hashable {}
+extension ContactsManagerBinary.ContactsManagerEvent : Swift.RawRepresentable {}
+extension ContactsManagerBinary.ContactSelectionMode : Swift.Equatable {}
+extension ContactsManagerBinary.ContactSelectionMode : Swift.Hashable {}
+extension ContactsManagerBinary.ContactFieldType : Swift.Equatable {}
+extension ContactsManagerBinary.ContactFieldType : Swift.Hashable {}
