@@ -379,6 +379,10 @@ final public class ContactLabelledValue : Swift.Comparable {
     get
     set
   }
+  final public var _value: Swift.String? {
+    get
+    set
+  }
   final public var type: Swift.String? {
     get
     set

@@ -9808,7 +9808,6 @@
             "moduleName": "ContactsManagerPackage",
             "declAttributes": [
               "Final",
-              "Custom",
               "AccessControl"
             ],
             "accessors": [
@@ -9889,6 +9888,123 @@
                 "declKind": "Accessor",
                 "usr": "s:22ContactsManagerPackage20ContactLabelledValueC5valueSSSgvM",
                 "mangledName": "$s22ContactsManagerPackage20ContactLabelledValueC5valueSSSgvM",
+                "moduleName": "ContactsManagerPackage",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "_value",
+            "printedName": "_value",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22ContactsManagerPackage20ContactLabelledValueC6_valueSSSgvp",
+            "mangledName": "$s22ContactsManagerPackage20ContactLabelledValueC6_valueSSSgvp",
+            "moduleName": "ContactsManagerPackage",
+            "declAttributes": [
+              "Final",
+              "Custom",
+              "AccessControl",
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22ContactsManagerPackage20ContactLabelledValueC6_valueSSSgvg",
+                "mangledName": "$s22ContactsManagerPackage20ContactLabelledValueC6_valueSSSgvg",
+                "moduleName": "ContactsManagerPackage",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22ContactsManagerPackage20ContactLabelledValueC6_valueSSSgvs",
+                "mangledName": "$s22ContactsManagerPackage20ContactLabelledValueC6_valueSSSgvs",
+                "moduleName": "ContactsManagerPackage",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22ContactsManagerPackage20ContactLabelledValueC6_valueSSSgvM",
+                "mangledName": "$s22ContactsManagerPackage20ContactLabelledValueC6_valueSSSgvM",
                 "moduleName": "ContactsManagerPackage",
                 "implicit": true,
                 "declAttributes": [
@@ -17978,6 +18094,13 @@
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManagerPackage\/ContactsManagerPackage\/UI\/ContactPickerViewModel.swift",
       "kind": "BooleanLiteral",
       "offset": 512,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManagerPackage\/ContactsManagerPackage\/UI\/ContactPickerViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2226,
       "length": 5,
       "value": "false"
     },
