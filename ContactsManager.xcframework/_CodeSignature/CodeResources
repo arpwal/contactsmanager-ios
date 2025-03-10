@@ -6,7 +6,7 @@
 	<dict>
 		<key>ios-arm64/ContactsManager.framework/ContactsManager</key>
 		<data>
-		me9+sR7HFUNmjC4vumFW9bmdDGo=
+		sL1LzYbYR4mHSIUDle98RvZMP5E=
 		</data>
 		<key>ios-arm64/ContactsManager.framework/Headers/ContactsManager.h</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/ContactsManager.framework/ContactsManager</key>
 		<data>
-		1OWmBhG761q/OfJaEOn9Uk67K6A=
+		Uu5IWF/yBRLAh2aNfd6QPrcyckw=
 		</data>
 		<key>ios-arm64_x86_64-simulator/ContactsManager.framework/Headers/ContactsManager.h</key>
 		<data>
@@ -99,11 +99,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			me9+sR7HFUNmjC4vumFW9bmdDGo=
+			sL1LzYbYR4mHSIUDle98RvZMP5E=
 			</data>
 			<key>hash2</key>
 			<data>
-			4EUkQP57KKqpjZvwxdlfTtqi922C2HVDkYPdFWbJCr4=
+			7V2JdPoXYrqd8IL9jcJ33AvX0yawYX0mdOA9hIHHWjo=
 			</data>
 		</dict>
 		<key>ios-arm64/ContactsManager.framework/Headers/ContactsManager.h</key>
@@ -198,11 +198,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1OWmBhG761q/OfJaEOn9Uk67K6A=
+			Uu5IWF/yBRLAh2aNfd6QPrcyckw=
 			</data>
 			<key>hash2</key>
 			<data>
-			1Ni5Jft1vK+oDgp4lmJx+MGr9VvFMGZvdmQuUVCxD7o=
+			FR5HyumS2WIocuRNribi8MjR042VU8r53QOtNB8fQqk=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/ContactsManager.framework/Headers/ContactsManager.h</key>
