@@ -41,8 +41,21 @@ Or in Xcode:
 Import the framework in your Swift file:
 
 ```swift
-import ContactsManagerBinary
+import ContactsManager
 ```
+
+## Documentation
+
+The ContactsManager SDK provides comprehensive documentation for all major features:
+
+### [Authorization & Access](docs/Authorization.md)
+Learn how to handle contacts access permissions, initialize the SDK, and manage service state.
+
+### [Contact Search & Access](docs/ContactSearch.md)
+Explore methods for fetching and searching contacts based on different criteria.
+
+### [Contact Picker UI](docs/ContactPicker.md)
+Learn how to present and use the SwiftUI-based contact picker in your UIKit applications.
 
 ## Demo App
 
