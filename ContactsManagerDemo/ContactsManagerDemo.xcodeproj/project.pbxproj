@@ -7,15 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FC08B3932D7E07F700EFB260 /* ContactsManager in Frameworks */ = {isa = PBXBuildFile; productRef = FC08B3922D7E07F700EFB260 /* ContactsManager */; };
-		FC08B3962D7E0C6B00EFB260 /* ContactsManager in Frameworks */ = {isa = PBXBuildFile; productRef = FC08B3952D7E0C6B00EFB260 /* ContactsManager */; };
-		FC1CF5F32D7E2B1E003CCD24 /* ContactsManager in Frameworks */ = {isa = PBXBuildFile; productRef = FC1CF5F22D7E2B1E003CCD24 /* ContactsManager */; };
-		FC45063A2D7B6B68009DDF20 /* ContactsManager in Frameworks */ = {isa = PBXBuildFile; productRef = FC4506392D7B6B68009DDF20 /* ContactsManager */; };
-		FC9919272D79924000E950FD /* ContactsManager in Frameworks */ = {isa = PBXBuildFile; productRef = FC9919262D79924000E950FD /* ContactsManager */; };
-		FC99192D2D7A09DB00E950FD /* ContactsManager in Frameworks */ = {isa = PBXBuildFile; productRef = FC99192C2D7A09DB00E950FD /* ContactsManager */; };
-		FC9919302D7A0A4D00E950FD /* ContactsManager in Frameworks */ = {isa = PBXBuildFile; productRef = FC99192F2D7A0A4D00E950FD /* ContactsManager */; };
-		FC9919332D7A0F4700E950FD /* ContactsManager in Frameworks */ = {isa = PBXBuildFile; productRef = FC9919322D7A0F4700E950FD /* ContactsManager */; };
-		FC9919362D7A1C7400E950FD /* ContactsManager in Frameworks */ = {isa = PBXBuildFile; productRef = FC9919352D7A1C7400E950FD /* ContactsManager */; };
+		FC4385822D7E652E003527B6 /* ContactsManagerPackage in Frameworks */ = {isa = PBXBuildFile; productRef = FC4385812D7E652E003527B6 /* ContactsManagerPackage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,15 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC9919272D79924000E950FD /* ContactsManager in Frameworks */,
-				FC08B3962D7E0C6B00EFB260 /* ContactsManager in Frameworks */,
-				FC1CF5F32D7E2B1E003CCD24 /* ContactsManager in Frameworks */,
-				FC9919362D7A1C7400E950FD /* ContactsManager in Frameworks */,
-				FC9919332D7A0F4700E950FD /* ContactsManager in Frameworks */,
-				FC99192D2D7A09DB00E950FD /* ContactsManager in Frameworks */,
-				FC9919302D7A0A4D00E950FD /* ContactsManager in Frameworks */,
-				FC08B3932D7E07F700EFB260 /* ContactsManager in Frameworks */,
-				FC45063A2D7B6B68009DDF20 /* ContactsManager in Frameworks */,
+				FC4385822D7E652E003527B6 /* ContactsManagerPackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,15 +70,7 @@
 			);
 			name = ContactsManagerDemo;
 			packageProductDependencies = (
-				FC9919262D79924000E950FD /* ContactsManager */,
-				FC99192C2D7A09DB00E950FD /* ContactsManager */,
-				FC99192F2D7A0A4D00E950FD /* ContactsManager */,
-				FC9919322D7A0F4700E950FD /* ContactsManager */,
-				FC9919352D7A1C7400E950FD /* ContactsManager */,
-				FC4506392D7B6B68009DDF20 /* ContactsManager */,
-				FC08B3922D7E07F700EFB260 /* ContactsManager */,
-				FC08B3952D7E0C6B00EFB260 /* ContactsManager */,
-				FC1CF5F22D7E2B1E003CCD24 /* ContactsManager */,
+				FC4385812D7E652E003527B6 /* ContactsManagerPackage */,
 			);
 			productName = ContactsManagerDemo;
 			productReference = FC9918782D78F0FC00E950FD /* ContactsManagerDemo.app */;
@@ -125,6 +101,7 @@
 			mainGroup = FC99186F2D78F0FC00E950FD;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
+				FC4385802D7E652E003527B6 /* XCLocalSwiftPackageReference "../../ios-package" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = FC9918792D78F0FC00E950FD /* Products */;
@@ -361,42 +338,17 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCLocalSwiftPackageReference section */
+		FC4385802D7E652E003527B6 /* XCLocalSwiftPackageReference "../../ios-package" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "../../ios-package";
+		};
+/* End XCLocalSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
-		FC08B3922D7E07F700EFB260 /* ContactsManager */ = {
+		FC4385812D7E652E003527B6 /* ContactsManagerPackage */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = ContactsManager;
-		};
-		FC08B3952D7E0C6B00EFB260 /* ContactsManager */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = ContactsManager;
-		};
-		FC1CF5F22D7E2B1E003CCD24 /* ContactsManager */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = ContactsManager;
-		};
-		FC4506392D7B6B68009DDF20 /* ContactsManager */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = ContactsManager;
-		};
-		FC9919262D79924000E950FD /* ContactsManager */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = ContactsManager;
-		};
-		FC99192C2D7A09DB00E950FD /* ContactsManager */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = ContactsManager;
-		};
-		FC99192F2D7A0A4D00E950FD /* ContactsManager */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = ContactsManager;
-		};
-		FC9919322D7A0F4700E950FD /* ContactsManager */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = ContactsManager;
-		};
-		FC9919352D7A1C7400E950FD /* ContactsManager */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = ContactsManager;
+			productName = ContactsManagerPackage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

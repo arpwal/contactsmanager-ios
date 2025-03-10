@@ -1,5 +1,5 @@
 import SwiftUI
-import ContactsManager
+import ContactsManagerPackage
 
 // Basic Information Section
 private struct BasicInfoSection: View {

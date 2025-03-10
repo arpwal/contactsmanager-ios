@@ -3,9 +3,6 @@ import PackageDescription
 
 let package = Package(
     name: "ContactsManagerPackage",
-    platforms: [
-        .iOS(.v17)
-    ],
     products: [
         .library(
             name: "ContactsManagerPackage",
