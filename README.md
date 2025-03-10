@@ -1,7 +1,7 @@
 # Contacts Manager for Businesses - iOS Package
 
 [![Swift](https://img.shields.io/badge/Swift-5.5+-orange.svg)](https://swift.org)
-[![iOS](https://img.shields.io/badge/iOS-13.0+-blue.svg)](https://developer.apple.com/ios/)
+[![iOS](https://img.shields.io/badge/iOS-17.0+-blue.svg)](https://developer.apple.com/ios/)
 [![Version](https://img.shields.io/badge/version-0.10.0-green.svg)](https://github.com/arpwal/contactsmanager-ios/releases)
 
 A powerful contacts management framework for iOS business applications.
@@ -27,12 +27,12 @@ Or in Xcode:
 
 - Comprehensive contact management
 - Business-focused contact organization
-- iOS 13+ support
+- iOS 17+ support
 - Swift 5.5+ compatibility
 
 ## Requirements
 
-- iOS 13.0+
+- iOS 17.0+
 - Swift 5.5+
 - Xcode 13.0+
 
@@ -43,6 +43,18 @@ Import the framework in your Swift file:
 ```swift
 import ContactsManagerBinary
 ```
+
+## Demo App
+
+Check out our demo app to see the SDK in action! The demo app showcases the basic functionality and integration patterns of the Contacts Manager SDK.
+
+[Demo App Repository](https://github.com/arpwal/contactsmanager-demo)
+
+The demo app includes:
+- Complete SDK integration example
+- Basic contact management features
+- Step-by-step setup guide
+- Real-world usage patterns
 
 ## License
 
