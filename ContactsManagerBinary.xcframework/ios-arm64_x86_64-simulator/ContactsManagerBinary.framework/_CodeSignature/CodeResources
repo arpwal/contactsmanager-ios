@@ -10,11 +10,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		1a7JwI+8G6Mq8H3gEs6uPEk54Qc=
+		q+sTXKxGVU2UC42B3y4N2qIwFp4=
 		</data>
 		<key>Modules/ContactsManagerBinary.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		ug5V1etKGMfaL6IDW2bDHHS6my0=
+		YKj8ivDogSqNC7YN8sJWKDNvVB0=
 		</data>
 		<key>Modules/ContactsManagerBinary.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/ContactsManagerBinary.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		DqsoxQUKE4kwjbHeHPj7dNQyVjw=
+		H4rB/t8KWicZfSoU5CTLyVP7U6c=
 		</data>
 		<key>Modules/ContactsManagerBinary.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		ug5V1etKGMfaL6IDW2bDHHS6my0=
+		YKj8ivDogSqNC7YN8sJWKDNvVB0=
 		</data>
 		<key>Modules/ContactsManagerBinary.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/ContactsManagerBinary.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		PibAzP//OZGiCGABZ9nkVUZ036o=
+		I7CsoBzfAIOIjS8WNFGWI8YF/uU=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -66,7 +66,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			TZLD590UpbtYC6Rg7LVqq2boBRNKvOAp2bZkrjVbPIA=
+			TxOS2mJ2GTTTGa2oJwIxm8i7Q7GQcoLDwLrsicnIdek=
 			</data>
 		</dict>
 		<key>Modules/ContactsManagerBinary.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -94,14 +94,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GyFi2UR2icXqf7OwIeapwBuEqOc80bZM3cbVdyLHeiM=
+			yHXYDWkQ+O7dMtqbwfnHUz9LkFV7guAc+hPf0DHIh9I=
 			</data>
 		</dict>
 		<key>Modules/ContactsManagerBinary.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TZLD590UpbtYC6Rg7LVqq2boBRNKvOAp2bZkrjVbPIA=
+			TxOS2mJ2GTTTGa2oJwIxm8i7Q7GQcoLDwLrsicnIdek=
 			</data>
 		</dict>
 		<key>Modules/ContactsManagerBinary.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -129,7 +129,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xoR7YH5sN4j4YRg/k+6o2eQssGQSVmWuDVSb0CKP9oM=
+			E0Tk3SV0oNnF1CggwZbzTPR/NUeVi7+waBRCfVbnsVk=
 			</data>
 		</dict>
 	</dict>
