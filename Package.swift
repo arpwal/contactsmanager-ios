@@ -5,16 +5,16 @@ let package = Package(
     name: "ContactsManager",
     products: [
         .library(
-            name: "ContactsManagerBinary",
-            targets: ["ContactsManagerBinary"])
+            name: "ContactsManager",
+            targets: ["ContactsManager"])
     ],
     dependencies: [
         // No dependencies
     ],
     targets: [
         .binaryTarget(
-            name: "ContactsManagerBinary",
-            path: "ContactsManagerBinary.xcframework"
+            name: "ContactsManager",
+            path: "ContactsManager.xcframework"
         )
     ]
 )
