@@ -17079,6 +17079,77 @@
             "isFromExtension": true,
             "throwing": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "requestContactsAccess",
+            "printedName": "requestContactsAccess()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15ContactsManager0A7ServiceC07requestA6AccessSbyYaF",
+            "mangledName": "$s15ContactsManager0A7ServiceC07requestA6AccessSbyYaF",
+            "moduleName": "ContactsManager",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "contactsAccessStatus",
+            "printedName": "contactsAccessStatus",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ContactsAccessStatus",
+                "printedName": "ContactsManager.ContactsAccessStatus",
+                "usr": "s:15ContactsManager0A12AccessStatusO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15ContactsManager0A7ServiceC20contactsAccessStatusAA0aeF0Ovp",
+            "mangledName": "$s15ContactsManager0A7ServiceC20contactsAccessStatusAA0aeF0Ovp",
+            "moduleName": "ContactsManager",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ContactsAccessStatus",
+                    "printedName": "ContactsManager.ContactsAccessStatus",
+                    "usr": "s:15ContactsManager0A12AccessStatusO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15ContactsManager0A7ServiceC20contactsAccessStatusAA0aeF0Ovg",
+                "mangledName": "$s15ContactsManager0A7ServiceC20contactsAccessStatusAA0aeF0Ovg",
+                "moduleName": "ContactsManager",
+                "declAttributes": [
+                  "Final"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
           }
         ],
         "declKind": "Class",

@@ -665,6 +665,12 @@ extension ContactsManager.ContactsService {
   final public func fetchContacts(fieldType: ContactsManager.ContactFieldType) async throws -> [ContactsManager.Contact]
   final public func fetchContact(withId id: Swift.String) async throws -> ContactsManager.Contact?
 }
+extension ContactsManager.ContactsService {
+  final public func requestContactsAccess() async -> Swift.Bool
+  final public var contactsAccessStatus: ContactsManager.ContactsAccessStatus {
+    get
+  }
+}
 extension ContactsManager.ContactDataRestriction : Swift.Equatable {}
 extension ContactsManager.ContactDataRestriction : Swift.Hashable {}
 extension ContactsManager.ContactDataRestriction : Swift.RawRepresentable {}
