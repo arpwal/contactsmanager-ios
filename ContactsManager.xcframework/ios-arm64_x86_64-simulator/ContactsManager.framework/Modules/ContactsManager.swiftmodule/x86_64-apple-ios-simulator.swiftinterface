@@ -292,7 +292,7 @@ final public class ContactAddress : Swift.Comparable {
     get
     set
   }
-  public init(contactId: Swift.String?, address1: Swift.String?, address2: Swift.String?, city: Swift.String?, county: Swift.String?, state: Swift.String?, country: Swift.String?, postalCode: Swift.String?, countryCode: Swift.String?, type: Swift.String?, emoji: Swift.String? = "")
+  public init(contactId: Swift.String?, address1: Swift.String?, address2: Swift.String?, city: Swift.String?, county: Swift.String?, state: Swift.String?, country: Swift.String?, postalCode: Swift.String?, countryCode: Swift.String?, type: Swift.String?, emoji: Swift.String? = "", randomComponent: Swift.String? = nil)
   public static func < (lhs: ContactsManager.ContactAddress, rhs: ContactsManager.ContactAddress) -> Swift.Bool
   final public func display(separator: Swift.String = ", ") -> Swift.String
   final public var persistentBackingData: any SwiftData.BackingData<ContactsManager.ContactAddress> {
@@ -387,7 +387,7 @@ final public class ContactLabelledValue : Swift.Comparable {
     get
     set
   }
-  public init(contactId: Swift.String?, value: Swift.String?, type: Swift.String?, emoji: Swift.String?)
+  public init(contactId: Swift.String?, value: Swift.String?, type: Swift.String?, emoji: Swift.String?, randomComponent: Swift.String? = nil)
   public static func < (lhs: ContactsManager.ContactLabelledValue, rhs: ContactsManager.ContactLabelledValue) -> Swift.Bool
   final public var persistentBackingData: any SwiftData.BackingData<ContactsManager.ContactLabelledValue> {
     get
@@ -507,7 +507,7 @@ final public class ContactSocial : Swift.Comparable {
     get
     set
   }
-  public init(contactId: Swift.String?, urlString: Swift.String?, username: Swift.String?, userIdentifier: Swift.String?, service: Swift.String?, type: Swift.String?, emoji: Swift.String? = "")
+  public init(contactId: Swift.String?, urlString: Swift.String?, username: Swift.String?, userIdentifier: Swift.String?, service: Swift.String?, type: Swift.String?, emoji: Swift.String? = "", randomComponent: Swift.String? = nil)
   public static func < (lhs: ContactsManager.ContactSocial, rhs: ContactsManager.ContactSocial) -> Swift.Bool
   final public func display() -> Swift.String?
   final public var persistentBackingData: any SwiftData.BackingData<ContactsManager.ContactSocial> {
@@ -549,10 +549,11 @@ public enum ContactsAccessStatus : Swift.Equatable {
     get
   }
 }
-@_hasMissingDesignatedInitializers final public class ContactSearchService {
-  public static let shared: ContactsManager.ContactSearchService
-  final public func initialize(with container: any ContactsManager.ContactDatabaseContainer)
-  final public func searchContacts(query: Swift.String, searchFields: Swift.Set<ContactsManager.ContactSearchService.SearchField> = Set(SearchField.allCases), offset: Swift.Int = 0, limit: Swift.Int = 50) async throws -> [ContactsManager.Contact]
+@_hasMissingDesignatedInitializers @_Concurrency.MainActor final public class ContactSearchService {
+  @_Concurrency.MainActor public static let shared: ContactsManager.ContactSearchService
+  @_Concurrency.MainActor final public func initialize(with container: any ContactsManager.ContactDatabaseContainer)
+  @_Concurrency.MainActor final public func searchContacts(query: Swift.String, searchFields: Swift.Set<ContactsManager.ContactSearchService.SearchField> = Set(SearchField.allCases), offset: Swift.Int = 0, limit: Swift.Int = 50) async throws -> [ContactsManager.Contact]
+  @_Concurrency.MainActor final public func quickSearch(_ query: Swift.String) async throws -> [ContactsManager.Contact]
   public enum SearchField : Swift.CaseIterable {
     case name
     case email
@@ -662,6 +663,11 @@ public enum ContactsServiceError : Foundation.LocalizedError {
   @objc deinit
 }
 extension ContactsManager.ContactsService {
+  final public var databaseContainer: (any ContactsManager.ContactDatabaseContainer)? {
+    get
+  }
+}
+extension ContactsManager.ContactsService {
   final public func fetchContacts(fieldType: ContactsManager.ContactFieldType) async throws -> [ContactsManager.Contact]
   final public func fetchContact(withId id: Swift.String) async throws -> ContactsManager.Contact?
 }
@@ -675,6 +681,7 @@ extension ContactsManager.ContactDataRestriction : Swift.Equatable {}
 extension ContactsManager.ContactDataRestriction : Swift.Hashable {}
 extension ContactsManager.ContactDataRestriction : Swift.RawRepresentable {}
 extension ContactsManager.ContactsAccessStatus : Swift.Hashable {}
+extension ContactsManager.ContactSearchService : Swift.Sendable {}
 extension ContactsManager.ContactSearchService.SearchField : Swift.Equatable {}
 extension ContactsManager.ContactSearchService.SearchField : Swift.Hashable {}
 extension ContactsManager.ContactsManagerEvent : Swift.Equatable {}
