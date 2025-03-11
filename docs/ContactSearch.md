@@ -1,6 +1,6 @@
 # Accessing & Searching Contacts
 
-The ContactsManager provides powerful methods to access and search contacts based on different criteria.
+The ContactsManager provides powerful methods to access and search contacts based on different criteria. All contacts are automatically synced when access is granted and kept up to date.
 
 ## Fetching Contacts by Field Type
 ```swift
@@ -31,6 +31,13 @@ The following field types are supported for filtering contacts:
 - `.email`: Contacts with email addresses
 - `.notes`: Contacts with notes (requires special entitlement)
 - `.any`: All contacts regardless of field type
+
+## Automatic Syncing
+The ContactsManager automatically:
+- Syncs contacts when access is initially granted
+- Updates when contacts change on the device
+- Maintains a local cache for fast access
+- Handles background updates efficiently
 
 ## Notes Access
 To access contact notes, you need special entitlement from Apple:

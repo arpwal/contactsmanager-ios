@@ -11,12 +11,50 @@ try await ContactsService.shared.initialize(
 )
 ```
 
-## Authorization Status
+## Requesting Access
+```swift
+// Request contacts access
+let accessGranted = await ContactsService.shared.requestContactsAccess()
+if accessGranted {
+    // Access granted, contacts will be synced automatically
+} else {
+    // Handle access denied
+}
+```
+
+## Checking Authorization Status
+```swift
+// Get current authorization status
+let status = ContactsService.shared.contactsAccessStatus
+switch status {
+case .authorized:
+    // Full access granted
+case .denied:
+    // Access denied
+case .restricted:
+    // Access restricted
+case .notDetermined:
+    // Not requested yet
+case .limitedAuthorized:
+    // Limited access (iOS 15+)
+}
+```
+
+## Settings Alert
 ```swift
 // Check if contacts access is required
 if ContactsService.shared.authorization.shouldShowSettingsAlert() {
     // Show settings alert view
     ContactsService.shared.settingsAlert
+}
+```
+
+## Event Handling
+```swift
+// Listen for contacts access changes
+.onContactsManagerEvent(.contactsAccessChanged, identifier: "YourIdentifier") {
+    // Handle access changes
+    // Contacts will be automatically synced when access is granted
 }
 ```
 
