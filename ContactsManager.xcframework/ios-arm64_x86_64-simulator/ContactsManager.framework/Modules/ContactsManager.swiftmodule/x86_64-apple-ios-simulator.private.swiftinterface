@@ -379,10 +379,6 @@ final public class ContactLabelledValue : Swift.Comparable {
     get
     set
   }
-  final public var _value: Swift.String? {
-    get
-    set
-  }
   final public var type: Swift.String? {
     get
     set
@@ -536,6 +532,11 @@ extension ContactsManager.ContactSocial : SwiftData.PersistentModel {
 }
 extension ContactsManager.ContactSocial : Observation.Observable {
 }
+public protocol ContactDatabaseContainer {
+  var mainContext: SwiftData.ModelContext { get }
+}
+extension SwiftData.ModelContainer : ContactsManager.ContactDatabaseContainer {
+}
 public enum ContactsAccessStatus : Swift.Equatable {
   case notDetermined
   case authorized
@@ -570,23 +571,6 @@ public enum ContactsAccessStatus : Swift.Equatable {
     }
   }
   @objc deinit
-}
-public protocol ContactDatabaseContainer {
-  var mainContext: SwiftData.ModelContext { get }
-}
-@_hasMissingDesignatedInitializers final public class ContactService {
-  public static let shared: ContactsManager.ContactService
-  final public var contactsPublisher: Combine.AnyPublisher<Swift.Void, Swift.Never> {
-    get
-  }
-  final public func initialize(with container: any ContactsManager.ContactDatabaseContainer)
-  final public func requestAccess() async -> Swift.Bool
-  final public func authorizationStatus() -> ContactsManager.ContactsAccessStatus
-  final public func requestFullAccess() async -> Swift.Bool
-  final public func fetchContacts(query: Swift.String? = nil, section: Swift.Character? = nil, offset: Swift.Int = 0, limit: Swift.Int = 50) async throws -> [ContactsManager.Contact]
-  @objc deinit
-}
-extension SwiftData.ModelContainer : ContactsManager.ContactDatabaseContainer {
 }
 public enum ContactsManagerEvent : Swift.String {
   case appDidBecomeActive
