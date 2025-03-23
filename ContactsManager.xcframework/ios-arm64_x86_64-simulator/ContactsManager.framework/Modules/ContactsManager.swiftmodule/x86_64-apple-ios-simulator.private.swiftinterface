@@ -219,6 +219,10 @@ final public class Contact {
     get
     set
   }
+  final public var dirtyTime: Swift.Double? {
+    get
+    set
+  }
   final public var sourceId: Swift.String? {
     get
     set
