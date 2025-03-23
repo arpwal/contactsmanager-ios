@@ -4714,145 +4714,27 @@
           },
           {
             "kind": "Var",
-            "name": "education",
-            "printedName": "education",
+            "name": "instantMessageAddresses",
+            "printedName": "instantMessageAddresses",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Array",
-                "printedName": "[ContactsManager.ContactEducation]",
+                "printedName": "[ContactsManager.ContactInstantMessage]",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "ContactEducation",
-                    "printedName": "ContactsManager.ContactEducation",
-                    "usr": "s:15ContactsManager16ContactEducationC"
+                    "name": "ContactInstantMessage",
+                    "printedName": "ContactsManager.ContactInstantMessage",
+                    "usr": "s:15ContactsManager21ContactInstantMessageC"
                   }
                 ],
                 "usr": "s:Sa"
               }
             ],
             "declKind": "Var",
-            "usr": "s:15ContactsManager7ContactC9educationSayAA0C9EducationCGvp",
-            "mangledName": "$s15ContactsManager7ContactC9educationSayAA0C9EducationCGvp",
-            "moduleName": "ContactsManager",
-            "declAttributes": [
-              "Final",
-              "Custom",
-              "AccessControl",
-              "Custom",
-              "RawDocComment"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[ContactsManager.ContactEducation]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ContactEducation",
-                        "printedName": "ContactsManager.ContactEducation",
-                        "usr": "s:15ContactsManager16ContactEducationC"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:15ContactsManager7ContactC9educationSayAA0C9EducationCGvg",
-                "mangledName": "$s15ContactsManager7ContactC9educationSayAA0C9EducationCGvg",
-                "moduleName": "ContactsManager",
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[ContactsManager.ContactEducation]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ContactEducation",
-                        "printedName": "ContactsManager.ContactEducation",
-                        "usr": "s:15ContactsManager16ContactEducationC"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:15ContactsManager7ContactC9educationSayAA0C9EducationCGvs",
-                "mangledName": "$s15ContactsManager7ContactC9educationSayAA0C9EducationCGvs",
-                "moduleName": "ContactsManager",
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:15ContactsManager7ContactC9educationSayAA0C9EducationCGvM",
-                "mangledName": "$s15ContactsManager7ContactC9educationSayAA0C9EducationCGvM",
-                "moduleName": "ContactsManager",
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "organizations",
-            "printedName": "organizations",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[ContactsManager.ContactOrganization]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ContactOrganization",
-                    "printedName": "ContactsManager.ContactOrganization",
-                    "usr": "s:15ContactsManager19ContactOrganizationC"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:15ContactsManager7ContactC13organizationsSayAA0C12OrganizationCGvp",
-            "mangledName": "$s15ContactsManager7ContactC13organizationsSayAA0C12OrganizationCGvp",
+            "usr": "s:15ContactsManager7ContactC23instantMessageAddressesSayAA0c7InstantE0CGvp",
+            "mangledName": "$s15ContactsManager7ContactC23instantMessageAddressesSayAA0c7InstantE0CGvp",
             "moduleName": "ContactsManager",
             "declAttributes": [
               "Final",
@@ -4869,21 +4751,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Array",
-                    "printedName": "[ContactsManager.ContactOrganization]",
+                    "printedName": "[ContactsManager.ContactInstantMessage]",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "ContactOrganization",
-                        "printedName": "ContactsManager.ContactOrganization",
-                        "usr": "s:15ContactsManager19ContactOrganizationC"
+                        "name": "ContactInstantMessage",
+                        "printedName": "ContactsManager.ContactInstantMessage",
+                        "usr": "s:15ContactsManager21ContactInstantMessageC"
                       }
                     ],
                     "usr": "s:Sa"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15ContactsManager7ContactC13organizationsSayAA0C12OrganizationCGvg",
-                "mangledName": "$s15ContactsManager7ContactC13organizationsSayAA0C12OrganizationCGvg",
+                "usr": "s:15ContactsManager7ContactC23instantMessageAddressesSayAA0c7InstantE0CGvg",
+                "mangledName": "$s15ContactsManager7ContactC23instantMessageAddressesSayAA0c7InstantE0CGvg",
                 "moduleName": "ContactsManager",
                 "declAttributes": [
                   "Final"
@@ -4903,21 +4785,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Array",
-                    "printedName": "[ContactsManager.ContactOrganization]",
+                    "printedName": "[ContactsManager.ContactInstantMessage]",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "ContactOrganization",
-                        "printedName": "ContactsManager.ContactOrganization",
-                        "usr": "s:15ContactsManager19ContactOrganizationC"
+                        "name": "ContactInstantMessage",
+                        "printedName": "ContactsManager.ContactInstantMessage",
+                        "usr": "s:15ContactsManager21ContactInstantMessageC"
                       }
                     ],
                     "usr": "s:Sa"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15ContactsManager7ContactC13organizationsSayAA0C12OrganizationCGvs",
-                "mangledName": "$s15ContactsManager7ContactC13organizationsSayAA0C12OrganizationCGvs",
+                "usr": "s:15ContactsManager7ContactC23instantMessageAddressesSayAA0c7InstantE0CGvs",
+                "mangledName": "$s15ContactsManager7ContactC23instantMessageAddressesSayAA0c7InstantE0CGvs",
                 "moduleName": "ContactsManager",
                 "declAttributes": [
                   "Final"
@@ -4936,8 +4818,125 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15ContactsManager7ContactC13organizationsSayAA0C12OrganizationCGvM",
-                "mangledName": "$s15ContactsManager7ContactC13organizationsSayAA0C12OrganizationCGvM",
+                "usr": "s:15ContactsManager7ContactC23instantMessageAddressesSayAA0c7InstantE0CGvM",
+                "mangledName": "$s15ContactsManager7ContactC23instantMessageAddressesSayAA0c7InstantE0CGvM",
+                "moduleName": "ContactsManager",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "relations",
+            "printedName": "relations",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[ContactsManager.ContactRelation]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ContactRelation",
+                    "printedName": "ContactsManager.ContactRelation",
+                    "usr": "s:15ContactsManager15ContactRelationC"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15ContactsManager7ContactC9relationsSayAA0C8RelationCGvp",
+            "mangledName": "$s15ContactsManager7ContactC9relationsSayAA0C8RelationCGvp",
+            "moduleName": "ContactsManager",
+            "declAttributes": [
+              "Final",
+              "Custom",
+              "AccessControl",
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[ContactsManager.ContactRelation]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ContactRelation",
+                        "printedName": "ContactsManager.ContactRelation",
+                        "usr": "s:15ContactsManager15ContactRelationC"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15ContactsManager7ContactC9relationsSayAA0C8RelationCGvg",
+                "mangledName": "$s15ContactsManager7ContactC9relationsSayAA0C8RelationCGvg",
+                "moduleName": "ContactsManager",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[ContactsManager.ContactRelation]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ContactRelation",
+                        "printedName": "ContactsManager.ContactRelation",
+                        "usr": "s:15ContactsManager15ContactRelationC"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15ContactsManager7ContactC9relationsSayAA0C8RelationCGvs",
+                "mangledName": "$s15ContactsManager7ContactC9relationsSayAA0C8RelationCGvs",
+                "moduleName": "ContactsManager",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15ContactsManager7ContactC9relationsSayAA0C8RelationCGvM",
+                "mangledName": "$s15ContactsManager7ContactC9relationsSayAA0C8RelationCGvM",
                 "moduleName": "ContactsManager",
                 "implicit": true,
                 "declAttributes": [
@@ -6583,78 +6582,6 @@
           },
           {
             "kind": "Function",
-            "name": "setEducation",
-            "printedName": "setEducation(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[ContactsManager.ContactEducation]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ContactEducation",
-                    "printedName": "ContactsManager.ContactEducation",
-                    "usr": "s:15ContactsManager16ContactEducationC"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15ContactsManager7ContactC12setEducationyySayAA0cE0CGF",
-            "mangledName": "$s15ContactsManager7ContactC12setEducationyySayAA0cE0CGF",
-            "moduleName": "ContactsManager",
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setOrganizations",
-            "printedName": "setOrganizations(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[ContactsManager.ContactOrganization]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ContactOrganization",
-                    "printedName": "ContactsManager.ContactOrganization",
-                    "usr": "s:15ContactsManager19ContactOrganizationC"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15ContactsManager7ContactC16setOrganizationsyySayAA0C12OrganizationCGF",
-            "mangledName": "$s15ContactsManager7ContactC16setOrganizationsyySayAA0C12OrganizationCGF",
-            "moduleName": "ContactsManager",
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "setInterests",
             "printedName": "setInterests(_:)",
             "children": [
@@ -6753,6 +6680,78 @@
             "declKind": "Func",
             "usr": "s:15ContactsManager7ContactC8setDatesyySayAA0C4DateCGF",
             "mangledName": "$s15ContactsManager7ContactC8setDatesyySayAA0C4DateCGF",
+            "moduleName": "ContactsManager",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setInstantMessageAddresses",
+            "printedName": "setInstantMessageAddresses(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[ContactsManager.ContactInstantMessage]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ContactInstantMessage",
+                    "printedName": "ContactsManager.ContactInstantMessage",
+                    "usr": "s:15ContactsManager21ContactInstantMessageC"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15ContactsManager7ContactC26setInstantMessageAddressesyySayAA0ceF0CGF",
+            "mangledName": "$s15ContactsManager7ContactC26setInstantMessageAddressesyySayAA0ceF0CGF",
+            "moduleName": "ContactsManager",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setRelations",
+            "printedName": "setRelations(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[ContactsManager.ContactRelation]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ContactRelation",
+                    "printedName": "ContactsManager.ContactRelation",
+                    "usr": "s:15ContactsManager15ContactRelationC"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15ContactsManager7ContactC12setRelationsyySayAA0C8RelationCGF",
+            "mangledName": "$s15ContactsManager7ContactC12setRelationsyySayAA0C8RelationCGF",
             "moduleName": "ContactsManager",
             "declAttributes": [
               "Final",
@@ -9918,14 +9917,35 @@
         "moduleName": "ContactsManager"
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ContactsManager"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftData",
+        "printedName": "SwiftData",
+        "declKind": "Import",
+        "moduleName": "ContactsManager"
+      },
+      {
+        "kind": "Import",
+        "name": "Contacts",
+        "printedName": "Contacts",
+        "declKind": "Import",
+        "moduleName": "ContactsManager"
+      },
+      {
         "kind": "TypeDecl",
-        "name": "ContactEducation",
-        "printedName": "ContactEducation",
+        "name": "ContactInstantMessage",
+        "printedName": "ContactInstantMessage",
         "children": [
           {
             "kind": "Var",
-            "name": "educationId",
-            "printedName": "educationId",
+            "name": "instantMessageId",
+            "printedName": "instantMessageId",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -9935,8 +9955,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:15ContactsManager16ContactEducationC11educationIdSSvp",
-            "mangledName": "$s15ContactsManager16ContactEducationC11educationIdSSvp",
+            "usr": "s:15ContactsManager21ContactInstantMessageC07instantE2IdSSvp",
+            "mangledName": "$s15ContactsManager21ContactInstantMessageC07instantE2IdSSvp",
             "moduleName": "ContactsManager",
             "declAttributes": [
               "Final",
@@ -9959,8 +9979,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15ContactsManager16ContactEducationC11educationIdSSvg",
-                "mangledName": "$s15ContactsManager16ContactEducationC11educationIdSSvg",
+                "usr": "s:15ContactsManager21ContactInstantMessageC07instantE2IdSSvg",
+                "mangledName": "$s15ContactsManager21ContactInstantMessageC07instantE2IdSSvg",
                 "moduleName": "ContactsManager",
                 "declAttributes": [
                   "Final"
@@ -9985,8 +10005,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15ContactsManager16ContactEducationC11educationIdSSvs",
-                "mangledName": "$s15ContactsManager16ContactEducationC11educationIdSSvs",
+                "usr": "s:15ContactsManager21ContactInstantMessageC07instantE2IdSSvs",
+                "mangledName": "$s15ContactsManager21ContactInstantMessageC07instantE2IdSSvs",
                 "moduleName": "ContactsManager",
                 "declAttributes": [
                   "Final"
@@ -10005,8 +10025,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15ContactsManager16ContactEducationC11educationIdSSvM",
-                "mangledName": "$s15ContactsManager16ContactEducationC11educationIdSSvM",
+                "usr": "s:15ContactsManager21ContactInstantMessageC07instantE2IdSSvM",
+                "mangledName": "$s15ContactsManager21ContactInstantMessageC07instantE2IdSSvM",
                 "moduleName": "ContactsManager",
                 "implicit": true,
                 "declAttributes": [
@@ -10018,8 +10038,8 @@
           },
           {
             "kind": "Var",
-            "name": "schoolName",
-            "printedName": "schoolName",
+            "name": "service",
+            "printedName": "service",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -10037,8 +10057,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:15ContactsManager16ContactEducationC10schoolNameSSSgvp",
-            "mangledName": "$s15ContactsManager16ContactEducationC10schoolNameSSSgvp",
+            "usr": "s:15ContactsManager21ContactInstantMessageC7serviceSSSgvp",
+            "mangledName": "$s15ContactsManager21ContactInstantMessageC7serviceSSSgvp",
             "moduleName": "ContactsManager",
             "declAttributes": [
               "Final",
@@ -10067,8 +10087,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15ContactsManager16ContactEducationC10schoolNameSSSgvg",
-                "mangledName": "$s15ContactsManager16ContactEducationC10schoolNameSSSgvg",
+                "usr": "s:15ContactsManager21ContactInstantMessageC7serviceSSSgvg",
+                "mangledName": "$s15ContactsManager21ContactInstantMessageC7serviceSSSgvg",
                 "moduleName": "ContactsManager",
                 "declAttributes": [
                   "Final"
@@ -10101,8 +10121,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15ContactsManager16ContactEducationC10schoolNameSSSgvs",
-                "mangledName": "$s15ContactsManager16ContactEducationC10schoolNameSSSgvs",
+                "usr": "s:15ContactsManager21ContactInstantMessageC7serviceSSSgvs",
+                "mangledName": "$s15ContactsManager21ContactInstantMessageC7serviceSSSgvs",
                 "moduleName": "ContactsManager",
                 "declAttributes": [
                   "Final"
@@ -10121,8 +10141,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15ContactsManager16ContactEducationC10schoolNameSSSgvM",
-                "mangledName": "$s15ContactsManager16ContactEducationC10schoolNameSSSgvM",
+                "usr": "s:15ContactsManager21ContactInstantMessageC7serviceSSSgvM",
+                "mangledName": "$s15ContactsManager21ContactInstantMessageC7serviceSSSgvM",
                 "moduleName": "ContactsManager",
                 "implicit": true,
                 "declAttributes": [
@@ -10134,8 +10154,8 @@
           },
           {
             "kind": "Var",
-            "name": "degree",
-            "printedName": "degree",
+            "name": "username",
+            "printedName": "username",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -10153,8 +10173,125 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:15ContactsManager16ContactEducationC6degreeSSSgvp",
-            "mangledName": "$s15ContactsManager16ContactEducationC6degreeSSSgvp",
+            "usr": "s:15ContactsManager21ContactInstantMessageC8usernameSSSgvp",
+            "mangledName": "$s15ContactsManager21ContactInstantMessageC8usernameSSSgvp",
+            "moduleName": "ContactsManager",
+            "declAttributes": [
+              "Final",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15ContactsManager21ContactInstantMessageC8usernameSSSgvg",
+                "mangledName": "$s15ContactsManager21ContactInstantMessageC8usernameSSSgvg",
+                "moduleName": "ContactsManager",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15ContactsManager21ContactInstantMessageC8usernameSSSgvs",
+                "mangledName": "$s15ContactsManager21ContactInstantMessageC8usernameSSSgvs",
+                "moduleName": "ContactsManager",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15ContactsManager21ContactInstantMessageC8usernameSSSgvM",
+                "mangledName": "$s15ContactsManager21ContactInstantMessageC8usernameSSSgvM",
+                "moduleName": "ContactsManager",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "userIdentifier",
+            "printedName": "userIdentifier",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15ContactsManager21ContactInstantMessageC14userIdentifierSSSgvp",
+            "mangledName": "$s15ContactsManager21ContactInstantMessageC14userIdentifierSSSgvp",
             "moduleName": "ContactsManager",
             "declAttributes": [
               "Final",
@@ -10183,8 +10320,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15ContactsManager16ContactEducationC6degreeSSSgvg",
-                "mangledName": "$s15ContactsManager16ContactEducationC6degreeSSSgvg",
+                "usr": "s:15ContactsManager21ContactInstantMessageC14userIdentifierSSSgvg",
+                "mangledName": "$s15ContactsManager21ContactInstantMessageC14userIdentifierSSSgvg",
                 "moduleName": "ContactsManager",
                 "declAttributes": [
                   "Final"
@@ -10217,8 +10354,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15ContactsManager16ContactEducationC6degreeSSSgvs",
-                "mangledName": "$s15ContactsManager16ContactEducationC6degreeSSSgvs",
+                "usr": "s:15ContactsManager21ContactInstantMessageC14userIdentifierSSSgvs",
+                "mangledName": "$s15ContactsManager21ContactInstantMessageC14userIdentifierSSSgvs",
                 "moduleName": "ContactsManager",
                 "declAttributes": [
                   "Final"
@@ -10237,124 +10374,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15ContactsManager16ContactEducationC6degreeSSSgvM",
-                "mangledName": "$s15ContactsManager16ContactEducationC6degreeSSSgvM",
-                "moduleName": "ContactsManager",
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "year",
-            "printedName": "year",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:15ContactsManager16ContactEducationC4yearSSSgvp",
-            "mangledName": "$s15ContactsManager16ContactEducationC4yearSSSgvp",
-            "moduleName": "ContactsManager",
-            "declAttributes": [
-              "Final",
-              "Custom",
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:15ContactsManager16ContactEducationC4yearSSSgvg",
-                "mangledName": "$s15ContactsManager16ContactEducationC4yearSSSgvg",
-                "moduleName": "ContactsManager",
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:15ContactsManager16ContactEducationC4yearSSSgvs",
-                "mangledName": "$s15ContactsManager16ContactEducationC4yearSSSgvs",
-                "moduleName": "ContactsManager",
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:15ContactsManager16ContactEducationC4yearSSSgvM",
-                "mangledName": "$s15ContactsManager16ContactEducationC4yearSSSgvM",
+                "usr": "s:15ContactsManager21ContactInstantMessageC14userIdentifierSSSgvM",
+                "mangledName": "$s15ContactsManager21ContactInstantMessageC14userIdentifierSSSgvM",
                 "moduleName": "ContactsManager",
                 "implicit": true,
                 "declAttributes": [
@@ -10385,8 +10406,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:15ContactsManager16ContactEducationC4typeSSSgvp",
-            "mangledName": "$s15ContactsManager16ContactEducationC4typeSSSgvp",
+            "usr": "s:15ContactsManager21ContactInstantMessageC4typeSSSgvp",
+            "mangledName": "$s15ContactsManager21ContactInstantMessageC4typeSSSgvp",
             "moduleName": "ContactsManager",
             "declAttributes": [
               "Final",
@@ -10415,8 +10436,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15ContactsManager16ContactEducationC4typeSSSgvg",
-                "mangledName": "$s15ContactsManager16ContactEducationC4typeSSSgvg",
+                "usr": "s:15ContactsManager21ContactInstantMessageC4typeSSSgvg",
+                "mangledName": "$s15ContactsManager21ContactInstantMessageC4typeSSSgvg",
                 "moduleName": "ContactsManager",
                 "declAttributes": [
                   "Final"
@@ -10449,8 +10470,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15ContactsManager16ContactEducationC4typeSSSgvs",
-                "mangledName": "$s15ContactsManager16ContactEducationC4typeSSSgvs",
+                "usr": "s:15ContactsManager21ContactInstantMessageC4typeSSSgvs",
+                "mangledName": "$s15ContactsManager21ContactInstantMessageC4typeSSSgvs",
                 "moduleName": "ContactsManager",
                 "declAttributes": [
                   "Final"
@@ -10469,8 +10490,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15ContactsManager16ContactEducationC4typeSSSgvM",
-                "mangledName": "$s15ContactsManager16ContactEducationC4typeSSSgvM",
+                "usr": "s:15ContactsManager21ContactInstantMessageC4typeSSSgvM",
+                "mangledName": "$s15ContactsManager21ContactInstantMessageC4typeSSSgvM",
                 "moduleName": "ContactsManager",
                 "implicit": true,
                 "declAttributes": [
@@ -10501,13 +10522,14 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:15ContactsManager16ContactEducationC5emojiSSSgvp",
-            "mangledName": "$s15ContactsManager16ContactEducationC5emojiSSSgvp",
+            "usr": "s:15ContactsManager21ContactInstantMessageC5emojiSSSgvp",
+            "mangledName": "$s15ContactsManager21ContactInstantMessageC5emojiSSSgvp",
             "moduleName": "ContactsManager",
             "declAttributes": [
               "Final",
               "Custom",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "accessors": [
               {
@@ -10531,8 +10553,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15ContactsManager16ContactEducationC5emojiSSSgvg",
-                "mangledName": "$s15ContactsManager16ContactEducationC5emojiSSSgvg",
+                "usr": "s:15ContactsManager21ContactInstantMessageC5emojiSSSgvg",
+                "mangledName": "$s15ContactsManager21ContactInstantMessageC5emojiSSSgvg",
                 "moduleName": "ContactsManager",
                 "declAttributes": [
                   "Final"
@@ -10565,8 +10587,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15ContactsManager16ContactEducationC5emojiSSSgvs",
-                "mangledName": "$s15ContactsManager16ContactEducationC5emojiSSSgvs",
+                "usr": "s:15ContactsManager21ContactInstantMessageC5emojiSSSgvs",
+                "mangledName": "$s15ContactsManager21ContactInstantMessageC5emojiSSSgvs",
                 "moduleName": "ContactsManager",
                 "declAttributes": [
                   "Final"
@@ -10585,8 +10607,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15ContactsManager16ContactEducationC5emojiSSSgvM",
-                "mangledName": "$s15ContactsManager16ContactEducationC5emojiSSSgvM",
+                "usr": "s:15ContactsManager21ContactInstantMessageC5emojiSSSgvM",
+                "mangledName": "$s15ContactsManager21ContactInstantMessageC5emojiSSSgvM",
                 "moduleName": "ContactsManager",
                 "implicit": true,
                 "declAttributes": [
@@ -10599,13 +10621,13 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(contactId:schoolName:degree:year:type:emoji:)",
+            "printedName": "init(contactId:service:username:userIdentifier:type:emoji:randomComponent:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "ContactEducation",
-                "printedName": "ContactsManager.ContactEducation",
-                "usr": "s:15ContactsManager16ContactEducationC"
+                "name": "ContactInstantMessage",
+                "printedName": "ContactsManager.ContactInstantMessage",
+                "usr": "s:15ContactsManager21ContactInstantMessageC"
               },
               {
                 "kind": "TypeNominal",
@@ -10691,11 +10713,26 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:15ContactsManager16ContactEducationC9contactId10schoolName6degree4year4type5emojiACSSSg_A5Jtcfc",
-            "mangledName": "$s15ContactsManager16ContactEducationC9contactId10schoolName6degree4year4type5emojiACSSSg_A5Jtcfc",
+            "usr": "s:15ContactsManager21ContactInstantMessageC9contactId7service8username14userIdentifier4type5emoji15randomComponentACSSSg_A6Ktcfc",
+            "mangledName": "$s15ContactsManager21ContactInstantMessageC9contactId7service8username14userIdentifier4type5emoji15randomComponentACSSSg_A6Ktcfc",
             "moduleName": "ContactsManager",
             "declAttributes": [
               "AccessControl"
@@ -10715,20 +10752,20 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "ContactEducation",
-                "printedName": "ContactsManager.ContactEducation",
-                "usr": "s:15ContactsManager16ContactEducationC"
+                "name": "ContactInstantMessage",
+                "printedName": "ContactsManager.ContactInstantMessage",
+                "usr": "s:15ContactsManager21ContactInstantMessageC"
               },
               {
                 "kind": "TypeNominal",
-                "name": "ContactEducation",
-                "printedName": "ContactsManager.ContactEducation",
-                "usr": "s:15ContactsManager16ContactEducationC"
+                "name": "ContactInstantMessage",
+                "printedName": "ContactsManager.ContactInstantMessage",
+                "usr": "s:15ContactsManager21ContactInstantMessageC"
               }
             ],
             "declKind": "Func",
-            "usr": "s:15ContactsManager16ContactEducationC1loiySbAC_ACtFZ",
-            "mangledName": "$s15ContactsManager16ContactEducationC1loiySbAC_ACtFZ",
+            "usr": "s:15ContactsManager21ContactInstantMessageC1loiySbAC_ACtFZ",
+            "mangledName": "$s15ContactsManager21ContactInstantMessageC1loiySbAC_ACtFZ",
             "moduleName": "ContactsManager",
             "static": true,
             "declAttributes": [
@@ -10750,8 +10787,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:15ContactsManager16ContactEducationC7displaySSyF",
-            "mangledName": "$s15ContactsManager16ContactEducationC7displaySSyF",
+            "usr": "s:15ContactsManager21ContactInstantMessageC7displaySSyF",
+            "mangledName": "$s15ContactsManager21ContactInstantMessageC7displaySSyF",
             "moduleName": "ContactsManager",
             "declAttributes": [
               "Final",
@@ -10767,13 +10804,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "BackingData",
-                "printedName": "any SwiftData.BackingData<ContactsManager.ContactEducation>",
+                "printedName": "any SwiftData.BackingData<ContactsManager.ContactInstantMessage>",
                 "usr": "s:9SwiftData07BackingB0P"
               }
             ],
             "declKind": "Var",
-            "usr": "s:15ContactsManager16ContactEducationC21persistentBackingData05SwiftG00fG0_pAC5ModelAeFPRts_XPvp",
-            "mangledName": "$s15ContactsManager16ContactEducationC21persistentBackingData05SwiftG00fG0_pAC5ModelAeFPRts_XPvp",
+            "usr": "s:15ContactsManager21ContactInstantMessageC21persistentBackingData05SwiftH00gH0_pAC5ModelAeFPRts_XPvp",
+            "mangledName": "$s15ContactsManager21ContactInstantMessageC21persistentBackingData05SwiftH00gH0_pAC5ModelAeFPRts_XPvp",
             "moduleName": "ContactsManager",
             "declAttributes": [
               "Final",
@@ -10788,13 +10825,13 @@
                   {
                     "kind": "TypeNominal",
                     "name": "BackingData",
-                    "printedName": "any SwiftData.BackingData<ContactsManager.ContactEducation>",
+                    "printedName": "any SwiftData.BackingData<ContactsManager.ContactInstantMessage>",
                     "usr": "s:9SwiftData07BackingB0P"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15ContactsManager16ContactEducationC21persistentBackingData05SwiftG00fG0_pAC5ModelAeFPRts_XPvg",
-                "mangledName": "$s15ContactsManager16ContactEducationC21persistentBackingData05SwiftG00fG0_pAC5ModelAeFPRts_XPvg",
+                "usr": "s:15ContactsManager21ContactInstantMessageC21persistentBackingData05SwiftH00gH0_pAC5ModelAeFPRts_XPvg",
+                "mangledName": "$s15ContactsManager21ContactInstantMessageC21persistentBackingData05SwiftH00gH0_pAC5ModelAeFPRts_XPvg",
                 "moduleName": "ContactsManager",
                 "declAttributes": [
                   "Final"
@@ -10814,13 +10851,13 @@
                   {
                     "kind": "TypeNominal",
                     "name": "BackingData",
-                    "printedName": "any SwiftData.BackingData<ContactsManager.ContactEducation>",
+                    "printedName": "any SwiftData.BackingData<ContactsManager.ContactInstantMessage>",
                     "usr": "s:9SwiftData07BackingB0P"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15ContactsManager16ContactEducationC21persistentBackingData05SwiftG00fG0_pAC5ModelAeFPRts_XPvs",
-                "mangledName": "$s15ContactsManager16ContactEducationC21persistentBackingData05SwiftG00fG0_pAC5ModelAeFPRts_XPvs",
+                "usr": "s:15ContactsManager21ContactInstantMessageC21persistentBackingData05SwiftH00gH0_pAC5ModelAeFPRts_XPvs",
+                "mangledName": "$s15ContactsManager21ContactInstantMessageC21persistentBackingData05SwiftH00gH0_pAC5ModelAeFPRts_XPvs",
                 "moduleName": "ContactsManager",
                 "declAttributes": [
                   "Final"
@@ -10839,8 +10876,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15ContactsManager16ContactEducationC21persistentBackingData05SwiftG00fG0_pAC5ModelAeFPRts_XPvM",
-                "mangledName": "$s15ContactsManager16ContactEducationC21persistentBackingData05SwiftG00fG0_pAC5ModelAeFPRts_XPvM",
+                "usr": "s:15ContactsManager21ContactInstantMessageC21persistentBackingData05SwiftH00gH0_pAC5ModelAeFPRts_XPvM",
+                "mangledName": "$s15ContactsManager21ContactInstantMessageC21persistentBackingData05SwiftH00gH0_pAC5ModelAeFPRts_XPvM",
                 "moduleName": "ContactsManager",
                 "implicit": true,
                 "declAttributes": [
@@ -10871,8 +10908,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:15ContactsManager16ContactEducationC14schemaMetadataSay9SwiftData6SchemaC08PropertyF0VGvpZ",
-            "mangledName": "$s15ContactsManager16ContactEducationC14schemaMetadataSay9SwiftData6SchemaC08PropertyF0VGvpZ",
+            "usr": "s:15ContactsManager21ContactInstantMessageC14schemaMetadataSay9SwiftData6SchemaC08PropertyG0VGvpZ",
+            "mangledName": "$s15ContactsManager21ContactInstantMessageC14schemaMetadataSay9SwiftData6SchemaC08PropertyG0VGvpZ",
             "moduleName": "ContactsManager",
             "static": true,
             "declAttributes": [
@@ -10901,8 +10938,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15ContactsManager16ContactEducationC14schemaMetadataSay9SwiftData6SchemaC08PropertyF0VGvgZ",
-                "mangledName": "$s15ContactsManager16ContactEducationC14schemaMetadataSay9SwiftData6SchemaC08PropertyF0VGvgZ",
+                "usr": "s:15ContactsManager21ContactInstantMessageC14schemaMetadataSay9SwiftData6SchemaC08PropertyG0VGvgZ",
+                "mangledName": "$s15ContactsManager21ContactInstantMessageC14schemaMetadataSay9SwiftData6SchemaC08PropertyG0VGvgZ",
                 "moduleName": "ContactsManager",
                 "static": true,
                 "declAttributes": [
@@ -10919,20 +10956,20 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "ContactEducation",
-                "printedName": "ContactsManager.ContactEducation",
-                "usr": "s:15ContactsManager16ContactEducationC"
+                "name": "ContactInstantMessage",
+                "printedName": "ContactsManager.ContactInstantMessage",
+                "usr": "s:15ContactsManager21ContactInstantMessageC"
               },
               {
                 "kind": "TypeNominal",
                 "name": "BackingData",
-                "printedName": "any SwiftData.BackingData<ContactsManager.ContactEducation>",
+                "printedName": "any SwiftData.BackingData<ContactsManager.ContactInstantMessage>",
                 "usr": "s:9SwiftData07BackingB0P"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:15ContactsManager16ContactEducationC11backingDataAC05SwiftF007BackingF0_pAC5ModelAeFPRts_XP_tcfc",
-            "mangledName": "$s15ContactsManager16ContactEducationC11backingDataAC05SwiftF007BackingF0_pAC5ModelAeFPRts_XP_tcfc",
+            "usr": "s:15ContactsManager21ContactInstantMessageC11backingDataAC05SwiftG007BackingG0_pAC5ModelAeFPRts_XP_tcfc",
+            "mangledName": "$s15ContactsManager21ContactInstantMessageC11backingDataAC05SwiftG007BackingG0_pAC5ModelAeFPRts_XP_tcfc",
             "moduleName": "ContactsManager",
             "declAttributes": [
               "AccessControl"
@@ -10957,8 +10994,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:15ContactsManager16ContactEducationC6encode2toys7Encoder_p_tKF",
-            "mangledName": "$s15ContactsManager16ContactEducationC6encode2toys7Encoder_p_tKF",
+            "usr": "s:15ContactsManager21ContactInstantMessageC6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s15ContactsManager21ContactInstantMessageC6encode2toys7Encoder_p_tKF",
             "moduleName": "ContactsManager",
             "declAttributes": [
               "Final",
@@ -10975,9 +11012,9 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "ContactEducation",
-                "printedName": "ContactsManager.ContactEducation",
-                "usr": "s:15ContactsManager16ContactEducationC"
+                "name": "ContactInstantMessage",
+                "printedName": "ContactsManager.ContactInstantMessage",
+                "usr": "s:15ContactsManager21ContactInstantMessageC"
               },
               {
                 "kind": "TypeNominal",
@@ -10987,8 +11024,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:15ContactsManager16ContactEducationC4fromACs7Decoder_p_tKcfc",
-            "mangledName": "$s15ContactsManager16ContactEducationC4fromACs7Decoder_p_tKcfc",
+            "usr": "s:15ContactsManager21ContactInstantMessageC4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s15ContactsManager21ContactInstantMessageC4fromACs7Decoder_p_tKcfc",
             "moduleName": "ContactsManager",
             "declAttributes": [
               "Convenience",
@@ -11011,8 +11048,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:15ContactsManager16ContactEducationC9hashValueSivp",
-            "mangledName": "$s15ContactsManager16ContactEducationC9hashValueSivp",
+            "usr": "s:15ContactsManager21ContactInstantMessageC9hashValueSivp",
+            "mangledName": "$s15ContactsManager21ContactInstantMessageC9hashValueSivp",
             "moduleName": "ContactsManager",
             "implicit": true,
             "declAttributes": [
@@ -11033,8 +11070,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15ContactsManager16ContactEducationC9hashValueSivg",
-                "mangledName": "$s15ContactsManager16ContactEducationC9hashValueSivg",
+                "usr": "s:15ContactsManager21ContactInstantMessageC9hashValueSivg",
+                "mangledName": "$s15ContactsManager21ContactInstantMessageC9hashValueSivg",
                 "moduleName": "ContactsManager",
                 "implicit": true,
                 "declAttributes": [
@@ -11047,8 +11084,8 @@
           }
         ],
         "declKind": "Class",
-        "usr": "s:15ContactsManager16ContactEducationC",
-        "mangledName": "$s15ContactsManager16ContactEducationC",
+        "usr": "s:15ContactsManager21ContactInstantMessageC",
+        "mangledName": "$s15ContactsManager21ContactInstantMessageC",
         "moduleName": "ContactsManager",
         "declAttributes": [
           "Final",
@@ -11142,20 +11179,6 @@
             "mangledName": "$s11Observation10ObservableP"
           }
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "ContactsManager"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftData",
-        "printedName": "SwiftData",
-        "declKind": "Import",
-        "moduleName": "ContactsManager"
       },
       {
         "kind": "Import",
@@ -12151,14 +12174,21 @@
         "moduleName": "ContactsManager"
       },
       {
+        "kind": "Import",
+        "name": "Contacts",
+        "printedName": "Contacts",
+        "declKind": "Import",
+        "moduleName": "ContactsManager"
+      },
+      {
         "kind": "TypeDecl",
-        "name": "ContactOrganization",
-        "printedName": "ContactOrganization",
+        "name": "ContactRelation",
+        "printedName": "ContactRelation",
         "children": [
           {
             "kind": "Var",
-            "name": "organizationId",
-            "printedName": "organizationId",
+            "name": "relationId",
+            "printedName": "relationId",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -12168,8 +12198,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:15ContactsManager19ContactOrganizationC14organizationIdSSvp",
-            "mangledName": "$s15ContactsManager19ContactOrganizationC14organizationIdSSvp",
+            "usr": "s:15ContactsManager15ContactRelationC10relationIdSSvp",
+            "mangledName": "$s15ContactsManager15ContactRelationC10relationIdSSvp",
             "moduleName": "ContactsManager",
             "declAttributes": [
               "Final",
@@ -12192,8 +12222,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15ContactsManager19ContactOrganizationC14organizationIdSSvg",
-                "mangledName": "$s15ContactsManager19ContactOrganizationC14organizationIdSSvg",
+                "usr": "s:15ContactsManager15ContactRelationC10relationIdSSvg",
+                "mangledName": "$s15ContactsManager15ContactRelationC10relationIdSSvg",
                 "moduleName": "ContactsManager",
                 "declAttributes": [
                   "Final"
@@ -12218,8 +12248,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15ContactsManager19ContactOrganizationC14organizationIdSSvs",
-                "mangledName": "$s15ContactsManager19ContactOrganizationC14organizationIdSSvs",
+                "usr": "s:15ContactsManager15ContactRelationC10relationIdSSvs",
+                "mangledName": "$s15ContactsManager15ContactRelationC10relationIdSSvs",
                 "moduleName": "ContactsManager",
                 "declAttributes": [
                   "Final"
@@ -12238,8 +12268,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15ContactsManager19ContactOrganizationC14organizationIdSSvM",
-                "mangledName": "$s15ContactsManager19ContactOrganizationC14organizationIdSSvM",
+                "usr": "s:15ContactsManager15ContactRelationC10relationIdSSvM",
+                "mangledName": "$s15ContactsManager15ContactRelationC10relationIdSSvM",
                 "moduleName": "ContactsManager",
                 "implicit": true,
                 "declAttributes": [
@@ -12251,8 +12281,8 @@
           },
           {
             "kind": "Var",
-            "name": "organizationName",
-            "printedName": "organizationName",
+            "name": "name",
+            "printedName": "name",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -12270,8 +12300,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:15ContactsManager19ContactOrganizationC16organizationNameSSSgvp",
-            "mangledName": "$s15ContactsManager19ContactOrganizationC16organizationNameSSSgvp",
+            "usr": "s:15ContactsManager15ContactRelationC4nameSSSgvp",
+            "mangledName": "$s15ContactsManager15ContactRelationC4nameSSSgvp",
             "moduleName": "ContactsManager",
             "declAttributes": [
               "Final",
@@ -12300,8 +12330,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15ContactsManager19ContactOrganizationC16organizationNameSSSgvg",
-                "mangledName": "$s15ContactsManager19ContactOrganizationC16organizationNameSSSgvg",
+                "usr": "s:15ContactsManager15ContactRelationC4nameSSSgvg",
+                "mangledName": "$s15ContactsManager15ContactRelationC4nameSSSgvg",
                 "moduleName": "ContactsManager",
                 "declAttributes": [
                   "Final"
@@ -12334,8 +12364,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15ContactsManager19ContactOrganizationC16organizationNameSSSgvs",
-                "mangledName": "$s15ContactsManager19ContactOrganizationC16organizationNameSSSgvs",
+                "usr": "s:15ContactsManager15ContactRelationC4nameSSSgvs",
+                "mangledName": "$s15ContactsManager15ContactRelationC4nameSSSgvs",
                 "moduleName": "ContactsManager",
                 "declAttributes": [
                   "Final"
@@ -12354,8 +12384,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15ContactsManager19ContactOrganizationC16organizationNameSSSgvM",
-                "mangledName": "$s15ContactsManager19ContactOrganizationC16organizationNameSSSgvM",
+                "usr": "s:15ContactsManager15ContactRelationC4nameSSSgvM",
+                "mangledName": "$s15ContactsManager15ContactRelationC4nameSSSgvM",
                 "moduleName": "ContactsManager",
                 "implicit": true,
                 "declAttributes": [
@@ -12367,8 +12397,8 @@
           },
           {
             "kind": "Var",
-            "name": "role",
-            "printedName": "role",
+            "name": "relationType",
+            "printedName": "relationType",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -12386,8 +12416,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:15ContactsManager19ContactOrganizationC4roleSSSgvp",
-            "mangledName": "$s15ContactsManager19ContactOrganizationC4roleSSSgvp",
+            "usr": "s:15ContactsManager15ContactRelationC12relationTypeSSSgvp",
+            "mangledName": "$s15ContactsManager15ContactRelationC12relationTypeSSSgvp",
             "moduleName": "ContactsManager",
             "declAttributes": [
               "Final",
@@ -12416,8 +12446,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15ContactsManager19ContactOrganizationC4roleSSSgvg",
-                "mangledName": "$s15ContactsManager19ContactOrganizationC4roleSSSgvg",
+                "usr": "s:15ContactsManager15ContactRelationC12relationTypeSSSgvg",
+                "mangledName": "$s15ContactsManager15ContactRelationC12relationTypeSSSgvg",
                 "moduleName": "ContactsManager",
                 "declAttributes": [
                   "Final"
@@ -12450,8 +12480,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15ContactsManager19ContactOrganizationC4roleSSSgvs",
-                "mangledName": "$s15ContactsManager19ContactOrganizationC4roleSSSgvs",
+                "usr": "s:15ContactsManager15ContactRelationC12relationTypeSSSgvs",
+                "mangledName": "$s15ContactsManager15ContactRelationC12relationTypeSSSgvs",
                 "moduleName": "ContactsManager",
                 "declAttributes": [
                   "Final"
@@ -12470,8 +12500,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15ContactsManager19ContactOrganizationC4roleSSSgvM",
-                "mangledName": "$s15ContactsManager19ContactOrganizationC4roleSSSgvM",
+                "usr": "s:15ContactsManager15ContactRelationC12relationTypeSSSgvM",
+                "mangledName": "$s15ContactsManager15ContactRelationC12relationTypeSSSgvM",
                 "moduleName": "ContactsManager",
                 "implicit": true,
                 "declAttributes": [
@@ -12483,8 +12513,8 @@
           },
           {
             "kind": "Var",
-            "name": "department",
-            "printedName": "department",
+            "name": "notes",
+            "printedName": "notes",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -12502,13 +12532,14 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:15ContactsManager19ContactOrganizationC10departmentSSSgvp",
-            "mangledName": "$s15ContactsManager19ContactOrganizationC10departmentSSSgvp",
+            "usr": "s:15ContactsManager15ContactRelationC5notesSSSgvp",
+            "mangledName": "$s15ContactsManager15ContactRelationC5notesSSSgvp",
             "moduleName": "ContactsManager",
             "declAttributes": [
               "Final",
               "Custom",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "accessors": [
               {
@@ -12532,8 +12563,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15ContactsManager19ContactOrganizationC10departmentSSSgvg",
-                "mangledName": "$s15ContactsManager19ContactOrganizationC10departmentSSSgvg",
+                "usr": "s:15ContactsManager15ContactRelationC5notesSSSgvg",
+                "mangledName": "$s15ContactsManager15ContactRelationC5notesSSSgvg",
                 "moduleName": "ContactsManager",
                 "declAttributes": [
                   "Final"
@@ -12566,8 +12597,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15ContactsManager19ContactOrganizationC10departmentSSSgvs",
-                "mangledName": "$s15ContactsManager19ContactOrganizationC10departmentSSSgvs",
+                "usr": "s:15ContactsManager15ContactRelationC5notesSSSgvs",
+                "mangledName": "$s15ContactsManager15ContactRelationC5notesSSSgvs",
                 "moduleName": "ContactsManager",
                 "declAttributes": [
                   "Final"
@@ -12586,240 +12617,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15ContactsManager19ContactOrganizationC10departmentSSSgvM",
-                "mangledName": "$s15ContactsManager19ContactOrganizationC10departmentSSSgvM",
-                "moduleName": "ContactsManager",
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "type",
-            "printedName": "type",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:15ContactsManager19ContactOrganizationC4typeSSSgvp",
-            "mangledName": "$s15ContactsManager19ContactOrganizationC4typeSSSgvp",
-            "moduleName": "ContactsManager",
-            "declAttributes": [
-              "Final",
-              "Custom",
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:15ContactsManager19ContactOrganizationC4typeSSSgvg",
-                "mangledName": "$s15ContactsManager19ContactOrganizationC4typeSSSgvg",
-                "moduleName": "ContactsManager",
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:15ContactsManager19ContactOrganizationC4typeSSSgvs",
-                "mangledName": "$s15ContactsManager19ContactOrganizationC4typeSSSgvs",
-                "moduleName": "ContactsManager",
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:15ContactsManager19ContactOrganizationC4typeSSSgvM",
-                "mangledName": "$s15ContactsManager19ContactOrganizationC4typeSSSgvM",
-                "moduleName": "ContactsManager",
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "emoji",
-            "printedName": "emoji",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:15ContactsManager19ContactOrganizationC5emojiSSSgvp",
-            "mangledName": "$s15ContactsManager19ContactOrganizationC5emojiSSSgvp",
-            "moduleName": "ContactsManager",
-            "declAttributes": [
-              "Final",
-              "Custom",
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:15ContactsManager19ContactOrganizationC5emojiSSSgvg",
-                "mangledName": "$s15ContactsManager19ContactOrganizationC5emojiSSSgvg",
-                "moduleName": "ContactsManager",
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:15ContactsManager19ContactOrganizationC5emojiSSSgvs",
-                "mangledName": "$s15ContactsManager19ContactOrganizationC5emojiSSSgvs",
-                "moduleName": "ContactsManager",
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:15ContactsManager19ContactOrganizationC5emojiSSSgvM",
-                "mangledName": "$s15ContactsManager19ContactOrganizationC5emojiSSSgvM",
+                "usr": "s:15ContactsManager15ContactRelationC5notesSSSgvM",
+                "mangledName": "$s15ContactsManager15ContactRelationC5notesSSSgvM",
                 "moduleName": "ContactsManager",
                 "implicit": true,
                 "declAttributes": [
@@ -12832,41 +12631,13 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(contactId:organizationName:role:department:type:emoji:)",
+            "printedName": "init(contactId:name:relationType:notes:randomComponent:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "ContactOrganization",
-                "printedName": "ContactsManager.ContactOrganization",
-                "usr": "s:15ContactsManager19ContactOrganizationC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "ContactRelation",
+                "printedName": "ContactsManager.ContactRelation",
+                "usr": "s:15ContactsManager15ContactRelationC"
               },
               {
                 "kind": "TypeNominal",
@@ -12924,11 +12695,26 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:15ContactsManager19ContactOrganizationC9contactId16organizationName4role10department4type5emojiACSSSg_A5Jtcfc",
-            "mangledName": "$s15ContactsManager19ContactOrganizationC9contactId16organizationName4role10department4type5emojiACSSSg_A5Jtcfc",
+            "usr": "s:15ContactsManager15ContactRelationC9contactId4name12relationType5notes15randomComponentACSSSg_A4Itcfc",
+            "mangledName": "$s15ContactsManager15ContactRelationC9contactId4name12relationType5notes15randomComponentACSSSg_A4Itcfc",
             "moduleName": "ContactsManager",
             "declAttributes": [
               "AccessControl"
@@ -12948,20 +12734,20 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "ContactOrganization",
-                "printedName": "ContactsManager.ContactOrganization",
-                "usr": "s:15ContactsManager19ContactOrganizationC"
+                "name": "ContactRelation",
+                "printedName": "ContactsManager.ContactRelation",
+                "usr": "s:15ContactsManager15ContactRelationC"
               },
               {
                 "kind": "TypeNominal",
-                "name": "ContactOrganization",
-                "printedName": "ContactsManager.ContactOrganization",
-                "usr": "s:15ContactsManager19ContactOrganizationC"
+                "name": "ContactRelation",
+                "printedName": "ContactsManager.ContactRelation",
+                "usr": "s:15ContactsManager15ContactRelationC"
               }
             ],
             "declKind": "Func",
-            "usr": "s:15ContactsManager19ContactOrganizationC1loiySbAC_ACtFZ",
-            "mangledName": "$s15ContactsManager19ContactOrganizationC1loiySbAC_ACtFZ",
+            "usr": "s:15ContactsManager15ContactRelationC1loiySbAC_ACtFZ",
+            "mangledName": "$s15ContactsManager15ContactRelationC1loiySbAC_ACtFZ",
             "moduleName": "ContactsManager",
             "static": true,
             "declAttributes": [
@@ -12983,8 +12769,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:15ContactsManager19ContactOrganizationC7displaySSyF",
-            "mangledName": "$s15ContactsManager19ContactOrganizationC7displaySSyF",
+            "usr": "s:15ContactsManager15ContactRelationC7displaySSyF",
+            "mangledName": "$s15ContactsManager15ContactRelationC7displaySSyF",
             "moduleName": "ContactsManager",
             "declAttributes": [
               "Final",
@@ -13000,13 +12786,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "BackingData",
-                "printedName": "any SwiftData.BackingData<ContactsManager.ContactOrganization>",
+                "printedName": "any SwiftData.BackingData<ContactsManager.ContactRelation>",
                 "usr": "s:9SwiftData07BackingB0P"
               }
             ],
             "declKind": "Var",
-            "usr": "s:15ContactsManager19ContactOrganizationC21persistentBackingData05SwiftG00fG0_pAC5ModelAeFPRts_XPvp",
-            "mangledName": "$s15ContactsManager19ContactOrganizationC21persistentBackingData05SwiftG00fG0_pAC5ModelAeFPRts_XPvp",
+            "usr": "s:15ContactsManager15ContactRelationC21persistentBackingData05SwiftG00fG0_pAC5ModelAeFPRts_XPvp",
+            "mangledName": "$s15ContactsManager15ContactRelationC21persistentBackingData05SwiftG00fG0_pAC5ModelAeFPRts_XPvp",
             "moduleName": "ContactsManager",
             "declAttributes": [
               "Final",
@@ -13021,13 +12807,13 @@
                   {
                     "kind": "TypeNominal",
                     "name": "BackingData",
-                    "printedName": "any SwiftData.BackingData<ContactsManager.ContactOrganization>",
+                    "printedName": "any SwiftData.BackingData<ContactsManager.ContactRelation>",
                     "usr": "s:9SwiftData07BackingB0P"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15ContactsManager19ContactOrganizationC21persistentBackingData05SwiftG00fG0_pAC5ModelAeFPRts_XPvg",
-                "mangledName": "$s15ContactsManager19ContactOrganizationC21persistentBackingData05SwiftG00fG0_pAC5ModelAeFPRts_XPvg",
+                "usr": "s:15ContactsManager15ContactRelationC21persistentBackingData05SwiftG00fG0_pAC5ModelAeFPRts_XPvg",
+                "mangledName": "$s15ContactsManager15ContactRelationC21persistentBackingData05SwiftG00fG0_pAC5ModelAeFPRts_XPvg",
                 "moduleName": "ContactsManager",
                 "declAttributes": [
                   "Final"
@@ -13047,13 +12833,13 @@
                   {
                     "kind": "TypeNominal",
                     "name": "BackingData",
-                    "printedName": "any SwiftData.BackingData<ContactsManager.ContactOrganization>",
+                    "printedName": "any SwiftData.BackingData<ContactsManager.ContactRelation>",
                     "usr": "s:9SwiftData07BackingB0P"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15ContactsManager19ContactOrganizationC21persistentBackingData05SwiftG00fG0_pAC5ModelAeFPRts_XPvs",
-                "mangledName": "$s15ContactsManager19ContactOrganizationC21persistentBackingData05SwiftG00fG0_pAC5ModelAeFPRts_XPvs",
+                "usr": "s:15ContactsManager15ContactRelationC21persistentBackingData05SwiftG00fG0_pAC5ModelAeFPRts_XPvs",
+                "mangledName": "$s15ContactsManager15ContactRelationC21persistentBackingData05SwiftG00fG0_pAC5ModelAeFPRts_XPvs",
                 "moduleName": "ContactsManager",
                 "declAttributes": [
                   "Final"
@@ -13072,8 +12858,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15ContactsManager19ContactOrganizationC21persistentBackingData05SwiftG00fG0_pAC5ModelAeFPRts_XPvM",
-                "mangledName": "$s15ContactsManager19ContactOrganizationC21persistentBackingData05SwiftG00fG0_pAC5ModelAeFPRts_XPvM",
+                "usr": "s:15ContactsManager15ContactRelationC21persistentBackingData05SwiftG00fG0_pAC5ModelAeFPRts_XPvM",
+                "mangledName": "$s15ContactsManager15ContactRelationC21persistentBackingData05SwiftG00fG0_pAC5ModelAeFPRts_XPvM",
                 "moduleName": "ContactsManager",
                 "implicit": true,
                 "declAttributes": [
@@ -13104,8 +12890,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:15ContactsManager19ContactOrganizationC14schemaMetadataSay9SwiftData6SchemaC08PropertyF0VGvpZ",
-            "mangledName": "$s15ContactsManager19ContactOrganizationC14schemaMetadataSay9SwiftData6SchemaC08PropertyF0VGvpZ",
+            "usr": "s:15ContactsManager15ContactRelationC14schemaMetadataSay9SwiftData6SchemaC08PropertyF0VGvpZ",
+            "mangledName": "$s15ContactsManager15ContactRelationC14schemaMetadataSay9SwiftData6SchemaC08PropertyF0VGvpZ",
             "moduleName": "ContactsManager",
             "static": true,
             "declAttributes": [
@@ -13134,8 +12920,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15ContactsManager19ContactOrganizationC14schemaMetadataSay9SwiftData6SchemaC08PropertyF0VGvgZ",
-                "mangledName": "$s15ContactsManager19ContactOrganizationC14schemaMetadataSay9SwiftData6SchemaC08PropertyF0VGvgZ",
+                "usr": "s:15ContactsManager15ContactRelationC14schemaMetadataSay9SwiftData6SchemaC08PropertyF0VGvgZ",
+                "mangledName": "$s15ContactsManager15ContactRelationC14schemaMetadataSay9SwiftData6SchemaC08PropertyF0VGvgZ",
                 "moduleName": "ContactsManager",
                 "static": true,
                 "declAttributes": [
@@ -13152,20 +12938,20 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "ContactOrganization",
-                "printedName": "ContactsManager.ContactOrganization",
-                "usr": "s:15ContactsManager19ContactOrganizationC"
+                "name": "ContactRelation",
+                "printedName": "ContactsManager.ContactRelation",
+                "usr": "s:15ContactsManager15ContactRelationC"
               },
               {
                 "kind": "TypeNominal",
                 "name": "BackingData",
-                "printedName": "any SwiftData.BackingData<ContactsManager.ContactOrganization>",
+                "printedName": "any SwiftData.BackingData<ContactsManager.ContactRelation>",
                 "usr": "s:9SwiftData07BackingB0P"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:15ContactsManager19ContactOrganizationC11backingDataAC05SwiftF007BackingF0_pAC5ModelAeFPRts_XP_tcfc",
-            "mangledName": "$s15ContactsManager19ContactOrganizationC11backingDataAC05SwiftF007BackingF0_pAC5ModelAeFPRts_XP_tcfc",
+            "usr": "s:15ContactsManager15ContactRelationC11backingDataAC05SwiftF007BackingF0_pAC5ModelAeFPRts_XP_tcfc",
+            "mangledName": "$s15ContactsManager15ContactRelationC11backingDataAC05SwiftF007BackingF0_pAC5ModelAeFPRts_XP_tcfc",
             "moduleName": "ContactsManager",
             "declAttributes": [
               "AccessControl"
@@ -13190,8 +12976,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:15ContactsManager19ContactOrganizationC6encode2toys7Encoder_p_tKF",
-            "mangledName": "$s15ContactsManager19ContactOrganizationC6encode2toys7Encoder_p_tKF",
+            "usr": "s:15ContactsManager15ContactRelationC6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s15ContactsManager15ContactRelationC6encode2toys7Encoder_p_tKF",
             "moduleName": "ContactsManager",
             "declAttributes": [
               "Final",
@@ -13208,9 +12994,9 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "ContactOrganization",
-                "printedName": "ContactsManager.ContactOrganization",
-                "usr": "s:15ContactsManager19ContactOrganizationC"
+                "name": "ContactRelation",
+                "printedName": "ContactsManager.ContactRelation",
+                "usr": "s:15ContactsManager15ContactRelationC"
               },
               {
                 "kind": "TypeNominal",
@@ -13220,8 +13006,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:15ContactsManager19ContactOrganizationC4fromACs7Decoder_p_tKcfc",
-            "mangledName": "$s15ContactsManager19ContactOrganizationC4fromACs7Decoder_p_tKcfc",
+            "usr": "s:15ContactsManager15ContactRelationC4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s15ContactsManager15ContactRelationC4fromACs7Decoder_p_tKcfc",
             "moduleName": "ContactsManager",
             "declAttributes": [
               "Convenience",
@@ -13244,8 +13030,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:15ContactsManager19ContactOrganizationC9hashValueSivp",
-            "mangledName": "$s15ContactsManager19ContactOrganizationC9hashValueSivp",
+            "usr": "s:15ContactsManager15ContactRelationC9hashValueSivp",
+            "mangledName": "$s15ContactsManager15ContactRelationC9hashValueSivp",
             "moduleName": "ContactsManager",
             "implicit": true,
             "declAttributes": [
@@ -13266,8 +13052,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15ContactsManager19ContactOrganizationC9hashValueSivg",
-                "mangledName": "$s15ContactsManager19ContactOrganizationC9hashValueSivg",
+                "usr": "s:15ContactsManager15ContactRelationC9hashValueSivg",
+                "mangledName": "$s15ContactsManager15ContactRelationC9hashValueSivg",
                 "moduleName": "ContactsManager",
                 "implicit": true,
                 "declAttributes": [
@@ -13280,8 +13066,8 @@
           }
         ],
         "declKind": "Class",
-        "usr": "s:15ContactsManager19ContactOrganizationC",
-        "mangledName": "$s15ContactsManager19ContactOrganizationC",
+        "usr": "s:15ContactsManager15ContactRelationC",
+        "mangledName": "$s15ContactsManager15ContactRelationC",
         "moduleName": "ContactsManager",
         "declAttributes": [
           "Final",
@@ -26861,42 +26647,42 @@
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/ContactsSchemaMigrations.swift",
       "kind": "IntegerLiteral",
-      "offset": 595,
+      "offset": 530,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/ContactsSchemaMigrations.swift",
       "kind": "IntegerLiteral",
-      "offset": 1073,
+      "offset": 943,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/ContactsSchemaMigrations.swift",
       "kind": "IntegerLiteral",
-      "offset": 1087,
+      "offset": 957,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/ContactsSchemaMigrations.swift",
       "kind": "StringLiteral",
-      "offset": 1213,
+      "offset": 1083,
       "length": 53,
       "value": "\"Migrating from v1 to v2: Adding ContactSource model\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/ContactsSchemaMigrations.swift",
       "kind": "IntegerLiteral",
-      "offset": 1630,
+      "offset": 1500,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/ContactsSchemaMigrations.swift",
       "kind": "BooleanLiteral",
-      "offset": 2246,
+      "offset": 2116,
       "length": 4,
       "value": "true"
     },
@@ -26959,21 +26745,21 @@
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Contact.swift",
       "kind": "Array",
-      "offset": 1910,
+      "offset": 1882,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Contact.swift",
       "kind": "Array",
-      "offset": 1946,
+      "offset": 1918,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Contact.swift",
       "kind": "BooleanLiteral",
-      "offset": 2198,
+      "offset": 2170,
       "length": 5,
       "value": "false"
     },
@@ -27013,16 +26799,9 @@
       "value": "8"
     },
     {
-      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/ContactEducation.swift",
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/ContactInstantMessage.swift",
       "kind": "StringLiteral",
-      "offset": 488,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/ContactOrganization.swift",
-      "kind": "StringLiteral",
-      "offset": 520,
+      "offset": 590,
       "length": 2,
       "value": "\"\""
     },
@@ -27980,302 +27759,351 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1031,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "StringLiteral",
-      "offset": 1104,
+      "offset": 1172,
+      "length": 17,
+      "value": "\"user_identifier\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
+      "kind": "StringLiteral",
+      "offset": 1233,
+      "length": 12,
+      "value": "\"is_primary\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
+      "kind": "StringLiteral",
+      "offset": 1529,
+      "length": 15,
+      "value": "\"relation_type\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
+      "kind": "StringLiteral",
+      "offset": 1880,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "StringLiteral",
-      "offset": 1131,
+      "offset": 1907,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "Array",
-      "offset": 1350,
+      "offset": 2126,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "Array",
-      "offset": 1408,
+      "offset": 2184,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "Array",
-      "offset": 1456,
+      "offset": 2232,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "Array",
-      "offset": 1514,
+      "offset": 2290,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "Array",
-      "offset": 1561,
+      "offset": 2337,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "Array",
-      "offset": 1589,
+      "offset": 2405,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
+      "kind": "Array",
+      "offset": 2453,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
+      "kind": "Array",
+      "offset": 2481,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "Dictionary",
-      "offset": 1633,
+      "offset": 2525,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "Array",
-      "offset": 1900,
+      "offset": 2792,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "IntegerLiteral",
-      "offset": 1955,
+      "offset": 2847,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "StringLiteral",
-      "offset": 2078,
+      "offset": 2970,
       "length": 14,
       "value": "\"display_name\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "StringLiteral",
-      "offset": 2118,
+      "offset": 3010,
       "length": 12,
       "value": "\"given_name\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "StringLiteral",
-      "offset": 2157,
+      "offset": 3049,
       "length": 13,
       "value": "\"family_name\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "StringLiteral",
-      "offset": 2197,
+      "offset": 3089,
       "length": 13,
       "value": "\"name_prefix\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "StringLiteral",
-      "offset": 2237,
+      "offset": 3129,
       "length": 13,
       "value": "\"name_suffix\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "StringLiteral",
-      "offset": 2277,
+      "offset": 3169,
       "length": 13,
       "value": "\"middle_name\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "StringLiteral",
-      "offset": 2325,
+      "offset": 3217,
       "length": 22,
       "value": "\"previous_family_name\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "StringLiteral",
-      "offset": 2458,
+      "offset": 3350,
       "length": 17,
       "value": "\"contact_section\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "StringLiteral",
-      "offset": 2506,
+      "offset": 3398,
       "length": 17,
       "value": "\"organization_id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "StringLiteral",
-      "offset": 2548,
+      "offset": 3440,
       "length": 11,
       "value": "\"source_id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "StringLiteral",
-      "offset": 2586,
+      "offset": 3478,
       "length": 13,
       "value": "\"external_id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "StringLiteral",
-      "offset": 2628,
+      "offset": 3520,
       "length": 15,
       "value": "\"phone_numbers\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "StringLiteral",
-      "offset": 2674,
+      "offset": 3566,
       "length": 17,
       "value": "\"email_addresses\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "StringLiteral",
-      "offset": 2740,
+      "offset": 3632,
       "length": 17,
       "value": "\"social_profiles\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "StringLiteral",
-      "offset": 2827,
+      "offset": 3712,
+      "length": 27,
+      "value": "\"instant_message_addresses\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
+      "kind": "StringLiteral",
+      "offset": 3809,
       "length": 15,
       "value": "\"custom_fields\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "StringLiteral",
-      "offset": 2870,
+      "offset": 3852,
       "length": 14,
       "value": "\"match_string\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "StringLiteral",
-      "offset": 2917,
+      "offset": 3899,
       "length": 19,
       "value": "\"organization_name\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "StringLiteral",
-      "offset": 2967,
+      "offset": 3949,
       "length": 17,
       "value": "\"department_name\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "StringLiteral",
-      "offset": 3009,
+      "offset": 3991,
       "length": 11,
       "value": "\"job_title\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "StringLiteral",
-      "offset": 3089,
+      "offset": 4071,
       "length": 14,
       "value": "\"contact_type\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "BooleanLiteral",
-      "offset": 3307,
+      "offset": 4289,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "StringLiteral",
-      "offset": 3504,
+      "offset": 4486,
       "length": 12,
       "value": "\"is_primary\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "StringLiteral",
-      "offset": 3559,
+      "offset": 4541,
       "length": 10,
       "value": "\"label_id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "BooleanLiteral",
-      "offset": 3656,
+      "offset": 4638,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "BooleanLiteral",
-      "offset": 4501,
+      "offset": 5483,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "StringLiteral",
-      "offset": 4689,
+      "offset": 5671,
       "length": 13,
       "value": "\"postal_code\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "StringLiteral",
-      "offset": 4749,
+      "offset": 5731,
       "length": 12,
       "value": "\"is_primary\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "BooleanLiteral",
-      "offset": 4950,
+      "offset": 5932,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "StringLiteral",
-      "offset": 5586,
+      "offset": 6568,
       "length": 13,
       "value": "\"source_type\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "StringLiteral",
-      "offset": 5648,
+      "offset": 6630,
       "length": 11,
       "value": "\"is_active\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "StringLiteral",
-      "offset": 5690,
+      "offset": 6672,
       "length": 17,
       "value": "\"organization_id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "StringLiteral",
-      "offset": 5742,
+      "offset": 6724,
       "length": 22,
       "value": "\"canonical_contact_id\""
     },

@@ -6,7 +6,7 @@
 	<dict>
 		<key>ARCHITECTURE.md</key>
 		<data>
-		ahHhwiGD2cDt3cKVtRZWIwV1VnQ=
+		qZRm/ioiMZtfifiBFm6Q/Pb3K9A=
 		</data>
 		<key>Headers/ContactsManager.h</key>
 		<data>
@@ -18,11 +18,11 @@
 		</data>
 		<key>Modules/ContactsManager.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		gVUM4skCLnBskjvd+Aac3ytZHfo=
+		LBBfehvUozdtthDbsJv5EnzKyb8=
 		</data>
 		<key>Modules/ContactsManager.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		jctzxpMuElinHEodELAv6KGIV04=
+		wqezLgOnzuWytY1sD09NY9jZ2XQ=
 		</data>
 		<key>Modules/ContactsManager.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -30,19 +30,19 @@
 		</data>
 		<key>Modules/ContactsManager.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		jctzxpMuElinHEodELAv6KGIV04=
+		wqezLgOnzuWytY1sD09NY9jZ2XQ=
 		</data>
 		<key>Modules/ContactsManager.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		fRGTQ8Woc5SJ1XlPD5iXsyB5cc4=
+		ZL+Hs0lIEqEwJrcVbfG//lQScvo=
 		</data>
 		<key>Modules/ContactsManager.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		gVUM4skCLnBskjvd+Aac3ytZHfo=
+		LBBfehvUozdtthDbsJv5EnzKyb8=
 		</data>
 		<key>Modules/ContactsManager.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		LqAFIOPIvMipNnM88rp/xfi4kRk=
+		y2IYjudSgIIQ7n/2AFF/6L+plak=
 		</data>
 		<key>Modules/ContactsManager.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/ContactsManager.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		LqAFIOPIvMipNnM88rp/xfi4kRk=
+		y2IYjudSgIIQ7n/2AFF/6L+plak=
 		</data>
 		<key>Modules/ContactsManager.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		9bWfrnGJLP0XRKOjPKqHHXy3UjU=
+		bKek3/n8Xr8viWlZNPYCc3kFS1w=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -67,7 +67,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			aABACDIgET3y8imvBIHz+foPYzIoOV+PiFE+prJZydU=
+			eKmC6GPNl5v2NL65k+Gvc+9UEyu/ufdyL/mfhtuBbIo=
 			</data>
 		</dict>
 		<key>Headers/ContactsManager.h</key>
@@ -81,14 +81,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Es1ySG6eoXz+h60ruSA2JLvejhR1y+rS19LbTvmi2gA=
+			VAiXUIj8dc3siLKVAVZiVzogawZ0jSdFgPAp01p902Q=
 			</data>
 		</dict>
 		<key>Modules/ContactsManager.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Qu3I8nMmAmnivK2b7blRr9V9Ymsj4LJhlNSZDxL9+9k=
+			tAOkDLpONItF+kmcRw5j9oTNQR4b2TgvwhtMAH0FxSg=
 			</data>
 		</dict>
 		<key>Modules/ContactsManager.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -102,28 +102,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Qu3I8nMmAmnivK2b7blRr9V9Ymsj4LJhlNSZDxL9+9k=
+			tAOkDLpONItF+kmcRw5j9oTNQR4b2TgvwhtMAH0FxSg=
 			</data>
 		</dict>
 		<key>Modules/ContactsManager.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cF/J3aV9uEt7HPoNPqUhSDPMolhPcn4tZAZW/fMyIMM=
+			K8t4WboVWXnKZR7L8u0z4OT9DnF1o4AW4GNbv1/1a50=
 			</data>
 		</dict>
 		<key>Modules/ContactsManager.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Es1ySG6eoXz+h60ruSA2JLvejhR1y+rS19LbTvmi2gA=
+			VAiXUIj8dc3siLKVAVZiVzogawZ0jSdFgPAp01p902Q=
 			</data>
 		</dict>
 		<key>Modules/ContactsManager.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kSa0h+nGGiksvqSKej32pBpx6oGvpvpDz0cD2lJ8zWQ=
+			1KLDZoJGLHGtp4TEdVQrnDCu/gjhS9WD2SdF+tAzq20=
 			</data>
 		</dict>
 		<key>Modules/ContactsManager.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -137,14 +137,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kSa0h+nGGiksvqSKej32pBpx6oGvpvpDz0cD2lJ8zWQ=
+			1KLDZoJGLHGtp4TEdVQrnDCu/gjhS9WD2SdF+tAzq20=
 			</data>
 		</dict>
 		<key>Modules/ContactsManager.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xml7HZKjehfgoWxPUfbMWOPbSRsVWy1XMKQHoO/PmfQ=
+			as/DySh7kxlLSjosv8FY/cJYOTARRm4mh65huLRAGDw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

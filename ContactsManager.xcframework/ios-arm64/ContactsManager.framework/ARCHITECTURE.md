@@ -69,15 +69,6 @@ classDiagram
         +String emoji
     }
 
-    class ContactEducation {
-        +String educationId
-        +String schoolName
-        +String degree
-        +String year
-        +String type
-        +String emoji
-    }
-
     class ContactOrganization {
         +String organizationId
         +String organizationName
@@ -92,7 +83,6 @@ classDiagram
     Contact "1" --o "*" ContactLabelledValue : urlAddresses
     Contact "1" --o "*" ContactSocial : socialProfiles
     Contact "1" --o "*" ContactAddress : addresses
-    Contact "1" --o "*" ContactEducation : education
     Contact "1" --o "*" ContactOrganization : organizations
 ```
 
@@ -123,16 +113,6 @@ classDiagram
    - Manages social media profiles
    - Stores service-specific information
    - Unique ID based on social profile details
-
-4. **ContactEducation**
-   - Tracks educational history
-   - Stores institution and degree information
-   - Unique ID based on education details
-
-5. **ContactOrganization**
-   - Manages organizational affiliations
-   - Stores role and department information
-   - Unique ID based on organization details
 
 ### Common Patterns
 - All models conform to `Codable` for serialization

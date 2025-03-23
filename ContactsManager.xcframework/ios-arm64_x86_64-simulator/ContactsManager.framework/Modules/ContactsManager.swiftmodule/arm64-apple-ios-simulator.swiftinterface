@@ -175,11 +175,11 @@ final public class Contact {
     get
     set
   }
-  final public var education: [ContactsManager.ContactEducation] {
+  final public var instantMessageAddresses: [ContactsManager.ContactInstantMessage] {
     get
     set
   }
-  final public var organizations: [ContactsManager.ContactOrganization] {
+  final public var relations: [ContactsManager.ContactRelation] {
     get
     set
   }
@@ -247,11 +247,11 @@ extension ContactsManager.Contact {
   final public func setUrlAddresses(_ urls: [ContactsManager.ContactLabelledValue])
   final public func setSocialProfiles(_ profiles: [ContactsManager.ContactSocial])
   final public func setAddresses(_ addresses: [ContactsManager.ContactAddress])
-  final public func setEducation(_ education: [ContactsManager.ContactEducation])
-  final public func setOrganizations(_ organizations: [ContactsManager.ContactOrganization])
   final public func setInterests(_ interests: [Swift.String])
   final public func setAvatars(_ avatars: [Swift.String])
   final public func setDates(_ dates: [ContactsManager.ContactDate])
+  final public func setInstantMessageAddresses(_ instantMessages: [ContactsManager.ContactInstantMessage])
+  final public func setRelations(_ relations: [ContactsManager.ContactRelation])
 }
 extension ContactsManager.Contact : SwiftData.PersistentModel {
   public typealias ID = Swift.String
@@ -381,20 +381,20 @@ extension ContactsManager.ContactDate : SwiftData.PersistentModel {
 }
 extension ContactsManager.ContactDate : Observation.Observable {
 }
-final public class ContactEducation : Swift.Comparable {
-  final public var educationId: Swift.String {
+final public class ContactInstantMessage : Swift.Comparable {
+  final public var instantMessageId: Swift.String {
     get
     set
   }
-  final public var schoolName: Swift.String? {
+  final public var service: Swift.String? {
     get
     set
   }
-  final public var degree: Swift.String? {
+  final public var username: Swift.String? {
     get
     set
   }
-  final public var year: Swift.String? {
+  final public var userIdentifier: Swift.String? {
     get
     set
   }
@@ -406,30 +406,30 @@ final public class ContactEducation : Swift.Comparable {
     get
     set
   }
-  public init(contactId: Swift.String?, schoolName: Swift.String?, degree: Swift.String?, year: Swift.String?, type: Swift.String?, emoji: Swift.String? = "")
-  public static func < (lhs: ContactsManager.ContactEducation, rhs: ContactsManager.ContactEducation) -> Swift.Bool
+  public init(contactId: Swift.String?, service: Swift.String?, username: Swift.String?, userIdentifier: Swift.String?, type: Swift.String?, emoji: Swift.String? = "", randomComponent: Swift.String? = nil)
+  public static func < (lhs: ContactsManager.ContactInstantMessage, rhs: ContactsManager.ContactInstantMessage) -> Swift.Bool
   final public func display() -> Swift.String
-  final public var persistentBackingData: any SwiftData.BackingData<ContactsManager.ContactEducation> {
+  final public var persistentBackingData: any SwiftData.BackingData<ContactsManager.ContactInstantMessage> {
     get
     set
   }
   public static var schemaMetadata: [SwiftData.Schema.PropertyMetadata] {
     get
   }
-  public init(backingData: any SwiftData.BackingData<ContactsManager.ContactEducation>)
+  public init(backingData: any SwiftData.BackingData<ContactsManager.ContactInstantMessage>)
   @objc deinit
 }
-extension ContactsManager.ContactEducation : Swift.Codable {
+extension ContactsManager.ContactInstantMessage : Swift.Codable {
   final public func encode(to encoder: any Swift.Encoder) throws
   convenience public init(from decoder: any Swift.Decoder) throws
 }
-extension ContactsManager.ContactEducation : SwiftData.PersistentModel {
+extension ContactsManager.ContactInstantMessage : SwiftData.PersistentModel {
   public typealias ID = SwiftData.PersistentIdentifier
   final public var hashValue: Swift.Int {
     get
   }
 }
-extension ContactsManager.ContactEducation : Observation.Observable {
+extension ContactsManager.ContactInstantMessage : Observation.Observable {
 }
 final public class ContactLabelledValue : Swift.Comparable {
   final public var labelId: Swift.String {
@@ -472,55 +472,47 @@ extension ContactsManager.ContactLabelledValue : SwiftData.PersistentModel {
 }
 extension ContactsManager.ContactLabelledValue : Observation.Observable {
 }
-final public class ContactOrganization : Swift.Comparable {
-  final public var organizationId: Swift.String {
+final public class ContactRelation : Swift.Comparable {
+  final public var relationId: Swift.String {
     get
     set
   }
-  final public var organizationName: Swift.String? {
+  final public var name: Swift.String? {
     get
     set
   }
-  final public var role: Swift.String? {
+  final public var relationType: Swift.String? {
     get
     set
   }
-  final public var department: Swift.String? {
+  final public var notes: Swift.String? {
     get
     set
   }
-  final public var type: Swift.String? {
-    get
-    set
-  }
-  final public var emoji: Swift.String? {
-    get
-    set
-  }
-  public init(contactId: Swift.String?, organizationName: Swift.String?, role: Swift.String?, department: Swift.String?, type: Swift.String?, emoji: Swift.String? = "")
-  public static func < (lhs: ContactsManager.ContactOrganization, rhs: ContactsManager.ContactOrganization) -> Swift.Bool
+  public init(contactId: Swift.String?, name: Swift.String?, relationType: Swift.String?, notes: Swift.String? = nil, randomComponent: Swift.String? = nil)
+  public static func < (lhs: ContactsManager.ContactRelation, rhs: ContactsManager.ContactRelation) -> Swift.Bool
   final public func display() -> Swift.String
-  final public var persistentBackingData: any SwiftData.BackingData<ContactsManager.ContactOrganization> {
+  final public var persistentBackingData: any SwiftData.BackingData<ContactsManager.ContactRelation> {
     get
     set
   }
   public static var schemaMetadata: [SwiftData.Schema.PropertyMetadata] {
     get
   }
-  public init(backingData: any SwiftData.BackingData<ContactsManager.ContactOrganization>)
+  public init(backingData: any SwiftData.BackingData<ContactsManager.ContactRelation>)
   @objc deinit
 }
-extension ContactsManager.ContactOrganization : Swift.Codable {
+extension ContactsManager.ContactRelation : Swift.Codable {
   final public func encode(to encoder: any Swift.Encoder) throws
   convenience public init(from decoder: any Swift.Decoder) throws
 }
-extension ContactsManager.ContactOrganization : SwiftData.PersistentModel {
+extension ContactsManager.ContactRelation : SwiftData.PersistentModel {
   public typealias ID = SwiftData.PersistentIdentifier
   final public var hashValue: Swift.Int {
     get
   }
 }
-extension ContactsManager.ContactOrganization : Observation.Observable {
+extension ContactsManager.ContactRelation : Observation.Observable {
 }
 public enum ContactDataRestriction : Swift.String, Swift.CaseIterable {
   case notes
