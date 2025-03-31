@@ -31186,7 +31186,7 @@
           {
             "kind": "Function",
             "name": "getRecommendedContactsToInvite",
-            "printedName": "getRecommendedContactsToInvite(canonicalContactId:organizationId:limit:)",
+            "printedName": "getRecommendedContactsToInvite(limit:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -31204,18 +31204,6 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "UUID",
-                "printedName": "Foundation.UUID",
-                "usr": "s:10Foundation4UUIDV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UUID",
-                "printedName": "Foundation.UUID",
-                "usr": "s:10Foundation4UUIDV"
-              },
-              {
-                "kind": "TypeNominal",
                 "name": "Int",
                 "printedName": "Swift.Int",
                 "hasDefaultArg": true,
@@ -31223,8 +31211,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:15ContactsManager0A7ServiceC014getRecommendedA8ToInvite18canonicalContactId012organizationJ05limitSayAA0I14RecommendationVG10Foundation4UUIDV_AMSitYaKF",
-            "mangledName": "$s15ContactsManager0A7ServiceC014getRecommendedA8ToInvite18canonicalContactId012organizationJ05limitSayAA0I14RecommendationVG10Foundation4UUIDV_AMSitYaKF",
+            "usr": "s:15ContactsManager0A7ServiceC014getRecommendedA8ToInvite5limitSayAA21ContactRecommendationVGSi_tYaKF",
+            "mangledName": "$s15ContactsManager0A7ServiceC014getRecommendedA8ToInvite5limitSayAA21ContactRecommendationVGSi_tYaKF",
             "moduleName": "ContactsManager",
             "declAttributes": [
               "Final",
@@ -31297,7 +31285,7 @@
           {
             "kind": "Function",
             "name": "getContactsUsingApp",
-            "printedName": "getContactsUsingApp(organizationId:limit:)",
+            "printedName": "getContactsUsingApp(limit:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -31315,12 +31303,6 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "UUID",
-                "printedName": "Foundation.UUID",
-                "usr": "s:10Foundation4UUIDV"
-              },
-              {
-                "kind": "TypeNominal",
                 "name": "Int",
                 "printedName": "Swift.Int",
                 "hasDefaultArg": true,
@@ -31328,8 +31310,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:15ContactsManager0A7ServiceC03getA8UsingApp14organizationId5limitSayAA21ContactRecommendationVG10Foundation4UUIDV_SitYaKF",
-            "mangledName": "$s15ContactsManager0A7ServiceC03getA8UsingApp14organizationId5limitSayAA21ContactRecommendationVG10Foundation4UUIDV_SitYaKF",
+            "usr": "s:15ContactsManager0A7ServiceC03getA8UsingApp5limitSayAA21ContactRecommendationVGSi_tYaKF",
+            "mangledName": "$s15ContactsManager0A7ServiceC03getA8UsingApp5limitSayAA21ContactRecommendationVGSi_tYaKF",
             "moduleName": "ContactsManager",
             "declAttributes": [
               "Final",
@@ -34418,28 +34400,28 @@
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/ContactsService.swift",
       "kind": "IntegerLiteral",
-      "offset": 39318,
+      "offset": 39254,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/ContactsService.swift",
       "kind": "IntegerLiteral",
-      "offset": 40259,
+      "offset": 40099,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/ContactsService.swift",
       "kind": "IntegerLiteral",
-      "offset": 40284,
+      "offset": 40124,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/ContactsService.swift",
       "kind": "IntegerLiteral",
-      "offset": 41528,
+      "offset": 41174,
       "length": 2,
       "value": "30"
     },
@@ -34460,28 +34442,28 @@
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/RecommendationService.swift",
       "kind": "IntegerLiteral",
-      "offset": 2219,
+      "offset": 2074,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/RecommendationService.swift",
       "kind": "IntegerLiteral",
-      "offset": 3290,
+      "offset": 3029,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/RecommendationService.swift",
       "kind": "IntegerLiteral",
-      "offset": 3311,
+      "offset": 3050,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/RecommendationService.swift",
       "kind": "IntegerLiteral",
-      "offset": 4282,
+      "offset": 3875,
       "length": 2,
       "value": "30"
     }

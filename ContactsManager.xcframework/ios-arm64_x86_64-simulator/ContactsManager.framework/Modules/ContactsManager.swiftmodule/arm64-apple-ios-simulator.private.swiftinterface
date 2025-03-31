@@ -1147,9 +1147,9 @@ extension ContactsManager.ContactsService {
   }
 }
 extension ContactsManager.ContactsService {
-  final public func getRecommendedContactsToInvite(canonicalContactId: Foundation.UUID, organizationId: Foundation.UUID, limit: Swift.Int = 30) async throws -> [ContactsManager.ContactRecommendation]
+  final public func getRecommendedContactsToInvite(limit: Swift.Int = 30) async throws -> [ContactsManager.ContactRecommendation]
   final public func getNearbyContacts(latitude: Swift.Double, longitude: Swift.Double, radiusInKm: Swift.Double = 10, limit: Swift.Int = 30) async throws -> [ContactsManager.ContactRecommendation]
-  final public func getContactsUsingApp(organizationId: Foundation.UUID, limit: Swift.Int = 30) async throws -> [ContactsManager.ContactRecommendation]
+  final public func getContactsUsingApp(limit: Swift.Int = 30) async throws -> [ContactsManager.ContactRecommendation]
 }
 public enum RecommendationType {
   case inviteRecommendations
