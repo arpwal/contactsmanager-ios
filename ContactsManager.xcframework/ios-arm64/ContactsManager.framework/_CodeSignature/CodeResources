@@ -18,27 +18,31 @@
 		</data>
 		<key>Modules/ContactsManager.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		V+9GTvyA7u8n+UWm4o1iu+jEnjU=
+		QTdcYBhEKY54mRtk2upMAdbPXpw=
 		</data>
 		<key>Modules/ContactsManager.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		K2SzxJktR+nEvqh1FE6hCRrV0yo=
+		Io6e57x8MGL83KQlt9u3fBO+pfs=
 		</data>
 		<key>Modules/ContactsManager.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		UZ7Mfap0itRKCbFE8F0rzvNwmN8=
+		abhgAWBRYy1ahaxOGjHGXrDQ7nY=
 		</data>
 		<key>Modules/ContactsManager.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		K2SzxJktR+nEvqh1FE6hCRrV0yo=
+		Io6e57x8MGL83KQlt9u3fBO+pfs=
 		</data>
 		<key>Modules/ContactsManager.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		qhiZGE1QDwcZbx/rj5x/v3zW0O4=
+		ba7DQHWQowHvl167soFLCZd4X3Q=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		JXrHTbx/HzUVUtDy9iXSXLXskPU=
+		</data>
+		<key>README_BACKGROUND_TASKS.md</key>
+		<data>
+		R5cl7u/qtcGRJsqE++NgK97b7Oo=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -61,35 +65,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			uG61AUS7PCNSKzFaAEm3e7uD5AsiqjhboBj7UFWlpIs=
+			QJAdJeMN231K1T0Hm8U68zM+Nqne1niPxbahpbESvQs=
 			</data>
 		</dict>
 		<key>Modules/ContactsManager.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bApqhSadqJu542k6cipDAXuXsJJVFFhhOKmc7Nr3rzY=
+			iMg9Kn6Nnws1cuI81Jat4Qd8NaYln1/fyucvw4nCwXM=
 			</data>
 		</dict>
 		<key>Modules/ContactsManager.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AvE5SSaGGMH44a642sY88+E3+7d1lmZVJvuNnr0AzWE=
+			VQSNNwSph5nxNmk4dILii3H9uafkwZSQKKmi5etgJmY=
 			</data>
 		</dict>
 		<key>Modules/ContactsManager.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bApqhSadqJu542k6cipDAXuXsJJVFFhhOKmc7Nr3rzY=
+			iMg9Kn6Nnws1cuI81Jat4Qd8NaYln1/fyucvw4nCwXM=
 			</data>
 		</dict>
 		<key>Modules/ContactsManager.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qtfLwUv9GAaO81XObEX9mrOBxBkuC86tlJY2ASYG02U=
+			BbfM51dBPB4C3MlBEERSUQvBnZ2xCMDRFTDhzgF/mew=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -97,6 +101,13 @@
 			<key>hash2</key>
 			<data>
 			QAnYqCfdXABnfxjnYdMymoktCpiU48B5Z7T2JGVGIVM=
+			</data>
+		</dict>
+		<key>README_BACKGROUND_TASKS.md</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			CwBuLFYp52pBdPfuwOEQlBZ47o5k/wgeL2/WNeF1lfA=
 			</data>
 		</dict>
 	</dict>

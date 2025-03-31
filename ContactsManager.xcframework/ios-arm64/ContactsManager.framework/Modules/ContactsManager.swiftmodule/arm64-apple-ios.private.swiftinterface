@@ -8,6 +8,7 @@ import Contacts
 import CryptoKit
 import Foundation
 import OSLog
+import Observation
 import Swift
 import SwiftData
 import SwiftUI
@@ -21,9 +22,15 @@ import _SwiftData_SwiftUI
 public enum ContactsSchemaVersions {
   public static let v1: ContactsManager.SchemaVersion
   public static let v2: ContactsManager.SchemaVersion
+  public static let v3: ContactsManager.SchemaVersion
+  public static let v4: ContactsManager.SchemaVersion
+  public static let v5: ContactsManager.SchemaVersion
 }
 public enum ContactsMigrationStages {
   public static let v1ToV2: ContactsManager.MigrationStage
+  public static let v2ToV3: ContactsManager.MigrationStage
+  public static let v3ToV4: ContactsManager.MigrationStage
+  public static let v4ToV5: ContactsManager.MigrationStage
 }
 public struct ContactsMigrationPlan {
   public static let current: ContactsManager.SchemaMigrationPlan
@@ -47,6 +54,10 @@ public enum MigrationError : Foundation.LocalizedError {
     get
   }
 }
+public struct SchemaMigrationCleanup {
+  public static func cleanupAfterV4Migration(container: SwiftData.ModelContainer) async
+  @_Concurrency.MainActor public static func getModelCounts(container: SwiftData.ModelContainer) -> Swift.String
+}
 public struct SchemaVersion {
   public let version: Swift.Int
   public let models: [any SwiftData.PersistentModel.Type]
@@ -55,8 +66,8 @@ public struct SchemaVersion {
 public struct MigrationStage {
   public let fromVersion: Swift.Int
   public let toVersion: Swift.Int
-  public let migrationHandler: (SwiftData.ModelContainer) async throws -> Swift.Void
-  public init(fromVersion: Swift.Int, toVersion: Swift.Int, migrationHandler: @escaping (SwiftData.ModelContainer) async throws -> Swift.Void)
+  public let migrationHandler: @_Concurrency.MainActor (SwiftData.ModelContainer) async throws -> Swift.Void
+  public init(fromVersion: Swift.Int, toVersion: Swift.Int, migrationHandler: @escaping @_Concurrency.MainActor (SwiftData.ModelContainer) async throws -> Swift.Void)
 }
 public struct SchemaMigrationPlan {
   public let schemaVersions: [ContactsManager.SchemaVersion]
@@ -155,15 +166,15 @@ final public class Contact {
     get
     set
   }
-  final public var phoneNumbers: [ContactsManager.ContactLabelledValue] {
+  final public var phoneNumbers: [ContactsManager.ContactPhoneNumber] {
     get
     set
   }
-  final public var emailAddresses: [ContactsManager.ContactLabelledValue] {
+  final public var emailAddresses: [ContactsManager.ContactEmailAddress] {
     get
     set
   }
-  final public var urlAddresses: [ContactsManager.ContactLabelledValue] {
+  final public var urlAddresses: [ContactsManager.ContactURLAddress] {
     get
     set
   }
@@ -244,18 +255,44 @@ extension ContactsManager.Contact : Swift.Codable {
 }
 extension ContactsManager.Contact {
   final public func updateDisplayInfo()
+  final public func markAsDirty()
+  final public func update(fromCNContact cnContact: Contacts.CNContact, markAsDirty: Swift.Bool = true)
 }
 extension ContactsManager.Contact {
-  final public func setPhoneNumbers(_ numbers: [ContactsManager.ContactLabelledValue])
-  final public func setEmailAddresses(_ emails: [ContactsManager.ContactLabelledValue])
-  final public func setUrlAddresses(_ urls: [ContactsManager.ContactLabelledValue])
+  final public func setPhoneNumbers(_ numbers: [ContactsManager.ContactPhoneNumber])
+  final public func setEmailAddresses(_ emails: [ContactsManager.ContactEmailAddress])
+  final public func setUrlAddresses(_ urls: [ContactsManager.ContactURLAddress])
   final public func setSocialProfiles(_ profiles: [ContactsManager.ContactSocial])
   final public func setAddresses(_ addresses: [ContactsManager.ContactAddress])
-  final public func setInterests(_ interests: [Swift.String])
-  final public func setAvatars(_ avatars: [Swift.String])
-  final public func setDates(_ dates: [ContactsManager.ContactDate])
-  final public func setInstantMessageAddresses(_ instantMessages: [ContactsManager.ContactInstantMessage])
+  final public func setInstantMessageAddresses(_ ims: [ContactsManager.ContactInstantMessage])
   final public func setRelations(_ relations: [ContactsManager.ContactRelation])
+  final public func setDates(_ dates: [ContactsManager.ContactDate])
+}
+extension ContactsManager.Contact {
+  final public func updateNamePrefix(_ value: Swift.String?)
+  final public func updateGivenName(_ value: Swift.String?)
+  final public func updateMiddleName(_ value: Swift.String?)
+  final public func updateFamilyName(_ value: Swift.String?)
+  final public func updatePreviousFamilyName(_ value: Swift.String?)
+  final public func updateNameSuffix(_ value: Swift.String?)
+  final public func updateNickname(_ value: Swift.String?)
+  final public func updateOrganizationName(_ value: Swift.String?)
+  final public func updateDepartmentName(_ value: Swift.String?)
+  final public func updateJobTitle(_ value: Swift.String?)
+  final public func updateNotes(_ value: Swift.String?)
+  final public func updateBio(_ value: Swift.String?)
+  final public func updateLocation(_ value: Swift.String?)
+  final public func updateBirthday(_ value: Foundation.Date?)
+  final public func markAsDeleted()
+  final public func markAsActive()
+}
+extension ContactsManager.Contact {
+  final public func isEqual(to other: ContactsManager.Contact) -> Swift.Bool
+}
+extension ContactsManager.Contact {
+  final public var displayInfo: Swift.String {
+    get
+  }
 }
 extension ContactsManager.Contact : SwiftData.PersistentModel {
   public typealias ID = Swift.String
@@ -307,6 +344,10 @@ final public class ContactAddress : Swift.Comparable {
     set
   }
   final public var emoji: Swift.String? {
+    get
+    set
+  }
+  final public var contact: ContactsManager.Contact? {
     get
     set
   }
@@ -363,6 +404,10 @@ final public class ContactDate : Swift.Codable {
     get
     set
   }
+  final public var contact: ContactsManager.Contact? {
+    get
+    set
+  }
   public init(id: Swift.String = UUID().uuidString, contactId: Swift.String, label: Swift.String, date: Foundation.Date, isPrimary: Swift.Bool = false, randomComponent: Swift.String = UUID().uuidString.prefix(8).description)
   final public func displayString() -> Swift.String
   final public func encode(to encoder: any Swift.Encoder) throws
@@ -384,6 +429,59 @@ extension ContactsManager.ContactDate : SwiftData.PersistentModel {
   }
 }
 extension ContactsManager.ContactDate : Observation.Observable {
+}
+final public class ContactEmailAddress : Swift.Comparable {
+  final public var emailId: Swift.String {
+    get
+    set
+  }
+  final public var value: Swift.String? {
+    get
+    set
+  }
+  final public var type: Swift.String? {
+    get
+    set
+  }
+  final public var emoji: Swift.String? {
+    get
+    set
+  }
+  final public var contact: ContactsManager.Contact? {
+    get
+    set
+  }
+  public init(contactId: Swift.String?, value: Swift.String?, type: Swift.String?, emoji: Swift.String?, randomComponent: Swift.String? = nil)
+  public static func < (lhs: ContactsManager.ContactEmailAddress, rhs: ContactsManager.ContactEmailAddress) -> Swift.Bool
+  final public var persistentBackingData: any SwiftData.BackingData<ContactsManager.ContactEmailAddress> {
+    get
+    set
+  }
+  public static var schemaMetadata: [SwiftData.Schema.PropertyMetadata] {
+    get
+  }
+  public init(backingData: any SwiftData.BackingData<ContactsManager.ContactEmailAddress>)
+  @objc deinit
+}
+extension ContactsManager.ContactEmailAddress : Swift.CustomDebugStringConvertible {
+  final public var debugDescription: Swift.String {
+    get
+  }
+}
+extension ContactsManager.ContactEmailAddress : Swift.Codable {
+  final public func encode(to encoder: any Swift.Encoder) throws
+  convenience public init(from decoder: any Swift.Decoder) throws
+}
+extension ContactsManager.ContactEmailAddress {
+  public static func create(from item: Contacts.CNLabeledValue<Foundation.NSString>, contactId: Swift.String?) -> ContactsManager.ContactEmailAddress
+}
+extension ContactsManager.ContactEmailAddress : SwiftData.PersistentModel {
+  public typealias ID = SwiftData.PersistentIdentifier
+  final public var hashValue: Swift.Int {
+    get
+  }
+}
+extension ContactsManager.ContactEmailAddress : Observation.Observable {
 }
 final public class ContactInstantMessage : Swift.Comparable {
   final public var instantMessageId: Swift.String {
@@ -407,6 +505,10 @@ final public class ContactInstantMessage : Swift.Comparable {
     set
   }
   final public var emoji: Swift.String? {
+    get
+    set
+  }
+  final public var contact: ContactsManager.Contact? {
     get
     set
   }
@@ -435,8 +537,8 @@ extension ContactsManager.ContactInstantMessage : SwiftData.PersistentModel {
 }
 extension ContactsManager.ContactInstantMessage : Observation.Observable {
 }
-final public class ContactLabelledValue : Swift.Comparable {
-  final public var labelId: Swift.String {
+final public class ContactPhoneNumber : Swift.Comparable {
+  final public var phoneId: Swift.String {
     get
     set
   }
@@ -452,29 +554,41 @@ final public class ContactLabelledValue : Swift.Comparable {
     get
     set
   }
+  final public var contact: ContactsManager.Contact? {
+    get
+    set
+  }
   public init(contactId: Swift.String?, value: Swift.String?, type: Swift.String?, emoji: Swift.String?, randomComponent: Swift.String? = nil)
-  public static func < (lhs: ContactsManager.ContactLabelledValue, rhs: ContactsManager.ContactLabelledValue) -> Swift.Bool
-  final public var persistentBackingData: any SwiftData.BackingData<ContactsManager.ContactLabelledValue> {
+  public static func < (lhs: ContactsManager.ContactPhoneNumber, rhs: ContactsManager.ContactPhoneNumber) -> Swift.Bool
+  final public var persistentBackingData: any SwiftData.BackingData<ContactsManager.ContactPhoneNumber> {
     get
     set
   }
   public static var schemaMetadata: [SwiftData.Schema.PropertyMetadata] {
     get
   }
-  public init(backingData: any SwiftData.BackingData<ContactsManager.ContactLabelledValue>)
+  public init(backingData: any SwiftData.BackingData<ContactsManager.ContactPhoneNumber>)
   @objc deinit
 }
-extension ContactsManager.ContactLabelledValue : Swift.Codable {
+extension ContactsManager.ContactPhoneNumber : Swift.CustomDebugStringConvertible {
+  final public var debugDescription: Swift.String {
+    get
+  }
+}
+extension ContactsManager.ContactPhoneNumber : Swift.Codable {
   final public func encode(to encoder: any Swift.Encoder) throws
   convenience public init(from decoder: any Swift.Decoder) throws
 }
-extension ContactsManager.ContactLabelledValue : SwiftData.PersistentModel {
+extension ContactsManager.ContactPhoneNumber {
+  public static func create(from item: Contacts.CNLabeledValue<Contacts.CNPhoneNumber>, contactId: Swift.String?) -> ContactsManager.ContactPhoneNumber
+}
+extension ContactsManager.ContactPhoneNumber : SwiftData.PersistentModel {
   public typealias ID = SwiftData.PersistentIdentifier
   final public var hashValue: Swift.Int {
     get
   }
 }
-extension ContactsManager.ContactLabelledValue : Observation.Observable {
+extension ContactsManager.ContactPhoneNumber : Observation.Observable {
 }
 final public class ContactRelation : Swift.Comparable {
   final public var relationId: Swift.String {
@@ -490,6 +604,10 @@ final public class ContactRelation : Swift.Comparable {
     set
   }
   final public var notes: Swift.String? {
+    get
+    set
+  }
+  final public var contact: ContactsManager.Contact? {
     get
     set
   }
@@ -561,6 +679,10 @@ final public class ContactSocial : Swift.Comparable {
     set
   }
   final public var emoji: Swift.String? {
+    get
+    set
+  }
+  final public var contact: ContactsManager.Contact? {
     get
     set
   }
@@ -690,6 +812,59 @@ extension ContactsManager.ContactSource : SwiftData.PersistentModel {
 }
 extension ContactsManager.ContactSource : Observation.Observable {
 }
+final public class ContactURLAddress : Swift.Comparable {
+  final public var urlId: Swift.String {
+    get
+    set
+  }
+  final public var value: Swift.String? {
+    get
+    set
+  }
+  final public var type: Swift.String? {
+    get
+    set
+  }
+  final public var emoji: Swift.String? {
+    get
+    set
+  }
+  final public var contact: ContactsManager.Contact? {
+    get
+    set
+  }
+  public init(contactId: Swift.String?, value: Swift.String?, type: Swift.String?, emoji: Swift.String?, randomComponent: Swift.String? = nil)
+  public static func < (lhs: ContactsManager.ContactURLAddress, rhs: ContactsManager.ContactURLAddress) -> Swift.Bool
+  final public var persistentBackingData: any SwiftData.BackingData<ContactsManager.ContactURLAddress> {
+    get
+    set
+  }
+  public static var schemaMetadata: [SwiftData.Schema.PropertyMetadata] {
+    get
+  }
+  public init(backingData: any SwiftData.BackingData<ContactsManager.ContactURLAddress>)
+  @objc deinit
+}
+extension ContactsManager.ContactURLAddress : Swift.CustomDebugStringConvertible {
+  final public var debugDescription: Swift.String {
+    get
+  }
+}
+extension ContactsManager.ContactURLAddress : Swift.Codable {
+  final public func encode(to encoder: any Swift.Encoder) throws
+  convenience public init(from decoder: any Swift.Decoder) throws
+}
+extension ContactsManager.ContactURLAddress {
+  public static func create(from item: Contacts.CNLabeledValue<Foundation.NSString>, contactId: Swift.String?) -> ContactsManager.ContactURLAddress
+}
+extension ContactsManager.ContactURLAddress : SwiftData.PersistentModel {
+  public typealias ID = SwiftData.PersistentIdentifier
+  final public var hashValue: Swift.Int {
+    get
+  }
+}
+extension ContactsManager.ContactURLAddress : Observation.Observable {
+}
 public struct DeviceInfo : Swift.Codable {
   public var deviceId: Swift.String
   public var hardwareId: Swift.String
@@ -736,12 +911,17 @@ public struct APIResponse<T> : Swift.Decodable where T : Swift.Decodable {
   public init(from decoder: any Swift.Decoder) throws
 }
 public class APIClient {
+  public static let shared: ContactsManager.APIClient
   public init(userId: Swift.String, deviceInfo: ContactsManager.DeviceInfo? = nil)
   public func setContactSyncManager(_ manager: ContactsManager.ContactSyncManager)
   public func refreshToken() async throws -> Swift.String
   public func createContactSource(name: Swift.String, sourceType: ContactsManager.SourceType) async throws -> ContactsManager.ContactSource
   public func syncContacts(contacts: [ContactsManager.Contact], skipDuplicates: Swift.Bool = true) async throws -> Swift.Int
   public func getUserInfo() async throws -> [Swift.String : Any]
+  public func get<T>(endpoint: Swift.String, parameters: [Swift.String : Swift.String]? = nil, requiresAuth: Swift.Bool = true) async throws -> T where T : Swift.Decodable
+  public func post<T>(endpoint: Swift.String, body: any Swift.Encodable, parameters: [Swift.String : Swift.String]? = nil, requiresAuth: Swift.Bool = true) async throws -> T where T : Swift.Decodable
+  public func put<T>(endpoint: Swift.String, body: any Swift.Encodable, parameters: [Swift.String : Swift.String]? = nil, requiresAuth: Swift.Bool = true) async throws -> T where T : Swift.Decodable
+  public func delete<T>(endpoint: Swift.String, parameters: [Swift.String : Swift.String]? = nil, requiresAuth: Swift.Bool = true) async throws -> T where T : Swift.Decodable
   @objc deinit
 }
 extension ContactsManager.APIClient {
@@ -769,6 +949,9 @@ public struct APIConfig {
   public static let contactSourceEndpoint: Swift.String
   public static let contactSourcesEndpoint: Swift.String
   public static let userInfoEndpoint: Swift.String
+  public static let recommendContactsToInviteEndpoint: Swift.String
+  public static let nearbyContactsEndpoint: Swift.String
+  public static let appUserContactsEndpoint: Swift.String
   public static let validateAPIKeyEndpoint: Swift.String
   public static let defaultTimeout: Swift.Double
   public static let uploadTimeout: Swift.Double
@@ -777,11 +960,6 @@ public struct APIConfig {
   public static func configure(environment: ContactsManager.RuntimeEnvironment)
 }
 public class ContactSyncManager {
-  public enum UserDefaultsKeys {
-    public static let contactSourcePrefix: Swift.String
-    public static let sourceData: Swift.String
-    public static let deviceId: Swift.String
-  }
   public enum ContactSourceError : Swift.Error, Foundation.LocalizedError {
     case saveFailure(any Swift.Error)
     case retrievalFailure(Swift.String)
@@ -793,7 +971,7 @@ public class ContactSyncManager {
     }
   }
   public init(userId: Swift.String, sourceIdentifier: Swift.String, modelContext: SwiftData.ModelContext, deviceInfo: ContactsManager.DeviceInfo? = nil, batchSize: Swift.Int = APIConfig.maxContactsPerBatch)
-  public func getDeviceIdFromDefaults() -> Swift.String?
+  public func registerBackgroundTasks()
   public func syncContacts() async throws -> Swift.Int
   public func syncContacts(completion: @escaping (Swift.Result<Swift.Int, any Swift.Error>) -> Swift.Void)
   @objc deinit
@@ -932,6 +1110,8 @@ public enum ContactsServiceError : Foundation.LocalizedError {
   case databaseError(any Swift.Error)
   case notInitialized
   case contactsAccessDenied
+  case userNotAuthenticated
+  case customError(Swift.String)
   public var errorDescription: Swift.String? {
     get
   }
@@ -966,6 +1146,27 @@ extension ContactsManager.ContactsService {
     get
   }
 }
+extension ContactsManager.ContactsService {
+  final public func getRecommendedContactsToInvite(canonicalContactId: Foundation.UUID, organizationId: Foundation.UUID, limit: Swift.Int = 30) async throws -> [ContactsManager.ContactRecommendation]
+  final public func getNearbyContacts(latitude: Swift.Double, longitude: Swift.Double, radiusInKm: Swift.Double = 10, limit: Swift.Int = 30) async throws -> [ContactsManager.ContactRecommendation]
+  final public func getContactsUsingApp(organizationId: Foundation.UUID, limit: Swift.Int = 30) async throws -> [ContactsManager.ContactRecommendation]
+}
+public enum RecommendationType {
+  case inviteRecommendations
+  case nearbyContacts
+  case appUsers
+  public static func == (a: ContactsManager.RecommendationType, b: ContactsManager.RecommendationType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct ContactRecommendation {
+  public let contact: ContactsManager.Contact
+  public let score: Swift.Double
+  public let reason: Swift.String
+  public let type: ContactsManager.RecommendationType
+}
 extension ContactsManager.ContactDataRestriction : Swift.Equatable {}
 extension ContactsManager.ContactDataRestriction : Swift.Hashable {}
 extension ContactsManager.ContactDataRestriction : Swift.RawRepresentable {}
@@ -988,3 +1189,5 @@ extension ContactsManager.ContactSelectionMode : Swift.Equatable {}
 extension ContactsManager.ContactSelectionMode : Swift.Hashable {}
 extension ContactsManager.ContactFieldType : Swift.Equatable {}
 extension ContactsManager.ContactFieldType : Swift.Hashable {}
+extension ContactsManager.RecommendationType : Swift.Equatable {}
+extension ContactsManager.RecommendationType : Swift.Hashable {}
