@@ -18,23 +18,23 @@
 		</data>
 		<key>Modules/ContactsManager.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		khnjiqHvt/rc6lOnds7Ge87Hvkw=
+		AZAadZIdn2RJdVEsx3wA6MMWgMM=
 		</data>
 		<key>Modules/ContactsManager.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		MyW68O2+7G8d+bMY2v0IpUTkcCc=
+		kS97RD3LmcmibGxtWcwt3p80qD0=
 		</data>
 		<key>Modules/ContactsManager.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		AYVXtJsveqoYfqGDJli4n2xMk18=
+		gmyX+uzXemvnWz3p0SY0uJTvhog=
 		</data>
 		<key>Modules/ContactsManager.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		MyW68O2+7G8d+bMY2v0IpUTkcCc=
+		kS97RD3LmcmibGxtWcwt3p80qD0=
 		</data>
 		<key>Modules/ContactsManager.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		TZNPH83oQ1a6OMbM2nT6Mvu45MA=
+		fMkt+lSJyqvEBCGSauu45to1RZE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -43,6 +43,10 @@
 		<key>README_BACKGROUND_TASKS.md</key>
 		<data>
 		R5cl7u/qtcGRJsqE++NgK97b7Oo=
+		</data>
+		<key>README_BACKGROUND_TASKS_FIX.md</key>
+		<data>
+		UTz0SDe9w4LLKwMWxqG0toKI9jQ=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -65,35 +69,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DHhJuGWWOzT5aKbZWf6PYnSKAIzuzoy1s4nrcXOpvkc=
+			ppN6ePsJW38XGTKI4ouEAkODF9lL/4XqYWGQkIhR8Lk=
 			</data>
 		</dict>
 		<key>Modules/ContactsManager.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rTlC5uoJ2VHATzXdUiThaSk1JT3Cdl7EDPYRYKBWgRo=
+			kz0PagL5WDJKB65L/u6cUl+d4DnDBBiEseOBCPYFcDc=
 			</data>
 		</dict>
 		<key>Modules/ContactsManager.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jR/g2yznTQNZwvKvSqc0C+kwrdfmkZoEFEKOiwpcsGA=
+			jByWLK/nw57skT7Ap/N7gEJbP2YkxwejKdh93GNApv0=
 			</data>
 		</dict>
 		<key>Modules/ContactsManager.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rTlC5uoJ2VHATzXdUiThaSk1JT3Cdl7EDPYRYKBWgRo=
+			kz0PagL5WDJKB65L/u6cUl+d4DnDBBiEseOBCPYFcDc=
 			</data>
 		</dict>
 		<key>Modules/ContactsManager.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9iEzfRuEBB4DMKYTtWp1AyHiAwfewDhv2ffMxx2VxWc=
+			8LHz2aaeiP2SqoCvgLKZ4GsTumiQuzocyda/TlVR4K4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -108,6 +112,13 @@
 			<key>hash2</key>
 			<data>
 			CwBuLFYp52pBdPfuwOEQlBZ47o5k/wgeL2/WNeF1lfA=
+			</data>
+		</dict>
+		<key>README_BACKGROUND_TASKS_FIX.md</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			8IwHwWEmmCFkTXtszvS7SqCLhKPHC3UgP6yzfIGRgkE=
 			</data>
 		</dict>
 	</dict>

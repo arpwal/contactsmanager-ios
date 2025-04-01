@@ -947,7 +947,6 @@ public struct APIConfig {
   public static let contactsEndpoint: Swift.String
   public static let contactsSyncEndpoint: Swift.String
   public static let contactSourceEndpoint: Swift.String
-  public static let contactSourcesEndpoint: Swift.String
   public static let userInfoEndpoint: Swift.String
   public static let recommendContactsToInviteEndpoint: Swift.String
   public static let nearbyContactsEndpoint: Swift.String
@@ -971,7 +970,6 @@ public class ContactSyncManager {
     }
   }
   public init(userId: Swift.String, sourceIdentifier: Swift.String, modelContext: SwiftData.ModelContext, deviceInfo: ContactsManager.DeviceInfo? = nil, batchSize: Swift.Int = APIConfig.maxContactsPerBatch)
-  public func registerBackgroundTasks()
   public func syncContacts() async throws -> Swift.Int
   public func syncContacts(completion: @escaping (Swift.Result<Swift.Int, any Swift.Error>) -> Swift.Void)
   @objc deinit
@@ -1150,6 +1148,9 @@ extension ContactsManager.ContactsService {
   final public func getRecommendedContactsToInvite(limit: Swift.Int = 30) async throws -> [ContactsManager.ContactRecommendation]
   final public func getNearbyContacts(latitude: Swift.Double, longitude: Swift.Double, radiusInKm: Swift.Double = 10, limit: Swift.Int = 30) async throws -> [ContactsManager.ContactRecommendation]
   final public func getContactsUsingApp(limit: Swift.Int = 30) async throws -> [ContactsManager.ContactRecommendation]
+}
+extension ContactsManager.ContactsService {
+  final public func enableBackgroundSync()
 }
 public enum RecommendationType {
   case inviteRecommendations
