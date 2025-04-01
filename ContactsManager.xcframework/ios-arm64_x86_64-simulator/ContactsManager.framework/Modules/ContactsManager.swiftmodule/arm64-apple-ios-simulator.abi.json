@@ -34229,77 +34229,77 @@
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/UI\/ContactPickerViewModel.swift",
       "kind": "Array",
-      "offset": 463,
+      "offset": 450,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/UI\/ContactPickerViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 510,
+      "offset": 497,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/UI\/ContactPickerViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 572,
+      "offset": 559,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/UI\/ContactPickerViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 636,
+      "offset": 623,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/UI\/ContactPickerViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 670,
+      "offset": 657,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/UI\/ContactPickerViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 704,
+      "offset": 691,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/UI\/ContactPickerViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 752,
+      "offset": 739,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/UI\/ContactPickerViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1341,
+      "offset": 1529,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/UI\/ContactPickerViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 1426,
+      "offset": 1614,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/UI\/ContactPickerViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 1456,
+      "offset": 1644,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/UI\/ContactPickerViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1493,
+      "offset": 1681,
       "length": 4,
       "value": "true"
     },
