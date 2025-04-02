@@ -894,6 +894,115 @@ public struct DeviceInfo : Swift.Codable {
 extension ContactsManager.DeviceInfo {
   public func asDictionary() -> [Swift.String : Any]
 }
+public struct SocialResponse<T> : Swift.Decodable where T : Swift.Decodable {
+  public let status: Swift.String
+  public let message: Swift.String?
+  public let data: T
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CanonicalContact : Swift.Codable, Swift.Identifiable, Swift.Hashable {
+  public let id: Swift.String
+  public let organizationId: Swift.String
+  public let externalId: Swift.String?
+  public let email: Swift.String?
+  public let fullName: Swift.String?
+  public let avatarUrl: Swift.String?
+  public let isActive: Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (lhs: ContactsManager.CanonicalContact, rhs: ContactsManager.CanonicalContact) -> Swift.Bool
+  public typealias ID = Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public var hashValue: Swift.Int {
+    get
+  }
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct FollowRelationship : Swift.Codable, Swift.Identifiable {
+  public let id: Swift.String
+  public let organizationId: Swift.String
+  public let followerId: Swift.String
+  public let followedId: Swift.String
+  public let createdAt: Foundation.Date
+  public let follower: ContactsManager.CanonicalContact?
+  public let followed: ContactsManager.CanonicalContact?
+  public typealias ID = Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct FollowActionResponse : Swift.Decodable {
+  public let alreadyFollowing: Swift.Bool?
+  public let wasFollowing: Swift.Bool?
+  public let success: Swift.Bool?
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct FollowStatusResponse : Swift.Decodable {
+  public let isFollowing: Swift.Bool
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct PaginatedFollowList : Swift.Decodable {
+  public let total: Swift.Int
+  public let skip: Swift.Int
+  public let limit: Swift.Int
+  public let items: [ContactsManager.FollowRelationship]
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct SocialEvent : Swift.Codable, Swift.Identifiable {
+  public let id: Swift.String
+  public let organizationId: Swift.String
+  public let canonicalContactId: Swift.String
+  public let eventType: Swift.String
+  public let title: Swift.String
+  public let description: Swift.String?
+  public let location: Swift.String?
+  public let startTime: Foundation.Date?
+  public let endTime: Foundation.Date?
+  public let metadata: [Swift.String : Swift.String]?
+  public let isPublic: Swift.Bool
+  public let createdAt: Foundation.Date
+  public let updatedAt: Foundation.Date
+  public typealias ID = Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CreateEventRequest : Swift.Codable {
+  public let eventType: Swift.String
+  public let title: Swift.String
+  public let description: Swift.String?
+  public let location: Swift.String?
+  public let startTime: Foundation.Date?
+  public let endTime: Foundation.Date?
+  public let metadata: [Swift.String : Swift.String]?
+  public let isPublic: Swift.Bool
+  public init(eventType: Swift.String, title: Swift.String, description: Swift.String? = nil, location: Swift.String? = nil, startTime: Foundation.Date? = nil, endTime: Foundation.Date? = nil, metadata: [Swift.String : Swift.String]? = nil, isPublic: Swift.Bool = true)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct UpdateEventRequest : Swift.Codable {
+  public let title: Swift.String?
+  public let description: Swift.String?
+  public let location: Swift.String?
+  public let startTime: Foundation.Date?
+  public let endTime: Foundation.Date?
+  public let metadata: [Swift.String : Swift.String]?
+  public let isPublic: Swift.Bool?
+  public init(title: Swift.String? = nil, description: Swift.String? = nil, location: Swift.String? = nil, startTime: Foundation.Date? = nil, endTime: Foundation.Date? = nil, metadata: [Swift.String : Swift.String]? = nil, isPublic: Swift.Bool? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct EventActionResponse : Swift.Decodable {
+  public let eventId: Swift.String?
+  public let created: Swift.Bool?
+  public let updated: Swift.Bool?
+  public let deleted: Swift.Bool?
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct PaginatedEventList : Swift.Decodable {
+  public let total: Swift.Int
+  public let skip: Swift.Int
+  public let limit: Swift.Int
+  public let items: [ContactsManager.SocialEvent]
+  public init(from decoder: any Swift.Decoder) throws
+}
 public enum APIError : Swift.Error {
   case invalidURL
   case noData
@@ -922,6 +1031,7 @@ public class APIClient {
   public func post<T>(endpoint: Swift.String, body: any Swift.Encodable, parameters: [Swift.String : Swift.String]? = nil, requiresAuth: Swift.Bool = true) async throws -> T where T : Swift.Decodable
   public func put<T>(endpoint: Swift.String, body: any Swift.Encodable, parameters: [Swift.String : Swift.String]? = nil, requiresAuth: Swift.Bool = true) async throws -> T where T : Swift.Decodable
   public func delete<T>(endpoint: Swift.String, parameters: [Swift.String : Swift.String]? = nil, requiresAuth: Swift.Bool = true) async throws -> T where T : Swift.Decodable
+  public func getSocialData<T>(endpoint: Swift.String, parameters: [Swift.String : Swift.String]? = nil) async throws -> T where T : Swift.Decodable
   @objc deinit
 }
 extension ContactsManager.APIClient {
@@ -950,6 +1060,17 @@ public struct APIConfig {
   public static let userInfoEndpoint: Swift.String
   public static let sharedContactsToInviteEndpoint: Swift.String
   public static let appUserContactsEndpoint: Swift.String
+  public static let socialBasePath: Swift.String
+  public static let followEndpoint: Swift.String
+  public static let unfollowEndpoint: Swift.String
+  public static let isFollowingEndpoint: Swift.String
+  public static let followersEndpoint: Swift.String
+  public static let followingEndpoint: Swift.String
+  public static let mutualFollowsEndpoint: Swift.String
+  public static let eventsEndpoint: Swift.String
+  public static let feedEndpoint: Swift.String
+  public static let upcomingEventsEndpoint: Swift.String
+  public static let forYouEndpoint: Swift.String
   public static let validateAPIKeyEndpoint: Swift.String
   public static let defaultTimeout: Swift.Double
   public static let uploadTimeout: Swift.Double
@@ -1048,7 +1169,7 @@ public enum ContactsManagerEvent : Swift.String {
   }
 }
 public typealias EventHandler = () -> Swift.Void
-@_hasMissingDesignatedInitializers final public class EventWrapperService : Foundation.ObservableObject {
+@_hasMissingDesignatedInitializers final public class EventWrapperService : Combine.ObservableObject {
   public static let shared: ContactsManager.EventWrapperService
   final public func subscribe(to event: ContactsManager.ContactsManagerEvent, identifier: Swift.String, handler: @escaping ContactsManager.EventHandler)
   final public func unsubscribe(from event: ContactsManager.ContactsManagerEvent, identifier: Swift.String)
@@ -1066,6 +1187,33 @@ extension ContactsManager.ContactsManagerEvent : Swift.CaseIterable {
 extension SwiftUICore.View {
   @_Concurrency.MainActor @preconcurrency public func onContactsManagerEvent(_ event: ContactsManager.ContactsManagerEvent, identifier: Swift.String, perform action: @escaping () -> Swift.Void) -> some SwiftUICore.View
   
+}
+public class SocialService {
+  public init(apiClient: ContactsManager.APIClient = APIClient.shared)
+  public func followContact(followedId: Swift.String) async throws -> ContactsManager.FollowActionResponse
+  public func unfollowContact(followedId: Swift.String) async throws -> ContactsManager.FollowActionResponse
+  public func isFollowingContact(followedId: Swift.String) async throws -> ContactsManager.FollowStatusResponse
+  public func getFollowers(contactId: Swift.String? = nil, skip: Swift.Int = 0, limit: Swift.Int = 20) async throws -> ContactsManager.PaginatedFollowList
+  public func getFollowing(contactId: Swift.String? = nil, skip: Swift.Int = 0, limit: Swift.Int = 20) async throws -> ContactsManager.PaginatedFollowList
+  public func getMutualFollows(skip: Swift.Int = 0, limit: Swift.Int = 20) async throws -> ContactsManager.PaginatedFollowList
+  public func createEvent(eventData: ContactsManager.CreateEventRequest) async throws -> ContactsManager.EventActionResponse
+  public func getEvent(eventId: Swift.String) async throws -> ContactsManager.SocialEvent
+  public func updateEvent(eventId: Swift.String, eventData: ContactsManager.UpdateEventRequest) async throws -> ContactsManager.EventActionResponse
+  public func deleteEvent(eventId: Swift.String) async throws -> ContactsManager.EventActionResponse
+  public func getContactEvents(contactId: Swift.String? = nil, skip: Swift.Int = 0, limit: Swift.Int = 20) async throws -> ContactsManager.PaginatedEventList
+  public func getFeed(skip: Swift.Int = 0, limit: Swift.Int = 20) async throws -> ContactsManager.PaginatedEventList
+  public func getUpcomingEvents(skip: Swift.Int = 0, limit: Swift.Int = 20) async throws -> ContactsManager.PaginatedEventList
+  public func getForYouFeed(skip: Swift.Int = 0, limit: Swift.Int = 20) async throws -> ContactsManager.PaginatedEventList
+  @objc deinit
+}
+extension ContactsManager.SocialService {
+  public struct Examples {
+    public static func followExample() async
+    public static func createEventExample() async
+    public static func getFollowersExample() async
+    public static func getFeedExample() async
+    public static func getForYouFeedExample() async
+  }
 }
 public enum ContactSelectionMode {
   case single
