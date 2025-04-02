@@ -25976,8 +25976,8 @@
           },
           {
             "kind": "Var",
-            "name": "recommendContactsToInviteEndpoint",
-            "printedName": "recommendContactsToInviteEndpoint",
+            "name": "sharedContactsToInviteEndpoint",
+            "printedName": "sharedContactsToInviteEndpoint",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -25987,8 +25987,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:15ContactsManager9APIConfigV09recommendA16ToInviteEndpointSSvpZ",
-            "mangledName": "$s15ContactsManager9APIConfigV09recommendA16ToInviteEndpointSSvpZ",
+            "usr": "s:15ContactsManager9APIConfigV06sharedA16ToInviteEndpointSSvpZ",
+            "mangledName": "$s15ContactsManager9APIConfigV06sharedA16ToInviteEndpointSSvpZ",
             "moduleName": "ContactsManager",
             "static": true,
             "declAttributes": [
@@ -26013,55 +26013,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15ContactsManager9APIConfigV09recommendA16ToInviteEndpointSSvgZ",
-                "mangledName": "$s15ContactsManager9APIConfigV09recommendA16ToInviteEndpointSSvgZ",
-                "moduleName": "ContactsManager",
-                "static": true,
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "nearbyContactsEndpoint",
-            "printedName": "nearbyContactsEndpoint",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:15ContactsManager9APIConfigV06nearbyA8EndpointSSvpZ",
-            "mangledName": "$s15ContactsManager9APIConfigV06nearbyA8EndpointSSvpZ",
-            "moduleName": "ContactsManager",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:15ContactsManager9APIConfigV06nearbyA8EndpointSSvgZ",
-                "mangledName": "$s15ContactsManager9APIConfigV06nearbyA8EndpointSSvgZ",
+                "usr": "s:15ContactsManager9APIConfigV06sharedA16ToInviteEndpointSSvgZ",
+                "mangledName": "$s15ContactsManager9APIConfigV06sharedA16ToInviteEndpointSSvgZ",
                 "moduleName": "ContactsManager",
                 "static": true,
                 "implicit": true,
@@ -31124,8 +31077,8 @@
           },
           {
             "kind": "Function",
-            "name": "getRecommendedContactsToInvite",
-            "printedName": "getRecommendedContactsToInvite(limit:)",
+            "name": "getSharedContactsByUsersToInvite",
+            "printedName": "getSharedContactsByUsersToInvite(limit:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -31150,67 +31103,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:15ContactsManager0A7ServiceC014getRecommendedA8ToInvite5limitSayAA21ContactRecommendationVGSi_tYaKF",
-            "mangledName": "$s15ContactsManager0A7ServiceC014getRecommendedA8ToInvite5limitSayAA21ContactRecommendationVGSi_tYaKF",
-            "moduleName": "ContactsManager",
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getNearbyContacts",
-            "printedName": "getNearbyContacts(latitude:longitude:radiusInKm:limit:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[ContactsManager.ContactRecommendation]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ContactRecommendation",
-                    "printedName": "ContactsManager.ContactRecommendation",
-                    "usr": "s:15ContactsManager21ContactRecommendationV"
-                  }
-                ],
-                "usr": "s:Sa"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "hasDefaultArg": true,
-                "usr": "s:Sd"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "hasDefaultArg": true,
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15ContactsManager0A7ServiceC09getNearbyA08latitude9longitude10radiusInKm5limitSayAA21ContactRecommendationVGSd_S2dSitYaKF",
-            "mangledName": "$s15ContactsManager0A7ServiceC09getNearbyA08latitude9longitude10radiusInKm5limitSayAA21ContactRecommendationVGSd_S2dSitYaKF",
+            "usr": "s:15ContactsManager0A7ServiceC09getSharedA15ByUsersToInvite5limitSayAA21ContactRecommendationVGSi_tYaKF",
+            "mangledName": "$s15ContactsManager0A7ServiceC09getSharedA15ByUsersToInvite5limitSayAA21ContactRecommendationVGSi_tYaKF",
             "moduleName": "ContactsManager",
             "declAttributes": [
               "Final",
@@ -31373,43 +31267,6 @@
             "declKind": "EnumElement",
             "usr": "s:15ContactsManager18RecommendationTypeO21inviteRecommendationsyA2CmF",
             "mangledName": "$s15ContactsManager18RecommendationTypeO21inviteRecommendationsyA2CmF",
-            "moduleName": "ContactsManager"
-          },
-          {
-            "kind": "Var",
-            "name": "nearbyContacts",
-            "printedName": "nearbyContacts",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(ContactsManager.RecommendationType.Type) -> ContactsManager.RecommendationType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "RecommendationType",
-                    "printedName": "ContactsManager.RecommendationType",
-                    "usr": "s:15ContactsManager18RecommendationTypeO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "ContactsManager.RecommendationType.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "RecommendationType",
-                        "printedName": "ContactsManager.RecommendationType",
-                        "usr": "s:15ContactsManager18RecommendationTypeO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:15ContactsManager18RecommendationTypeO06nearbyA0yA2CmF",
-            "mangledName": "$s15ContactsManager18RecommendationTypeO06nearbyA0yA2CmF",
             "moduleName": "ContactsManager"
           },
           {
@@ -33508,84 +33365,70 @@
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1328,
-      "length": 61,
+      "offset": 1325,
+      "length": 56,
       "value": "\"\/api\/\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1347,
+      "offset": 1344,
       "length": 1,
-      "value": "\"\/client\/contact-recommendations-to-invite\""
+      "value": "\"\/client\/shared-contacts-across-users\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1437,
-      "length": 43,
-      "value": "\"\/api\/\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 1456,
-      "length": 1,
-      "value": "\"\/client\/contacts-nearby\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 1529,
+      "offset": 1430,
       "length": 46,
       "value": "\"\/api\/\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1548,
+      "offset": 1449,
       "length": 1,
       "value": "\"\/client\/contacts-app-users\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1727,
+      "offset": 1628,
       "length": 40,
       "value": "\"\/api\/\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1746,
+      "offset": 1647,
       "length": 1,
       "value": "\"\/client\/validate-key\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 1858,
+      "offset": 1759,
       "length": 4,
       "value": "60.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 1915,
+      "offset": 1816,
       "length": 5,
       "value": "180.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 1991,
+      "offset": 1892,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2053,
+      "offset": 1954,
       "length": 32,
       "value": "\"https:\/\/www.contactsmanager.io\""
     },
@@ -34348,28 +34191,14 @@
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/ContactsService.swift",
       "kind": "IntegerLiteral",
-      "offset": 39468,
+      "offset": 39345,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/ContactsService.swift",
       "kind": "IntegerLiteral",
-      "offset": 40313,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/ContactsService.swift",
-      "kind": "IntegerLiteral",
-      "offset": 40338,
-      "length": 2,
-      "value": "30"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/ContactsService.swift",
-      "kind": "IntegerLiteral",
-      "offset": 41388,
+      "offset": 40308,
       "length": 2,
       "value": "30"
     },
@@ -34390,28 +34219,14 @@
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/RecommendationService.swift",
       "kind": "IntegerLiteral",
-      "offset": 2074,
+      "offset": 2054,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/RecommendationService.swift",
       "kind": "IntegerLiteral",
-      "offset": 3029,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/RecommendationService.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3050,
-      "length": 2,
-      "value": "30"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/RecommendationService.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3875,
+      "offset": 2844,
       "length": 2,
       "value": "30"
     }
