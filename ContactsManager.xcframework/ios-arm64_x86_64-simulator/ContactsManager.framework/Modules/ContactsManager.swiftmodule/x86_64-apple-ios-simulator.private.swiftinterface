@@ -1312,6 +1312,7 @@ public struct ContactRecommendation {
   public let score: Swift.Double
   public let reason: Swift.String
   public let type: ContactsManager.RecommendationType
+  public let organizationUserId: Swift.String?
 }
 extension ContactsManager.ContactDataRestriction : Swift.Equatable {}
 extension ContactsManager.ContactDataRestriction : Swift.Hashable {}

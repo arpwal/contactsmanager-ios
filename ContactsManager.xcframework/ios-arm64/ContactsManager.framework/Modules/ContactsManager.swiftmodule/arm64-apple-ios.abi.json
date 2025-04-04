@@ -37554,6 +37554,66 @@
                 "accessorKind": "get"
               }
             ]
+          },
+          {
+            "kind": "Var",
+            "name": "organizationUserId",
+            "printedName": "organizationUserId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15ContactsManager21ContactRecommendationV18organizationUserIdSSSgvp",
+            "mangledName": "$s15ContactsManager21ContactRecommendationV18organizationUserIdSSSgvp",
+            "moduleName": "ContactsManager",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15ContactsManager21ContactRecommendationV18organizationUserIdSSSgvg",
+                "mangledName": "$s15ContactsManager21ContactRecommendationV18organizationUserIdSSSgvg",
+                "moduleName": "ContactsManager",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
           }
         ],
         "declKind": "Struct",
@@ -40341,98 +40401,98 @@
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Services\/SocialService.swift",
       "kind": "IntegerLiteral",
-      "offset": 2360,
+      "offset": 2357,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Services\/SocialService.swift",
       "kind": "IntegerLiteral",
-      "offset": 2380,
+      "offset": 2377,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Services\/SocialService.swift",
       "kind": "IntegerLiteral",
-      "offset": 3188,
+      "offset": 3185,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Services\/SocialService.swift",
       "kind": "IntegerLiteral",
-      "offset": 3208,
+      "offset": 3205,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Services\/SocialService.swift",
       "kind": "IntegerLiteral",
-      "offset": 3872,
+      "offset": 3869,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Services\/SocialService.swift",
       "kind": "IntegerLiteral",
-      "offset": 3892,
+      "offset": 3889,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Services\/SocialService.swift",
       "kind": "IntegerLiteral",
-      "offset": 6410,
+      "offset": 6825,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Services\/SocialService.swift",
       "kind": "IntegerLiteral",
-      "offset": 6430,
+      "offset": 6845,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Services\/SocialService.swift",
       "kind": "IntegerLiteral",
-      "offset": 7092,
+      "offset": 7507,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Services\/SocialService.swift",
       "kind": "IntegerLiteral",
-      "offset": 7112,
+      "offset": 7527,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Services\/SocialService.swift",
       "kind": "IntegerLiteral",
-      "offset": 7646,
+      "offset": 8061,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Services\/SocialService.swift",
       "kind": "IntegerLiteral",
-      "offset": 7666,
+      "offset": 8081,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Services\/SocialService.swift",
       "kind": "IntegerLiteral",
-      "offset": 8292,
+      "offset": 8707,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Services\/SocialService.swift",
       "kind": "IntegerLiteral",
-      "offset": 8312,
+      "offset": 8727,
       "length": 2,
       "value": "20"
     },
@@ -40621,14 +40681,14 @@
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/RecommendationService.swift",
       "kind": "IntegerLiteral",
-      "offset": 2054,
+      "offset": 2179,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/RecommendationService.swift",
       "kind": "IntegerLiteral",
-      "offset": 2844,
+      "offset": 2969,
       "length": 2,
       "value": "30"
     }
