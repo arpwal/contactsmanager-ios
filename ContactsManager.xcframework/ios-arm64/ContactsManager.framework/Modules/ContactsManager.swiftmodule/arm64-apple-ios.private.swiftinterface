@@ -919,15 +919,16 @@ public struct CanonicalContact : Swift.Codable, Swift.Identifiable, Swift.Hashab
 }
 public struct FollowRelationship : Swift.Codable, Swift.Identifiable {
   public let id: Swift.String
-  public let organizationId: Swift.String
   public let followerId: Swift.String
   public let followedId: Swift.String
+  public let contactId: Swift.String
   public let createdAt: Foundation.Date
   public let follower: ContactsManager.CanonicalContact?
   public let followed: ContactsManager.CanonicalContact?
-  public typealias ID = Swift.String
-  public func encode(to encoder: any Swift.Encoder) throws
+  public var localContact: ContactsManager.Contact?
   public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public typealias ID = Swift.String
 }
 public struct FollowActionResponse : Swift.Decodable {
   public let alreadyFollowing: Swift.Bool?
@@ -943,7 +944,7 @@ public struct PaginatedFollowList : Swift.Decodable {
   public let total: Swift.Int
   public let skip: Swift.Int
   public let limit: Swift.Int
-  public let items: [ContactsManager.FollowRelationship]
+  public var items: [ContactsManager.FollowRelationship]
   public init(from decoder: any Swift.Decoder) throws
 }
 public struct SocialEvent : Swift.Codable, Swift.Identifiable {
@@ -1002,6 +1003,19 @@ public struct PaginatedEventList : Swift.Decodable {
   public let limit: Swift.Int
   public let items: [ContactsManager.SocialEvent]
   public init(from decoder: any Swift.Decoder) throws
+}
+public class UserInfo : Swift.Codable {
+  final public let userId: Swift.String
+  final public let fullName: Swift.String?
+  final public let email: Swift.String?
+  final public let phone: Swift.String?
+  final public let avatarUrl: Swift.String?
+  final public let metadata: [Swift.String : Swift.String]?
+  public init(userId: Swift.String, fullName: Swift.String? = nil, email: Swift.String? = nil, phone: Swift.String? = nil, avatarUrl: Swift.String? = nil, metadata: [Swift.String : Swift.String]? = nil)
+  public func isValid() -> Swift.Bool
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 public enum APIError : Swift.Error {
   case invalidURL
@@ -1190,7 +1204,7 @@ extension SwiftUICore.View {
 }
 public class SocialService {
   public init(apiClient: ContactsManager.APIClient = APIClient.shared)
-  public func followContact(followedId: Swift.String) async throws -> ContactsManager.FollowActionResponse
+  public func followContact(followedId: Swift.String, contactId: Swift.String) async throws -> ContactsManager.FollowActionResponse
   public func unfollowContact(followedId: Swift.String) async throws -> ContactsManager.FollowActionResponse
   public func isFollowingContact(followedId: Swift.String) async throws -> ContactsManager.FollowStatusResponse
   public func getFollowers(contactId: Swift.String? = nil, skip: Swift.Int = 0, limit: Swift.Int = 20) async throws -> ContactsManager.PaginatedFollowList
@@ -1256,6 +1270,7 @@ public enum ContactsServiceError : Foundation.LocalizedError {
   case notInitialized
   case contactsAccessDenied
   case userNotAuthenticated
+  case invalidUserInfo(Swift.String)
   case customError(Swift.String)
   public var errorDescription: Swift.String? {
     get
@@ -1263,6 +1278,8 @@ public enum ContactsServiceError : Foundation.LocalizedError {
 }
 @_hasMissingDesignatedInitializers final public class ContactsService {
   public static let shared: ContactsManager.ContactsService
+  final public func initialize(withAPIKey apiKey: Swift.String, userInfo: ContactsManager.UserInfo, options: ContactsManager.ContactsManagerOptions = .default) async throws
+  @available(*, deprecated, message: "Use initialize(withAPIKey:userInfo:options:) instead")
   final public func initialize(withAPIKey apiKey: Swift.String, userId: Swift.String, options: ContactsManager.ContactsManagerOptions = .default) async throws
   final public var isInitialized: Swift.Bool {
     get
@@ -1297,6 +1314,9 @@ extension ContactsManager.ContactsService {
 }
 extension ContactsManager.ContactsService {
   final public func enableBackgroundSync()
+}
+extension ContactsManager.ContactsService {
+  @_Concurrency.MainActor final public func registerContactSource() async throws -> Swift.String
 }
 public enum RecommendationType {
   case inviteRecommendations
