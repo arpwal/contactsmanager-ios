@@ -1145,12 +1145,12 @@ public enum ContactsAccessStatus : Swift.Equatable {
     get
   }
 }
-@_hasMissingDesignatedInitializers @_Concurrency.MainActor final public class ContactSearchService {
-  @_Concurrency.MainActor public static let shared: ContactsManager.ContactSearchService
-  @_Concurrency.MainActor final public func initialize(with container: any ContactsManager.ContactDatabaseContainer)
-  @_Concurrency.MainActor final public func getTotalContactsCount() async throws -> Swift.Int
-  @_Concurrency.MainActor final public func searchContacts(query: Swift.String, searchFields: Swift.Set<ContactsManager.ContactSearchService.SearchField> = Set(SearchField.allCases), offset: Swift.Int = 0, limit: Swift.Int = 50) async throws -> [ContactsManager.Contact]
-  @_Concurrency.MainActor final public func quickSearch(_ query: Swift.String) async throws -> [ContactsManager.Contact]
+@_hasMissingDesignatedInitializers final public class ContactSearchService {
+  public static let shared: ContactsManager.ContactSearchService
+  final public func initialize(with container: any ContactsManager.ContactDatabaseContainer)
+  final public func getTotalContactsCount() async throws -> Swift.Int
+  final public func searchContacts(query: Swift.String, searchFields: Swift.Set<ContactsManager.ContactSearchService.SearchField> = Set(SearchField.allCases), offset: Swift.Int = 0, limit: Swift.Int = 50) async throws -> [ContactsManager.Contact]
+  final public func quickSearch(_ query: Swift.String) async throws -> [ContactsManager.Contact]
   public enum SearchField : Swift.CaseIterable {
     case name
     case email
@@ -1346,7 +1346,6 @@ extension ContactsManager.RuntimeEnvironment : Swift.RawRepresentable {}
 extension ContactsManager.ContactSyncManager.SyncError : Swift.Equatable {}
 extension ContactsManager.ContactSyncManager.SyncError : Swift.Hashable {}
 extension ContactsManager.ContactsAccessStatus : Swift.Hashable {}
-extension ContactsManager.ContactSearchService : Swift.Sendable {}
 extension ContactsManager.ContactSearchService.SearchField : Swift.Equatable {}
 extension ContactsManager.ContactSearchService.SearchField : Swift.Hashable {}
 extension ContactsManager.ContactsManagerEvent : Swift.Equatable {}
