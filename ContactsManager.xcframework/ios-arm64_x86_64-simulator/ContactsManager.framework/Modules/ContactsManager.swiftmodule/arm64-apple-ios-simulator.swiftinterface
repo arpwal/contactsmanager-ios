@@ -902,20 +902,26 @@ public struct SocialResponse<T> : Swift.Decodable where T : Swift.Decodable {
 }
 public struct CanonicalContact : Swift.Codable, Swift.Identifiable, Swift.Hashable {
   public let id: Swift.String
-  public let organizationId: Swift.String
-  public let externalId: Swift.String?
+  public let organizationId: Swift.String?
+  public let externalId: Swift.String
   public let email: Swift.String?
-  public let fullName: Swift.String?
+  public let phone: Swift.String?
+  public let fullName: Swift.String
   public let avatarUrl: Swift.String?
-  public let isActive: Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public static func == (lhs: ContactsManager.CanonicalContact, rhs: ContactsManager.CanonicalContact) -> Swift.Bool
-  public typealias ID = Swift.String
-  public func encode(to encoder: any Swift.Encoder) throws
-  public var hashValue: Swift.Int {
+  public let isActive: Swift.Bool?
+  public let createdAt: Foundation.Date?
+  public let updatedAt: Foundation.Date?
+  public var contactMetadata: [Swift.String : Any]? {
     get
   }
   public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (lhs: ContactsManager.CanonicalContact, rhs: ContactsManager.CanonicalContact) -> Swift.Bool
+  public typealias ID = Swift.String
+  public var hashValue: Swift.Int {
+    get
+  }
 }
 public struct FollowRelationship : Swift.Codable, Swift.Identifiable {
   public let id: Swift.String
@@ -1074,6 +1080,7 @@ public struct APIConfig {
   public static let userInfoEndpoint: Swift.String
   public static let sharedContactsToInviteEndpoint: Swift.String
   public static let appUserContactsEndpoint: Swift.String
+  public static let usersYouMightKnowEndpoint: Swift.String
   public static let socialBasePath: Swift.String
   public static let followEndpoint: Swift.String
   public static let unfollowEndpoint: Swift.String
@@ -1318,9 +1325,13 @@ extension ContactsManager.ContactsService {
 extension ContactsManager.ContactsService {
   @_Concurrency.MainActor final public func registerContactSource() async throws -> Swift.String
 }
+extension ContactsManager.ContactsService {
+  final public func getUsersYouMightKnow(limit: Swift.Int = 30) async throws -> [ContactsManager.CanonicalContact]
+}
 public enum RecommendationType {
   case inviteRecommendations
   case appUsers
+  case usersYouMightKnow
   public static func == (a: ContactsManager.RecommendationType, b: ContactsManager.RecommendationType) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
