@@ -1057,6 +1057,9 @@ public class APIClient {
 extension ContactsManager.APIClient {
   public static func validateAPIKey(_ apiKey: Swift.String) async throws -> Swift.Bool
 }
+extension ContactsManager.APIClient {
+  public func checkHealth() async -> Swift.Bool
+}
 public enum RuntimeEnvironment : Swift.String {
   case development
   case staging
@@ -1095,6 +1098,7 @@ public struct APIConfig {
   public static let validateAPIKeyEndpoint: Swift.String
   public static let defaultTimeout: Swift.Double
   public static let uploadTimeout: Swift.Double
+  public static let healthEndpoint: Swift.String
   public static let maxContactsPerBatch: Swift.Int
   public static let websiteURL: Swift.String
   public static func configure(environment: ContactsManager.RuntimeEnvironment)
