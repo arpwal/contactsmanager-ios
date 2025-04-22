@@ -1041,7 +1041,7 @@ public struct APIResponse<T> : Swift.Decodable where T : Swift.Decodable {
 }
 public class APIClient {
   public static let shared: ContactsManager.APIClient
-  public init(userId: Swift.String, deviceInfo: ContactsManager.DeviceInfo? = nil)
+  public init(userId: Swift.String, token: Swift.String, deviceInfo: ContactsManager.DeviceInfo? = nil)
   public func setContactSyncManager(_ manager: ContactsManager.ContactSyncManager)
   public func refreshToken() async throws -> Swift.String
   public func createContactSource(name: Swift.String, sourceType: ContactsManager.SourceType) async throws -> ContactsManager.ContactSource
@@ -1289,9 +1289,7 @@ public enum ContactsServiceError : Foundation.LocalizedError {
 }
 @_hasMissingDesignatedInitializers final public class ContactsService {
   public static let shared: ContactsManager.ContactsService
-  final public func initialize(withAPIKey apiKey: Swift.String, userInfo: ContactsManager.UserInfo, options: ContactsManager.ContactsManagerOptions = .default) async throws
-  @available(*, deprecated, message: "Use initialize(withAPIKey:userInfo:options:) instead")
-  final public func initialize(withAPIKey apiKey: Swift.String, userId: Swift.String, options: ContactsManager.ContactsManagerOptions = .default) async throws
+  final public func initialize(withAPIKey apiKey: Swift.String, token: Swift.String, userInfo: ContactsManager.UserInfo, options: ContactsManager.ContactsManagerOptions = .default) async throws
   final public var isInitialized: Swift.Bool {
     get
   }
