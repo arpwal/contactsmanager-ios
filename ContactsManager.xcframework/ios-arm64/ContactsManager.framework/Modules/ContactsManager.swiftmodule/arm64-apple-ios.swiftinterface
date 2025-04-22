@@ -1076,7 +1076,6 @@ public struct APIConfig {
     get
   }
   public static let apiVersion: Swift.String
-  public static let tokenEndpoint: Swift.String
   public static let contactsEndpoint: Swift.String
   public static let contactsSyncEndpoint: Swift.String
   public static let contactSourceEndpoint: Swift.String
