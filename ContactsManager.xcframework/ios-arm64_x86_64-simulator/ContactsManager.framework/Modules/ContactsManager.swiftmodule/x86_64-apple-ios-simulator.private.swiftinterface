@@ -967,7 +967,15 @@ public struct SocialEvent : Swift.Codable, Swift.Identifiable {
   public let isPublic: Swift.Bool
   public let createdAt: Foundation.Date
   public let updatedAt: Foundation.Date
+  public let userId: Swift.String?
+  public let createdBy: ContactsManager.EventCreator?
   public typealias ID = Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct EventCreator : Swift.Codable {
+  public let name: Swift.String
+  public let avatarUrl: Swift.String?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -1055,7 +1063,7 @@ public class APIClient {
   @objc deinit
 }
 extension ContactsManager.APIClient {
-  public static func validateAPIKey(_ apiKey: Swift.String) async throws -> Swift.Bool
+  public func validateAPIKey(_ apiKey: Swift.String, userInfo: ContactsManager.UserInfo) async throws -> Swift.Bool
 }
 extension ContactsManager.APIClient {
   public func checkHealth() async -> Swift.Bool
