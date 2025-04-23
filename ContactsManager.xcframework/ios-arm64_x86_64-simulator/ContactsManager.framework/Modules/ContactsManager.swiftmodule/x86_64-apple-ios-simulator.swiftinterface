@@ -1066,7 +1066,7 @@ extension ContactsManager.APIClient {
   public func validateAPIKey(_ apiKey: Swift.String, userInfo: ContactsManager.UserInfo) async throws -> Swift.Bool
 }
 extension ContactsManager.APIClient {
-  public func checkHealth() async -> Swift.Bool
+  public static func checkHealth() async -> Swift.Bool
 }
 public enum RuntimeEnvironment : Swift.String {
   case development

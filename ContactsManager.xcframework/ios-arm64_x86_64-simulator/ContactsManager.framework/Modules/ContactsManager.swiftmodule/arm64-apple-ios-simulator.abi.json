@@ -31382,10 +31382,12 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:15ContactsManager9APIClientC11checkHealthSbyYaF",
-            "mangledName": "$s15ContactsManager9APIClientC11checkHealthSbyYaF",
+            "usr": "s:15ContactsManager9APIClientC11checkHealthSbyYaFZ",
+            "mangledName": "$s15ContactsManager9APIClientC11checkHealthSbyYaFZ",
             "moduleName": "ContactsManager",
+            "static": true,
             "declAttributes": [
+              "Final",
               "AccessControl",
               "RawDocComment"
             ],
