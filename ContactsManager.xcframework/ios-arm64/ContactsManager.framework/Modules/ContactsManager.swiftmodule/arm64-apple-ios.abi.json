@@ -27319,14 +27319,22 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:15ContactsManager12EventCreatorV4nameSSvp",
-            "mangledName": "$s15ContactsManager12EventCreatorV4nameSSvp",
+            "usr": "s:15ContactsManager12EventCreatorV4nameSSSgvp",
+            "mangledName": "$s15ContactsManager12EventCreatorV4nameSSSgvp",
             "moduleName": "ContactsManager",
             "declAttributes": [
               "HasStorage",
@@ -27342,14 +27350,22 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15ContactsManager12EventCreatorV4nameSSvg",
-                "mangledName": "$s15ContactsManager12EventCreatorV4nameSSvg",
+                "usr": "s:15ContactsManager12EventCreatorV4nameSSSgvg",
+                "mangledName": "$s15ContactsManager12EventCreatorV4nameSSSgvg",
                 "moduleName": "ContactsManager",
                 "implicit": true,
                 "accessorKind": "get"
@@ -40619,77 +40635,77 @@
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/SocialModels.swift",
       "kind": "StringLiteral",
-      "offset": 9974,
+      "offset": 9975,
       "length": 12,
       "value": "\"avatar_url\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/SocialModels.swift",
       "kind": "StringLiteral",
-      "offset": 10388,
+      "offset": 10389,
       "length": 12,
       "value": "\"event_type\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/SocialModels.swift",
       "kind": "StringLiteral",
-      "offset": 10476,
+      "offset": 10477,
       "length": 12,
       "value": "\"start_time\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/SocialModels.swift",
       "kind": "StringLiteral",
-      "offset": 10508,
+      "offset": 10509,
       "length": 10,
       "value": "\"end_time\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/SocialModels.swift",
       "kind": "StringLiteral",
-      "offset": 10557,
+      "offset": 10558,
       "length": 11,
       "value": "\"is_public\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/SocialModels.swift",
       "kind": "BooleanLiteral",
-      "offset": 10806,
+      "offset": 10807,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/SocialModels.swift",
       "kind": "StringLiteral",
-      "offset": 11477,
+      "offset": 11478,
       "length": 12,
       "value": "\"start_time\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/SocialModels.swift",
       "kind": "StringLiteral",
-      "offset": 11509,
+      "offset": 11510,
       "length": 10,
       "value": "\"end_time\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/SocialModels.swift",
       "kind": "StringLiteral",
-      "offset": 11558,
+      "offset": 11559,
       "length": 11,
       "value": "\"is_public\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/SocialModels.swift",
       "kind": "StringLiteral",
-      "offset": 12287,
+      "offset": 12288,
       "length": 10,
       "value": "\"event_id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/SocialModels.swift",
       "kind": "StringLiteral",
-      "offset": 12634,
+      "offset": 12635,
       "length": 6,
       "value": "\"data\""
     },

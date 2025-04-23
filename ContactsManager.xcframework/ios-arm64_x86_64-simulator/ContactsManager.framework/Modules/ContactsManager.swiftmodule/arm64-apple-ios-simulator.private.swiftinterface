@@ -974,7 +974,7 @@ public struct SocialEvent : Swift.Codable, Swift.Identifiable {
   public init(from decoder: any Swift.Decoder) throws
 }
 public struct EventCreator : Swift.Codable {
-  public let name: Swift.String
+  public let name: Swift.String?
   public let avatarUrl: Swift.String?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
