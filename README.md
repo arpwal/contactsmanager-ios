@@ -19,6 +19,7 @@ dependencies: [
 ```
 
 Or in Xcode:
+
 1. File > Add Packages
 2. Enter Package URL: `https://github.com/arpwal/contactsmanager-ios.git`
 3. Select "Exact Version" and enter "0.0.1"
@@ -46,16 +47,15 @@ import ContactsManager
 
 ## Documentation
 
-The ContactsManager SDK provides comprehensive documentation for all major features:
+For comprehensive documentation on all features of the ContactsManager SDK, please visit [docs.contactsmanager.io](https://docs.contactsmanager.io).
 
-### [Authorization & Access](docs/Authorization.md)
-Learn how to handle contacts access permissions, initialize the SDK, and manage service state.
+Our documentation covers everything you need to know about:
 
-### [Contact Search & Access](docs/ContactSearch.md)
-Explore methods for fetching and searching contacts based on different criteria.
-
-### [Contact Picker UI](docs/ContactPicker.md)
-Learn how to present and use the SwiftUI-based contact picker in your UIKit applications.
+- Authorization and permission handling
+- Contact search and retrieval
+- Contact picker UI components
+- Advanced integration patterns
+- Troubleshooting and FAQs
 
 ## Demo App
 
@@ -64,6 +64,7 @@ Check out our demo app to see the SDK in action! The demo app showcases the basi
 [Demo App Repository](https://github.com/arpwal/contactsmanager-demo)
 
 The demo app includes:
+
 - Complete SDK integration example
 - Basic contact management features
 - Step-by-step setup guide
@@ -78,4 +79,3 @@ This project is licensed under the terms specified in the LICENSE file.
 Current Version: 1.28.0
 Release Date: 2025-04-23
 [Release Notes](https://github.com/arpwal/contactsmanager-ios/releases)
-
