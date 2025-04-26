@@ -790,6 +790,7 @@ final public class ContactSource {
     set
   }
   public init(id: Swift.String = UUID().uuidString, name: Swift.String, sourceType: ContactsManager.SourceType, organizationId: Swift.String = "", canonicalContactId: Swift.String = "")
+  convenience public init(id: Swift.String?, name: Swift.String, sourceType: Swift.String, identifier: Swift.String?, isActive: Swift.Bool?, organizationId: Swift.String?, canonicalContactId: Swift.String?)
   final public var persistentBackingData: any SwiftData.BackingData<ContactsManager.ContactSource> {
     get
     set
