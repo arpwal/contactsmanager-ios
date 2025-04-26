@@ -22,7 +22,7 @@ Or in Xcode:
 
 1. File > Add Packages
 2. Enter Package URL: `https://github.com/arpwal/contactsmanager-ios.git`
-3. Select "Exact Version" and enter "0.0.1"
+3. Select "Exact Version" and enter "1.29.0"
 
 ## Features
 
