@@ -14,27 +14,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		SDiT+Ek29VjL7iYZuWrARXqRdJ4=
+		LbzGUOtlFzmVzQmBjdR3HHO+1rk=
 		</data>
 		<key>Modules/ContactsManager.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		8YOG5b3MqwE0fQf8dtbuIdnbgfE=
+		am3jSG+OPF4J2Z04hbgQoybNezA=
 		</data>
 		<key>Modules/ContactsManager.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		1YgMDRBjELQt4YaIJM9W0gcut0g=
+		4vtO9J7+UOaQiHLF5ycr54U0PU4=
 		</data>
 		<key>Modules/ContactsManager.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		7jtRC337vNWVB5enAQNgJET2b9E=
+		SZetP+EQ09/tVjSz+tzoC7AvSTw=
 		</data>
 		<key>Modules/ContactsManager.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		1YgMDRBjELQt4YaIJM9W0gcut0g=
+		4vtO9J7+UOaQiHLF5ycr54U0PU4=
 		</data>
 		<key>Modules/ContactsManager.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		NZcXk1KFGBdU1S3mZCnmZVz2flE=
+		7yCWWZelDHz0H9uDbznz/3AWah4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -73,35 +73,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			HV3qFq+Kfr3FAfmSil6prT0A7F6NFvTFWNhjEfGDpLg=
+			R1mrxCp2FKa4sVstk740/YErNVzYH3bgKkMAbLvLcfo=
 			</data>
 		</dict>
 		<key>Modules/ContactsManager.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ey7L2vwyxZb9r6RbN842FB/M6AQv6pmvj1cSFVnN7FQ=
+			mer7jbZ4z5zL3DEd/SzUjDF1uS3TvFCEv4oQiOb6kvs=
 			</data>
 		</dict>
 		<key>Modules/ContactsManager.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6O4TBjuIWc4/Vl6glBwOmxEE/2biD5UWVCoYoLFijLg=
+			lwnxabRRMPpzudHgyO0AM+uiMLRE6U+J9j4AiJU41DY=
 			</data>
 		</dict>
 		<key>Modules/ContactsManager.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ey7L2vwyxZb9r6RbN842FB/M6AQv6pmvj1cSFVnN7FQ=
+			mer7jbZ4z5zL3DEd/SzUjDF1uS3TvFCEv4oQiOb6kvs=
 			</data>
 		</dict>
 		<key>Modules/ContactsManager.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ib1AwDC3GA1m492QkdoLjfjs6guZFiocs505bKx5WGs=
+			p4UcDfQmvS2Hk4I9HxUlqrzDtdDUf0zlMixKKqsPxMU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
