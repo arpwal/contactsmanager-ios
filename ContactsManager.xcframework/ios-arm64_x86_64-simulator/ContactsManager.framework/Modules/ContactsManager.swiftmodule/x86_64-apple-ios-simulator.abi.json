@@ -24392,6 +24392,322 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "LocalCanonicalContact",
+        "printedName": "LocalCanonicalContact",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "contact",
+            "printedName": "contact",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "ContactsManager.Contact?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Contact",
+                    "printedName": "ContactsManager.Contact",
+                    "usr": "s:15ContactsManager7ContactC"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15ContactsManager21LocalCanonicalContactV7contactAA0E0CSgvp",
+            "mangledName": "$s15ContactsManager21LocalCanonicalContactV7contactAA0E0CSgvp",
+            "moduleName": "ContactsManager",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "ContactsManager.Contact?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Contact",
+                        "printedName": "ContactsManager.Contact",
+                        "usr": "s:15ContactsManager7ContactC"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15ContactsManager21LocalCanonicalContactV7contactAA0E0CSgvg",
+                "mangledName": "$s15ContactsManager21LocalCanonicalContactV7contactAA0E0CSgvg",
+                "moduleName": "ContactsManager",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "contactId",
+            "printedName": "contactId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15ContactsManager21LocalCanonicalContactV9contactIdSSvp",
+            "mangledName": "$s15ContactsManager21LocalCanonicalContactV9contactIdSSvp",
+            "moduleName": "ContactsManager",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15ContactsManager21LocalCanonicalContactV9contactIdSSvg",
+                "mangledName": "$s15ContactsManager21LocalCanonicalContactV9contactIdSSvg",
+                "moduleName": "ContactsManager",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "externalId",
+            "printedName": "externalId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15ContactsManager21LocalCanonicalContactV10externalIdSSvp",
+            "mangledName": "$s15ContactsManager21LocalCanonicalContactV10externalIdSSvp",
+            "moduleName": "ContactsManager",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15ContactsManager21LocalCanonicalContactV10externalIdSSvg",
+                "mangledName": "$s15ContactsManager21LocalCanonicalContactV10externalIdSSvg",
+                "moduleName": "ContactsManager",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "canonicalContact",
+            "printedName": "canonicalContact",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CanonicalContact",
+                "printedName": "ContactsManager.CanonicalContact",
+                "usr": "s:15ContactsManager16CanonicalContactV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15ContactsManager21LocalCanonicalContactV09canonicalE0AA0dE0Vvp",
+            "mangledName": "$s15ContactsManager21LocalCanonicalContactV09canonicalE0AA0dE0Vvp",
+            "moduleName": "ContactsManager",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CanonicalContact",
+                    "printedName": "ContactsManager.CanonicalContact",
+                    "usr": "s:15ContactsManager16CanonicalContactV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15ContactsManager21LocalCanonicalContactV09canonicalE0AA0dE0Vvg",
+                "mangledName": "$s15ContactsManager21LocalCanonicalContactV09canonicalE0AA0dE0Vvg",
+                "moduleName": "ContactsManager",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "LocalCanonicalContact",
+                "printedName": "ContactsManager.LocalCanonicalContact",
+                "usr": "s:15ContactsManager21LocalCanonicalContactV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15ContactsManager21LocalCanonicalContactV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s15ContactsManager21LocalCanonicalContactV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "ContactsManager",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(contact:contactId:externalId:canonicalContact:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "LocalCanonicalContact",
+                "printedName": "ContactsManager.LocalCanonicalContact",
+                "usr": "s:15ContactsManager21LocalCanonicalContactV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "ContactsManager.Contact?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Contact",
+                    "printedName": "ContactsManager.Contact",
+                    "usr": "s:15ContactsManager7ContactC"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CanonicalContact",
+                "printedName": "ContactsManager.CanonicalContact",
+                "usr": "s:15ContactsManager16CanonicalContactV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15ContactsManager21LocalCanonicalContactV7contact0F2Id08externalG009canonicalE0AcA0E0CSg_S2SAA0dE0Vtcfc",
+            "mangledName": "$s15ContactsManager21LocalCanonicalContactV7contact0F2Id08externalG009canonicalE0AcA0E0CSg_S2SAA0dE0Vtcfc",
+            "moduleName": "ContactsManager",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:15ContactsManager21LocalCanonicalContactV",
+        "mangledName": "$s15ContactsManager21LocalCanonicalContactV",
+        "moduleName": "ContactsManager",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "CanonicalContact",
         "printedName": "CanonicalContact",
         "children": [
@@ -25402,8 +25718,8 @@
           },
           {
             "kind": "Var",
-            "name": "contactId",
-            "printedName": "contactId",
+            "name": "userId",
+            "printedName": "userId",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -25413,8 +25729,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:15ContactsManager18FollowRelationshipV9contactIdSSvp",
-            "mangledName": "$s15ContactsManager18FollowRelationshipV9contactIdSSvp",
+            "usr": "s:15ContactsManager18FollowRelationshipV6userIdSSvp",
+            "mangledName": "$s15ContactsManager18FollowRelationshipV6userIdSSvp",
             "moduleName": "ContactsManager",
             "declAttributes": [
               "HasStorage",
@@ -25436,8 +25752,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15ContactsManager18FollowRelationshipV9contactIdSSvg",
-                "mangledName": "$s15ContactsManager18FollowRelationshipV9contactIdSSvg",
+                "usr": "s:15ContactsManager18FollowRelationshipV6userIdSSvg",
+                "mangledName": "$s15ContactsManager18FollowRelationshipV6userIdSSvg",
                 "moduleName": "ContactsManager",
                 "implicit": true,
                 "accessorKind": "get"
@@ -25462,7 +25778,8 @@
             "moduleName": "ContactsManager",
             "declAttributes": [
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -26465,6 +26782,311 @@
         "declKind": "Struct",
         "usr": "s:15ContactsManager19PaginatedFollowListV",
         "mangledName": "$s15ContactsManager19PaginatedFollowListV",
+        "moduleName": "ContactsManager",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PaginatedMutualFollowers",
+        "printedName": "PaginatedMutualFollowers",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "total",
+            "printedName": "total",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15ContactsManager24PaginatedMutualFollowersV5totalSivp",
+            "mangledName": "$s15ContactsManager24PaginatedMutualFollowersV5totalSivp",
+            "moduleName": "ContactsManager",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15ContactsManager24PaginatedMutualFollowersV5totalSivg",
+                "mangledName": "$s15ContactsManager24PaginatedMutualFollowersV5totalSivg",
+                "moduleName": "ContactsManager",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "skip",
+            "printedName": "skip",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15ContactsManager24PaginatedMutualFollowersV4skipSivp",
+            "mangledName": "$s15ContactsManager24PaginatedMutualFollowersV4skipSivp",
+            "moduleName": "ContactsManager",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15ContactsManager24PaginatedMutualFollowersV4skipSivg",
+                "mangledName": "$s15ContactsManager24PaginatedMutualFollowersV4skipSivg",
+                "moduleName": "ContactsManager",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "limit",
+            "printedName": "limit",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15ContactsManager24PaginatedMutualFollowersV5limitSivp",
+            "mangledName": "$s15ContactsManager24PaginatedMutualFollowersV5limitSivp",
+            "moduleName": "ContactsManager",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15ContactsManager24PaginatedMutualFollowersV5limitSivg",
+                "mangledName": "$s15ContactsManager24PaginatedMutualFollowersV5limitSivg",
+                "moduleName": "ContactsManager",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "items",
+            "printedName": "items",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[ContactsManager.CanonicalContact]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CanonicalContact",
+                    "printedName": "ContactsManager.CanonicalContact",
+                    "usr": "s:15ContactsManager16CanonicalContactV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15ContactsManager24PaginatedMutualFollowersV5itemsSayAA16CanonicalContactVGvp",
+            "mangledName": "$s15ContactsManager24PaginatedMutualFollowersV5itemsSayAA16CanonicalContactVGvp",
+            "moduleName": "ContactsManager",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[ContactsManager.CanonicalContact]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CanonicalContact",
+                        "printedName": "ContactsManager.CanonicalContact",
+                        "usr": "s:15ContactsManager16CanonicalContactV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15ContactsManager24PaginatedMutualFollowersV5itemsSayAA16CanonicalContactVGvg",
+                "mangledName": "$s15ContactsManager24PaginatedMutualFollowersV5itemsSayAA16CanonicalContactVGvg",
+                "moduleName": "ContactsManager",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[ContactsManager.CanonicalContact]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CanonicalContact",
+                        "printedName": "ContactsManager.CanonicalContact",
+                        "usr": "s:15ContactsManager16CanonicalContactV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15ContactsManager24PaginatedMutualFollowersV5itemsSayAA16CanonicalContactVGvs",
+                "mangledName": "$s15ContactsManager24PaginatedMutualFollowersV5itemsSayAA16CanonicalContactVGvs",
+                "moduleName": "ContactsManager",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15ContactsManager24PaginatedMutualFollowersV5itemsSayAA16CanonicalContactVGvM",
+                "mangledName": "$s15ContactsManager24PaginatedMutualFollowersV5itemsSayAA16CanonicalContactVGvM",
+                "moduleName": "ContactsManager",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PaginatedMutualFollowers",
+                "printedName": "ContactsManager.PaginatedMutualFollowers",
+                "usr": "s:15ContactsManager24PaginatedMutualFollowersV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15ContactsManager24PaginatedMutualFollowersV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s15ContactsManager24PaginatedMutualFollowersV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "ContactsManager",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:15ContactsManager24PaginatedMutualFollowersV",
+        "mangledName": "$s15ContactsManager24PaginatedMutualFollowersV",
         "moduleName": "ContactsManager",
         "declAttributes": [
           "AccessControl",
@@ -35982,7 +36604,7 @@
           {
             "kind": "Function",
             "name": "followContact",
-            "printedName": "followContact(followedId:contactId:)",
+            "printedName": "followContact(userId:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -35995,17 +36617,11 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
               }
             ],
             "declKind": "Func",
-            "usr": "s:15ContactsManager13SocialServiceC13followContact10followedId07contactH0AA20FollowActionResponseVSS_SStYaKF",
-            "mangledName": "$s15ContactsManager13SocialServiceC13followContact10followedId07contactH0AA20FollowActionResponseVSS_SStYaKF",
+            "usr": "s:15ContactsManager13SocialServiceC13followContact6userIdAA20FollowActionResponseVSS_tYaKF",
+            "mangledName": "$s15ContactsManager13SocialServiceC13followContact6userIdAA20FollowActionResponseVSS_tYaKF",
             "moduleName": "ContactsManager",
             "declAttributes": [
               "AccessControl",
@@ -36017,7 +36633,7 @@
           {
             "kind": "Function",
             "name": "unfollowContact",
-            "printedName": "unfollowContact(followedId:)",
+            "printedName": "unfollowContact(userId:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -36033,8 +36649,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:15ContactsManager13SocialServiceC15unfollowContact10followedIdAA20FollowActionResponseVSS_tYaKF",
-            "mangledName": "$s15ContactsManager13SocialServiceC15unfollowContact10followedIdAA20FollowActionResponseVSS_tYaKF",
+            "usr": "s:15ContactsManager13SocialServiceC15unfollowContact6userIdAA20FollowActionResponseVSS_tYaKF",
+            "mangledName": "$s15ContactsManager13SocialServiceC15unfollowContact6userIdAA20FollowActionResponseVSS_tYaKF",
             "moduleName": "ContactsManager",
             "declAttributes": [
               "AccessControl",
@@ -36046,7 +36662,7 @@
           {
             "kind": "Function",
             "name": "isFollowingContact",
-            "printedName": "isFollowingContact(followedId:)",
+            "printedName": "isFollowingContact(userId:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -36062,8 +36678,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:15ContactsManager13SocialServiceC18isFollowingContact10followedIdAA20FollowStatusResponseVSS_tYaKF",
-            "mangledName": "$s15ContactsManager13SocialServiceC18isFollowingContact10followedIdAA20FollowStatusResponseVSS_tYaKF",
+            "usr": "s:15ContactsManager13SocialServiceC18isFollowingContact6userIdAA20FollowStatusResponseVSS_tYaKF",
+            "mangledName": "$s15ContactsManager13SocialServiceC18isFollowingContact6userIdAA20FollowStatusResponseVSS_tYaKF",
             "moduleName": "ContactsManager",
             "declAttributes": [
               "AccessControl",
@@ -36075,7 +36691,7 @@
           {
             "kind": "Function",
             "name": "getFollowers",
-            "printedName": "getFollowers(contactId:skip:limit:)",
+            "printedName": "getFollowers(userId:skip:limit:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -36114,8 +36730,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:15ContactsManager13SocialServiceC12getFollowers9contactId4skip5limitAA19PaginatedFollowListVSSSg_S2itYaKF",
-            "mangledName": "$s15ContactsManager13SocialServiceC12getFollowers9contactId4skip5limitAA19PaginatedFollowListVSSSg_S2itYaKF",
+            "usr": "s:15ContactsManager13SocialServiceC12getFollowers6userId4skip5limitAA19PaginatedFollowListVSSSg_S2itYaKF",
+            "mangledName": "$s15ContactsManager13SocialServiceC12getFollowers6userId4skip5limitAA19PaginatedFollowListVSSSg_S2itYaKF",
             "moduleName": "ContactsManager",
             "declAttributes": [
               "AccessControl",
@@ -36127,7 +36743,7 @@
           {
             "kind": "Function",
             "name": "getFollowing",
-            "printedName": "getFollowing(contactId:skip:limit:)",
+            "printedName": "getFollowing(userId:skip:limit:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -36166,8 +36782,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:15ContactsManager13SocialServiceC12getFollowing9contactId4skip5limitAA19PaginatedFollowListVSSSg_S2itYaKF",
-            "mangledName": "$s15ContactsManager13SocialServiceC12getFollowing9contactId4skip5limitAA19PaginatedFollowListVSSSg_S2itYaKF",
+            "usr": "s:15ContactsManager13SocialServiceC12getFollowing6userId4skip5limitAA19PaginatedFollowListVSSSg_S2itYaKF",
+            "mangledName": "$s15ContactsManager13SocialServiceC12getFollowing6userId4skip5limitAA19PaginatedFollowListVSSSg_S2itYaKF",
             "moduleName": "ContactsManager",
             "declAttributes": [
               "AccessControl",
@@ -36183,9 +36799,9 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "PaginatedFollowList",
-                "printedName": "ContactsManager.PaginatedFollowList",
-                "usr": "s:15ContactsManager19PaginatedFollowListV"
+                "name": "PaginatedMutualFollowers",
+                "printedName": "ContactsManager.PaginatedMutualFollowers",
+                "usr": "s:15ContactsManager24PaginatedMutualFollowersV"
               },
               {
                 "kind": "TypeNominal",
@@ -36203,8 +36819,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:15ContactsManager13SocialServiceC16getMutualFollows4skip5limitAA19PaginatedFollowListVSi_SitYaKF",
-            "mangledName": "$s15ContactsManager13SocialServiceC16getMutualFollows4skip5limitAA19PaginatedFollowListVSi_SitYaKF",
+            "usr": "s:15ContactsManager13SocialServiceC16getMutualFollows4skip5limitAA09PaginatedF9FollowersVSi_SitYaKF",
+            "mangledName": "$s15ContactsManager13SocialServiceC16getMutualFollows4skip5limitAA09PaginatedF9FollowersVSi_SitYaKF",
             "moduleName": "ContactsManager",
             "declAttributes": [
               "AccessControl",
@@ -36338,7 +36954,7 @@
           {
             "kind": "Function",
             "name": "getContactEvents",
-            "printedName": "getContactEvents(contactId:skip:limit:)",
+            "printedName": "getContactEvents(userId:skip:limit:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -36377,8 +36993,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:15ContactsManager13SocialServiceC16getContactEvents9contactId4skip5limitAA18PaginatedEventListVSSSg_S2itYaKF",
-            "mangledName": "$s15ContactsManager13SocialServiceC16getContactEvents9contactId4skip5limitAA18PaginatedEventListVSSSg_S2itYaKF",
+            "usr": "s:15ContactsManager13SocialServiceC16getContactEvents6userId4skip5limitAA18PaginatedEventListVSSSg_S2itYaKF",
+            "mangledName": "$s15ContactsManager13SocialServiceC16getContactEvents6userId4skip5limitAA18PaginatedEventListVSSSg_S2itYaKF",
             "moduleName": "ContactsManager",
             "declAttributes": [
               "AccessControl",
@@ -36497,148 +37113,6 @@
             ],
             "throwing": true,
             "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "TypeDecl",
-            "name": "Examples",
-            "printedName": "Examples",
-            "children": [
-              {
-                "kind": "Function",
-                "name": "followExample",
-                "printedName": "followExample()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Func",
-                "usr": "s:15ContactsManager13SocialServiceC8ExamplesV13followExampleyyYaFZ",
-                "mangledName": "$s15ContactsManager13SocialServiceC8ExamplesV13followExampleyyYaFZ",
-                "moduleName": "ContactsManager",
-                "static": true,
-                "declAttributes": [
-                  "AccessControl",
-                  "RawDocComment"
-                ],
-                "funcSelfKind": "NonMutating"
-              },
-              {
-                "kind": "Function",
-                "name": "createEventExample",
-                "printedName": "createEventExample()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Func",
-                "usr": "s:15ContactsManager13SocialServiceC8ExamplesV18createEventExampleyyYaFZ",
-                "mangledName": "$s15ContactsManager13SocialServiceC8ExamplesV18createEventExampleyyYaFZ",
-                "moduleName": "ContactsManager",
-                "static": true,
-                "declAttributes": [
-                  "AccessControl",
-                  "RawDocComment"
-                ],
-                "funcSelfKind": "NonMutating"
-              },
-              {
-                "kind": "Function",
-                "name": "getFollowersExample",
-                "printedName": "getFollowersExample()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Func",
-                "usr": "s:15ContactsManager13SocialServiceC8ExamplesV19getFollowersExampleyyYaFZ",
-                "mangledName": "$s15ContactsManager13SocialServiceC8ExamplesV19getFollowersExampleyyYaFZ",
-                "moduleName": "ContactsManager",
-                "static": true,
-                "declAttributes": [
-                  "AccessControl",
-                  "RawDocComment"
-                ],
-                "funcSelfKind": "NonMutating"
-              },
-              {
-                "kind": "Function",
-                "name": "getFeedExample",
-                "printedName": "getFeedExample()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Func",
-                "usr": "s:15ContactsManager13SocialServiceC8ExamplesV14getFeedExampleyyYaFZ",
-                "mangledName": "$s15ContactsManager13SocialServiceC8ExamplesV14getFeedExampleyyYaFZ",
-                "moduleName": "ContactsManager",
-                "static": true,
-                "declAttributes": [
-                  "AccessControl",
-                  "RawDocComment"
-                ],
-                "funcSelfKind": "NonMutating"
-              },
-              {
-                "kind": "Function",
-                "name": "getForYouFeedExample",
-                "printedName": "getForYouFeedExample()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Func",
-                "usr": "s:15ContactsManager13SocialServiceC8ExamplesV20getForYouFeedExampleyyYaFZ",
-                "mangledName": "$s15ContactsManager13SocialServiceC8ExamplesV20getForYouFeedExampleyyYaFZ",
-                "moduleName": "ContactsManager",
-                "static": true,
-                "declAttributes": [
-                  "AccessControl",
-                  "RawDocComment"
-                ],
-                "funcSelfKind": "NonMutating"
-              }
-            ],
-            "declKind": "Struct",
-            "usr": "s:15ContactsManager13SocialServiceC8ExamplesV",
-            "mangledName": "$s15ContactsManager13SocialServiceC8ExamplesV",
-            "moduleName": "ContactsManager",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "conformances": [
-              {
-                "kind": "Conformance",
-                "name": "Copyable",
-                "printedName": "Copyable",
-                "usr": "s:s8CopyableP",
-                "mangledName": "$ss8CopyableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              }
-            ]
           }
         ],
         "declKind": "Class",
@@ -38716,13 +39190,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Array",
-                "printedName": "[ContactsManager.ContactRecommendation]",
+                "printedName": "[ContactsManager.LocalCanonicalContact]",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "ContactRecommendation",
-                    "printedName": "ContactsManager.ContactRecommendation",
-                    "usr": "s:15ContactsManager21ContactRecommendationV"
+                    "name": "LocalCanonicalContact",
+                    "printedName": "ContactsManager.LocalCanonicalContact",
+                    "usr": "s:15ContactsManager21LocalCanonicalContactV"
                   }
                 ],
                 "usr": "s:Sa"
@@ -38736,8 +39210,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:15ContactsManager0A7ServiceC03getA8UsingApp5limitSayAA21ContactRecommendationVGSi_tYaKF",
-            "mangledName": "$s15ContactsManager0A7ServiceC03getA8UsingApp5limitSayAA21ContactRecommendationVGSi_tYaKF",
+            "usr": "s:15ContactsManager0A7ServiceC03getA8UsingApp5limitSayAA21LocalCanonicalContactVGSi_tYaKF",
+            "mangledName": "$s15ContactsManager0A7ServiceC03getA8UsingApp5limitSayAA21LocalCanonicalContactVGSi_tYaKF",
             "moduleName": "ContactsManager",
             "declAttributes": [
               "Final",
@@ -40565,259 +41039,294 @@
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/SocialModels.swift",
       "kind": "StringLiteral",
-      "offset": 1425,
-      "length": 17,
-      "value": "\"organization_id\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/SocialModels.swift",
-      "kind": "StringLiteral",
-      "offset": 1465,
-      "length": 13,
-      "value": "\"external_id\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/SocialModels.swift",
-      "kind": "StringLiteral",
-      "offset": 1499,
-      "length": 11,
-      "value": "\"full_name\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/SocialModels.swift",
-      "kind": "StringLiteral",
-      "offset": 1547,
-      "length": 12,
-      "value": "\"avatar_url\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/SocialModels.swift",
-      "kind": "StringLiteral",
-      "offset": 1605,
-      "length": 18,
-      "value": "\"contact_metadata\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/SocialModels.swift",
-      "kind": "StringLiteral",
-      "offset": 1644,
-      "length": 11,
-      "value": "\"is_active\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/SocialModels.swift",
-      "kind": "StringLiteral",
-      "offset": 1677,
-      "length": 12,
-      "value": "\"created_at\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/SocialModels.swift",
-      "kind": "StringLiteral",
-      "offset": 1711,
-      "length": 12,
-      "value": "\"updated_at\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/SocialModels.swift",
-      "kind": "StringLiteral",
-      "offset": 6242,
-      "length": 13,
-      "value": "\"follower_id\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/SocialModels.swift",
-      "kind": "StringLiteral",
-      "offset": 6278,
-      "length": 13,
-      "value": "\"followed_id\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/SocialModels.swift",
-      "kind": "StringLiteral",
-      "offset": 6313,
+      "offset": 817,
       "length": 12,
       "value": "\"contact_id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/SocialModels.swift",
       "kind": "StringLiteral",
-      "offset": 6347,
-      "length": 12,
-      "value": "\"created_at\""
+      "offset": 852,
+      "length": 13,
+      "value": "\"external_id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/SocialModels.swift",
       "kind": "StringLiteral",
-      "offset": 8094,
+      "offset": 894,
       "length": 19,
-      "value": "\"already_following\""
+      "value": "\"canonical_contact\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/SocialModels.swift",
       "kind": "StringLiteral",
-      "offset": 8138,
-      "length": 15,
-      "value": "\"was_following\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/SocialModels.swift",
-      "kind": "StringLiteral",
-      "offset": 8357,
-      "length": 14,
-      "value": "\"is_following\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/SocialModels.swift",
-      "kind": "StringLiteral",
-      "offset": 8681,
-      "length": 6,
-      "value": "\"data\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/SocialModels.swift",
-      "kind": "StringLiteral",
-      "offset": 9353,
+      "offset": 3100,
       "length": 17,
       "value": "\"organization_id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/SocialModels.swift",
       "kind": "StringLiteral",
-      "offset": 9401,
-      "length": 22,
-      "value": "\"canonical_contact_id\""
+      "offset": 3140,
+      "length": 13,
+      "value": "\"external_id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/SocialModels.swift",
       "kind": "StringLiteral",
-      "offset": 9445,
-      "length": 12,
-      "value": "\"event_type\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/SocialModels.swift",
-      "kind": "StringLiteral",
-      "offset": 9533,
-      "length": 12,
-      "value": "\"start_time\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/SocialModels.swift",
-      "kind": "StringLiteral",
-      "offset": 9565,
-      "length": 10,
-      "value": "\"end_time\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/SocialModels.swift",
-      "kind": "StringLiteral",
-      "offset": 9614,
+      "offset": 3174,
       "length": 11,
-      "value": "\"is_public\""
+      "value": "\"full_name\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/SocialModels.swift",
       "kind": "StringLiteral",
-      "offset": 9647,
-      "length": 12,
-      "value": "\"created_at\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/SocialModels.swift",
-      "kind": "StringLiteral",
-      "offset": 9681,
-      "length": 12,
-      "value": "\"updated_at\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/SocialModels.swift",
-      "kind": "StringLiteral",
-      "offset": 9712,
-      "length": 9,
-      "value": "\"user_id\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/SocialModels.swift",
-      "kind": "StringLiteral",
-      "offset": 9743,
-      "length": 12,
-      "value": "\"created_by\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/SocialModels.swift",
-      "kind": "StringLiteral",
-      "offset": 9975,
+      "offset": 3222,
       "length": 12,
       "value": "\"avatar_url\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/SocialModels.swift",
       "kind": "StringLiteral",
-      "offset": 10389,
+      "offset": 3280,
+      "length": 18,
+      "value": "\"contact_metadata\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/SocialModels.swift",
+      "kind": "StringLiteral",
+      "offset": 3319,
+      "length": 11,
+      "value": "\"is_active\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/SocialModels.swift",
+      "kind": "StringLiteral",
+      "offset": 3352,
+      "length": 12,
+      "value": "\"created_at\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/SocialModels.swift",
+      "kind": "StringLiteral",
+      "offset": 3386,
+      "length": 12,
+      "value": "\"updated_at\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/SocialModels.swift",
+      "kind": "StringLiteral",
+      "offset": 7955,
+      "length": 13,
+      "value": "\"follower_id\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/SocialModels.swift",
+      "kind": "StringLiteral",
+      "offset": 7991,
+      "length": 13,
+      "value": "\"followed_id\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/SocialModels.swift",
+      "kind": "StringLiteral",
+      "offset": 8023,
+      "length": 9,
+      "value": "\"user_id\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/SocialModels.swift",
+      "kind": "StringLiteral",
+      "offset": 8054,
+      "length": 12,
+      "value": "\"contact_id\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/SocialModels.swift",
+      "kind": "StringLiteral",
+      "offset": 8088,
+      "length": 12,
+      "value": "\"created_at\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/SocialModels.swift",
+      "kind": "StringLiteral",
+      "offset": 9838,
+      "length": 19,
+      "value": "\"already_following\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/SocialModels.swift",
+      "kind": "StringLiteral",
+      "offset": 9882,
+      "length": 15,
+      "value": "\"was_following\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/SocialModels.swift",
+      "kind": "StringLiteral",
+      "offset": 10101,
+      "length": 14,
+      "value": "\"is_following\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/SocialModels.swift",
+      "kind": "StringLiteral",
+      "offset": 10425,
+      "length": 6,
+      "value": "\"data\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/SocialModels.swift",
+      "kind": "StringLiteral",
+      "offset": 10738,
+      "length": 6,
+      "value": "\"data\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/SocialModels.swift",
+      "kind": "StringLiteral",
+      "offset": 11410,
+      "length": 17,
+      "value": "\"organization_id\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/SocialModels.swift",
+      "kind": "StringLiteral",
+      "offset": 11458,
+      "length": 22,
+      "value": "\"canonical_contact_id\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/SocialModels.swift",
+      "kind": "StringLiteral",
+      "offset": 11502,
       "length": 12,
       "value": "\"event_type\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/SocialModels.swift",
       "kind": "StringLiteral",
-      "offset": 10477,
+      "offset": 11590,
       "length": 12,
       "value": "\"start_time\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/SocialModels.swift",
       "kind": "StringLiteral",
-      "offset": 10509,
+      "offset": 11622,
       "length": 10,
       "value": "\"end_time\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/SocialModels.swift",
       "kind": "StringLiteral",
-      "offset": 10558,
+      "offset": 11671,
+      "length": 11,
+      "value": "\"is_public\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/SocialModels.swift",
+      "kind": "StringLiteral",
+      "offset": 11704,
+      "length": 12,
+      "value": "\"created_at\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/SocialModels.swift",
+      "kind": "StringLiteral",
+      "offset": 11738,
+      "length": 12,
+      "value": "\"updated_at\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/SocialModels.swift",
+      "kind": "StringLiteral",
+      "offset": 11769,
+      "length": 9,
+      "value": "\"user_id\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/SocialModels.swift",
+      "kind": "StringLiteral",
+      "offset": 11800,
+      "length": 12,
+      "value": "\"created_by\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/SocialModels.swift",
+      "kind": "StringLiteral",
+      "offset": 12032,
+      "length": 12,
+      "value": "\"avatar_url\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/SocialModels.swift",
+      "kind": "StringLiteral",
+      "offset": 12446,
+      "length": 12,
+      "value": "\"event_type\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/SocialModels.swift",
+      "kind": "StringLiteral",
+      "offset": 12534,
+      "length": 12,
+      "value": "\"start_time\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/SocialModels.swift",
+      "kind": "StringLiteral",
+      "offset": 12566,
+      "length": 10,
+      "value": "\"end_time\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/SocialModels.swift",
+      "kind": "StringLiteral",
+      "offset": 12615,
       "length": 11,
       "value": "\"is_public\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/SocialModels.swift",
       "kind": "BooleanLiteral",
-      "offset": 10807,
+      "offset": 12864,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/SocialModels.swift",
       "kind": "StringLiteral",
-      "offset": 11478,
+      "offset": 13535,
       "length": 12,
       "value": "\"start_time\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/SocialModels.swift",
       "kind": "StringLiteral",
-      "offset": 11510,
+      "offset": 13567,
       "length": 10,
       "value": "\"end_time\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/SocialModels.swift",
       "kind": "StringLiteral",
-      "offset": 11559,
+      "offset": 13616,
       "length": 11,
       "value": "\"is_public\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/SocialModels.swift",
       "kind": "StringLiteral",
-      "offset": 12288,
+      "offset": 14345,
       "length": 10,
       "value": "\"event_id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/SocialModels.swift",
       "kind": "StringLiteral",
-      "offset": 12635,
+      "offset": 14692,
       "length": 6,
       "value": "\"data\""
     },
@@ -42140,112 +42649,105 @@
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Services\/SocialService.swift",
       "kind": "StringLiteral",
-      "offset": 1081,
-      "length": 13,
-      "value": "\"external_id\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Services\/SocialService.swift",
-      "kind": "StringLiteral",
-      "offset": 1118,
-      "length": 12,
-      "value": "\"contact_id\""
+      "offset": 1041,
+      "length": 9,
+      "value": "\"user_id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Services\/SocialService.swift",
       "kind": "IntegerLiteral",
-      "offset": 3288,
+      "offset": 3039,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Services\/SocialService.swift",
       "kind": "IntegerLiteral",
-      "offset": 3308,
+      "offset": 3059,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Services\/SocialService.swift",
       "kind": "IntegerLiteral",
-      "offset": 4267,
+      "offset": 3891,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Services\/SocialService.swift",
       "kind": "IntegerLiteral",
-      "offset": 4287,
+      "offset": 3911,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Services\/SocialService.swift",
       "kind": "IntegerLiteral",
-      "offset": 5102,
+      "offset": 4596,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Services\/SocialService.swift",
       "kind": "IntegerLiteral",
-      "offset": 5122,
+      "offset": 4616,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Services\/SocialService.swift",
       "kind": "IntegerLiteral",
-      "offset": 9418,
+      "offset": 7584,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Services\/SocialService.swift",
       "kind": "IntegerLiteral",
-      "offset": 9438,
+      "offset": 7604,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Services\/SocialService.swift",
       "kind": "IntegerLiteral",
-      "offset": 10099,
+      "offset": 8244,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Services\/SocialService.swift",
       "kind": "IntegerLiteral",
-      "offset": 10119,
+      "offset": 8264,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Services\/SocialService.swift",
       "kind": "IntegerLiteral",
-      "offset": 10652,
+      "offset": 8798,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Services\/SocialService.swift",
       "kind": "IntegerLiteral",
-      "offset": 10672,
+      "offset": 8818,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Services\/SocialService.swift",
       "kind": "IntegerLiteral",
-      "offset": 11297,
+      "offset": 9444,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Services\/SocialService.swift",
       "kind": "IntegerLiteral",
-      "offset": 11317,
+      "offset": 9464,
       "length": 2,
       "value": "20"
     },
@@ -42427,14 +42929,14 @@
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/ContactsService.swift",
       "kind": "IntegerLiteral",
-      "offset": 36515,
+      "offset": 36569,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/ContactsService.swift",
       "kind": "IntegerLiteral",
-      "offset": 48309,
+      "offset": 48363,
       "length": 2,
       "value": "30"
     },
@@ -42462,14 +42964,14 @@
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/RecommendationService.swift",
       "kind": "IntegerLiteral",
-      "offset": 3374,
+      "offset": 3422,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/RecommendationService.swift",
       "kind": "IntegerLiteral",
-      "offset": 4180,
+      "offset": 6682,
       "length": 2,
       "value": "30"
     }

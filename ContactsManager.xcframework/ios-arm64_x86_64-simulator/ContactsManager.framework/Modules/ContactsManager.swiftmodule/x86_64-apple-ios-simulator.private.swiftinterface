@@ -901,6 +901,14 @@ public struct SocialResponse<T> : Swift.Decodable where T : Swift.Decodable {
   public let data: T
   public init(from decoder: any Swift.Decoder) throws
 }
+public struct LocalCanonicalContact : Swift.Decodable {
+  public let contact: ContactsManager.Contact?
+  public let contactId: Swift.String
+  public let externalId: Swift.String
+  public let canonicalContact: ContactsManager.CanonicalContact
+  public init(from decoder: any Swift.Decoder) throws
+  public init(contact: ContactsManager.Contact?, contactId: Swift.String, externalId: Swift.String, canonicalContact: ContactsManager.CanonicalContact)
+}
 public struct CanonicalContact : Swift.Codable, Swift.Identifiable, Swift.Hashable {
   public let id: Swift.String
   public let organizationId: Swift.String?
@@ -928,7 +936,7 @@ public struct FollowRelationship : Swift.Codable, Swift.Identifiable {
   public let id: Swift.String
   public let followerId: Swift.String
   public let followedId: Swift.String
-  public let contactId: Swift.String
+  public let userId: Swift.String
   public let createdAt: Foundation.Date
   public let follower: ContactsManager.CanonicalContact?
   public let followed: ContactsManager.CanonicalContact?
@@ -952,6 +960,13 @@ public struct PaginatedFollowList : Swift.Decodable {
   public let skip: Swift.Int
   public let limit: Swift.Int
   public var items: [ContactsManager.FollowRelationship]
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct PaginatedMutualFollowers : Swift.Decodable {
+  public let total: Swift.Int
+  public let skip: Swift.Int
+  public let limit: Swift.Int
+  public var items: [ContactsManager.CanonicalContact]
   public init(from decoder: any Swift.Decoder) throws
 }
 public struct SocialEvent : Swift.Codable, Swift.Identifiable {
@@ -1223,30 +1238,21 @@ extension SwiftUICore.View {
 }
 public class SocialService {
   public init(apiClient: ContactsManager.APIClient = APIClient.shared)
-  public func followContact(followedId: Swift.String, contactId: Swift.String) async throws -> ContactsManager.FollowActionResponse
-  public func unfollowContact(followedId: Swift.String) async throws -> ContactsManager.FollowActionResponse
-  public func isFollowingContact(followedId: Swift.String) async throws -> ContactsManager.FollowStatusResponse
-  public func getFollowers(contactId: Swift.String? = nil, skip: Swift.Int = 0, limit: Swift.Int = 20) async throws -> ContactsManager.PaginatedFollowList
-  public func getFollowing(contactId: Swift.String? = nil, skip: Swift.Int = 0, limit: Swift.Int = 20) async throws -> ContactsManager.PaginatedFollowList
-  public func getMutualFollows(skip: Swift.Int = 0, limit: Swift.Int = 20) async throws -> ContactsManager.PaginatedFollowList
+  public func followContact(userId: Swift.String) async throws -> ContactsManager.FollowActionResponse
+  public func unfollowContact(userId: Swift.String) async throws -> ContactsManager.FollowActionResponse
+  public func isFollowingContact(userId: Swift.String) async throws -> ContactsManager.FollowStatusResponse
+  public func getFollowers(userId: Swift.String? = nil, skip: Swift.Int = 0, limit: Swift.Int = 20) async throws -> ContactsManager.PaginatedFollowList
+  public func getFollowing(userId: Swift.String? = nil, skip: Swift.Int = 0, limit: Swift.Int = 20) async throws -> ContactsManager.PaginatedFollowList
+  public func getMutualFollows(skip: Swift.Int = 0, limit: Swift.Int = 20) async throws -> ContactsManager.PaginatedMutualFollowers
   public func createEvent(eventData: ContactsManager.CreateEventRequest) async throws -> ContactsManager.EventActionResponse
   public func getEvent(eventId: Swift.String) async throws -> ContactsManager.SocialEvent
   public func updateEvent(eventId: Swift.String, eventData: ContactsManager.UpdateEventRequest) async throws -> ContactsManager.EventActionResponse
   public func deleteEvent(eventId: Swift.String) async throws -> ContactsManager.EventActionResponse
-  public func getContactEvents(contactId: Swift.String? = nil, skip: Swift.Int = 0, limit: Swift.Int = 20) async throws -> ContactsManager.PaginatedEventList
+  public func getContactEvents(userId: Swift.String? = nil, skip: Swift.Int = 0, limit: Swift.Int = 20) async throws -> ContactsManager.PaginatedEventList
   public func getFeed(skip: Swift.Int = 0, limit: Swift.Int = 20) async throws -> ContactsManager.PaginatedEventList
   public func getUpcomingEvents(skip: Swift.Int = 0, limit: Swift.Int = 20) async throws -> ContactsManager.PaginatedEventList
   public func getForYouFeed(skip: Swift.Int = 0, limit: Swift.Int = 20) async throws -> ContactsManager.PaginatedEventList
   @objc deinit
-}
-extension ContactsManager.SocialService {
-  public struct Examples {
-    public static func followExample() async
-    public static func createEventExample() async
-    public static func getFollowersExample() async
-    public static func getFeedExample() async
-    public static func getForYouFeedExample() async
-  }
 }
 public enum ContactSelectionMode {
   case single
@@ -1327,7 +1333,7 @@ extension ContactsManager.ContactsService {
 }
 extension ContactsManager.ContactsService {
   final public func getSharedContactsByUsersToInvite(limit: Swift.Int = 30) async throws -> [ContactsManager.ContactRecommendation]
-  final public func getContactsUsingApp(limit: Swift.Int = 30) async throws -> [ContactsManager.ContactRecommendation]
+  final public func getContactsUsingApp(limit: Swift.Int = 30) async throws -> [ContactsManager.LocalCanonicalContact]
 }
 extension ContactsManager.ContactsService {
   final public func enableBackgroundSync()
