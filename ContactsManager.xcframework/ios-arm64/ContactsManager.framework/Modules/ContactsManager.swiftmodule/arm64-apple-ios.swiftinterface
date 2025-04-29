@@ -16,67 +16,6 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 import _SwiftData_SwiftUI
-@_hasMissingDesignatedInitializers public class CNContactMapper {
-  @objc deinit
-}
-public enum ContactsSchemaVersions {
-  public static let v1: ContactsManager.SchemaVersion
-  public static let v2: ContactsManager.SchemaVersion
-  public static let v3: ContactsManager.SchemaVersion
-  public static let v4: ContactsManager.SchemaVersion
-  public static let v5: ContactsManager.SchemaVersion
-}
-public enum ContactsMigrationStages {
-  public static let v1ToV2: ContactsManager.MigrationStage
-  public static let v2ToV3: ContactsManager.MigrationStage
-  public static let v3ToV4: ContactsManager.MigrationStage
-  public static let v4ToV5: ContactsManager.MigrationStage
-}
-public struct ContactsMigrationPlan {
-  public static let current: ContactsManager.SchemaMigrationPlan
-}
-extension ContactsManager.MigrationManager {
-  public static var contacts: ContactsManager.MigrationManager {
-    get
-  }
-  public static func contacts(databaseName: Swift.String, shouldHideDatabase: Swift.Bool = true) -> ContactsManager.MigrationManager
-}
-final public class MigrationManager {
-  public init(migrationPlan: ContactsManager.SchemaMigrationPlan, userDefaults: Foundation.UserDefaults = .standard, versionKey: Swift.String = "com.contactsmanager.schema.version", databaseName: Swift.String = "ContactsManager.store", shouldHideDatabase: Swift.Bool = true)
-  final public func createModelContainer() throws -> SwiftData.ModelContainer
-  @objc deinit
-}
-public enum MigrationError : Foundation.LocalizedError {
-  case invalidSchemaVersion(Swift.Int)
-  case noMigrationPath(fromVersion: Swift.Int, toVersion: Swift.Int)
-  case databaseCreationFailed(any Swift.Error)
-  public var errorDescription: Swift.String? {
-    get
-  }
-}
-public struct SchemaMigrationCleanup {
-  public static func cleanupAfterV4Migration(container: SwiftData.ModelContainer) async
-  @_Concurrency.MainActor public static func getModelCounts(container: SwiftData.ModelContainer) -> Swift.String
-}
-public struct SchemaVersion {
-  public let version: Swift.Int
-  public let models: [any SwiftData.PersistentModel.Type]
-  public init(version: Swift.Int, models: [any SwiftData.PersistentModel.Type])
-}
-public struct MigrationStage {
-  public let fromVersion: Swift.Int
-  public let toVersion: Swift.Int
-  public let migrationHandler: @_Concurrency.MainActor (SwiftData.ModelContainer) async throws -> Swift.Void
-  public init(fromVersion: Swift.Int, toVersion: Swift.Int, migrationHandler: @escaping @_Concurrency.MainActor (SwiftData.ModelContainer) async throws -> Swift.Void)
-}
-public struct SchemaMigrationPlan {
-  public let schemaVersions: [ContactsManager.SchemaVersion]
-  public let migrationStages: [ContactsManager.MigrationStage]
-  public let currentVersion: Swift.Int
-  public init(schemaVersions: [ContactsManager.SchemaVersion], migrationStages: [ContactsManager.MigrationStage], currentVersion: Swift.Int)
-  public func migrationPath(fromVersion: Swift.Int, toVersion: Swift.Int) -> [ContactsManager.MigrationStage]
-  public func schemaVersion(for version: Swift.Int) -> ContactsManager.SchemaVersion?
-}
 public let SECTIONNONAME: Swift.String
 final public class Contact {
   final public var identifier: Swift.String {
@@ -254,42 +193,6 @@ extension ContactsManager.Contact : Swift.Codable {
   convenience public init(from decoder: any Swift.Decoder) throws
 }
 extension ContactsManager.Contact {
-  final public func updateDisplayInfo()
-  final public func markAsDirty()
-  final public func update(fromCNContact cnContact: Contacts.CNContact, markAsDirty: Swift.Bool = true)
-}
-extension ContactsManager.Contact {
-  final public func setPhoneNumbers(_ numbers: [ContactsManager.ContactPhoneNumber])
-  final public func setEmailAddresses(_ emails: [ContactsManager.ContactEmailAddress])
-  final public func setUrlAddresses(_ urls: [ContactsManager.ContactURLAddress])
-  final public func setSocialProfiles(_ profiles: [ContactsManager.ContactSocial])
-  final public func setAddresses(_ addresses: [ContactsManager.ContactAddress])
-  final public func setInstantMessageAddresses(_ ims: [ContactsManager.ContactInstantMessage])
-  final public func setRelations(_ relations: [ContactsManager.ContactRelation])
-  final public func setDates(_ dates: [ContactsManager.ContactDate])
-}
-extension ContactsManager.Contact {
-  final public func updateNamePrefix(_ value: Swift.String?)
-  final public func updateGivenName(_ value: Swift.String?)
-  final public func updateMiddleName(_ value: Swift.String?)
-  final public func updateFamilyName(_ value: Swift.String?)
-  final public func updatePreviousFamilyName(_ value: Swift.String?)
-  final public func updateNameSuffix(_ value: Swift.String?)
-  final public func updateNickname(_ value: Swift.String?)
-  final public func updateOrganizationName(_ value: Swift.String?)
-  final public func updateDepartmentName(_ value: Swift.String?)
-  final public func updateJobTitle(_ value: Swift.String?)
-  final public func updateNotes(_ value: Swift.String?)
-  final public func updateBio(_ value: Swift.String?)
-  final public func updateLocation(_ value: Swift.String?)
-  final public func updateBirthday(_ value: Foundation.Date?)
-  final public func markAsDeleted()
-  final public func markAsActive()
-}
-extension ContactsManager.Contact {
-  final public func isEqual(to other: ContactsManager.Contact) -> Swift.Bool
-}
-extension ContactsManager.Contact {
   final public var displayInfo: Swift.String {
     get
   }
@@ -302,7 +205,7 @@ extension ContactsManager.Contact : SwiftData.PersistentModel {
 }
 extension ContactsManager.Contact : Observation.Observable {
 }
-final public class ContactAddress : Swift.Comparable {
+@_hasMissingDesignatedInitializers final public class ContactAddress : Swift.Comparable {
   final public var addressId: Swift.String {
     get
     set
@@ -351,7 +254,6 @@ final public class ContactAddress : Swift.Comparable {
     get
     set
   }
-  public init(contactId: Swift.String?, address1: Swift.String?, address2: Swift.String?, city: Swift.String?, county: Swift.String?, state: Swift.String?, country: Swift.String?, postalCode: Swift.String?, countryCode: Swift.String?, type: Swift.String?, emoji: Swift.String? = "", randomComponent: Swift.String? = nil)
   public static func < (lhs: ContactsManager.ContactAddress, rhs: ContactsManager.ContactAddress) -> Swift.Bool
   final public func display(separator: Swift.String = ", ") -> Swift.String
   final public var persistentBackingData: any SwiftData.BackingData<ContactsManager.ContactAddress> {
@@ -368,9 +270,6 @@ extension ContactsManager.ContactAddress : Swift.Codable {
   final public func encode(to encoder: any Swift.Encoder) throws
   convenience public init(from decoder: any Swift.Decoder) throws
 }
-extension ContactsManager.ContactAddress {
-  public static func create(from item: Contacts.CNLabeledValue<Contacts.CNPostalAddress>, contactId: Swift.String?) -> ContactsManager.ContactAddress
-}
 extension ContactsManager.ContactAddress : SwiftData.PersistentModel {
   public typealias ID = SwiftData.PersistentIdentifier
   final public var hashValue: Swift.Int {
@@ -379,7 +278,7 @@ extension ContactsManager.ContactAddress : SwiftData.PersistentModel {
 }
 extension ContactsManager.ContactAddress : Observation.Observable {
 }
-final public class ContactDate : Swift.Codable {
+@_hasMissingDesignatedInitializers final public class ContactDate : Swift.Codable {
   final public var id: Swift.String {
     get
     set
@@ -400,15 +299,10 @@ final public class ContactDate : Swift.Codable {
     get
     set
   }
-  final public var randomComponent: Swift.String {
-    get
-    set
-  }
   final public var contact: ContactsManager.Contact? {
     get
     set
   }
-  public init(id: Swift.String = UUID().uuidString, contactId: Swift.String, label: Swift.String, date: Foundation.Date, isPrimary: Swift.Bool = false, randomComponent: Swift.String = UUID().uuidString.prefix(8).description)
   final public func displayString() -> Swift.String
   final public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
@@ -430,7 +324,7 @@ extension ContactsManager.ContactDate : SwiftData.PersistentModel {
 }
 extension ContactsManager.ContactDate : Observation.Observable {
 }
-final public class ContactEmailAddress : Swift.Comparable {
+@_hasMissingDesignatedInitializers final public class ContactEmailAddress : Swift.Comparable {
   final public var emailId: Swift.String {
     get
     set
@@ -451,7 +345,6 @@ final public class ContactEmailAddress : Swift.Comparable {
     get
     set
   }
-  public init(contactId: Swift.String?, value: Swift.String?, type: Swift.String?, emoji: Swift.String?, randomComponent: Swift.String? = nil)
   public static func < (lhs: ContactsManager.ContactEmailAddress, rhs: ContactsManager.ContactEmailAddress) -> Swift.Bool
   final public var persistentBackingData: any SwiftData.BackingData<ContactsManager.ContactEmailAddress> {
     get
@@ -472,9 +365,6 @@ extension ContactsManager.ContactEmailAddress : Swift.Codable {
   final public func encode(to encoder: any Swift.Encoder) throws
   convenience public init(from decoder: any Swift.Decoder) throws
 }
-extension ContactsManager.ContactEmailAddress {
-  public static func create(from item: Contacts.CNLabeledValue<Foundation.NSString>, contactId: Swift.String?) -> ContactsManager.ContactEmailAddress
-}
 extension ContactsManager.ContactEmailAddress : SwiftData.PersistentModel {
   public typealias ID = SwiftData.PersistentIdentifier
   final public var hashValue: Swift.Int {
@@ -483,7 +373,7 @@ extension ContactsManager.ContactEmailAddress : SwiftData.PersistentModel {
 }
 extension ContactsManager.ContactEmailAddress : Observation.Observable {
 }
-final public class ContactInstantMessage : Swift.Comparable {
+@_hasMissingDesignatedInitializers final public class ContactInstantMessage : Swift.Comparable {
   final public var instantMessageId: Swift.String {
     get
     set
@@ -512,7 +402,6 @@ final public class ContactInstantMessage : Swift.Comparable {
     get
     set
   }
-  public init(contactId: Swift.String?, service: Swift.String?, username: Swift.String?, userIdentifier: Swift.String?, type: Swift.String?, emoji: Swift.String? = "", randomComponent: Swift.String? = nil)
   public static func < (lhs: ContactsManager.ContactInstantMessage, rhs: ContactsManager.ContactInstantMessage) -> Swift.Bool
   final public func display() -> Swift.String
   final public var persistentBackingData: any SwiftData.BackingData<ContactsManager.ContactInstantMessage> {
@@ -537,7 +426,7 @@ extension ContactsManager.ContactInstantMessage : SwiftData.PersistentModel {
 }
 extension ContactsManager.ContactInstantMessage : Observation.Observable {
 }
-final public class ContactPhoneNumber : Swift.Comparable {
+@_hasMissingDesignatedInitializers final public class ContactPhoneNumber : Swift.Comparable {
   final public var phoneId: Swift.String {
     get
     set
@@ -558,7 +447,6 @@ final public class ContactPhoneNumber : Swift.Comparable {
     get
     set
   }
-  public init(contactId: Swift.String?, value: Swift.String?, type: Swift.String?, emoji: Swift.String?, randomComponent: Swift.String? = nil)
   public static func < (lhs: ContactsManager.ContactPhoneNumber, rhs: ContactsManager.ContactPhoneNumber) -> Swift.Bool
   final public var persistentBackingData: any SwiftData.BackingData<ContactsManager.ContactPhoneNumber> {
     get
@@ -579,9 +467,6 @@ extension ContactsManager.ContactPhoneNumber : Swift.Codable {
   final public func encode(to encoder: any Swift.Encoder) throws
   convenience public init(from decoder: any Swift.Decoder) throws
 }
-extension ContactsManager.ContactPhoneNumber {
-  public static func create(from item: Contacts.CNLabeledValue<Contacts.CNPhoneNumber>, contactId: Swift.String?) -> ContactsManager.ContactPhoneNumber
-}
 extension ContactsManager.ContactPhoneNumber : SwiftData.PersistentModel {
   public typealias ID = SwiftData.PersistentIdentifier
   final public var hashValue: Swift.Int {
@@ -590,7 +475,7 @@ extension ContactsManager.ContactPhoneNumber : SwiftData.PersistentModel {
 }
 extension ContactsManager.ContactPhoneNumber : Observation.Observable {
 }
-final public class ContactRelation : Swift.Comparable {
+@_hasMissingDesignatedInitializers final public class ContactRelation : Swift.Comparable {
   final public var relationId: Swift.String {
     get
     set
@@ -611,7 +496,6 @@ final public class ContactRelation : Swift.Comparable {
     get
     set
   }
-  public init(contactId: Swift.String?, name: Swift.String?, relationType: Swift.String?, notes: Swift.String? = nil, randomComponent: Swift.String? = nil)
   public static func < (lhs: ContactsManager.ContactRelation, rhs: ContactsManager.ContactRelation) -> Swift.Bool
   final public func display() -> Swift.String
   final public var persistentBackingData: any SwiftData.BackingData<ContactsManager.ContactRelation> {
@@ -653,7 +537,7 @@ public struct ContactsManagerOptions {
   public static let `default`: ContactsManager.ContactsManagerOptions
   public init(restrictedKeysToFetch: Swift.Set<ContactsManager.ContactFieldType>)
 }
-final public class ContactSocial : Swift.Comparable {
+@_hasMissingDesignatedInitializers final public class ContactSocial : Swift.Comparable {
   final public var socialId: Swift.String {
     get
     set
@@ -686,7 +570,6 @@ final public class ContactSocial : Swift.Comparable {
     get
     set
   }
-  public init(contactId: Swift.String?, urlString: Swift.String?, username: Swift.String?, userIdentifier: Swift.String?, service: Swift.String?, type: Swift.String?, emoji: Swift.String? = "", randomComponent: Swift.String? = nil)
   public static func < (lhs: ContactsManager.ContactSocial, rhs: ContactsManager.ContactSocial) -> Swift.Bool
   final public func display() -> Swift.String?
   final public var persistentBackingData: any SwiftData.BackingData<ContactsManager.ContactSocial> {
@@ -724,7 +607,7 @@ public enum SourceType : Swift.String, Swift.Codable {
     get
   }
 }
-final public class ContactSource {
+@_hasMissingDesignatedInitializers final public class ContactSource {
   final public var id: Swift.String {
     get
     set
@@ -777,20 +660,6 @@ final public class ContactSource {
     get
     set
   }
-  final public var credentials: [Swift.String : Any]? {
-    get
-    set
-  }
-  final public var settings: [Swift.String : Any]? {
-    get
-    set
-  }
-  final public var sourceMetadata: [Swift.String : Any]? {
-    get
-    set
-  }
-  public init(id: Swift.String = UUID().uuidString, name: Swift.String, sourceType: ContactsManager.SourceType, organizationId: Swift.String = "", canonicalContactId: Swift.String = "")
-  convenience public init(id: Swift.String?, name: Swift.String, sourceType: Swift.String, identifier: Swift.String?, isActive: Swift.Bool?, organizationId: Swift.String?, canonicalContactId: Swift.String?)
   final public var persistentBackingData: any SwiftData.BackingData<ContactsManager.ContactSource> {
     get
     set
@@ -813,7 +682,7 @@ extension ContactsManager.ContactSource : SwiftData.PersistentModel {
 }
 extension ContactsManager.ContactSource : Observation.Observable {
 }
-final public class ContactURLAddress : Swift.Comparable {
+@_hasMissingDesignatedInitializers final public class ContactURLAddress : Swift.Comparable {
   final public var urlId: Swift.String {
     get
     set
@@ -834,7 +703,6 @@ final public class ContactURLAddress : Swift.Comparable {
     get
     set
   }
-  public init(contactId: Swift.String?, value: Swift.String?, type: Swift.String?, emoji: Swift.String?, randomComponent: Swift.String? = nil)
   public static func < (lhs: ContactsManager.ContactURLAddress, rhs: ContactsManager.ContactURLAddress) -> Swift.Bool
   final public var persistentBackingData: any SwiftData.BackingData<ContactsManager.ContactURLAddress> {
     get
@@ -854,9 +722,6 @@ extension ContactsManager.ContactURLAddress : Swift.CustomDebugStringConvertible
 extension ContactsManager.ContactURLAddress : Swift.Codable {
   final public func encode(to encoder: any Swift.Encoder) throws
   convenience public init(from decoder: any Swift.Decoder) throws
-}
-extension ContactsManager.ContactURLAddress {
-  public static func create(from item: Contacts.CNLabeledValue<Foundation.NSString>, contactId: Swift.String?) -> ContactsManager.ContactURLAddress
 }
 extension ContactsManager.ContactURLAddress : SwiftData.PersistentModel {
   public typealias ID = SwiftData.PersistentIdentifier
@@ -888,7 +753,6 @@ public struct DeviceInfo : Swift.Codable {
   public var cpuCount: Swift.Int?
   public var batteryLevel: Swift.Float?
   public var isCharging: Swift.Bool?
-  public init()
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -907,7 +771,6 @@ public struct LocalCanonicalContact : Swift.Decodable {
   public let sourceContactId: Swift.String
   public let canonicalContact: ContactsManager.CanonicalContact
   public init(from decoder: any Swift.Decoder) throws
-  public init(contact: ContactsManager.Contact?, contactId: Swift.String, sourceContactId: Swift.String, canonicalContact: ContactsManager.CanonicalContact)
 }
 public struct CanonicalContact : Swift.Codable, Swift.Identifiable, Swift.Hashable {
   public let id: Swift.String
@@ -1056,33 +919,9 @@ public enum APIError : Swift.Error {
   case unauthorized
   case tokenExpired
   case unknownError
-}
-public struct APIResponse<T> : Swift.Decodable where T : Swift.Decodable {
-  public let status: Swift.String
-  public let message: Swift.String?
-  public let data: T?
-  public init(from decoder: any Swift.Decoder) throws
-}
-public class APIClient {
-  public static let shared: ContactsManager.APIClient
-  public init(userId: Swift.String, token: Swift.String, deviceInfo: ContactsManager.DeviceInfo? = nil)
-  public func setContactSyncManager(_ manager: ContactsManager.ContactSyncManager)
-  public func refreshToken() async throws -> Swift.String
-  public func createContactSource(name: Swift.String, sourceType: ContactsManager.SourceType) async throws -> ContactsManager.ContactSource
-  public func syncContacts(contacts: [ContactsManager.Contact], skipDuplicates: Swift.Bool = true) async throws -> Swift.Int
-  public func getUserInfo() async throws -> [Swift.String : Any]
-  public func get<T>(endpoint: Swift.String, parameters: [Swift.String : Swift.String]? = nil, requiresAuth: Swift.Bool = true) async throws -> T where T : Swift.Decodable
-  public func post<T>(endpoint: Swift.String, body: any Swift.Encodable, parameters: [Swift.String : Swift.String]? = nil, requiresAuth: Swift.Bool = true) async throws -> T where T : Swift.Decodable
-  public func put<T>(endpoint: Swift.String, body: any Swift.Encodable, parameters: [Swift.String : Swift.String]? = nil, requiresAuth: Swift.Bool = true) async throws -> T where T : Swift.Decodable
-  public func delete<T>(endpoint: Swift.String, parameters: [Swift.String : Swift.String]? = nil, requiresAuth: Swift.Bool = true) async throws -> T where T : Swift.Decodable
-  public func getSocialData<T>(endpoint: Swift.String, parameters: [Swift.String : Swift.String]? = nil) async throws -> T where T : Swift.Decodable
-  @objc deinit
-}
-extension ContactsManager.APIClient {
-  public func validateAPIKey(_ apiKey: Swift.String, userInfo: ContactsManager.UserInfo) async throws -> Swift.Bool
-}
-extension ContactsManager.APIClient {
-  public static func checkHealth() async -> Swift.Bool
+  public var localizedDescription: Swift.String {
+    get
+  }
 }
 public enum RuntimeEnvironment : Swift.String {
   case development
@@ -1124,9 +963,8 @@ public struct APIConfig {
   public static let healthEndpoint: Swift.String
   public static let maxContactsPerBatch: Swift.Int
   public static let websiteURL: Swift.String
-  public static func configure(environment: ContactsManager.RuntimeEnvironment)
 }
-public class ContactSyncManager {
+@_hasMissingDesignatedInitializers public class ContactSyncManager {
   public enum ContactSourceError : Swift.Error, Foundation.LocalizedError {
     case saveFailure(any Swift.Error)
     case retrievalFailure(Swift.String)
@@ -1137,9 +975,6 @@ public class ContactSyncManager {
       get
     }
   }
-  public init(userId: Swift.String, sourceIdentifier: Swift.String, modelContext: SwiftData.ModelContext, deviceInfo: ContactsManager.DeviceInfo? = nil, batchSize: Swift.Int = APIConfig.maxContactsPerBatch)
-  public func syncContacts() async throws -> Swift.Int
-  public func syncContacts(completion: @escaping (Swift.Result<Swift.Int, any Swift.Error>) -> Swift.Void)
   @objc deinit
 }
 extension ContactsManager.ContactSyncManager {
@@ -1159,8 +994,6 @@ extension ContactsManager.ContactSyncManager {
 }
 extension ContactsManager.ContactSyncManager {
   public func scheduleBackgroundSync()
-  public func startSyncTask() async throws -> Swift.Int
-  public func cancelSync()
 }
 public protocol ContactDatabaseContainer {
   var mainContext: SwiftData.ModelContext { get }
@@ -1181,7 +1014,6 @@ public enum ContactsAccessStatus : Swift.Equatable {
 }
 @_hasMissingDesignatedInitializers final public class ContactSearchService {
   public static let shared: ContactsManager.ContactSearchService
-  final public func initialize(with container: any ContactsManager.ContactDatabaseContainer)
   final public func getTotalContactsCount() async throws -> Swift.Int
   final public func searchContacts(query: Swift.String, searchFields: Swift.Set<ContactsManager.ContactSearchService.SearchField> = Set(SearchField.allCases), offset: Swift.Int = 0, limit: Swift.Int = 50) async throws -> [ContactsManager.Contact]
   final public func quickSearch(_ query: Swift.String) async throws -> [ContactsManager.Contact]
@@ -1217,15 +1049,6 @@ public enum ContactsManagerEvent : Swift.String {
   }
 }
 public typealias EventHandler = () -> Swift.Void
-@_hasMissingDesignatedInitializers final public class EventWrapperService : Combine.ObservableObject {
-  public static let shared: ContactsManager.EventWrapperService
-  final public func subscribe(to event: ContactsManager.ContactsManagerEvent, identifier: Swift.String, handler: @escaping ContactsManager.EventHandler)
-  final public func unsubscribe(from event: ContactsManager.ContactsManagerEvent, identifier: Swift.String)
-  final public func startObserving()
-  final public func stopObserving()
-  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
-  @objc deinit
-}
 extension ContactsManager.ContactsManagerEvent : Swift.CaseIterable {
   public typealias AllCases = [ContactsManager.ContactsManagerEvent]
   nonisolated public static var allCases: [ContactsManager.ContactsManagerEvent] {
@@ -1236,11 +1059,10 @@ extension SwiftUICore.View {
   @_Concurrency.MainActor @preconcurrency public func onContactsManagerEvent(_ event: ContactsManager.ContactsManagerEvent, identifier: Swift.String, perform action: @escaping () -> Swift.Void) -> some SwiftUICore.View
   
 }
-public class SocialService {
-  public init(apiClient: ContactsManager.APIClient = APIClient.shared)
-  public func followContact(userId: Swift.String) async throws -> ContactsManager.FollowActionResponse
-  public func unfollowContact(userId: Swift.String) async throws -> ContactsManager.FollowActionResponse
-  public func isFollowingContact(userId: Swift.String) async throws -> ContactsManager.FollowStatusResponse
+@_hasMissingDesignatedInitializers public class SocialService {
+  public func followUser(userId: Swift.String) async throws -> ContactsManager.FollowActionResponse
+  public func unfollowUser(userId: Swift.String) async throws -> ContactsManager.FollowActionResponse
+  public func isFollowingUser(userId: Swift.String) async throws -> ContactsManager.FollowStatusResponse
   public func getFollowers(userId: Swift.String? = nil, skip: Swift.Int = 0, limit: Swift.Int = 20) async throws -> ContactsManager.PaginatedFollowList
   public func getFollowing(userId: Swift.String? = nil, skip: Swift.Int = 0, limit: Swift.Int = 20) async throws -> ContactsManager.PaginatedFollowList
   public func getMutualFollows(skip: Swift.Int = 0, limit: Swift.Int = 20) async throws -> ContactsManager.PaginatedMutualFollowers
@@ -1248,7 +1070,7 @@ public class SocialService {
   public func getEvent(eventId: Swift.String) async throws -> ContactsManager.SocialEvent
   public func updateEvent(eventId: Swift.String, eventData: ContactsManager.UpdateEventRequest) async throws -> ContactsManager.EventActionResponse
   public func deleteEvent(eventId: Swift.String) async throws -> ContactsManager.EventActionResponse
-  public func getContactEvents(userId: Swift.String? = nil, skip: Swift.Int = 0, limit: Swift.Int = 20) async throws -> ContactsManager.PaginatedEventList
+  public func getUserEvents(userId: Swift.String? = nil, skip: Swift.Int = 0, limit: Swift.Int = 20) async throws -> ContactsManager.PaginatedEventList
   public func getFeed(skip: Swift.Int = 0, limit: Swift.Int = 20) async throws -> ContactsManager.PaginatedEventList
   public func getUpcomingEvents(skip: Swift.Int = 0, limit: Swift.Int = 20) async throws -> ContactsManager.PaginatedEventList
   public func getForYouFeed(skip: Swift.Int = 0, limit: Swift.Int = 20) async throws -> ContactsManager.PaginatedEventList
@@ -1303,6 +1125,9 @@ public enum ContactsServiceError : Foundation.LocalizedError {
 }
 @_hasMissingDesignatedInitializers final public class ContactsService {
   public static let shared: ContactsManager.ContactsService
+  final public var socialService: ContactsManager.SocialService? {
+    get
+  }
   final public func initialize(withAPIKey apiKey: Swift.String, token: Swift.String, userInfo: ContactsManager.UserInfo, options: ContactsManager.ContactsManagerOptions = .default) async throws
   final public var isInitialized: Swift.Bool {
     get
@@ -1315,11 +1140,6 @@ public enum ContactsServiceError : Foundation.LocalizedError {
     get
   }
   @objc deinit
-}
-extension ContactsManager.ContactsService {
-  final public var databaseContainer: (any ContactsManager.ContactDatabaseContainer)? {
-    get
-  }
 }
 extension ContactsManager.ContactsService {
   final public func fetchContacts(fieldType: ContactsManager.ContactFieldType) async throws -> [ContactsManager.Contact]
@@ -1339,10 +1159,10 @@ extension ContactsManager.ContactsService {
   final public func enableBackgroundSync()
 }
 extension ContactsManager.ContactsService {
-  @_Concurrency.MainActor final public func registerContactSource() async throws -> Swift.String
+  final public func getUsersYouMightKnow(limit: Swift.Int = 30) async throws -> [ContactsManager.CanonicalContact]
 }
 extension ContactsManager.ContactsService {
-  final public func getUsersYouMightKnow(limit: Swift.Int = 30) async throws -> [ContactsManager.CanonicalContact]
+  public static func checkHealth() async -> Swift.Bool
 }
 public enum RecommendationType {
   case inviteRecommendations
