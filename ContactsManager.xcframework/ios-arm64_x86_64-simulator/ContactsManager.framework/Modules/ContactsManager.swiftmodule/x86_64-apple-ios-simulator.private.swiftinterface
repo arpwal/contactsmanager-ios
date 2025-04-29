@@ -904,15 +904,15 @@ public struct SocialResponse<T> : Swift.Decodable where T : Swift.Decodable {
 public struct LocalCanonicalContact : Swift.Decodable {
   public let contact: ContactsManager.Contact?
   public let contactId: Swift.String
-  public let externalId: Swift.String
+  public let sourceContactId: Swift.String
   public let canonicalContact: ContactsManager.CanonicalContact
   public init(from decoder: any Swift.Decoder) throws
-  public init(contact: ContactsManager.Contact?, contactId: Swift.String, externalId: Swift.String, canonicalContact: ContactsManager.CanonicalContact)
+  public init(contact: ContactsManager.Contact?, contactId: Swift.String, sourceContactId: Swift.String, canonicalContact: ContactsManager.CanonicalContact)
 }
 public struct CanonicalContact : Swift.Codable, Swift.Identifiable, Swift.Hashable {
   public let id: Swift.String
   public let organizationId: Swift.String?
-  public let externalId: Swift.String
+  public let organizationUserId: Swift.String
   public let email: Swift.String?
   public let phone: Swift.String?
   public let fullName: Swift.String
