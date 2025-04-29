@@ -9,6 +9,7 @@ import CryptoKit
 import Foundation
 import OSLog
 import Observation
+import Sentry
 import Swift
 import SwiftData
 import SwiftUI
@@ -939,6 +940,9 @@ public struct APIConfig {
     get
   }
   public static let apiVersion: Swift.String
+  public static var sentryDSN: Swift.String? {
+    get
+  }
   public static let contactsEndpoint: Swift.String
   public static let contactsSyncEndpoint: Swift.String
   public static let contactSourceEndpoint: Swift.String
@@ -994,6 +998,16 @@ extension ContactsManager.ContactSyncManager {
 }
 extension ContactsManager.ContactSyncManager {
   public func scheduleBackgroundSync()
+}
+@_hasMissingDesignatedInitializers public class SentryManager {
+  public static let shared: ContactsManager.SentryManager
+  public func initialize(dsn: Swift.String, environment: Swift.String = "production", debug: Swift.Bool = false)
+  public func captureError(_ error: any Swift.Error, additionalInfo: [Swift.String : Any]? = nil)
+  public func captureMessage(_ message: Swift.String, level: Sentry.SentryLevel = .info, additionalInfo: [Swift.String : Any]? = nil)
+  public func setUser(id: Swift.String, email: Swift.String? = nil, username: Swift.String? = nil, extra: [Swift.String : Swift.String]? = nil)
+  public func clearUser()
+  public func addBreadcrumb(message: Swift.String, category: Swift.String, level: Sentry.SentryLevel = .info)
+  @objc deinit
 }
 public protocol ContactDatabaseContainer {
   var mainContext: SwiftData.ModelContext { get }
