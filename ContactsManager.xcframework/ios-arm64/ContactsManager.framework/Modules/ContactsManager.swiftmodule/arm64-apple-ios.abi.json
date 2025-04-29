@@ -42173,350 +42173,350 @@
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "Array",
-      "offset": 1963,
+      "offset": 1968,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "Array",
-      "offset": 2018,
+      "offset": 2023,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "Array",
-      "offset": 2061,
+      "offset": 2066,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "Array",
-      "offset": 2117,
+      "offset": 2122,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "Array",
-      "offset": 2162,
+      "offset": 2167,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "Array",
-      "offset": 2228,
+      "offset": 2233,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "Array",
-      "offset": 2274,
+      "offset": 2279,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "Array",
-      "offset": 2300,
+      "offset": 2305,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "Dictionary",
-      "offset": 2342,
+      "offset": 2347,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "Array",
-      "offset": 2586,
+      "offset": 2591,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "IntegerLiteral",
-      "offset": 2633,
+      "offset": 2638,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "StringLiteral",
-      "offset": 2743,
+      "offset": 2748,
       "length": 14,
       "value": "\"display_name\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "StringLiteral",
-      "offset": 2779,
+      "offset": 2784,
       "length": 12,
       "value": "\"given_name\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "StringLiteral",
-      "offset": 2814,
+      "offset": 2819,
       "length": 13,
       "value": "\"family_name\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "StringLiteral",
-      "offset": 2850,
+      "offset": 2855,
       "length": 13,
       "value": "\"name_prefix\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "StringLiteral",
-      "offset": 2886,
+      "offset": 2891,
       "length": 13,
       "value": "\"name_suffix\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "StringLiteral",
-      "offset": 2922,
+      "offset": 2927,
       "length": 13,
       "value": "\"middle_name\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "StringLiteral",
-      "offset": 2966,
+      "offset": 2971,
       "length": 22,
       "value": "\"previous_family_name\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "StringLiteral",
-      "offset": 3079,
+      "offset": 3084,
       "length": 17,
       "value": "\"contact_section\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "StringLiteral",
-      "offset": 3123,
+      "offset": 3128,
       "length": 17,
       "value": "\"organization_id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "StringLiteral",
-      "offset": 3161,
+      "offset": 3166,
       "length": 11,
       "value": "\"source_id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "StringLiteral",
-      "offset": 3195,
-      "length": 13,
-      "value": "\"external_id\""
+      "offset": 3205,
+      "length": 19,
+      "value": "\"source_contact_id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "StringLiteral",
-      "offset": 3233,
+      "offset": 3249,
       "length": 15,
       "value": "\"phone_numbers\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "StringLiteral",
-      "offset": 3275,
+      "offset": 3291,
       "length": 17,
       "value": "\"email_addresses\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "StringLiteral",
-      "offset": 3333,
+      "offset": 3349,
       "length": 17,
       "value": "\"social_profiles\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "StringLiteral",
-      "offset": 3405,
+      "offset": 3421,
       "length": 27,
       "value": "\"instant_message_addresses\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "StringLiteral",
-      "offset": 3490,
+      "offset": 3506,
       "length": 15,
       "value": "\"custom_fields\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "StringLiteral",
-      "offset": 3529,
+      "offset": 3545,
       "length": 14,
       "value": "\"match_string\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "StringLiteral",
-      "offset": 3572,
+      "offset": 3588,
       "length": 19,
       "value": "\"organization_name\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "StringLiteral",
-      "offset": 3618,
+      "offset": 3634,
       "length": 17,
       "value": "\"department_name\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "StringLiteral",
-      "offset": 3656,
+      "offset": 3672,
       "length": 11,
       "value": "\"job_title\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "StringLiteral",
-      "offset": 3724,
+      "offset": 3740,
       "length": 14,
       "value": "\"contact_type\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "BooleanLiteral",
-      "offset": 3926,
+      "offset": 3942,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "StringLiteral",
-      "offset": 4093,
+      "offset": 4109,
       "length": 12,
       "value": "\"is_primary\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "StringLiteral",
-      "offset": 4140,
+      "offset": 4156,
       "length": 10,
       "value": "\"phone_id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "BooleanLiteral",
-      "offset": 4234,
+      "offset": 4250,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "BooleanLiteral",
-      "offset": 4649,
+      "offset": 4665,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "StringLiteral",
-      "offset": 4816,
+      "offset": 4832,
       "length": 12,
       "value": "\"is_primary\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "StringLiteral",
-      "offset": 4863,
+      "offset": 4879,
       "length": 10,
       "value": "\"email_id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "BooleanLiteral",
-      "offset": 4957,
+      "offset": 4973,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "BooleanLiteral",
-      "offset": 5368,
+      "offset": 5384,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "StringLiteral",
-      "offset": 5533,
+      "offset": 5549,
       "length": 12,
       "value": "\"is_primary\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "StringLiteral",
-      "offset": 5578,
+      "offset": 5594,
       "length": 8,
       "value": "\"url_id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "BooleanLiteral",
-      "offset": 5670,
+      "offset": 5686,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "BooleanLiteral",
-      "offset": 6476,
+      "offset": 6492,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "StringLiteral",
-      "offset": 6588,
+      "offset": 6604,
       "length": 16,
       "value": "\"street_address\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "StringLiteral",
-      "offset": 6632,
+      "offset": 6648,
       "length": 18,
       "value": "\"extended_address\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "StringLiteral",
-      "offset": 6703,
+      "offset": 6719,
       "length": 13,
       "value": "\"postal_code\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "StringLiteral",
-      "offset": 6755,
+      "offset": 6771,
       "length": 12,
       "value": "\"is_primary\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ServerModels.swift",
       "kind": "BooleanLiteral",
-      "offset": 7051,
+      "offset": 7067,
       "length": 5,
       "value": "false"
     },

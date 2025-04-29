@@ -10,7 +10,7 @@
 		</data>
 		<key>ios-arm64/ContactsManager.framework/ContactsManager</key>
 		<data>
-		mdPzsmN6OmmU9CEGkd24TKMSfTU=
+		t2igurdTwnCy2TaX3+T9xB+V1z8=
 		</data>
 		<key>ios-arm64/ContactsManager.framework/Headers/ContactsManager.h</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>ios-arm64/ContactsManager.framework/Modules/ContactsManager.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		PBW49WaDcr07QJAPORzdwFOBiwY=
+		XsUWmX8aIFv7e6xL5CBU59jGL7c=
 		</data>
 		<key>ios-arm64/ContactsManager.framework/Modules/ContactsManager.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>ios-arm64/ContactsManager.framework/_CodeSignature/CodeResources</key>
 		<data>
-		SiQnLLInf3LUZkRAzbeQNpMplXI=
+		Ip/QEBX6EXnP0DO19WFANjqDMG0=
 		</data>
 		<key>ios-arm64_x86_64-simulator/ContactsManager.framework/ARCHITECTURE.md</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/ContactsManager.framework/ContactsManager</key>
 		<data>
-		4RGSmWgYtsa1L408lIG2ndlQwes=
+		syVtVvP75bfSvp+kE2sR7qDIaR0=
 		</data>
 		<key>ios-arm64_x86_64-simulator/ContactsManager.framework/Headers/ContactsManager.h</key>
 		<data>
@@ -74,7 +74,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/ContactsManager.framework/Modules/ContactsManager.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		PBW49WaDcr07QJAPORzdwFOBiwY=
+		XsUWmX8aIFv7e6xL5CBU59jGL7c=
 		</data>
 		<key>ios-arm64_x86_64-simulator/ContactsManager.framework/Modules/ContactsManager.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -90,7 +90,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/ContactsManager.framework/Modules/ContactsManager.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		PBW49WaDcr07QJAPORzdwFOBiwY=
+		XsUWmX8aIFv7e6xL5CBU59jGL7c=
 		</data>
 		<key>ios-arm64_x86_64-simulator/ContactsManager.framework/Modules/ContactsManager.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -122,7 +122,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/ContactsManager.framework/_CodeSignature/CodeResources</key>
 		<data>
-		NdftilV846aiMpBBrsZWjltB2C0=
+		asiv1KzddA4T4pEPszxuuaDxokk=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -142,11 +142,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mdPzsmN6OmmU9CEGkd24TKMSfTU=
+			t2igurdTwnCy2TaX3+T9xB+V1z8=
 			</data>
 			<key>hash2</key>
 			<data>
-			xyxIHekg0LnopSNDjZXMexNCrjhgESxmryCnhX/a61E=
+			NBX+AlRhyrvm10N65ZapBJSc9UOnpZg9WPOe1RfsJ34=
 			</data>
 		</dict>
 		<key>ios-arm64/ContactsManager.framework/Headers/ContactsManager.h</key>
@@ -175,11 +175,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PBW49WaDcr07QJAPORzdwFOBiwY=
+			XsUWmX8aIFv7e6xL5CBU59jGL7c=
 			</data>
 			<key>hash2</key>
 			<data>
-			3V4SF30JYyWYrjWSdxA2Jw2ZQEAerrOH/uTfM9ng5x0=
+			vNWSJkBQlxKMUhQ/jbLuTvKaSTiscCCnB1nPPnx9L18=
 			</data>
 		</dict>
 		<key>ios-arm64/ContactsManager.framework/Modules/ContactsManager.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -263,11 +263,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SiQnLLInf3LUZkRAzbeQNpMplXI=
+			Ip/QEBX6EXnP0DO19WFANjqDMG0=
 			</data>
 			<key>hash2</key>
 			<data>
-			zMSN0Iyx0Fo/epSpMktutEeQwsDy+VTvJbb3AZotp64=
+			sL4ryc3QMetWBBAdgAYFfizcUGsgzW4f3tbOXSEW3ew=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/ContactsManager.framework/ARCHITECTURE.md</key>
@@ -285,11 +285,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4RGSmWgYtsa1L408lIG2ndlQwes=
+			syVtVvP75bfSvp+kE2sR7qDIaR0=
 			</data>
 			<key>hash2</key>
 			<data>
-			62ka1+EnpnBB1ZxE8lxwou1110C+OInSi37fPwlFm0A=
+			ltlXFXsmmZTSv3hoaOlMrXz0GrHClmo+YBgw4/1/aK4=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/ContactsManager.framework/Headers/ContactsManager.h</key>
@@ -318,11 +318,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PBW49WaDcr07QJAPORzdwFOBiwY=
+			XsUWmX8aIFv7e6xL5CBU59jGL7c=
 			</data>
 			<key>hash2</key>
 			<data>
-			3V4SF30JYyWYrjWSdxA2Jw2ZQEAerrOH/uTfM9ng5x0=
+			vNWSJkBQlxKMUhQ/jbLuTvKaSTiscCCnB1nPPnx9L18=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/ContactsManager.framework/Modules/ContactsManager.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -362,11 +362,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PBW49WaDcr07QJAPORzdwFOBiwY=
+			XsUWmX8aIFv7e6xL5CBU59jGL7c=
 			</data>
 			<key>hash2</key>
 			<data>
-			3V4SF30JYyWYrjWSdxA2Jw2ZQEAerrOH/uTfM9ng5x0=
+			vNWSJkBQlxKMUhQ/jbLuTvKaSTiscCCnB1nPPnx9L18=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/ContactsManager.framework/Modules/ContactsManager.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -450,11 +450,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NdftilV846aiMpBBrsZWjltB2C0=
+			asiv1KzddA4T4pEPszxuuaDxokk=
 			</data>
 			<key>hash2</key>
 			<data>
-			efoMmg45JOCFbp3J3+Ta2z6+NndA/tGur5y8ErNweqw=
+			mWD4aptIVRIQZPbaljMutKukfYH5/gyJ2JzmlxYcUrs=
 			</data>
 		</dict>
 	</dict>
