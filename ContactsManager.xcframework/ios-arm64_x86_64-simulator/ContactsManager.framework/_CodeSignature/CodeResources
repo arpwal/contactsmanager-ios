@@ -18,7 +18,7 @@
 		</data>
 		<key>Modules/ContactsManager.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		JU7zL4W7y1c4hU3cLiGVYCwZP8s=
+		Qa+vDYn7m8Nu1Ohnk/15yieZL4o=
 		</data>
 		<key>Modules/ContactsManager.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Modules/ContactsManager.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		4L9bSXfMGS7WW7wx5Ie4NuFkuXA=
+		opnSDAi+qmCanwh4f4LAwNZaD+0=
 		</data>
 		<key>Modules/ContactsManager.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/ContactsManager.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		JU7zL4W7y1c4hU3cLiGVYCwZP8s=
+		Qa+vDYn7m8Nu1Ohnk/15yieZL4o=
 		</data>
 		<key>Modules/ContactsManager.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Modules/ContactsManager.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		EV5N8ui047qkXg/kiT+Fe3MnrIk=
+		Y/7vFwkm77y7+ZM9+lM8WUAr6P0=
 		</data>
 		<key>Modules/ContactsManager.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
@@ -93,7 +93,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kPKfQRGIl6vfWdbcQ7d3j7o5mnx1gEUyWIaRvQqaDX0=
+			ZcmZhL1Tp+nN+QvYsit+6+U9fdhgb1VR0YNAc3wZzQk=
 			</data>
 		</dict>
 		<key>Modules/ContactsManager.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -107,7 +107,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			g7Ntmf2/P8LFxGTG6Y6TFHbL6qtZfwSysG6AbPviYdQ=
+			ISBGNjVIBMKXbx4grMCnJXMZYpXz8iyTZ259hqDT4JA=
 			</data>
 		</dict>
 		<key>Modules/ContactsManager.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
@@ -128,7 +128,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kPKfQRGIl6vfWdbcQ7d3j7o5mnx1gEUyWIaRvQqaDX0=
+			ZcmZhL1Tp+nN+QvYsit+6+U9fdhgb1VR0YNAc3wZzQk=
 			</data>
 		</dict>
 		<key>Modules/ContactsManager.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -142,7 +142,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gaZJWLcgSDYmxyp8JO6Z/mP7MpcAMLBnloKCOp+nxYk=
+			TODGFbJaxa4y5DHVdxIeVnD5T208O5ZeMR1FdjlL/F8=
 			</data>
 		</dict>
 		<key>Modules/ContactsManager.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
