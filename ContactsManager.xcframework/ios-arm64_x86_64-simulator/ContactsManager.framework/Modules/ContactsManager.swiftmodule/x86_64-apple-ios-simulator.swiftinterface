@@ -534,8 +534,9 @@ public enum ContactDataRestriction : Swift.String, Swift.CaseIterable {
 }
 public struct ContactsManagerOptions {
   public let restrictedKeysToFetch: Swift.Set<ContactsManager.ContactFieldType>
+  public let verboseLogging: Swift.Bool
   public static let `default`: ContactsManager.ContactsManagerOptions
-  public init(restrictedKeysToFetch: Swift.Set<ContactsManager.ContactFieldType>)
+  public init(restrictedKeysToFetch: Swift.Set<ContactsManager.ContactFieldType> = [], verboseLogging: Swift.Bool = false)
 }
 @_hasMissingDesignatedInitializers final public class ContactSocial : Swift.Comparable {
   final public var socialId: Swift.String {
@@ -992,9 +993,6 @@ extension ContactsManager.ContactSyncManager {
     }
   }
 }
-extension ContactsManager.ContactSyncManager {
-  public func scheduleBackgroundSync()
-}
 public protocol ContactDatabaseContainer {
   var mainContext: SwiftData.ModelContext { get }
 }
@@ -1157,6 +1155,7 @@ extension ContactsManager.ContactsService {
 }
 extension ContactsManager.ContactsService {
   final public func enableBackgroundSync()
+  final public func scheduleBackgroundSyncTask()
 }
 extension ContactsManager.ContactsService {
   final public func getUsersYouMightKnow(limit: Swift.Int = 30) async throws -> [ContactsManager.CanonicalContact]
