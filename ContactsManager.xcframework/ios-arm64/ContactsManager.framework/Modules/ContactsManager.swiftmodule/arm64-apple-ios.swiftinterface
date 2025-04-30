@@ -12,13 +12,10 @@ import Observation
 import Swift
 import SwiftData
 import SwiftUI
-import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 import _SwiftData_SwiftUI
-import os.log
-import os
 public let SECTIONNONAME: Swift.String
 final public class Contact {
   final public var identifier: Swift.String {
@@ -946,7 +943,6 @@ public struct APIConfig {
   public static let contactsSyncEndpoint: Swift.String
   public static let contactSourceEndpoint: Swift.String
   public static let userInfoEndpoint: Swift.String
-  public static let logsUploadEndpoint: Swift.String
   public static let sharedContactsToInviteEndpoint: Swift.String
   public static let appUserContactsEndpoint: Swift.String
   public static let usersYouMightKnowEndpoint: Swift.String
@@ -998,45 +994,6 @@ extension ContactsManager.ContactSyncManager {
 }
 extension ContactsManager.ContactSyncManager {
   public func scheduleBackgroundSync()
-}
-public struct LogManagerConfiguration {
-  public let maxLogFileSize: Swift.UInt64
-  public let maxTotalLogSize: Swift.UInt64
-  public let maxLogAgeDays: Swift.Int
-  public static let `default`: ContactsManager.LogManagerConfiguration
-  public init(maxLogFileSize: Swift.UInt64 = 1 * 1024 * 1024, maxTotalLogSize: Swift.UInt64 = 100 * 1024 * 1024, maxLogAgeDays: Swift.Int = 90)
-}
-@_hasMissingDesignatedInitializers public class LogManager {
-  public enum Level : Swift.String {
-    case debug
-    case info
-    case warning
-    case error
-    case fatal
-    public init?(rawValue: Swift.String)
-    public typealias RawValue = Swift.String
-    public var rawValue: Swift.String {
-      get
-    }
-  }
-  public static let shared: ContactsManager.LogManager
-  public func initialize(userInfo: ContactsManager.UserInfo, configuration: ContactsManager.LogManagerConfiguration = .default)
-  public func captureError(_ error: any Swift.Error, additionalInfo: [Swift.String : Any]? = nil)
-  public func captureMessage(_ message: Swift.String, level: ContactsManager.LogManager.Level, additionalInfo: [Swift.String : Any]? = nil)
-  public func addBreadcrumb(message: Swift.String, category: Swift.String, level: ContactsManager.LogManager.Level, type: Swift.String? = nil, data: [Swift.String : Any] = [:])
-  public func setTag(key: Swift.String, value: Swift.String)
-  public func setExtra(key: Swift.String, value: Any)
-  public func clearContext()
-  public func startTransaction(name: Swift.String, operation: Swift.String, description: Swift.String? = nil) -> ContactsManager.TransactionContext
-  public func uploadLogs() -> [Foundation.URL]
-  public func getLogsContent() -> Swift.String
-  @objc deinit
-}
-public struct TransactionContext {
-  public func finish()
-}
-extension ContactsManager.LogManager {
-  public func uploadLogsToServer() async -> Swift.Bool
 }
 public protocol ContactDatabaseContainer {
   var mainContext: SwiftData.ModelContext { get }
@@ -1235,9 +1192,6 @@ extension ContactsManager.RuntimeEnvironment : Swift.Hashable {}
 extension ContactsManager.RuntimeEnvironment : Swift.RawRepresentable {}
 extension ContactsManager.ContactSyncManager.SyncError : Swift.Equatable {}
 extension ContactsManager.ContactSyncManager.SyncError : Swift.Hashable {}
-extension ContactsManager.LogManager.Level : Swift.Equatable {}
-extension ContactsManager.LogManager.Level : Swift.Hashable {}
-extension ContactsManager.LogManager.Level : Swift.RawRepresentable {}
 extension ContactsManager.ContactsAccessStatus : Swift.Hashable {}
 extension ContactsManager.ContactSearchService.SearchField : Swift.Equatable {}
 extension ContactsManager.ContactSearchService.SearchField : Swift.Hashable {}
