@@ -31,6 +31,22 @@ Or in Xcode:
 - iOS 17+ support
 - Swift 5.5+ compatibility
 
+## Social Features
+
+ContactsManager SDK enables you to build engaging social experiences in your application while maintaining complete privacy and security for your users' contact data:
+
+- **Activity Feeds**: Create chronological feeds of user activities and interactions
+- **Follow/Unfollow**: Allow users to follow others and receive their updates
+- **Event Posting**: Enable users to share updates, events, and statuses
+- **Friend Recommendations**: Provide intelligent connection suggestions with privacy-preserving matching
+
+Unlike traditional social networks, ContactsManager takes a privacy-first approach:
+
+- Contact information stays on the user's device
+- Neither your application nor our servers have access to raw contact data
+- Users maintain full control over their connections at all times
+- Military-grade encryption secures any data used in the matching process
+
 ## Requirements
 
 - iOS 17.0+
@@ -57,22 +73,15 @@ Our documentation covers everything you need to know about:
 - Advanced integration patterns
 - Troubleshooting and FAQs
 
-## Demo App
+## Community Support
 
-Check out our demo app to see the SDK in action! The demo app showcases the basic functionality and integration patterns of the Contacts Manager SDK.
+Have questions or need help with implementation? Join our Slack community for support, discussions, and updates:
 
-[Demo App Repository](https://github.com/arpwal/contactsmanager-demo)
-
-The demo app includes:
-
-- Complete SDK integration example
-- Basic contact management features
-- Step-by-step setup guide
-- Real-world usage patterns
+[Join ContactsManager SDK Slack Community](https://join.slack.com/t/contactsmanagersdk/shared_invite/zt-34as6nm2u-N7oMFvcQFoXwQvIo~ePJ1g)
 
 ## License
 
-This project is licensed under the terms specified in the LICENSE file.
+This project is licensed under the MIT License. See the LICENSE file for details.
 
 ## Latest Release
 
