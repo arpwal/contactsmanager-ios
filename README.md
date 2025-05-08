@@ -2,6 +2,8 @@
 
 [![Swift](https://img.shields.io/badge/Swift-5.5+-orange.svg)](https://swift.org)
 [![iOS](https://img.shields.io/badge/iOS-17.0+-blue.svg)](https://developer.apple.com/ios/)
+[![Swift Package Manager](https://img.shields.io/badge/Swift_Package_Manager-compatible-brightgreen.svg)](https://swift.org/package-manager)
+[![Platforms](https://img.shields.io/badge/Platforms-iOS-lightgrey.svg)](https://developer.apple.com/ios/)
 [![Version](https://img.shields.io/badge/version-1.43.0-green.svg)](https://github.com/arpwal/contactsmanager-ios/releases)
 
 A powerful contacts management framework for iOS business applications.
