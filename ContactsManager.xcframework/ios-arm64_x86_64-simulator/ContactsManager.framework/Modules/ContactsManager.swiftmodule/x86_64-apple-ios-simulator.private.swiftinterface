@@ -1148,6 +1148,7 @@ extension ContactsManager.ContactsService {
   final public var contactsAccessStatus: ContactsManager.ContactsAccessStatus {
     get
   }
+  final public func hasContactsReadAccess() -> Swift.Bool
 }
 extension ContactsManager.ContactsService {
   final public func getSharedContactsByUsersToInvite(limit: Swift.Int = 30) async throws -> [ContactsManager.ContactRecommendation]

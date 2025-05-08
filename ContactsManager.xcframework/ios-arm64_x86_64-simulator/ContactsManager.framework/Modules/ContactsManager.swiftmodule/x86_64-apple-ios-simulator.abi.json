@@ -33222,6 +33222,30 @@
           },
           {
             "kind": "Function",
+            "name": "hasContactsReadAccess",
+            "printedName": "hasContactsReadAccess()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15ContactsManager0A7ServiceC03hasA10ReadAccessSbyF",
+            "mangledName": "$s15ContactsManager0A7ServiceC03hasA10ReadAccessSbyF",
+            "moduleName": "ContactsManager",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "getSharedContactsByUsersToInvite",
             "printedName": "getSharedContactsByUsersToInvite(limit:)",
             "children": [
@@ -36707,14 +36731,14 @@
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Services\/ContactSearchService.swift",
       "kind": "IntegerLiteral",
-      "offset": 3300,
+      "offset": 3277,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Services\/ContactSearchService.swift",
       "kind": "IntegerLiteral",
-      "offset": 3320,
+      "offset": 3297,
       "length": 2,
       "value": "50"
     },
@@ -37057,49 +37081,49 @@
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/ContactsService.swift",
       "kind": "IntegerLiteral",
-      "offset": 24099,
+      "offset": 24601,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/ContactsService.swift",
       "kind": "IntegerLiteral",
-      "offset": 24124,
+      "offset": 24626,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/ContactsService.swift",
       "kind": "IntegerLiteral",
-      "offset": 24151,
+      "offset": 24653,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/ContactsService.swift",
       "kind": "IntegerLiteral",
-      "offset": 24176,
+      "offset": 24678,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/ContactsService.swift",
       "kind": "IntegerLiteral",
-      "offset": 37631,
+      "offset": 38266,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/ContactsService.swift",
       "kind": "IntegerLiteral",
-      "offset": 39646,
+      "offset": 40281,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/ContactsService.swift",
       "kind": "IntegerLiteral",
-      "offset": 53339,
+      "offset": 53974,
       "length": 2,
       "value": "30"
     },
