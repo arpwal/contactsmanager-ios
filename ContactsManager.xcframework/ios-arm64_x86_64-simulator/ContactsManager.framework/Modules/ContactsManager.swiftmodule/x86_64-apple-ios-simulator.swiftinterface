@@ -779,12 +779,21 @@ public struct CanonicalContact : Swift.Codable, Swift.Identifiable, Swift.Hashab
   public let organizationUserId: Swift.String
   public let email: Swift.String?
   public let phone: Swift.String?
-  public let fullName: Swift.String
+  public let fullName: Swift.String?
   public let avatarUrl: Swift.String?
   public let isActive: Swift.Bool?
   public let createdAt: Foundation.Date?
   public let updatedAt: Foundation.Date?
   public var contactMetadata: [Swift.String : Any]? {
+    get
+  }
+  public var displayName: Swift.String {
+    get
+  }
+  public var displayInfo: Swift.String {
+    get
+  }
+  public var initials: Swift.String {
     get
   }
   public init(from decoder: any Swift.Decoder) throws
