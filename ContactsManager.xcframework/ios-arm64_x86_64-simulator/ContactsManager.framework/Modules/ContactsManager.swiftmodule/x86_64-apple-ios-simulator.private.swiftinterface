@@ -1115,6 +1115,16 @@ public class ContactsManagerUI {
   public func searchContacts(from viewController: UIKit.UIViewController, options: ContactsManager.ContactSelectionOptions, completion: @escaping (Swift.Result<[ContactsManager.Contact], any Swift.Error>) -> Swift.Void)
   @objc deinit
 }
+public struct SyncMetrics {
+  public let totalDeviceContacts: Swift.Int
+  public let newContacts: Swift.Int
+  public let updatedContacts: Swift.Int
+  public let unchangedContacts: Swift.Int
+  public let deletedContacts: Swift.Int
+  public let totalProcessed: Swift.Int
+  public init(totalDeviceContacts: Swift.Int, newContacts: Swift.Int, updatedContacts: Swift.Int, unchangedContacts: Swift.Int, deletedContacts: Swift.Int, totalProcessed: Swift.Int)
+}
+public typealias ContactSyncCompletionHandler = (ContactsManager.SyncMetrics) -> Swift.Void
 public enum ContactsServiceError : Foundation.LocalizedError {
   case invalidAPIKey
   case apiKeyValidationFailed(Swift.String)
@@ -1132,6 +1142,7 @@ public enum ContactsServiceError : Foundation.LocalizedError {
 }
 @_hasMissingDesignatedInitializers final public class ContactsService {
   public static let shared: ContactsManager.ContactsService
+  final public var onContactsSynced: ContactsManager.ContactSyncCompletionHandler?
   final public var socialService: ContactsManager.SocialService? {
     get
   }
@@ -1158,6 +1169,9 @@ extension ContactsManager.ContactsService {
     get
   }
   final public func hasContactsReadAccess() -> Swift.Bool
+}
+extension ContactsManager.ContactsService {
+  @_Concurrency.MainActor final public func syncContacts() async throws -> Swift.Int
 }
 extension ContactsManager.ContactsService {
   final public func getSharedContactsByUsersToInvite(limit: Swift.Int = 30) async throws -> [ContactsManager.ContactRecommendation]
