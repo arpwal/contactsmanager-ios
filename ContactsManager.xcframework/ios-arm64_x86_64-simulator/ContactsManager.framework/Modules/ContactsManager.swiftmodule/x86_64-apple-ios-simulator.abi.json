@@ -6,6 +6,1152 @@
     "children": [
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ContactsManager"
+      },
+      {
+        "kind": "Import",
+        "name": "OSLog",
+        "printedName": "OSLog",
+        "declKind": "Import",
+        "moduleName": "ContactsManager"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftData",
+        "printedName": "SwiftData",
+        "declKind": "Import",
+        "moduleName": "ContactsManager"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ContactDatabaseError",
+        "printedName": "ContactDatabaseError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "notInitialized",
+            "printedName": "notInitialized",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ContactsManager.ContactDatabaseError.Type) -> ContactsManager.ContactDatabaseError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ContactDatabaseError",
+                    "printedName": "ContactsManager.ContactDatabaseError",
+                    "usr": "s:15ContactsManager20ContactDatabaseErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ContactsManager.ContactDatabaseError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ContactDatabaseError",
+                        "printedName": "ContactsManager.ContactDatabaseError",
+                        "usr": "s:15ContactsManager20ContactDatabaseErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15ContactsManager20ContactDatabaseErrorO14notInitializedyA2CmF",
+            "mangledName": "$s15ContactsManager20ContactDatabaseErrorO14notInitializedyA2CmF",
+            "moduleName": "ContactsManager"
+          },
+          {
+            "kind": "Var",
+            "name": "invalidModelContainer",
+            "printedName": "invalidModelContainer",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ContactsManager.ContactDatabaseError.Type) -> ContactsManager.ContactDatabaseError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ContactDatabaseError",
+                    "printedName": "ContactsManager.ContactDatabaseError",
+                    "usr": "s:15ContactsManager20ContactDatabaseErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ContactsManager.ContactDatabaseError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ContactDatabaseError",
+                        "printedName": "ContactsManager.ContactDatabaseError",
+                        "usr": "s:15ContactsManager20ContactDatabaseErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15ContactsManager20ContactDatabaseErrorO21invalidModelContaineryA2CmF",
+            "mangledName": "$s15ContactsManager20ContactDatabaseErrorO21invalidModelContaineryA2CmF",
+            "moduleName": "ContactsManager"
+          },
+          {
+            "kind": "Var",
+            "name": "contactNotFound",
+            "printedName": "contactNotFound",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ContactsManager.ContactDatabaseError.Type) -> ContactsManager.ContactDatabaseError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ContactDatabaseError",
+                    "printedName": "ContactsManager.ContactDatabaseError",
+                    "usr": "s:15ContactsManager20ContactDatabaseErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ContactsManager.ContactDatabaseError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ContactDatabaseError",
+                        "printedName": "ContactsManager.ContactDatabaseError",
+                        "usr": "s:15ContactsManager20ContactDatabaseErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15ContactsManager20ContactDatabaseErrorO15contactNotFoundyA2CmF",
+            "mangledName": "$s15ContactsManager20ContactDatabaseErrorO15contactNotFoundyA2CmF",
+            "moduleName": "ContactsManager"
+          },
+          {
+            "kind": "Var",
+            "name": "invalidData",
+            "printedName": "invalidData",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ContactsManager.ContactDatabaseError.Type) -> ContactsManager.ContactDatabaseError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ContactDatabaseError",
+                    "printedName": "ContactsManager.ContactDatabaseError",
+                    "usr": "s:15ContactsManager20ContactDatabaseErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ContactsManager.ContactDatabaseError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ContactDatabaseError",
+                        "printedName": "ContactsManager.ContactDatabaseError",
+                        "usr": "s:15ContactsManager20ContactDatabaseErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15ContactsManager20ContactDatabaseErrorO11invalidDatayA2CmF",
+            "mangledName": "$s15ContactsManager20ContactDatabaseErrorO11invalidDatayA2CmF",
+            "moduleName": "ContactsManager"
+          },
+          {
+            "kind": "Var",
+            "name": "searchError",
+            "printedName": "searchError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ContactsManager.ContactDatabaseError.Type) -> ContactsManager.ContactDatabaseError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ContactDatabaseError",
+                    "printedName": "ContactsManager.ContactDatabaseError",
+                    "usr": "s:15ContactsManager20ContactDatabaseErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ContactsManager.ContactDatabaseError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ContactDatabaseError",
+                        "printedName": "ContactsManager.ContactDatabaseError",
+                        "usr": "s:15ContactsManager20ContactDatabaseErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15ContactsManager20ContactDatabaseErrorO06searchE0yA2CmF",
+            "mangledName": "$s15ContactsManager20ContactDatabaseErrorO06searchE0yA2CmF",
+            "moduleName": "ContactsManager"
+          },
+          {
+            "kind": "Var",
+            "name": "operationFailed",
+            "printedName": "operationFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ContactsManager.ContactDatabaseError.Type) -> (Swift.String) -> ContactsManager.ContactDatabaseError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> ContactsManager.ContactDatabaseError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ContactDatabaseError",
+                        "printedName": "ContactsManager.ContactDatabaseError",
+                        "usr": "s:15ContactsManager20ContactDatabaseErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ContactsManager.ContactDatabaseError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ContactDatabaseError",
+                        "printedName": "ContactsManager.ContactDatabaseError",
+                        "usr": "s:15ContactsManager20ContactDatabaseErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15ContactsManager20ContactDatabaseErrorO15operationFailedyACSScACmF",
+            "mangledName": "$s15ContactsManager20ContactDatabaseErrorO15operationFailedyACSScACmF",
+            "moduleName": "ContactsManager"
+          },
+          {
+            "kind": "Var",
+            "name": "contextCreationFailed",
+            "printedName": "contextCreationFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ContactsManager.ContactDatabaseError.Type) -> ContactsManager.ContactDatabaseError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ContactDatabaseError",
+                    "printedName": "ContactsManager.ContactDatabaseError",
+                    "usr": "s:15ContactsManager20ContactDatabaseErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ContactsManager.ContactDatabaseError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ContactDatabaseError",
+                        "printedName": "ContactsManager.ContactDatabaseError",
+                        "usr": "s:15ContactsManager20ContactDatabaseErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15ContactsManager20ContactDatabaseErrorO21contextCreationFailedyA2CmF",
+            "mangledName": "$s15ContactsManager20ContactDatabaseErrorO21contextCreationFailedyA2CmF",
+            "moduleName": "ContactsManager"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:15ContactsManager20ContactDatabaseErrorO",
+        "mangledName": "$s15ContactsManager20ContactDatabaseErrorO",
+        "moduleName": "ContactsManager",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ContactsManager"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftData",
+        "printedName": "SwiftData",
+        "declKind": "Import",
+        "moduleName": "ContactsManager"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ContactsManager"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftData",
+        "printedName": "SwiftData",
+        "declKind": "Import",
+        "moduleName": "ContactsManager"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ContactSyncProperty",
+        "printedName": "ContactSyncProperty",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "sourceId",
+            "printedName": "sourceId",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ContactsManager.ContactSyncProperty.Type) -> (Swift.String) -> ContactsManager.ContactSyncProperty",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> ContactsManager.ContactSyncProperty",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ContactSyncProperty",
+                        "printedName": "ContactsManager.ContactSyncProperty",
+                        "usr": "s:15ContactsManager19ContactSyncPropertyO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ContactsManager.ContactSyncProperty.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ContactSyncProperty",
+                        "printedName": "ContactsManager.ContactSyncProperty",
+                        "usr": "s:15ContactsManager19ContactSyncPropertyO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15ContactsManager19ContactSyncPropertyO8sourceIdyACSScACmF",
+            "mangledName": "$s15ContactsManager19ContactSyncPropertyO8sourceIdyACSScACmF",
+            "moduleName": "ContactsManager"
+          },
+          {
+            "kind": "Var",
+            "name": "parentContactId",
+            "printedName": "parentContactId",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ContactsManager.ContactSyncProperty.Type) -> (Swift.String) -> ContactsManager.ContactSyncProperty",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> ContactsManager.ContactSyncProperty",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ContactSyncProperty",
+                        "printedName": "ContactsManager.ContactSyncProperty",
+                        "usr": "s:15ContactsManager19ContactSyncPropertyO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ContactsManager.ContactSyncProperty.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ContactSyncProperty",
+                        "printedName": "ContactsManager.ContactSyncProperty",
+                        "usr": "s:15ContactsManager19ContactSyncPropertyO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15ContactsManager19ContactSyncPropertyO06parentC2IdyACSScACmF",
+            "mangledName": "$s15ContactsManager19ContactSyncPropertyO06parentC2IdyACSScACmF",
+            "moduleName": "ContactsManager"
+          },
+          {
+            "kind": "Var",
+            "name": "imageUrl",
+            "printedName": "imageUrl",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ContactsManager.ContactSyncProperty.Type) -> (Swift.String) -> ContactsManager.ContactSyncProperty",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> ContactsManager.ContactSyncProperty",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ContactSyncProperty",
+                        "printedName": "ContactsManager.ContactSyncProperty",
+                        "usr": "s:15ContactsManager19ContactSyncPropertyO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ContactsManager.ContactSyncProperty.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ContactSyncProperty",
+                        "printedName": "ContactsManager.ContactSyncProperty",
+                        "usr": "s:15ContactsManager19ContactSyncPropertyO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15ContactsManager19ContactSyncPropertyO8imageUrlyACSScACmF",
+            "mangledName": "$s15ContactsManager19ContactSyncPropertyO8imageUrlyACSScACmF",
+            "moduleName": "ContactsManager"
+          },
+          {
+            "kind": "Var",
+            "name": "bio",
+            "printedName": "bio",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ContactsManager.ContactSyncProperty.Type) -> (Swift.String) -> ContactsManager.ContactSyncProperty",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> ContactsManager.ContactSyncProperty",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ContactSyncProperty",
+                        "printedName": "ContactsManager.ContactSyncProperty",
+                        "usr": "s:15ContactsManager19ContactSyncPropertyO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ContactsManager.ContactSyncProperty.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ContactSyncProperty",
+                        "printedName": "ContactsManager.ContactSyncProperty",
+                        "usr": "s:15ContactsManager19ContactSyncPropertyO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15ContactsManager19ContactSyncPropertyO3bioyACSScACmF",
+            "mangledName": "$s15ContactsManager19ContactSyncPropertyO3bioyACSScACmF",
+            "moduleName": "ContactsManager"
+          },
+          {
+            "kind": "Var",
+            "name": "location",
+            "printedName": "location",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ContactsManager.ContactSyncProperty.Type) -> (Swift.String) -> ContactsManager.ContactSyncProperty",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> ContactsManager.ContactSyncProperty",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ContactSyncProperty",
+                        "printedName": "ContactsManager.ContactSyncProperty",
+                        "usr": "s:15ContactsManager19ContactSyncPropertyO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ContactsManager.ContactSyncProperty.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ContactSyncProperty",
+                        "printedName": "ContactsManager.ContactSyncProperty",
+                        "usr": "s:15ContactsManager19ContactSyncPropertyO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15ContactsManager19ContactSyncPropertyO8locationyACSScACmF",
+            "mangledName": "$s15ContactsManager19ContactSyncPropertyO8locationyACSScACmF",
+            "moduleName": "ContactsManager"
+          },
+          {
+            "kind": "Var",
+            "name": "organizationName",
+            "printedName": "organizationName",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ContactsManager.ContactSyncProperty.Type) -> (Swift.String) -> ContactsManager.ContactSyncProperty",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> ContactsManager.ContactSyncProperty",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ContactSyncProperty",
+                        "printedName": "ContactsManager.ContactSyncProperty",
+                        "usr": "s:15ContactsManager19ContactSyncPropertyO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ContactsManager.ContactSyncProperty.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ContactSyncProperty",
+                        "printedName": "ContactsManager.ContactSyncProperty",
+                        "usr": "s:15ContactsManager19ContactSyncPropertyO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15ContactsManager19ContactSyncPropertyO16organizationNameyACSScACmF",
+            "mangledName": "$s15ContactsManager19ContactSyncPropertyO16organizationNameyACSScACmF",
+            "moduleName": "ContactsManager"
+          },
+          {
+            "kind": "Var",
+            "name": "departmentName",
+            "printedName": "departmentName",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ContactsManager.ContactSyncProperty.Type) -> (Swift.String) -> ContactsManager.ContactSyncProperty",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> ContactsManager.ContactSyncProperty",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ContactSyncProperty",
+                        "printedName": "ContactsManager.ContactSyncProperty",
+                        "usr": "s:15ContactsManager19ContactSyncPropertyO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ContactsManager.ContactSyncProperty.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ContactSyncProperty",
+                        "printedName": "ContactsManager.ContactSyncProperty",
+                        "usr": "s:15ContactsManager19ContactSyncPropertyO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15ContactsManager19ContactSyncPropertyO14departmentNameyACSScACmF",
+            "mangledName": "$s15ContactsManager19ContactSyncPropertyO14departmentNameyACSScACmF",
+            "moduleName": "ContactsManager"
+          },
+          {
+            "kind": "Var",
+            "name": "jobTitle",
+            "printedName": "jobTitle",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ContactsManager.ContactSyncProperty.Type) -> (Swift.String) -> ContactsManager.ContactSyncProperty",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> ContactsManager.ContactSyncProperty",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ContactSyncProperty",
+                        "printedName": "ContactsManager.ContactSyncProperty",
+                        "usr": "s:15ContactsManager19ContactSyncPropertyO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ContactsManager.ContactSyncProperty.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ContactSyncProperty",
+                        "printedName": "ContactsManager.ContactSyncProperty",
+                        "usr": "s:15ContactsManager19ContactSyncPropertyO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15ContactsManager19ContactSyncPropertyO8jobTitleyACSScACmF",
+            "mangledName": "$s15ContactsManager19ContactSyncPropertyO8jobTitleyACSScACmF",
+            "moduleName": "ContactsManager"
+          },
+          {
+            "kind": "Var",
+            "name": "notes",
+            "printedName": "notes",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ContactsManager.ContactSyncProperty.Type) -> (Swift.String) -> ContactsManager.ContactSyncProperty",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> ContactsManager.ContactSyncProperty",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ContactSyncProperty",
+                        "printedName": "ContactsManager.ContactSyncProperty",
+                        "usr": "s:15ContactsManager19ContactSyncPropertyO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ContactsManager.ContactSyncProperty.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ContactSyncProperty",
+                        "printedName": "ContactsManager.ContactSyncProperty",
+                        "usr": "s:15ContactsManager19ContactSyncPropertyO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15ContactsManager19ContactSyncPropertyO5notesyACSScACmF",
+            "mangledName": "$s15ContactsManager19ContactSyncPropertyO5notesyACSScACmF",
+            "moduleName": "ContactsManager"
+          },
+          {
+            "kind": "Var",
+            "name": "interests",
+            "printedName": "interests",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ContactsManager.ContactSyncProperty.Type) -> ([Swift.String]) -> ContactsManager.ContactSyncProperty",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "([Swift.String]) -> ContactsManager.ContactSyncProperty",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ContactSyncProperty",
+                        "printedName": "ContactsManager.ContactSyncProperty",
+                        "usr": "s:15ContactsManager19ContactSyncPropertyO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ContactsManager.ContactSyncProperty.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ContactSyncProperty",
+                        "printedName": "ContactsManager.ContactSyncProperty",
+                        "usr": "s:15ContactsManager19ContactSyncPropertyO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15ContactsManager19ContactSyncPropertyO9interestsyACSaySSGcACmF",
+            "mangledName": "$s15ContactsManager19ContactSyncPropertyO9interestsyACSaySSGcACmF",
+            "moduleName": "ContactsManager"
+          },
+          {
+            "kind": "Var",
+            "name": "avatars",
+            "printedName": "avatars",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ContactsManager.ContactSyncProperty.Type) -> ([Swift.String]) -> ContactsManager.ContactSyncProperty",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "([Swift.String]) -> ContactsManager.ContactSyncProperty",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ContactSyncProperty",
+                        "printedName": "ContactsManager.ContactSyncProperty",
+                        "usr": "s:15ContactsManager19ContactSyncPropertyO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ContactsManager.ContactSyncProperty.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ContactSyncProperty",
+                        "printedName": "ContactsManager.ContactSyncProperty",
+                        "usr": "s:15ContactsManager19ContactSyncPropertyO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15ContactsManager19ContactSyncPropertyO7avatarsyACSaySSGcACmF",
+            "mangledName": "$s15ContactsManager19ContactSyncPropertyO7avatarsyACSaySSGcACmF",
+            "moduleName": "ContactsManager"
+          },
+          {
+            "kind": "Var",
+            "name": "isDeleted",
+            "printedName": "isDeleted",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ContactsManager.ContactSyncProperty.Type) -> (Swift.Bool) -> ContactsManager.ContactSyncProperty",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Bool) -> ContactsManager.ContactSyncProperty",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ContactSyncProperty",
+                        "printedName": "ContactsManager.ContactSyncProperty",
+                        "usr": "s:15ContactsManager19ContactSyncPropertyO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ContactsManager.ContactSyncProperty.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ContactSyncProperty",
+                        "printedName": "ContactsManager.ContactSyncProperty",
+                        "usr": "s:15ContactsManager19ContactSyncPropertyO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15ContactsManager19ContactSyncPropertyO9isDeletedyACSbcACmF",
+            "mangledName": "$s15ContactsManager19ContactSyncPropertyO9isDeletedyACSbcACmF",
+            "moduleName": "ContactsManager"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:15ContactsManager19ContactSyncPropertyO",
+        "mangledName": "$s15ContactsManager19ContactSyncPropertyO",
+        "moduleName": "ContactsManager",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ContactsManager"
+      },
+      {
+        "kind": "Import",
+        "name": "OSLog",
+        "printedName": "OSLog",
+        "declKind": "Import",
+        "moduleName": "ContactsManager"
+      },
+      {
+        "kind": "Import",
+        "name": "BackgroundTasks",
+        "printedName": "BackgroundTasks",
+        "declKind": "Import",
+        "moduleName": "ContactsManager"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ContactsManager"
+      },
+      {
+        "kind": "Import",
+        "name": "OSLog",
+        "printedName": "OSLog",
+        "declKind": "Import",
+        "moduleName": "ContactsManager"
+      },
+      {
+        "kind": "Import",
+        "name": "Contacts",
+        "printedName": "Contacts",
+        "declKind": "Import",
+        "moduleName": "ContactsManager"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ContactsManager"
+      },
+      {
+        "kind": "Import",
+        "name": "OSLog",
+        "printedName": "OSLog",
+        "declKind": "Import",
+        "moduleName": "ContactsManager"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftData",
+        "printedName": "SwiftData",
+        "declKind": "Import",
+        "moduleName": "ContactsManager"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ContactsManager"
+      },
+      {
+        "kind": "Import",
+        "name": "OSLog",
+        "printedName": "OSLog",
+        "declKind": "Import",
+        "moduleName": "ContactsManager"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftData",
+        "printedName": "SwiftData",
+        "declKind": "Import",
+        "moduleName": "ContactsManager"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ContactsManager"
+      },
+      {
+        "kind": "Import",
+        "name": "OSLog",
+        "printedName": "OSLog",
+        "declKind": "Import",
+        "moduleName": "ContactsManager"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftData",
+        "printedName": "SwiftData",
+        "declKind": "Import",
+        "moduleName": "ContactsManager"
+      },
+      {
+        "kind": "Import",
+        "name": "Contacts",
+        "printedName": "Contacts",
+        "declKind": "Import",
+        "moduleName": "ContactsManager"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ContactsManager"
+      },
+      {
+        "kind": "Import",
+        "name": "OSLog",
+        "printedName": "OSLog",
+        "declKind": "Import",
+        "moduleName": "ContactsManager"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftData",
+        "printedName": "SwiftData",
+        "declKind": "Import",
+        "moduleName": "ContactsManager"
+      },
+      {
+        "kind": "Import",
         "name": "CryptoKit",
         "printedName": "CryptoKit",
         "declKind": "Import",
@@ -28991,6 +30137,43 @@
               },
               {
                 "kind": "Var",
+                "name": "organizationIdNotFound",
+                "printedName": "organizationIdNotFound",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(ContactsManager.ContactSyncManager.SyncError.Type) -> ContactsManager.ContactSyncManager.SyncError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SyncError",
+                        "printedName": "ContactsManager.ContactSyncManager.SyncError",
+                        "usr": "s:15ContactsManager011ContactSyncB0C0D5ErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "ContactsManager.ContactSyncManager.SyncError.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "SyncError",
+                            "printedName": "ContactsManager.ContactSyncManager.SyncError",
+                            "usr": "s:15ContactsManager011ContactSyncB0C0D5ErrorO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:15ContactsManager011ContactSyncB0C0D5ErrorO22organizationIdNotFoundyA2EmF",
+                "mangledName": "$s15ContactsManager011ContactSyncB0C0D5ErrorO22organizationIdNotFoundyA2EmF",
+                "moduleName": "ContactsManager"
+              },
+              {
+                "kind": "Var",
                 "name": "localizedDescription",
                 "printedName": "localizedDescription",
                 "children": [
@@ -29755,17 +30938,30 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[ContactsManager.Contact]",
+                "name": "Tuple",
+                "printedName": "(contacts: [ContactsManager.Contact], totalCount: Swift.Int)",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Contact",
-                    "printedName": "ContactsManager.Contact",
-                    "usr": "s:15ContactsManager7ContactC"
+                    "name": "Array",
+                    "printedName": "[ContactsManager.Contact]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Contact",
+                        "printedName": "ContactsManager.Contact",
+                        "usr": "s:15ContactsManager7ContactC"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
                   }
-                ],
-                "usr": "s:Sa"
+                ]
               },
               {
                 "kind": "TypeNominal",
@@ -29804,12 +31000,13 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:15ContactsManager20ContactSearchServiceC06searchA05query0F6Fields6offset5limitSayAA0C0CGSS_ShyAC0D5FieldOGS2itYaKF",
-            "mangledName": "$s15ContactsManager20ContactSearchServiceC06searchA05query0F6Fields6offset5limitSayAA0C0CGSS_ShyAC0D5FieldOGS2itYaKF",
+            "usr": "s:15ContactsManager20ContactSearchServiceC06searchA05query0F6Fields6offset5limitSayAA0C0CG8contacts_Si10totalCounttSS_ShyAC0D5FieldOGS2itYaKF",
+            "mangledName": "$s15ContactsManager20ContactSearchServiceC06searchA05query0F6Fields6offset5limitSayAA0C0CG8contacts_Si10totalCounttSS_ShyAC0D5FieldOGS2itYaKF",
             "moduleName": "ContactsManager",
             "declAttributes": [
               "Final",
               "AccessControl",
+              "Custom",
               "RawDocComment"
             ],
             "throwing": true,
@@ -29848,6 +31045,7 @@
             "declAttributes": [
               "Final",
               "AccessControl",
+              "Custom",
               "RawDocComment"
             ],
             "throwing": true,
@@ -29893,7 +31091,10 @@
                 "declKind": "EnumElement",
                 "usr": "s:15ContactsManager20ContactSearchServiceC0D5FieldO4nameyA2EmF",
                 "mangledName": "$s15ContactsManager20ContactSearchServiceC0D5FieldO4nameyA2EmF",
-                "moduleName": "ContactsManager"
+                "moduleName": "ContactsManager",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
               },
               {
                 "kind": "Var",
@@ -29930,7 +31131,10 @@
                 "declKind": "EnumElement",
                 "usr": "s:15ContactsManager20ContactSearchServiceC0D5FieldO5emailyA2EmF",
                 "mangledName": "$s15ContactsManager20ContactSearchServiceC0D5FieldO5emailyA2EmF",
-                "moduleName": "ContactsManager"
+                "moduleName": "ContactsManager",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
               },
               {
                 "kind": "Var",
@@ -29967,7 +31171,10 @@
                 "declKind": "EnumElement",
                 "usr": "s:15ContactsManager20ContactSearchServiceC0D5FieldO5phoneyA2EmF",
                 "mangledName": "$s15ContactsManager20ContactSearchServiceC0D5FieldO5phoneyA2EmF",
-                "moduleName": "ContactsManager"
+                "moduleName": "ContactsManager",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
               },
               {
                 "kind": "Var",
@@ -30004,7 +31211,10 @@
                 "declKind": "EnumElement",
                 "usr": "s:15ContactsManager20ContactSearchServiceC0D5FieldO7addressyA2EmF",
                 "mangledName": "$s15ContactsManager20ContactSearchServiceC0D5FieldO7addressyA2EmF",
-                "moduleName": "ContactsManager"
+                "moduleName": "ContactsManager",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
               },
               {
                 "kind": "Var",
@@ -30041,7 +31251,10 @@
                 "declKind": "EnumElement",
                 "usr": "s:15ContactsManager20ContactSearchServiceC0D5FieldO12organizationyA2EmF",
                 "mangledName": "$s15ContactsManager20ContactSearchServiceC0D5FieldO12organizationyA2EmF",
-                "moduleName": "ContactsManager"
+                "moduleName": "ContactsManager",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
               },
               {
                 "kind": "Var",
@@ -30078,7 +31291,10 @@
                 "declKind": "EnumElement",
                 "usr": "s:15ContactsManager20ContactSearchServiceC0D5FieldO5notesyA2EmF",
                 "mangledName": "$s15ContactsManager20ContactSearchServiceC0D5FieldO5notesyA2EmF",
-                "moduleName": "ContactsManager"
+                "moduleName": "ContactsManager",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
               },
               {
                 "kind": "Var",
@@ -33728,6 +34944,52 @@
           },
           {
             "kind": "Function",
+            "name": "enableBackgroundSync",
+            "printedName": "enableBackgroundSync()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15ContactsManager0A7ServiceC20enableBackgroundSyncyyF",
+            "mangledName": "$s15ContactsManager0A7ServiceC20enableBackgroundSyncyyF",
+            "moduleName": "ContactsManager",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "scheduleBackgroundSyncTask",
+            "printedName": "scheduleBackgroundSyncTask()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15ContactsManager0A7ServiceC26scheduleBackgroundSyncTaskyyF",
+            "mangledName": "$s15ContactsManager0A7ServiceC26scheduleBackgroundSyncTaskyyF",
+            "moduleName": "ContactsManager",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "fetchContacts",
             "printedName": "fetchContacts(fieldType:)",
             "children": [
@@ -33794,6 +35056,151 @@
             "declKind": "Func",
             "usr": "s:15ContactsManager0A7ServiceC12fetchContact6withIdAA0E0CSgSS_tYaKF",
             "mangledName": "$s15ContactsManager0A7ServiceC12fetchContact6withIdAA0E0CSgSS_tYaKF",
+            "moduleName": "ContactsManager",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getSharedContactsByUsersToInvite",
+            "printedName": "getSharedContactsByUsersToInvite(limit:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[ContactsManager.ContactRecommendation]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ContactRecommendation",
+                    "printedName": "ContactsManager.ContactRecommendation",
+                    "usr": "s:15ContactsManager21ContactRecommendationV"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15ContactsManager0A7ServiceC09getSharedA15ByUsersToInvite5limitSayAA21ContactRecommendationVGSi_tYaKF",
+            "mangledName": "$s15ContactsManager0A7ServiceC09getSharedA15ByUsersToInvite5limitSayAA21ContactRecommendationVGSi_tYaKF",
+            "moduleName": "ContactsManager",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getContactsUsingApp",
+            "printedName": "getContactsUsingApp(limit:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[ContactsManager.LocalCanonicalContact]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LocalCanonicalContact",
+                    "printedName": "ContactsManager.LocalCanonicalContact",
+                    "usr": "s:15ContactsManager21LocalCanonicalContactV"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15ContactsManager0A7ServiceC03getA8UsingApp5limitSayAA21LocalCanonicalContactVGSi_tYaKF",
+            "mangledName": "$s15ContactsManager0A7ServiceC03getA8UsingApp5limitSayAA21LocalCanonicalContactVGSi_tYaKF",
+            "moduleName": "ContactsManager",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getUsersYouMightKnow",
+            "printedName": "getUsersYouMightKnow(limit:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[ContactsManager.CanonicalContact]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CanonicalContact",
+                    "printedName": "ContactsManager.CanonicalContact",
+                    "usr": "s:15ContactsManager16CanonicalContactV"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15ContactsManager0A7ServiceC20getUsersYouMightKnow5limitSayAA16CanonicalContactVGSi_tYaKF",
+            "mangledName": "$s15ContactsManager0A7ServiceC20getUsersYouMightKnow5limitSayAA16CanonicalContactVGSi_tYaKF",
+            "moduleName": "ContactsManager",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "syncContacts",
+            "printedName": "syncContacts()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15ContactsManager0A7ServiceC04syncA0SiyYaKF",
+            "mangledName": "$s15ContactsManager0A7ServiceC04syncA0SiyYaKF",
             "moduleName": "ContactsManager",
             "declAttributes": [
               "Final",
@@ -33897,198 +35304,6 @@
               "RawDocComment"
             ],
             "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "syncContacts",
-            "printedName": "syncContacts()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15ContactsManager0A7ServiceC04syncA0SiyYaKF",
-            "mangledName": "$s15ContactsManager0A7ServiceC04syncA0SiyYaKF",
-            "moduleName": "ContactsManager",
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "Custom",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getSharedContactsByUsersToInvite",
-            "printedName": "getSharedContactsByUsersToInvite(limit:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[ContactsManager.ContactRecommendation]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ContactRecommendation",
-                    "printedName": "ContactsManager.ContactRecommendation",
-                    "usr": "s:15ContactsManager21ContactRecommendationV"
-                  }
-                ],
-                "usr": "s:Sa"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "hasDefaultArg": true,
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15ContactsManager0A7ServiceC09getSharedA15ByUsersToInvite5limitSayAA21ContactRecommendationVGSi_tYaKF",
-            "mangledName": "$s15ContactsManager0A7ServiceC09getSharedA15ByUsersToInvite5limitSayAA21ContactRecommendationVGSi_tYaKF",
-            "moduleName": "ContactsManager",
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getContactsUsingApp",
-            "printedName": "getContactsUsingApp(limit:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[ContactsManager.LocalCanonicalContact]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "LocalCanonicalContact",
-                    "printedName": "ContactsManager.LocalCanonicalContact",
-                    "usr": "s:15ContactsManager21LocalCanonicalContactV"
-                  }
-                ],
-                "usr": "s:Sa"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "hasDefaultArg": true,
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15ContactsManager0A7ServiceC03getA8UsingApp5limitSayAA21LocalCanonicalContactVGSi_tYaKF",
-            "mangledName": "$s15ContactsManager0A7ServiceC03getA8UsingApp5limitSayAA21LocalCanonicalContactVGSi_tYaKF",
-            "moduleName": "ContactsManager",
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "enableBackgroundSync",
-            "printedName": "enableBackgroundSync()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15ContactsManager0A7ServiceC20enableBackgroundSyncyyF",
-            "mangledName": "$s15ContactsManager0A7ServiceC20enableBackgroundSyncyyF",
-            "moduleName": "ContactsManager",
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "scheduleBackgroundSyncTask",
-            "printedName": "scheduleBackgroundSyncTask()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15ContactsManager0A7ServiceC26scheduleBackgroundSyncTaskyyF",
-            "mangledName": "$s15ContactsManager0A7ServiceC26scheduleBackgroundSyncTaskyyF",
-            "moduleName": "ContactsManager",
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getUsersYouMightKnow",
-            "printedName": "getUsersYouMightKnow(limit:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[ContactsManager.CanonicalContact]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CanonicalContact",
-                    "printedName": "ContactsManager.CanonicalContact",
-                    "usr": "s:15ContactsManager16CanonicalContactV"
-                  }
-                ],
-                "usr": "s:Sa"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "hasDefaultArg": true,
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15ContactsManager0A7ServiceC20getUsersYouMightKnow5limitSayAA16CanonicalContactVGSi_tYaKF",
-            "mangledName": "$s15ContactsManager0A7ServiceC20getUsersYouMightKnow5limitSayAA16CanonicalContactVGSi_tYaKF",
-            "moduleName": "ContactsManager",
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "throwing": true,
             "funcSelfKind": "NonMutating"
           },
           {
@@ -34869,6 +36084,90 @@
   },
   "ConstValues": [
     {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Actors\/ContactDatabaseActor.swift",
+      "kind": "StringLiteral",
+      "offset": 593,
+      "length": 22,
+      "value": "\"ContactDatabaseActor\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Actors\/ContactDatabaseActor.swift",
+      "kind": "BooleanLiteral",
+      "offset": 699,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Actors\/ContactDatabaseActor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6954,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Actors\/ContactDatabaseActor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6974,
+      "length": 2,
+      "value": "50"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Actors\/ContactDatabaseActor+Sync.swift",
+      "kind": "IntegerLiteral",
+      "offset": 964,
+      "length": 2,
+      "value": "50"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Actors\/ContactDatabaseActor+Sync.swift",
+      "kind": "Array",
+      "offset": 3688,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Extensions\/ContactsService\/ContactsService+Fetching.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7576,
+      "length": 2,
+      "value": "50"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Extensions\/ContactsService\/ContactsService+Fetching.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7596,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Extensions\/ContactsService\/ContactsService+Fetching.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10872,
+      "length": 2,
+      "value": "50"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Extensions\/ContactsService\/ContactsService+Recommendations.swift",
+      "kind": "IntegerLiteral",
+      "offset": 393,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Extensions\/ContactsService\/ContactsService+Recommendations.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2408,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Extensions\/ContactsService\/ContactsService+Recommendations.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4125,
+      "length": 2,
+      "value": "30"
+    },
+    {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Logging\/LogManager.swift",
       "kind": "IntegerLiteral",
       "offset": 124,
@@ -34920,644 +36219,644 @@
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/ContactsSchemaMigrations.swift",
       "kind": "StringLiteral",
-      "offset": 132,
+      "offset": 150,
       "length": 11,
       "value": "\"Migration\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/ContactsSchemaMigrations.swift",
       "kind": "IntegerLiteral",
-      "offset": 328,
+      "offset": 346,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/ContactsSchemaMigrations.swift",
       "kind": "IntegerLiteral",
-      "offset": 670,
+      "offset": 688,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/ContactsSchemaMigrations.swift",
       "kind": "IntegerLiteral",
-      "offset": 1041,
+      "offset": 1059,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/ContactsSchemaMigrations.swift",
       "kind": "IntegerLiteral",
-      "offset": 1459,
+      "offset": 1477,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/ContactsSchemaMigrations.swift",
       "kind": "IntegerLiteral",
-      "offset": 1865,
+      "offset": 1883,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/ContactsSchemaMigrations.swift",
       "kind": "IntegerLiteral",
-      "offset": 2375,
+      "offset": 2393,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/ContactsSchemaMigrations.swift",
       "kind": "IntegerLiteral",
-      "offset": 2389,
+      "offset": 2407,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/ContactsSchemaMigrations.swift",
       "kind": "StringLiteral",
-      "offset": 2518,
+      "offset": 2545,
       "length": 53,
       "value": "\"Migrating from v1 to v2: Adding ContactSource model\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/ContactsSchemaMigrations.swift",
       "kind": "IntegerLiteral",
-      "offset": 2685,
+      "offset": 2712,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/ContactsSchemaMigrations.swift",
       "kind": "IntegerLiteral",
-      "offset": 2699,
+      "offset": 2726,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/ContactsSchemaMigrations.swift",
       "kind": "StringLiteral",
-      "offset": 2746,
+      "offset": 2782,
       "length": 53,
       "value": "\"Migrating from v2 to v3: Fixing relationship models\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/ContactsSchemaMigrations.swift",
       "kind": "StringLiteral",
-      "offset": 3136,
+      "offset": 3181,
       "length": 45,
       "value": "\"Found \""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/ContactsSchemaMigrations.swift",
       "kind": "StringLiteral",
-      "offset": 3160,
+      "offset": 3205,
       "length": 8,
       "value": "\" contacts to migrate\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/ContactsSchemaMigrations.swift",
       "kind": "StringLiteral",
-      "offset": 3379,
+      "offset": 3433,
       "length": 95,
       "value": "\"Contact \""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/ContactsSchemaMigrations.swift",
       "kind": "StringLiteral",
-      "offset": 3411,
+      "offset": 3465,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/ContactsSchemaMigrations.swift",
       "kind": "StringLiteral",
-      "offset": 3414,
+      "offset": 3468,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/ContactsSchemaMigrations.swift",
       "kind": "StringLiteral",
-      "offset": 3439,
+      "offset": 3493,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/ContactsSchemaMigrations.swift",
       "kind": "StringLiteral",
-      "offset": 3442,
+      "offset": 3496,
       "length": 3,
       "value": "\" has no phone numbers, skipping\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/ContactsSchemaMigrations.swift",
       "kind": "StringLiteral",
-      "offset": 4337,
+      "offset": 4400,
       "length": 89,
       "value": "\"Fixed phone numbers for contact: \""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/ContactsSchemaMigrations.swift",
       "kind": "StringLiteral",
-      "offset": 4394,
+      "offset": 4457,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/ContactsSchemaMigrations.swift",
       "kind": "StringLiteral",
-      "offset": 4397,
+      "offset": 4460,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/ContactsSchemaMigrations.swift",
       "kind": "StringLiteral",
-      "offset": 4422,
+      "offset": 4485,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/ContactsSchemaMigrations.swift",
       "kind": "StringLiteral",
-      "offset": 4425,
+      "offset": 4488,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/ContactsSchemaMigrations.swift",
       "kind": "StringLiteral",
-      "offset": 5191,
+      "offset": 5263,
       "length": 91,
       "value": "\"Fixed email addresses for contact: \""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/ContactsSchemaMigrations.swift",
       "kind": "StringLiteral",
-      "offset": 5250,
+      "offset": 5322,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/ContactsSchemaMigrations.swift",
       "kind": "StringLiteral",
-      "offset": 5253,
+      "offset": 5325,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/ContactsSchemaMigrations.swift",
       "kind": "StringLiteral",
-      "offset": 5278,
+      "offset": 5350,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/ContactsSchemaMigrations.swift",
       "kind": "StringLiteral",
-      "offset": 5281,
+      "offset": 5353,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/ContactsSchemaMigrations.swift",
       "kind": "StringLiteral",
-      "offset": 5943,
+      "offset": 6024,
       "length": 89,
       "value": "\"Fixed URL addresses for contact: \""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/ContactsSchemaMigrations.swift",
       "kind": "StringLiteral",
-      "offset": 6000,
+      "offset": 6081,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/ContactsSchemaMigrations.swift",
       "kind": "StringLiteral",
-      "offset": 6003,
+      "offset": 6084,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/ContactsSchemaMigrations.swift",
       "kind": "StringLiteral",
-      "offset": 6028,
+      "offset": 6109,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/ContactsSchemaMigrations.swift",
       "kind": "StringLiteral",
-      "offset": 6031,
+      "offset": 6112,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/ContactsSchemaMigrations.swift",
       "kind": "Array",
-      "offset": 6185,
+      "offset": 6266,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/ContactsSchemaMigrations.swift",
       "kind": "Array",
-      "offset": 6269,
+      "offset": 6350,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/ContactsSchemaMigrations.swift",
       "kind": "StringLiteral",
-      "offset": 6472,
+      "offset": 6562,
       "length": 45,
       "value": "\"Successfully migrated contacts to v3 schema\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/ContactsSchemaMigrations.swift",
       "kind": "StringLiteral",
-      "offset": 6556,
+      "offset": 6655,
       "length": 55,
       "value": "\"Error during migration: \""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/ContactsSchemaMigrations.swift",
       "kind": "StringLiteral",
-      "offset": 6610,
+      "offset": 6709,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/ContactsSchemaMigrations.swift",
       "kind": "IntegerLiteral",
-      "offset": 6773,
+      "offset": 6872,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/ContactsSchemaMigrations.swift",
       "kind": "IntegerLiteral",
-      "offset": 6787,
+      "offset": 6886,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/ContactsSchemaMigrations.swift",
       "kind": "StringLiteral",
-      "offset": 6834,
+      "offset": 6942,
       "length": 77,
       "value": "\"Migrating from v3 to v4: Creating specific models for phone, email, and URL\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/ContactsSchemaMigrations.swift",
       "kind": "StringLiteral",
-      "offset": 7248,
+      "offset": 7365,
       "length": 45,
       "value": "\"Found \""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/ContactsSchemaMigrations.swift",
       "kind": "StringLiteral",
-      "offset": 7272,
+      "offset": 7389,
       "length": 8,
       "value": "\" contacts to migrate\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/ContactsSchemaMigrations.swift",
       "kind": "StringLiteral",
-      "offset": 7648,
+      "offset": 7774,
       "length": 87,
       "value": "\"Updated contact relationships: \""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/ContactsSchemaMigrations.swift",
       "kind": "StringLiteral",
-      "offset": 7703,
+      "offset": 7829,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/ContactsSchemaMigrations.swift",
       "kind": "StringLiteral",
-      "offset": 7706,
+      "offset": 7832,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/ContactsSchemaMigrations.swift",
       "kind": "StringLiteral",
-      "offset": 7731,
+      "offset": 7857,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/ContactsSchemaMigrations.swift",
       "kind": "StringLiteral",
-      "offset": 7734,
+      "offset": 7860,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/ContactsSchemaMigrations.swift",
       "kind": "StringLiteral",
-      "offset": 7823,
+      "offset": 7958,
       "length": 45,
       "value": "\"Successfully migrated contacts to v4 schema\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/ContactsSchemaMigrations.swift",
       "kind": "StringLiteral",
-      "offset": 7907,
+      "offset": 8051,
       "length": 55,
       "value": "\"Error during migration: \""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/ContactsSchemaMigrations.swift",
       "kind": "StringLiteral",
-      "offset": 7961,
+      "offset": 8105,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/ContactsSchemaMigrations.swift",
       "kind": "IntegerLiteral",
-      "offset": 8113,
+      "offset": 8257,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/ContactsSchemaMigrations.swift",
       "kind": "IntegerLiteral",
-      "offset": 8127,
+      "offset": 8271,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/ContactsSchemaMigrations.swift",
       "kind": "StringLiteral",
-      "offset": 8174,
+      "offset": 8327,
       "length": 66,
       "value": "\"Migrating from v4 to v5: Final cleanup after removing old models\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/ContactsSchemaMigrations.swift",
       "kind": "StringLiteral",
-      "offset": 8616,
+      "offset": 8778,
       "length": 57,
       "value": "\"Found \""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/ContactsSchemaMigrations.swift",
       "kind": "StringLiteral",
-      "offset": 8640,
+      "offset": 8802,
       "length": 8,
       "value": "\" contacts for final verification\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/ContactsSchemaMigrations.swift",
       "kind": "IntegerLiteral",
-      "offset": 8743,
+      "offset": 8905,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/ContactsSchemaMigrations.swift",
       "kind": "StringLiteral",
-      "offset": 8860,
+      "offset": 9031,
       "length": 42,
       "value": "\"Total phone numbers found: \""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/ContactsSchemaMigrations.swift",
       "kind": "StringLiteral",
-      "offset": 8901,
+      "offset": 9072,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/ContactsSchemaMigrations.swift",
       "kind": "StringLiteral",
-      "offset": 9012,
+      "offset": 9192,
       "length": 47,
       "value": "\"Successfully finalized migration to schema v5\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/ContactsSchemaMigrations.swift",
       "kind": "StringLiteral",
-      "offset": 9200,
+      "offset": 9389,
       "length": 36,
       "value": "\"Final model counts: \""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/ContactsSchemaMigrations.swift",
       "kind": "StringLiteral",
-      "offset": 9235,
+      "offset": 9424,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/ContactsSchemaMigrations.swift",
       "kind": "StringLiteral",
-      "offset": 9275,
+      "offset": 9473,
       "length": 64,
       "value": "\"Error during v4 to v5 migration: \""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/ContactsSchemaMigrations.swift",
       "kind": "StringLiteral",
-      "offset": 9338,
+      "offset": 9536,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/ContactsSchemaMigrations.swift",
       "kind": "IntegerLiteral",
-      "offset": 10122,
+      "offset": 10320,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/ContactsSchemaMigrations.swift",
       "kind": "BooleanLiteral",
-      "offset": 10683,
+      "offset": 10881,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/MigrationManager.swift",
       "kind": "StringLiteral",
-      "offset": 88,
+      "offset": 97,
       "length": 21,
       "value": "\"com.contactsmanager\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/MigrationManager.swift",
       "kind": "StringLiteral",
-      "offset": 121,
+      "offset": 130,
       "length": 11,
       "value": "\"Migration\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/MigrationManager.swift",
       "kind": "StringLiteral",
-      "offset": 595,
+      "offset": 1351,
       "length": 36,
       "value": "\"com.contactsmanager.schema.version\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/MigrationManager.swift",
       "kind": "StringLiteral",
-      "offset": 660,
+      "offset": 1416,
       "length": 23,
       "value": "\"ContactsManager.store\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/MigrationManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 716,
+      "offset": 1472,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/SchemaMigrationCleanup.swift",
       "kind": "StringLiteral",
-      "offset": 88,
+      "offset": 94,
       "length": 21,
       "value": "\"com.contactsmanager\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Migration\/SchemaMigrationCleanup.swift",
       "kind": "StringLiteral",
-      "offset": 121,
+      "offset": 127,
       "length": 17,
       "value": "\"SchemaMigration\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Contact.swift",
       "kind": "StringLiteral",
-      "offset": 173,
+      "offset": 180,
       "length": 9,
       "value": "\"Contact\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Contact.swift",
       "kind": "StringLiteral",
-      "offset": 279,
+      "offset": 286,
       "length": 3,
       "value": "\"@\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Contact.swift",
       "kind": "IntegerLiteral",
-      "offset": 1070,
+      "offset": 1077,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Contact.swift",
       "kind": "BooleanLiteral",
-      "offset": 2589,
+      "offset": 2596,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Contact.swift",
       "kind": "Array",
-      "offset": 2733,
+      "offset": 2740,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Contact.swift",
       "kind": "Array",
-      "offset": 2839,
+      "offset": 2846,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Contact.swift",
       "kind": "Array",
-      "offset": 2953,
+      "offset": 2960,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Contact.swift",
       "kind": "Array",
-      "offset": 3031,
+      "offset": 3038,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Contact.swift",
       "kind": "Array",
-      "offset": 3102,
+      "offset": 3109,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Contact.swift",
       "kind": "Array",
-      "offset": 3203,
+      "offset": 3210,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Contact.swift",
       "kind": "Array",
-      "offset": 3279,
+      "offset": 3286,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Contact.swift",
       "kind": "Array",
-      "offset": 4289,
+      "offset": 4296,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Contact.swift",
       "kind": "BooleanLiteral",
-      "offset": 4570,
+      "offset": 4577,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Contact.swift",
       "kind": "BooleanLiteral",
-      "offset": 5457,
+      "offset": 5464,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Contact.swift",
       "kind": "BooleanLiteral",
-      "offset": 6935,
+      "offset": 6942,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Contact.swift",
       "kind": "StringLiteral",
-      "offset": 7908,
+      "offset": 7915,
       "length": 16,
       "value": "\"_interestsData\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Contact.swift",
       "kind": "StringLiteral",
-      "offset": 7948,
+      "offset": 7955,
       "length": 14,
       "value": "\"_avatarsData\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/Contact.swift",
       "kind": "BooleanLiteral",
-      "offset": 19795,
+      "offset": 19816,
       "length": 4,
       "value": "true"
     },
@@ -36208,392 +37507,378 @@
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
       "kind": "StringLiteral",
-      "offset": 138,
+      "offset": 144,
       "length": 11,
       "value": "\"APIClient\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
       "kind": "StringLiteral",
-      "offset": 1931,
+      "offset": 1937,
       "length": 34,
       "value": "\"contactsmanager.original.user.id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
       "kind": "StringLiteral",
-      "offset": 2087,
+      "offset": 2093,
       "length": 28,
       "value": "\"contactsmanager.user.token\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
       "kind": "StringLiteral",
-      "offset": 2145,
+      "offset": 2151,
       "length": 58,
       "value": "\"Please initialize the ContactsManager with a valid token\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 8729,
+      "offset": 9036,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
       "kind": "StringLiteral",
-      "offset": 8979,
+      "offset": 9292,
       "length": 6,
       "value": "\"POST\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
       "kind": "StringLiteral",
-      "offset": 9007,
+      "offset": 9320,
       "length": 18,
       "value": "\"application\/json\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
       "kind": "StringLiteral",
-      "offset": 9047,
+      "offset": 9360,
       "length": 14,
       "value": "\"Content-Type\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
       "kind": "StringLiteral",
-      "offset": 9084,
+      "offset": 9397,
       "length": 17,
       "value": "\"Bearer \""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
       "kind": "StringLiteral",
-      "offset": 9100,
+      "offset": 9413,
       "length": 24,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
       "kind": "StringLiteral",
-      "offset": 9123,
+      "offset": 9436,
       "length": 15,
       "value": "\"Authorization\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
       "kind": "StringLiteral",
-      "offset": 9272,
-      "length": 17,
-      "value": "\"organization_id\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
-      "kind": "StringLiteral",
-      "offset": 9522,
-      "length": 74,
+      "offset": 9473,
+      "length": 52,
       "value": "\"Preparing to sync \""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
       "kind": "StringLiteral",
-      "offset": 9558,
-      "length": 8,
-      "value": "\" contacts with source ID: \""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
-      "kind": "StringLiteral",
-      "offset": 9595,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
-      "kind": "StringLiteral",
-      "offset": 10295,
-      "length": 61,
-      "value": "\"Syncing contacts with request structure (first 1000 chars):\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
-      "kind": "IntegerLiteral",
-      "offset": 10404,
-      "length": 4,
-      "value": "1000"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
-      "kind": "StringLiteral",
-      "offset": 10767,
-      "length": 57,
-      "value": "\"Server response status code: \""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
-      "kind": "StringLiteral",
-      "offset": 10823,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
-      "kind": "StringLiteral",
-      "offset": 10914,
-      "length": 36,
-      "value": "\"Server response: \""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
-      "kind": "StringLiteral",
-      "offset": 10949,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
-      "kind": "IntegerLiteral",
-      "offset": 10997,
-      "length": 3,
-      "value": "400"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
-      "kind": "IntegerLiteral",
-      "offset": 11104,
-      "length": 3,
-      "value": "422"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
-      "kind": "StringLiteral",
-      "offset": 11353,
-      "length": 8,
-      "value": "\"detail\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
-      "kind": "StringLiteral",
-      "offset": 11501,
-      "length": 5,
-      "value": "\"loc\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
-      "kind": "StringLiteral",
-      "offset": 11595,
-      "length": 3,
-      "value": "\".\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
-      "kind": "StringLiteral",
-      "offset": 11631,
-      "length": 5,
-      "value": "\"msg\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
-      "kind": "StringLiteral",
-      "offset": 11681,
-      "length": 6,
-      "value": "\"type\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
-      "kind": "StringLiteral",
-      "offset": 11776,
-      "length": 4,
-      "value": "\": \""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
-      "kind": "StringLiteral",
-      "offset": 11816,
-      "length": 4,
-      "value": "\"\n\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
-      "kind": "StringLiteral",
-      "offset": 11849,
-      "length": 20,
-      "value": "\"Validation errors:\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
-      "kind": "IntegerLiteral",
-      "offset": 11981,
-      "length": 3,
-      "value": "422"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
-      "kind": "StringLiteral",
-      "offset": 11995,
-      "length": 35,
-      "value": "\"Validation error: \""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
-      "kind": "StringLiteral",
-      "offset": 12029,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
-      "kind": "StringLiteral",
-      "offset": 12079,
-      "length": 41,
-      "value": "\"Unprocessable entity: \""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
-      "kind": "StringLiteral",
-      "offset": 12119,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
-      "kind": "StringLiteral",
-      "offset": 12405,
-      "length": 17,
-      "value": "\"processed_count\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
-      "kind": "StringLiteral",
-      "offset": 12646,
-      "length": 59,
-      "value": "\"Successfully synced \""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
-      "kind": "StringLiteral",
-      "offset": 12695,
+      "offset": 9515,
       "length": 8,
       "value": "\" contacts\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
       "kind": "StringLiteral",
-      "offset": 12801,
+      "offset": 10006,
+      "length": 61,
+      "value": "\"Syncing contacts with request structure (first 1000 chars):\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10118,
+      "length": 4,
+      "value": "1000"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
+      "kind": "StringLiteral",
+      "offset": 10484,
+      "length": 57,
+      "value": "\"Server response status code: \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
+      "kind": "StringLiteral",
+      "offset": 10540,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
+      "kind": "StringLiteral",
+      "offset": 10634,
+      "length": 36,
+      "value": "\"Server response: \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
+      "kind": "StringLiteral",
+      "offset": 10669,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10717,
+      "length": 3,
+      "value": "400"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10824,
+      "length": 3,
+      "value": "422"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
+      "kind": "StringLiteral",
+      "offset": 11073,
+      "length": 8,
+      "value": "\"detail\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
+      "kind": "StringLiteral",
+      "offset": 11221,
+      "length": 5,
+      "value": "\"loc\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
+      "kind": "StringLiteral",
+      "offset": 11315,
+      "length": 3,
+      "value": "\".\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
+      "kind": "StringLiteral",
+      "offset": 11351,
+      "length": 5,
+      "value": "\"msg\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
+      "kind": "StringLiteral",
+      "offset": 11401,
+      "length": 6,
+      "value": "\"type\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
+      "kind": "StringLiteral",
+      "offset": 11496,
+      "length": 4,
+      "value": "\": \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
+      "kind": "StringLiteral",
+      "offset": 11536,
+      "length": 4,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
+      "kind": "StringLiteral",
+      "offset": 11572,
+      "length": 20,
+      "value": "\"Validation errors:\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11707,
+      "length": 3,
+      "value": "422"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
+      "kind": "StringLiteral",
+      "offset": 11721,
+      "length": 35,
+      "value": "\"Validation error: \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
+      "kind": "StringLiteral",
+      "offset": 11755,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
+      "kind": "StringLiteral",
+      "offset": 11808,
+      "length": 41,
+      "value": "\"Unprocessable entity: \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
+      "kind": "StringLiteral",
+      "offset": 11848,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
+      "kind": "StringLiteral",
+      "offset": 12134,
+      "length": 17,
+      "value": "\"processed_count\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
+      "kind": "StringLiteral",
+      "offset": 12378,
+      "length": 59,
+      "value": "\"Successfully synced \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
+      "kind": "StringLiteral",
+      "offset": 12427,
+      "length": 8,
+      "value": "\" contacts\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
+      "kind": "StringLiteral",
+      "offset": 12536,
       "length": 62,
       "value": "\"API Error during contact sync: \""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
       "kind": "StringLiteral",
-      "offset": 12862,
+      "offset": 12597,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
       "kind": "StringLiteral",
-      "offset": 12916,
+      "offset": 12654,
       "length": 69,
       "value": "\"Unexpected error during contact sync: \""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
       "kind": "StringLiteral",
-      "offset": 12984,
+      "offset": 12722,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 20593,
+      "offset": 20361,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 21221,
+      "offset": 20989,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 21866,
+      "offset": 21634,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 22462,
+      "offset": 22230,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 22909,
+      "offset": 22677,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
       "kind": "StringLiteral",
-      "offset": 30625,
+      "offset": 30453,
       "length": 12,
       "value": "\"expires_at\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
       "kind": "StringLiteral",
-      "offset": 31214,
+      "offset": 31042,
       "length": 9,
       "value": "\"api_key\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
       "kind": "StringLiteral",
-      "offset": 31248,
+      "offset": 31076,
       "length": 11,
       "value": "\"user_info\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
       "kind": "StringLiteral",
-      "offset": 31286,
+      "offset": 31114,
       "length": 13,
       "value": "\"device_info\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 31637,
+      "offset": 31465,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
       "kind": "StringLiteral",
-      "offset": 31712,
+      "offset": 31543,
       "length": 57,
       "value": "\"API key validation error: \""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
       "kind": "StringLiteral",
-      "offset": 31768,
+      "offset": 31599,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 31784,
+      "offset": 31615,
       "length": 5,
       "value": "false"
     },
@@ -36937,34 +38222,27 @@
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIConfig.swift",
       "kind": "IntegerLiteral",
       "offset": 3172,
-      "length": 2,
-      "value": "50"
+      "length": 3,
+      "value": "100"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIConfig.swift",
       "kind": "StringLiteral",
-      "offset": 3294,
+      "offset": 3295,
       "length": 32,
       "value": "\"https:\/\/www.contactsmanager.io\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ContactSyncManager.swift",
       "kind": "StringLiteral",
-      "offset": 307,
-      "length": 21,
-      "value": "\"com.contactsmanager\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ContactSyncManager.swift",
-      "kind": "StringLiteral",
-      "offset": 340,
+      "offset": 317,
       "length": 20,
       "value": "\"ContactSyncManager\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/ContactSyncManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 389,
+      "offset": 416,
       "length": 5,
       "value": "false"
     },
@@ -37384,42 +38662,42 @@
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Services\/ContactsAuthorizationService.swift",
       "kind": "StringLiteral",
-      "offset": 102,
+      "offset": 106,
       "length": 21,
       "value": "\"com.contactsmanager\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Services\/ContactsAuthorizationService.swift",
       "kind": "StringLiteral",
-      "offset": 135,
+      "offset": 139,
       "length": 15,
       "value": "\"Authorization\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Services\/ContactSearchService.swift",
       "kind": "StringLiteral",
-      "offset": 88,
+      "offset": 94,
       "length": 21,
       "value": "\"com.contactsmanager\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Services\/ContactSearchService.swift",
       "kind": "StringLiteral",
-      "offset": 121,
+      "offset": 127,
       "length": 8,
       "value": "\"Search\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Services\/ContactSearchService.swift",
       "kind": "IntegerLiteral",
-      "offset": 3277,
+      "offset": 2657,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Services\/ContactSearchService.swift",
       "kind": "IntegerLiteral",
-      "offset": 3297,
+      "offset": 2677,
       "length": 2,
       "value": "50"
     },
@@ -37454,56 +38732,56 @@
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Services\/EventWrapperService.swift",
       "kind": "StringLiteral",
-      "offset": 117,
+      "offset": 122,
       "length": 21,
       "value": "\"com.contactsmanager\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Services\/EventWrapperService.swift",
       "kind": "StringLiteral",
-      "offset": 150,
+      "offset": 155,
       "length": 14,
       "value": "\"EventWrapper\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Services\/EventWrapperService.swift",
       "kind": "StringLiteral",
-      "offset": 317,
+      "offset": 322,
       "length": 46,
       "value": "\"com.contactsmanager.event.appDidBecomeActive\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Services\/EventWrapperService.swift",
       "kind": "StringLiteral",
-      "offset": 395,
+      "offset": 400,
       "length": 49,
       "value": "\"com.contactsmanager.event.appDidEnterBackground\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Services\/EventWrapperService.swift",
       "kind": "StringLiteral",
-      "offset": 476,
+      "offset": 481,
       "length": 49,
       "value": "\"com.contactsmanager.event.contactStoreDidChange\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Services\/EventWrapperService.swift",
       "kind": "StringLiteral",
-      "offset": 552,
+      "offset": 557,
       "length": 44,
       "value": "\"com.contactsmanager.event.appWasTerminated\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Services\/EventWrapperService.swift",
       "kind": "StringLiteral",
-      "offset": 628,
+      "offset": 633,
       "length": 49,
       "value": "\"com.contactsmanager.event.contactsAccessChanged\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Services\/EventWrapperService.swift",
       "kind": "Dictionary",
-      "offset": 1100,
+      "offset": 1105,
       "length": 3,
       "value": "[]"
     },
@@ -37636,203 +38914,154 @@
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/UI\/ContactPickerViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 99,
+      "offset": 105,
       "length": 21,
       "value": "\"com.contactsmanager\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/UI\/ContactPickerViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 132,
+      "offset": 138,
       "length": 15,
       "value": "\"ContactPicker\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/UI\/ContactPickerViewModel.swift",
       "kind": "Array",
-      "offset": 310,
+      "offset": 412,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/UI\/ContactPickerViewModel.swift",
       "kind": "Array",
-      "offset": 373,
+      "offset": 475,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/UI\/ContactPickerViewModel.swift",
       "kind": "Array",
-      "offset": 427,
+      "offset": 529,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/UI\/ContactPickerViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 472,
+      "offset": 574,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/UI\/ContactPickerViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 532,
+      "offset": 634,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/UI\/ContactPickerViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 594,
+      "offset": 696,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/UI\/ContactPickerViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 626,
+      "offset": 728,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/UI\/ContactPickerViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 658,
+      "offset": 760,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/UI\/ContactPickerViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 704,
+      "offset": 806,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/UI\/ContactPickerViewModel.swift",
       "kind": "Dictionary",
-      "offset": 862,
+      "offset": 964,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/UI\/ContactPickerViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1486,
+      "offset": 1588,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/UI\/ContactPickerViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 1563,
+      "offset": 1665,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/UI\/ContactPickerViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 1591,
+      "offset": 1693,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/UI\/ContactPickerViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1626,
+      "offset": 1728,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/ContactsService.swift",
       "kind": "StringLiteral",
-      "offset": 226,
+      "offset": 227,
       "length": 9,
       "value": "\"Service\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/ContactsService.swift",
       "kind": "StringLiteral",
-      "offset": 320,
+      "offset": 322,
       "length": 34,
       "value": "\"com.contactsmanager.contact-sync\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/ContactsService.swift",
-      "kind": "IntegerLiteral",
-      "offset": 26491,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/ContactsService.swift",
-      "kind": "IntegerLiteral",
-      "offset": 26516,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/ContactsService.swift",
-      "kind": "IntegerLiteral",
-      "offset": 26543,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/ContactsService.swift",
-      "kind": "IntegerLiteral",
-      "offset": 26568,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/ContactsService.swift",
-      "kind": "IntegerLiteral",
-      "offset": 40335,
-      "length": 2,
-      "value": "30"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/ContactsService.swift",
-      "kind": "IntegerLiteral",
-      "offset": 42350,
-      "length": 2,
-      "value": "30"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/ContactsService.swift",
-      "kind": "IntegerLiteral",
-      "offset": 56043,
-      "length": 2,
-      "value": "30"
-    },
-    {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/RecommendationService.swift",
       "kind": "StringLiteral",
-      "offset": 315,
+      "offset": 319,
       "length": 23,
       "value": "\"RecommendationService\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/RecommendationService.swift",
       "kind": "IntegerLiteral",
-      "offset": 3779,
+      "offset": 3783,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/RecommendationService.swift",
       "kind": "IntegerLiteral",
-      "offset": 4612,
+      "offset": 4616,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/RecommendationService.swift",
       "kind": "IntegerLiteral",
-      "offset": 8124,
+      "offset": 8140,
       "length": 2,
       "value": "30"
     }

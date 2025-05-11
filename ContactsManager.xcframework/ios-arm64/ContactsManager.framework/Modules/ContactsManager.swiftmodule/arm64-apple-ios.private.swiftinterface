@@ -16,6 +16,45 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 import _SwiftData_SwiftUI
+public enum ContactDatabaseError : Swift.Error {
+  case notInitialized
+  case invalidModelContainer
+  case contactNotFound
+  case invalidData
+  case searchError
+  case operationFailed(Swift.String)
+  case contextCreationFailed
+}
+public enum ContactSyncProperty {
+  case sourceId(Swift.String)
+  case parentContactId(Swift.String)
+  case imageUrl(Swift.String)
+  case bio(Swift.String)
+  case location(Swift.String)
+  case organizationName(Swift.String)
+  case departmentName(Swift.String)
+  case jobTitle(Swift.String)
+  case notes(Swift.String)
+  case interests([Swift.String])
+  case avatars([Swift.String])
+  case isDeleted(Swift.Bool)
+}
+extension ContactsManager.ContactsService {
+  final public func enableBackgroundSync()
+  final public func scheduleBackgroundSyncTask()
+}
+extension ContactsManager.ContactsService {
+  final public func fetchContacts(fieldType: ContactsManager.ContactFieldType) async throws -> [ContactsManager.Contact]
+  final public func fetchContact(withId id: Swift.String) async throws -> ContactsManager.Contact?
+}
+extension ContactsManager.ContactsService {
+  final public func getSharedContactsByUsersToInvite(limit: Swift.Int = 30) async throws -> [ContactsManager.ContactRecommendation]
+  final public func getContactsUsingApp(limit: Swift.Int = 30) async throws -> [ContactsManager.LocalCanonicalContact]
+  final public func getUsersYouMightKnow(limit: Swift.Int = 30) async throws -> [ContactsManager.CanonicalContact]
+}
+extension ContactsManager.ContactsService {
+  final public func syncContacts() async throws -> Swift.Int
+}
 public let SECTIONNONAME: Swift.String
 final public class Contact {
   final public var identifier: Swift.String {
@@ -992,6 +1031,7 @@ extension ContactsManager.ContactSyncManager {
     case alreadyRunning
     case contextSaveError
     case sourceNotRegistered
+    case organizationIdNotFound
     public var localizedDescription: Swift.String {
       get
     }
@@ -1022,8 +1062,8 @@ public enum ContactsAccessStatus : Swift.Equatable {
 @_hasMissingDesignatedInitializers final public class ContactSearchService {
   public static let shared: ContactsManager.ContactSearchService
   final public func getTotalContactsCount() async throws -> Swift.Int
-  final public func searchContacts(query: Swift.String, searchFields: Swift.Set<ContactsManager.ContactSearchService.SearchField> = Set(SearchField.allCases), offset: Swift.Int = 0, limit: Swift.Int = 50) async throws -> [ContactsManager.Contact]
-  final public func quickSearch(_ query: Swift.String) async throws -> [ContactsManager.Contact]
+  @_Concurrency.MainActor final public func searchContacts(query: Swift.String, searchFields: Swift.Set<ContactsManager.ContactSearchService.SearchField> = Set(SearchField.allCases), offset: Swift.Int = 0, limit: Swift.Int = 50) async throws -> (contacts: [ContactsManager.Contact], totalCount: Swift.Int)
+  @_Concurrency.MainActor final public func quickSearch(_ query: Swift.String) async throws -> [ContactsManager.Contact]
   public enum SearchField : Swift.CaseIterable {
     case name
     case email
@@ -1160,29 +1200,11 @@ public enum ContactsServiceError : Foundation.LocalizedError {
   @objc deinit
 }
 extension ContactsManager.ContactsService {
-  final public func fetchContacts(fieldType: ContactsManager.ContactFieldType) async throws -> [ContactsManager.Contact]
-  final public func fetchContact(withId id: Swift.String) async throws -> ContactsManager.Contact?
-}
-extension ContactsManager.ContactsService {
   final public func requestContactsAccess() async -> Swift.Bool
   final public var contactsAccessStatus: ContactsManager.ContactsAccessStatus {
     get
   }
   final public func hasContactsReadAccess() -> Swift.Bool
-}
-extension ContactsManager.ContactsService {
-  @_Concurrency.MainActor final public func syncContacts() async throws -> Swift.Int
-}
-extension ContactsManager.ContactsService {
-  final public func getSharedContactsByUsersToInvite(limit: Swift.Int = 30) async throws -> [ContactsManager.ContactRecommendation]
-  final public func getContactsUsingApp(limit: Swift.Int = 30) async throws -> [ContactsManager.LocalCanonicalContact]
-}
-extension ContactsManager.ContactsService {
-  final public func enableBackgroundSync()
-  final public func scheduleBackgroundSyncTask()
-}
-extension ContactsManager.ContactsService {
-  final public func getUsersYouMightKnow(limit: Swift.Int = 30) async throws -> [ContactsManager.CanonicalContact]
 }
 extension ContactsManager.ContactsService {
   public static func checkHealth() async -> Swift.Bool
