@@ -1002,6 +1002,7 @@ public struct APIConfig {
   public static let followersEndpoint: Swift.String
   public static let followingEndpoint: Swift.String
   public static let mutualFollowsEndpoint: Swift.String
+  public static let batchFollowingStatusEndpoint: Swift.String
   public static let eventsEndpoint: Swift.String
   public static let feedEndpoint: Swift.String
   public static let upcomingEventsEndpoint: Swift.String
@@ -1106,7 +1107,19 @@ extension SwiftUICore.View {
   @_Concurrency.MainActor @preconcurrency public func onContactsManagerEvent(_ event: ContactsManager.ContactsManagerEvent, identifier: Swift.String, perform action: @escaping () -> Swift.Void) -> some SwiftUICore.View
   
 }
+public enum SocialServiceError : Foundation.LocalizedError {
+  case invalidInput(Swift.String)
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
 @_hasMissingDesignatedInitializers public class SocialService {
+  public struct BatchFollowingStatusItem : Swift.Decodable {
+    public let isFollowing: Swift.Bool
+    public let since: Foundation.Date?
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public func checkBatchFollowingStatus(userIds: [Swift.String]) async throws -> [Swift.String : ContactsManager.SocialService.BatchFollowingStatusItem]
   public func followUser(userId: Swift.String) async throws -> ContactsManager.FollowActionResponse
   public func unfollowUser(userId: Swift.String) async throws -> ContactsManager.FollowActionResponse
   public func isFollowingUser(userId: Swift.String) async throws -> ContactsManager.FollowStatusResponse
