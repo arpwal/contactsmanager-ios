@@ -32657,7 +32657,10 @@
             "declKind": "EnumElement",
             "usr": "s:15ContactsManager20ContactSelectionModeO6singleyA2CmF",
             "mangledName": "$s15ContactsManager20ContactSelectionModeO6singleyA2CmF",
-            "moduleName": "ContactsManager"
+            "moduleName": "ContactsManager",
+            "declAttributes": [
+              "RawDocComment"
+            ]
           },
           {
             "kind": "Var",
@@ -32694,7 +32697,10 @@
             "declKind": "EnumElement",
             "usr": "s:15ContactsManager20ContactSelectionModeO8multipleyA2CmF",
             "mangledName": "$s15ContactsManager20ContactSelectionModeO8multipleyA2CmF",
-            "moduleName": "ContactsManager"
+            "moduleName": "ContactsManager",
+            "declAttributes": [
+              "RawDocComment"
+            ]
           },
           {
             "kind": "Function",
@@ -32798,7 +32804,8 @@
         "mangledName": "$s15ContactsManager20ContactSelectionModeO",
         "moduleName": "ContactsManager",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "RawDocComment"
         ],
         "conformances": [
           {
@@ -32871,7 +32878,10 @@
             "declKind": "EnumElement",
             "usr": "s:15ContactsManager16ContactFieldTypeO5notesyA2CmF",
             "mangledName": "$s15ContactsManager16ContactFieldTypeO5notesyA2CmF",
-            "moduleName": "ContactsManager"
+            "moduleName": "ContactsManager",
+            "declAttributes": [
+              "RawDocComment"
+            ]
           },
           {
             "kind": "Var",
@@ -32908,7 +32918,10 @@
             "declKind": "EnumElement",
             "usr": "s:15ContactsManager16ContactFieldTypeO5phoneyA2CmF",
             "mangledName": "$s15ContactsManager16ContactFieldTypeO5phoneyA2CmF",
-            "moduleName": "ContactsManager"
+            "moduleName": "ContactsManager",
+            "declAttributes": [
+              "RawDocComment"
+            ]
           },
           {
             "kind": "Var",
@@ -32945,7 +32958,10 @@
             "declKind": "EnumElement",
             "usr": "s:15ContactsManager16ContactFieldTypeO5emailyA2CmF",
             "mangledName": "$s15ContactsManager16ContactFieldTypeO5emailyA2CmF",
-            "moduleName": "ContactsManager"
+            "moduleName": "ContactsManager",
+            "declAttributes": [
+              "RawDocComment"
+            ]
           },
           {
             "kind": "Var",
@@ -32982,7 +32998,10 @@
             "declKind": "EnumElement",
             "usr": "s:15ContactsManager16ContactFieldTypeO3anyyA2CmF",
             "mangledName": "$s15ContactsManager16ContactFieldTypeO3anyyA2CmF",
-            "moduleName": "ContactsManager"
+            "moduleName": "ContactsManager",
+            "declAttributes": [
+              "RawDocComment"
+            ]
           },
           {
             "kind": "Function",
@@ -33086,7 +33105,8 @@
         "mangledName": "$s15ContactsManager16ContactFieldTypeO",
         "moduleName": "ContactsManager",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "RawDocComment"
         ],
         "conformances": [
           {
@@ -33142,7 +33162,8 @@
             "moduleName": "ContactsManager",
             "declAttributes": [
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -33186,7 +33207,8 @@
             "moduleName": "ContactsManager",
             "declAttributes": [
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -33238,7 +33260,8 @@
             "moduleName": "ContactsManager",
             "declAttributes": [
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -33318,7 +33341,8 @@
             "mangledName": "$s15ContactsManager23ContactSelectionOptionsV13selectionMode9fieldType03maxD5CountAcA0cdG0O_AA0c5FieldI0OSiSgtcfc",
             "moduleName": "ContactsManager",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "init_kind": "Designated"
           }
@@ -33328,7 +33352,8 @@
         "mangledName": "$s15ContactsManager23ContactSelectionOptionsV",
         "moduleName": "ContactsManager",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "RawDocComment"
         ],
         "conformances": [
           {
@@ -33378,7 +33403,8 @@
             "static": true,
             "declAttributes": [
               "Final",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -33451,6 +33477,7 @@
             "moduleName": "ContactsManager",
             "declAttributes": [
               "AccessControl",
+              "Custom",
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
@@ -33463,7 +33490,8 @@
         "intro_iOS": "13.0",
         "declAttributes": [
           "AccessControl",
-          "Available"
+          "Available",
+          "RawDocComment"
         ],
         "hasMissingDesignatedInitializers": true,
         "conformances": [

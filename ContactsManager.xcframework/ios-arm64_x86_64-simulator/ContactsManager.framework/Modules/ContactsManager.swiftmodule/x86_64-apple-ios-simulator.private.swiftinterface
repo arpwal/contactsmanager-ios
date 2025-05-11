@@ -1152,7 +1152,7 @@ public struct ContactSelectionOptions {
 @_hasMissingDesignatedInitializers @available(iOS 13.0, *)
 public class ContactsManagerUI {
   public static func getInstance() -> ContactsManager.ContactsManagerUI
-  public func searchContacts(from viewController: UIKit.UIViewController, options: ContactsManager.ContactSelectionOptions, completion: @escaping (Swift.Result<[ContactsManager.Contact], any Swift.Error>) -> Swift.Void)
+  @_Concurrency.MainActor public func searchContacts(from viewController: UIKit.UIViewController, options: ContactsManager.ContactSelectionOptions, completion: @escaping (Swift.Result<[ContactsManager.Contact], any Swift.Error>) -> Swift.Void)
   @objc deinit
 }
 public struct SyncMetrics {
