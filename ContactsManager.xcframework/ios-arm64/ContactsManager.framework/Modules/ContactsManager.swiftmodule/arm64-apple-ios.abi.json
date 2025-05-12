@@ -38346,63 +38346,63 @@
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
       "kind": "StringLiteral",
-      "offset": 30454,
+      "offset": 30453,
       "length": 12,
       "value": "\"expires_at\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
       "kind": "StringLiteral",
-      "offset": 31043,
+      "offset": 31042,
       "length": 9,
       "value": "\"api_key\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
       "kind": "StringLiteral",
-      "offset": 31077,
+      "offset": 31076,
       "length": 11,
       "value": "\"user_info\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
       "kind": "StringLiteral",
-      "offset": 31115,
+      "offset": 31114,
       "length": 13,
       "value": "\"device_info\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 31466,
+      "offset": 31465,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
       "kind": "StringLiteral",
-      "offset": 31544,
+      "offset": 31543,
       "length": 57,
       "value": "\"API key validation error: \""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
       "kind": "StringLiteral",
-      "offset": 31600,
+      "offset": 31599,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 31616,
+      "offset": 31615,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
       "kind": "IntegerLiteral",
-      "offset": 33301,
+      "offset": 33300,
       "length": 5,
       "value": "86400"
     },
@@ -39627,7 +39627,7 @@
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/RecommendationService.swift",
       "kind": "IntegerLiteral",
-      "offset": 8140,
+      "offset": 8137,
       "length": 2,
       "value": "30"
     }
