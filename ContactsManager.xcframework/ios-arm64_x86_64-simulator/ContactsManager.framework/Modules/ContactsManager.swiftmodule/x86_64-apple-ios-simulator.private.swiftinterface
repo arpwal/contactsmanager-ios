@@ -992,6 +992,7 @@ public struct APIConfig {
   public static let contactsSyncEndpoint: Swift.String
   public static let contactSourceEndpoint: Swift.String
   public static let userInfoEndpoint: Swift.String
+  public static let generateTokenEndpoint: Swift.String
   public static let sharedContactsToInviteEndpoint: Swift.String
   public static let appUserContactsEndpoint: Swift.String
   public static let usersYouMightKnowEndpoint: Swift.String
@@ -1199,7 +1200,7 @@ public enum ContactsServiceError : Foundation.LocalizedError {
   final public var socialService: ContactsManager.SocialService? {
     get
   }
-  final public func initialize(withAPIKey apiKey: Swift.String, token: Swift.String, userInfo: ContactsManager.UserInfo, options: ContactsManager.ContactsManagerOptions = .default) async throws
+  final public func initialize(withAPIKey apiKey: Swift.String, token: Swift.String? = nil, userInfo: ContactsManager.UserInfo, options: ContactsManager.ContactsManagerOptions = .default) async throws
   final public var isInitialized: Swift.Bool {
     get
   }
