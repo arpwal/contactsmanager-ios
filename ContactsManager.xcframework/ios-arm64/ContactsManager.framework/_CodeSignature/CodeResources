@@ -18,27 +18,31 @@
 		</data>
 		<key>Modules/ContactsManager.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		kLya6jENd4Fay0vdDu8j7D/D0lw=
+		j8t2kuFbwvJlHby/lyL7F7QoNOE=
 		</data>
 		<key>Modules/ContactsManager.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		RdbCoy5INZibNvBauRJY5lDTcVk=
+		dhX7vAy6ryqDvcWxkz/SzNrDwR4=
 		</data>
 		<key>Modules/ContactsManager.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		NzgfcfI2NjZMzTYKFVLMYeAtPuI=
+		G/xrNHVoIuPSQGmZhqIB5axP/p4=
 		</data>
 		<key>Modules/ContactsManager.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		RdbCoy5INZibNvBauRJY5lDTcVk=
+		dhX7vAy6ryqDvcWxkz/SzNrDwR4=
 		</data>
 		<key>Modules/ContactsManager.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		Lzj6qtzlZqnDMxR4OScQE1CeWYA=
+		Vle2yHgG6Ae/BpJzcQ8UymevRUM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		JXrHTbx/HzUVUtDy9iXSXLXskPU=
+		</data>
+		<key>README_AUTO_SYNC.md</key>
+		<data>
+		AbNpm0tDjFaqpXEUT5w2VPQiOlg=
 		</data>
 		<key>README_BACKGROUND_TASKS.md</key>
 		<data>
@@ -73,35 +77,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KWNdItd/ebZovAbj4XkDsY18cShjY482oVVHRNkljas=
+			JnExEvc1joGvg6Mq5ObRpuvu0sec30LMuHS3QgtyYMs=
 			</data>
 		</dict>
 		<key>Modules/ContactsManager.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			v/83Rzwzs3TFKwbw3vktNmaLrVqWorI38nTpH03HaZY=
+			wezENm2R3BBBYlDmTpZHi95Ec2CYCFJrwFNFfBDUhHQ=
 			</data>
 		</dict>
 		<key>Modules/ContactsManager.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FhlljA1q8pOgt7sHs+FjpAdd6C3NgVQGCOgGP9AwMyA=
+			5Apz9mxC1HidB1D148ImV3nEW26oWnafrsAtuT2mdyQ=
 			</data>
 		</dict>
 		<key>Modules/ContactsManager.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			v/83Rzwzs3TFKwbw3vktNmaLrVqWorI38nTpH03HaZY=
+			wezENm2R3BBBYlDmTpZHi95Ec2CYCFJrwFNFfBDUhHQ=
 			</data>
 		</dict>
 		<key>Modules/ContactsManager.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/Jd1RhEgrUIIGXjpTCDHfsBzv4Bju7lcmbBIbK8dM5E=
+			ZflzZwXsNYZovpB/2+/NOjUcyzI9zdPbwUS85QNqtV8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -109,6 +113,13 @@
 			<key>hash2</key>
 			<data>
 			QAnYqCfdXABnfxjnYdMymoktCpiU48B5Z7T2JGVGIVM=
+			</data>
+		</dict>
+		<key>README_AUTO_SYNC.md</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			VXAWT7zViuGzalTKntrJCet6mtVFax2sFwDif1R+5wQ=
 			</data>
 		</dict>
 		<key>README_BACKGROUND_TASKS.md</key>

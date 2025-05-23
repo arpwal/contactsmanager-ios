@@ -49,11 +49,43 @@ extension ContactsManager.ContactsService {
 }
 extension ContactsManager.ContactsService {
   final public func getSharedContactsByUsersToInvite(limit: Swift.Int = 30) async throws -> [ContactsManager.ContactRecommendation]
-  final public func getContactsUsingApp(limit: Swift.Int = 30) async throws -> [ContactsManager.LocalCanonicalContact]
-  final public func getUsersYouMightKnow(limit: Swift.Int = 30) async throws -> [ContactsManager.CanonicalContact]
+  final public func getContactsUsingApp(limit: Swift.Int = 30) async throws -> [ContactsManager.UnifiedContact]
+  final public func getUsersYouMightKnow(limit: Swift.Int = 30) async throws -> [ContactsManager.CMUser]
 }
 extension ContactsManager.ContactsService {
   final public func syncContacts() async throws -> Swift.Int
+}
+public struct CMUser : Swift.Codable, Swift.Identifiable, Swift.Hashable {
+  public let id: Swift.String
+  public let organizationId: Swift.String?
+  public let organizationUserId: Swift.String
+  public let email: Swift.String?
+  public let phone: Swift.String?
+  public let fullName: Swift.String?
+  public let avatarUrl: Swift.String?
+  public let isActive: Swift.Bool?
+  public let createdAt: Foundation.Date?
+  public let updatedAt: Foundation.Date?
+  public var contactMetadata: [Swift.String : Any]? {
+    get
+  }
+  public var displayName: Swift.String {
+    get
+  }
+  public var displayInfo: Swift.String {
+    get
+  }
+  public var initials: Swift.String {
+    get
+  }
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (lhs: ContactsManager.CMUser, rhs: ContactsManager.CMUser) -> Swift.Bool
+  public typealias ID = Swift.String
+  public var hashValue: Swift.Int {
+    get
+  }
 }
 public let SECTIONNONAME: Swift.String
 final public class Contact {
@@ -574,8 +606,9 @@ public enum ContactDataRestriction : Swift.String, Swift.CaseIterable {
 public struct ContactsManagerOptions {
   public let restrictedKeysToFetch: Swift.Set<ContactsManager.ContactFieldType>
   public let verboseLogging: Swift.Bool
+  public let autoSyncEnabled: Swift.Bool
   public static let `default`: ContactsManager.ContactsManagerOptions
-  public init(restrictedKeysToFetch: Swift.Set<ContactsManager.ContactFieldType> = [], verboseLogging: Swift.Bool = false)
+  public init(restrictedKeysToFetch: Swift.Set<ContactsManager.ContactFieldType> = [], verboseLogging: Swift.Bool = false, autoSyncEnabled: Swift.Bool = true)
 }
 @_hasMissingDesignatedInitializers final public class ContactSocial : Swift.Comparable {
   final public var socialId: Swift.String {
@@ -799,59 +832,14 @@ public struct DeviceInfo : Swift.Codable {
 extension ContactsManager.DeviceInfo {
   public func asDictionary() -> [Swift.String : Any]
 }
-public struct SocialResponse<T> : Swift.Decodable where T : Swift.Decodable {
-  public let status: Swift.String
-  public let message: Swift.String?
-  public let data: T
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct LocalCanonicalContact : Swift.Decodable {
-  public let contact: ContactsManager.Contact?
-  public let contactId: Swift.String
-  public let sourceContactId: Swift.String
-  public let canonicalContact: ContactsManager.CanonicalContact
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct CanonicalContact : Swift.Codable, Swift.Identifiable, Swift.Hashable {
-  public let id: Swift.String
-  public let organizationId: Swift.String?
-  public let organizationUserId: Swift.String
-  public let email: Swift.String?
-  public let phone: Swift.String?
-  public let fullName: Swift.String?
-  public let avatarUrl: Swift.String?
-  public let isActive: Swift.Bool?
-  public let createdAt: Foundation.Date?
-  public let updatedAt: Foundation.Date?
-  public var contactMetadata: [Swift.String : Any]? {
-    get
-  }
-  public var displayName: Swift.String {
-    get
-  }
-  public var displayInfo: Swift.String {
-    get
-  }
-  public var initials: Swift.String {
-    get
-  }
-  public init(from decoder: any Swift.Decoder) throws
-  public func encode(to encoder: any Swift.Encoder) throws
-  public func hash(into hasher: inout Swift.Hasher)
-  public static func == (lhs: ContactsManager.CanonicalContact, rhs: ContactsManager.CanonicalContact) -> Swift.Bool
-  public typealias ID = Swift.String
-  public var hashValue: Swift.Int {
-    get
-  }
-}
 public struct FollowRelationship : Swift.Codable, Swift.Identifiable {
   public let id: Swift.String
   public let followerId: Swift.String
   public let followedId: Swift.String
   public let userId: Swift.String
   public let createdAt: Foundation.Date
-  public let follower: ContactsManager.CanonicalContact?
-  public let followed: ContactsManager.CanonicalContact?
+  public let follower: ContactsManager.CMUser?
+  public let followed: ContactsManager.CMUser?
   public var localContact: ContactsManager.Contact?
   public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
@@ -878,7 +866,7 @@ public struct PaginatedMutualFollowers : Swift.Decodable {
   public let total: Swift.Int
   public let skip: Swift.Int
   public let limit: Swift.Int
-  public var items: [ContactsManager.CanonicalContact]
+  public var items: [ContactsManager.CMUser]
   public init(from decoder: any Swift.Decoder) throws
 }
 public struct SocialEvent : Swift.Codable, Swift.Identifiable {
@@ -946,6 +934,19 @@ public struct PaginatedEventList : Swift.Decodable {
   public let items: [ContactsManager.SocialEvent]
   public init(from decoder: any Swift.Decoder) throws
 }
+public struct SocialResponse<T> : Swift.Decodable where T : Swift.Decodable {
+  public let status: Swift.String
+  public let message: Swift.String?
+  public let data: T
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct UnifiedContact : Swift.Decodable {
+  public let contact: ContactsManager.Contact?
+  public let contactId: Swift.String
+  public let sourceContactId: Swift.String
+  public let cmUser: ContactsManager.CMUser
+  public init(from decoder: any Swift.Decoder) throws
+}
 public class UserInfo : Swift.Codable {
   final public let userId: Swift.String
   final public let fullName: Swift.String?
@@ -991,7 +992,7 @@ public struct APIConfig {
   public static let contactsEndpoint: Swift.String
   public static let contactsSyncEndpoint: Swift.String
   public static let contactSourceEndpoint: Swift.String
-  public static let userInfoEndpoint: Swift.String
+  public static let canonicalContactEndpoint: Swift.String
   public static let generateTokenEndpoint: Swift.String
   public static let sharedContactsToInviteEndpoint: Swift.String
   public static let appUserContactsEndpoint: Swift.String
@@ -1197,10 +1198,15 @@ public enum ContactsServiceError : Foundation.LocalizedError {
 @_hasMissingDesignatedInitializers final public class ContactsService {
   public static let shared: ContactsManager.ContactsService
   final public var onContactsSynced: ContactsManager.ContactSyncCompletionHandler?
+  final public var autoSyncEnabled: Swift.Bool {
+    get
+    set
+  }
   final public var socialService: ContactsManager.SocialService? {
     get
   }
   final public func initialize(withAPIKey apiKey: Swift.String, token: Swift.String? = nil, userInfo: ContactsManager.UserInfo, options: ContactsManager.ContactsManagerOptions = .default) async throws
+  final public func initialize(withToken token: Swift.String, options: ContactsManager.ContactsManagerOptions = .default) async throws
   final public var isInitialized: Swift.Bool {
     get
   }
@@ -1208,6 +1214,7 @@ public enum ContactsServiceError : Foundation.LocalizedError {
     get
   }
   final public func reset() async throws
+  final public func uninitialize() async throws
   final public var settingsAlert: some SwiftUICore.View {
     get
   }
@@ -1219,6 +1226,9 @@ extension ContactsManager.ContactsService {
     get
   }
   final public func hasContactsReadAccess() -> Swift.Bool
+}
+extension ContactsManager.ContactsService {
+  final public func getCurrentCMUser() async throws -> ContactsManager.CMUser
 }
 extension ContactsManager.ContactsService {
   public static func checkHealth() async -> Swift.Bool
