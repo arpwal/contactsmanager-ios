@@ -904,6 +904,7 @@ public struct CreateEventRequest : Swift.Codable {
   public let endTime: Foundation.Date?
   public let metadata: [Swift.String : Swift.String]?
   public let isPublic: Swift.Bool
+  public init(eventType: ContactsManager.SocialEventType, title: Swift.String, description: Swift.String? = nil, location: Swift.String? = nil, startTime: Foundation.Date? = nil, endTime: Foundation.Date? = nil, metadata: [Swift.String : Swift.String]? = nil, isPublic: Swift.Bool = true)
   public init(eventType: Swift.String, title: Swift.String, description: Swift.String? = nil, location: Swift.String? = nil, startTime: Foundation.Date? = nil, endTime: Foundation.Date? = nil, metadata: [Swift.String : Swift.String]? = nil, isPublic: Swift.Bool = true)
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
@@ -933,6 +934,41 @@ public struct PaginatedEventList : Swift.Decodable {
   public let limit: Swift.Int
   public let items: [ContactsManager.SocialEvent]
   public init(from decoder: any Swift.Decoder) throws
+}
+public enum FeedMatchingType : Swift.String, Swift.CaseIterable {
+  case following
+  case mutualFollowing
+  public var description: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [ContactsManager.FeedMatchingType]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [ContactsManager.FeedMatchingType] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum SocialEventType : Swift.String, Swift.CaseIterable {
+  case post
+  case photo
+  case activity
+  case checkIn
+  case lifeEvent
+  case recommendation
+  case event
+  public static let allTypes: [Swift.String]
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [ContactsManager.SocialEventType]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [ContactsManager.SocialEventType] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
 }
 public struct SocialResponse<T> : Swift.Decodable where T : Swift.Decodable {
   public let status: Swift.String
@@ -1122,9 +1158,9 @@ public enum SocialServiceError : Foundation.LocalizedError {
     public init(from decoder: any Swift.Decoder) throws
   }
   public func checkBatchFollowingStatus(userIds: [Swift.String]) async throws -> [Swift.String : ContactsManager.SocialService.BatchFollowingStatusItem]
-  public func followUser(userId: Swift.String) async throws -> ContactsManager.FollowActionResponse
-  public func unfollowUser(userId: Swift.String) async throws -> ContactsManager.FollowActionResponse
-  public func isFollowingUser(userId: Swift.String) async throws -> ContactsManager.FollowStatusResponse
+  public func follow(userId: Swift.String) async throws -> ContactsManager.FollowActionResponse
+  public func unfollow(userId: Swift.String) async throws -> ContactsManager.FollowActionResponse
+  public func isFollowing(userId: Swift.String) async throws -> ContactsManager.FollowStatusResponse
   public func getFollowers(userId: Swift.String? = nil, skip: Swift.Int = 0, limit: Swift.Int = 20) async throws -> ContactsManager.PaginatedFollowList
   public func getFollowing(userId: Swift.String? = nil, skip: Swift.Int = 0, limit: Swift.Int = 20) async throws -> ContactsManager.PaginatedFollowList
   public func getMutualFollows(skip: Swift.Int = 0, limit: Swift.Int = 20) async throws -> ContactsManager.PaginatedMutualFollowers
@@ -1133,8 +1169,11 @@ public enum SocialServiceError : Foundation.LocalizedError {
   public func updateEvent(eventId: Swift.String, eventData: ContactsManager.UpdateEventRequest) async throws -> ContactsManager.EventActionResponse
   public func deleteEvent(eventId: Swift.String) async throws -> ContactsManager.EventActionResponse
   public func getUserEvents(userId: Swift.String? = nil, skip: Swift.Int = 0, limit: Swift.Int = 20) async throws -> ContactsManager.PaginatedEventList
-  public func getFeed(skip: Swift.Int = 0, limit: Swift.Int = 20) async throws -> ContactsManager.PaginatedEventList
+  public func getFeed(matching: ContactsManager.FeedMatchingType = .following, eventType: ContactsManager.SocialEventType?, skip: Swift.Int = 0, limit: Swift.Int = 20) async throws -> ContactsManager.PaginatedEventList
+  public func getFeed(matching: ContactsManager.FeedMatchingType = .following, eventType: Swift.String? = nil, skip: Swift.Int = 0, limit: Swift.Int = 20) async throws -> ContactsManager.PaginatedEventList
+  @available(*, deprecated, message: "Use getFeed(matching:eventType:skip:limit:) instead for more flexible event filtering")
   public func getUpcomingEvents(skip: Swift.Int = 0, limit: Swift.Int = 20) async throws -> ContactsManager.PaginatedEventList
+  @available(*, deprecated, message: "Use getFeed(matching:kind:skip:limit:) instead")
   public func getForYouFeed(skip: Swift.Int = 0, limit: Swift.Int = 20) async throws -> ContactsManager.PaginatedEventList
   @objc deinit
 }
@@ -1202,7 +1241,7 @@ public enum ContactsServiceError : Foundation.LocalizedError {
     get
     set
   }
-  final public var socialService: ContactsManager.SocialService? {
+  final public var social: ContactsManager.SocialService? {
     get
   }
   final public func initialize(withAPIKey apiKey: Swift.String, token: Swift.String? = nil, userInfo: ContactsManager.UserInfo, options: ContactsManager.ContactsManagerOptions = .default) async throws
@@ -1256,6 +1295,12 @@ extension ContactsManager.ContactDataRestriction : Swift.RawRepresentable {}
 extension ContactsManager.SourceType : Swift.Equatable {}
 extension ContactsManager.SourceType : Swift.Hashable {}
 extension ContactsManager.SourceType : Swift.RawRepresentable {}
+extension ContactsManager.FeedMatchingType : Swift.Equatable {}
+extension ContactsManager.FeedMatchingType : Swift.Hashable {}
+extension ContactsManager.FeedMatchingType : Swift.RawRepresentable {}
+extension ContactsManager.SocialEventType : Swift.Equatable {}
+extension ContactsManager.SocialEventType : Swift.Hashable {}
+extension ContactsManager.SocialEventType : Swift.RawRepresentable {}
 extension ContactsManager.RuntimeEnvironment : Swift.Equatable {}
 extension ContactsManager.RuntimeEnvironment : Swift.Hashable {}
 extension ContactsManager.RuntimeEnvironment : Swift.RawRepresentable {}

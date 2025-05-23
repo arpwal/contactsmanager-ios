@@ -18,23 +18,23 @@
 		</data>
 		<key>Modules/ContactsManager.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		j8t2kuFbwvJlHby/lyL7F7QoNOE=
+		9/4rdvMQKqA5vxErA5Y0I4e4iTE=
 		</data>
 		<key>Modules/ContactsManager.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		dhX7vAy6ryqDvcWxkz/SzNrDwR4=
+		TsAF7Q0feslTrcbGUualdB/9HcI=
 		</data>
 		<key>Modules/ContactsManager.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		G/xrNHVoIuPSQGmZhqIB5axP/p4=
+		knbdc4Gs0asMWcu1uRfDDNzyf6I=
 		</data>
 		<key>Modules/ContactsManager.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		dhX7vAy6ryqDvcWxkz/SzNrDwR4=
+		TsAF7Q0feslTrcbGUualdB/9HcI=
 		</data>
 		<key>Modules/ContactsManager.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		Vle2yHgG6Ae/BpJzcQ8UymevRUM=
+		Kdnl17ZC8RRB657YrWts92GPpdA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>SOCIAL_README.md</key>
 		<data>
-		maPxlHlHdPNvB7PWpphUxY41ZRo=
+		Pap7ZavsB1mfdzNfPj4QVjAiDdY=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -77,35 +77,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JnExEvc1joGvg6Mq5ObRpuvu0sec30LMuHS3QgtyYMs=
+			1QX9dF0nmyi9BSoSnFA0FJ364hs7J1wFf4xssKWrBy8=
 			</data>
 		</dict>
 		<key>Modules/ContactsManager.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wezENm2R3BBBYlDmTpZHi95Ec2CYCFJrwFNFfBDUhHQ=
+			lud5f0IxV6V7wGB5rwri4JnsrOsV3QOdXDE9EHGO6JE=
 			</data>
 		</dict>
 		<key>Modules/ContactsManager.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5Apz9mxC1HidB1D148ImV3nEW26oWnafrsAtuT2mdyQ=
+			PPq7RIjcXxg+ld1NKjyJgjUpFlx6ZAk62pixdnZ6/B4=
 			</data>
 		</dict>
 		<key>Modules/ContactsManager.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wezENm2R3BBBYlDmTpZHi95Ec2CYCFJrwFNFfBDUhHQ=
+			lud5f0IxV6V7wGB5rwri4JnsrOsV3QOdXDE9EHGO6JE=
 			</data>
 		</dict>
 		<key>Modules/ContactsManager.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZflzZwXsNYZovpB/2+/NOjUcyzI9zdPbwUS85QNqtV8=
+			DfSibi0ctRvqKKeqtoJJmi3rcpOB8R44y/Mz9CbRMtY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -140,7 +140,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CbrPZLjx0G4V/JMBLGwCO4L8xn9DE8xxbxjbhk5dG4g=
+			VzWKFwiwFL99IdwGaQaXN/2YERrGyEReIzS2ZpcNJa0=
 			</data>
 		</dict>
 	</dict>
