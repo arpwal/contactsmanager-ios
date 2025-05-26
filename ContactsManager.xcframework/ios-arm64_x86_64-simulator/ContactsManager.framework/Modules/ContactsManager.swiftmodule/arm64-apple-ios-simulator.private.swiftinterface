@@ -1374,18 +1374,10 @@ extension ContactsManager.ContactsService {
 extension ContactsManager.ContactsService {
   public static func checkHealth() async -> Swift.Bool
 }
-public enum UserMatchingCriteria {
+public enum ContactMatchingCriteria {
   case contactsInApp
   case usersWithMyContact
-  public static func == (a: ContactsManager.UserMatchingCriteria, b: ContactsManager.UserMatchingCriteria) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
-public enum ContactMatchingCriteria {
   case suggestedInvite
-  case usingApp
   case all
   public static func == (a: ContactsManager.ContactMatchingCriteria, b: ContactsManager.ContactMatchingCriteria) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
@@ -1394,12 +1386,12 @@ public enum ContactMatchingCriteria {
   }
 }
 @_hasMissingDesignatedInitializers final public class PeopleService {
-  final public func fetchUsers(matching criteria: [ContactsManager.UserMatchingCriteria], limit: Swift.Int = 10, skip: Swift.Int = 0) async throws -> [ContactsManager.Contact]
   final public func fetchUsers(userIds: [Swift.String]) async throws -> [ContactsManager.Contact]
-  final public func fetchContacts(matching criteria: [ContactsManager.ContactMatchingCriteria], limit: Swift.Int = 10, skip: Swift.Int = 0) async throws -> [ContactsManager.Contact]
+  final public func fetch(matching criteria: [ContactsManager.ContactMatchingCriteria], limit: Swift.Int = 10, skip: Swift.Int = 0) async throws -> [ContactsManager.Contact]
   @objc deinit
 }
 extension ContactsManager.PeopleService {
+  final public func fetch(matching criterion: ContactsManager.ContactMatchingCriteria, limit: Swift.Int = 10, skip: Swift.Int = 0) async throws -> [ContactsManager.Contact]
   final public func fetchUsersInApp(limit: Swift.Int = 10, skip: Swift.Int = 0) async throws -> [ContactsManager.Contact]
   final public func fetchUsersYouMightKnow(limit: Swift.Int = 10, skip: Swift.Int = 0) async throws -> [ContactsManager.Contact]
   final public func fetchContactsToInvite(limit: Swift.Int = 10, skip: Swift.Int = 0) async throws -> [ContactsManager.Contact]
@@ -1453,8 +1445,6 @@ extension ContactsManager.ContactSelectionMode : Swift.Equatable {}
 extension ContactsManager.ContactSelectionMode : Swift.Hashable {}
 extension ContactsManager.ContactFieldType : Swift.Equatable {}
 extension ContactsManager.ContactFieldType : Swift.Hashable {}
-extension ContactsManager.UserMatchingCriteria : Swift.Equatable {}
-extension ContactsManager.UserMatchingCriteria : Swift.Hashable {}
 extension ContactsManager.ContactMatchingCriteria : Swift.Equatable {}
 extension ContactsManager.ContactMatchingCriteria : Swift.Hashable {}
 extension ContactsManager.RecommendationType : Swift.Equatable {}
