@@ -966,6 +966,74 @@ public struct PaginatedMutualFollowers : Swift.Decodable {
   public var items: [ContactsManager.CMUser]
   public init(from decoder: any Swift.Decoder) throws
 }
+public struct InviteResponse : Swift.Codable {
+  public let id: Swift.String
+  public let inviteCode: Swift.String
+  public let inviteUrl: Swift.String
+  public let remainingInvites: Swift.Int
+  public let isActive: Swift.Bool
+  public let createdAt: Foundation.Date?
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct InviteRedemptionRequest : Swift.Codable {
+  public let inviteCode: Swift.String
+  public let redeemerId: Swift.String
+  public init(inviteCode: Swift.String, redeemerId: Swift.String)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct InviteRedemptionResponse : Swift.Codable {
+  public let success: Swift.Bool
+  public let message: Swift.String
+  public let inviterId: Swift.String?
+  public let organizationId: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct InvitedUserWithRedemption : Swift.Codable {
+  public let cmUser: ContactsManager.CMUser
+  public let redeemedAt: Foundation.Date
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct InvitedUsersResponse : Swift.Codable {
+  public let invitedUsers: [ContactsManager.InvitedUserWithRedemption]
+  public let totalInvited: Swift.Int
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct InviteStatsResponse : Swift.Codable {
+  public let inviteLimit: Swift.Int
+  public let invitesUsed: Swift.Int
+  public let remainingInvites: Swift.Int
+  public let hasActiveInvite: Swift.Bool
+  public let activeInviteCode: Swift.String?
+  public let activeInviteUrl: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct InvitedByResponse : Swift.Codable {
+  public let invitedBy: ContactsManager.CMUser?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ValidateInviteCodeRequest : Swift.Codable {
+  public let inviteCode: Swift.String
+  public init(inviteCode: Swift.String)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ValidateInviteCodeResponse : Swift.Codable {
+  public let valid: Swift.Bool
+  public let message: Swift.String
+  public let inviter: ContactsManager.CMUser?
+  public let organizationName: Swift.String?
+  public let remainingInvites: Swift.Int?
+  public init(valid: Swift.Bool, message: Swift.String, inviter: ContactsManager.CMUser? = nil, organizationName: Swift.String? = nil, remainingInvites: Swift.Int? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
 public struct SocialEvent : Swift.Codable, Swift.Identifiable {
   public let id: Swift.String
   public let organizationId: Swift.String
@@ -1137,6 +1205,14 @@ public struct APIConfig {
   public static let feedEndpoint: Swift.String
   public static let upcomingEventsEndpoint: Swift.String
   public static let forYouEndpoint: Swift.String
+  public static let userInvitesBasePath: Swift.String
+  public static let createInviteEndpoint: Swift.String
+  public static let redeemInviteEndpoint: Swift.String
+  public static let myInvitesEndpoint: Swift.String
+  public static let inviteStatsEndpoint: Swift.String
+  public static let validateInviteEndpoint: Swift.String
+  public static let invitedByEndpoint: Swift.String
+  public static let publicValidateInviteEndpoint: Swift.String
   public static let validateAPIKeyEndpoint: Swift.String
   public static let defaultTimeout: Swift.Double
   public static let uploadTimeout: Swift.Double
@@ -1346,6 +1422,9 @@ public enum ContactsServiceError : Foundation.LocalizedError {
   final public var people: ContactsManager.PeopleService? {
     get
   }
+  final public var invites: ContactsManager.InviteService? {
+    get
+  }
   final public func initialize(withAPIKey apiKey: Swift.String, token: Swift.String? = nil, userInfo: ContactsManager.UserInfo, options: ContactsManager.ContactsManagerOptions = .default) async throws
   final public func initialize(withToken token: Swift.String, options: ContactsManager.ContactsManagerOptions = .default) async throws
   final public var isInitialized: Swift.Bool {
@@ -1373,6 +1452,22 @@ extension ContactsManager.ContactsService {
 }
 extension ContactsManager.ContactsService {
   public static func checkHealth() async -> Swift.Bool
+}
+@_hasMissingDesignatedInitializers public class InviteService {
+  public var code: Swift.String? {
+    get async
+  }
+  public var link: Swift.String? {
+    get async
+  }
+  public func validateCode(code: Swift.String) async -> ContactsManager.ValidateInviteCodeResponse?
+  public func remaining() async -> Swift.Int
+  public func invited() async -> [ContactsManager.Contact]
+  public func invitedBy() async -> ContactsManager.Contact?
+  public func redeemInvite(code inviteCode: Swift.String, for redeemerId: Swift.String) async -> Swift.Bool
+  public func getInviteDetails(for code: Swift.String) async -> ContactsManager.ValidateInviteCodeResponse?
+  public func createInvite() async -> ContactsManager.InviteResponse?
+  @objc deinit
 }
 public enum ContactMatchingCriteria {
   case contactsInApp
