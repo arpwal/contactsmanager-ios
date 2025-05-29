@@ -14,51 +14,55 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		hV0xIaK/iS4UkR8U3npKmzeRVk8=
+		G9jjJ8199fSkl2POMVqd73472uY=
 		</data>
 		<key>Modules/ContactsManager.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		xl6lBGv9FDwGp2VpKUDGUrpxQFY=
+		DESGPboTCQbDGxdbI6PQVZmDYbg=
 		</data>
 		<key>Modules/ContactsManager.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		Cz/zeCkwBETEi1WAC4clFyIGffI=
+		xGx2yWaChHwTK6Dmlre2vTkhIl8=
 		</data>
 		<key>Modules/ContactsManager.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		+p1L7K+SFoU6L7V8uMOTAplB6x4=
+		BAYzc2INjlVNWnlcrzM+5a7+A4w=
 		</data>
 		<key>Modules/ContactsManager.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Cz/zeCkwBETEi1WAC4clFyIGffI=
+		xGx2yWaChHwTK6Dmlre2vTkhIl8=
 		</data>
 		<key>Modules/ContactsManager.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		OL7Gh77nDwRiOq+tkQFL9Jq9czo=
+		ifx6Z+T7Pz0/+D3vy4sfF6FkfK0=
 		</data>
 		<key>Modules/ContactsManager.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		xl6lBGv9FDwGp2VpKUDGUrpxQFY=
+		DESGPboTCQbDGxdbI6PQVZmDYbg=
 		</data>
 		<key>Modules/ContactsManager.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		hBVZVAj/UKBnfTFlUd1GaXJ45Xk=
+		GYg86hnQSibWJ5xT1HpaWrdnqx4=
 		</data>
 		<key>Modules/ContactsManager.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		OdWjZCxTNZWY3ct6bXzgQyYxQZU=
+		nKaMyujKjTXe1nn9c8Hwud2tOI4=
 		</data>
 		<key>Modules/ContactsManager.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		hBVZVAj/UKBnfTFlUd1GaXJ45Xk=
+		GYg86hnQSibWJ5xT1HpaWrdnqx4=
 		</data>
 		<key>Modules/ContactsManager.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		HJNukSRBfxlzqC7I6qboIVH0kEc=
+		seywV7KpYaPR+znjucBJjdHY3d0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		JXrHTbx/HzUVUtDy9iXSXLXskPU=
+		</data>
+		<key>REACTIONS_INTEGRATION.md</key>
+		<data>
+		7wcxaOYj8T1996NllqeV0Xd/nf8=
 		</data>
 		<key>README_AUTO_SYNC.md</key>
 		<data>
@@ -97,70 +101,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IonhYT0AuCvDoMWXdLW3q0XYjnLpPwA8NWuSZcIQxEo=
+			nU7GAefmG/kwl3Xx5VxkvUvooEY2iCPRzIHlO3cURIA=
 			</data>
 		</dict>
 		<key>Modules/ContactsManager.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SuqULLSWenwcPaOiDnB1qFwnedLsX6+i3dyribOQ+b0=
+			3iRfc9jzxSm7NLH2MqMWrGKGIMicNeJ1QmjNIoS4nw8=
 			</data>
 		</dict>
 		<key>Modules/ContactsManager.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sKkItvf3P4HwpEQxwd1KGKT+d/p8+UUawIExJOQd2wk=
+			PG7nnfKJDR2//H87cDpfZJqWYGlEsmj28gAl8xaULKw=
 			</data>
 		</dict>
 		<key>Modules/ContactsManager.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SuqULLSWenwcPaOiDnB1qFwnedLsX6+i3dyribOQ+b0=
+			3iRfc9jzxSm7NLH2MqMWrGKGIMicNeJ1QmjNIoS4nw8=
 			</data>
 		</dict>
 		<key>Modules/ContactsManager.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wa0NSeMZDQFjOE+i8HPc2tDC2vJs3Aom6nuQHPWS8t0=
+			YroU6IYuwZcF8X0YcQJ/oY21JE2fsM6WPeZ6EEAbAiw=
 			</data>
 		</dict>
 		<key>Modules/ContactsManager.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IonhYT0AuCvDoMWXdLW3q0XYjnLpPwA8NWuSZcIQxEo=
+			nU7GAefmG/kwl3Xx5VxkvUvooEY2iCPRzIHlO3cURIA=
 			</data>
 		</dict>
 		<key>Modules/ContactsManager.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			X6NpEE42Rn/uWwkpnv2spncgRKYuY1g2vihgmWx9zhk=
+			6xtDo5Y55kk1NkfpZargt9yHqxlSyGL56mGnphvg+fI=
 			</data>
 		</dict>
 		<key>Modules/ContactsManager.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			N2aKl8sP7WtdYK5SfRkWuOS6idV0JgiiDZb0fVuU/Po=
+			Luv3dKQUvZ97dKSxXdTcdOChoBuSxesY1AYrVnZdSSo=
 			</data>
 		</dict>
 		<key>Modules/ContactsManager.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			X6NpEE42Rn/uWwkpnv2spncgRKYuY1g2vihgmWx9zhk=
+			6xtDo5Y55kk1NkfpZargt9yHqxlSyGL56mGnphvg+fI=
 			</data>
 		</dict>
 		<key>Modules/ContactsManager.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2HN0pwKWnVH9CliPd7iTg16M81SdiJEfKXGDB+jqj14=
+			PBJIRr/bZ2Ib5HbteNopFhQdL8TchiDZfI2k3VM1BxE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -168,6 +172,13 @@
 			<key>hash2</key>
 			<data>
 			QAnYqCfdXABnfxjnYdMymoktCpiU48B5Z7T2JGVGIVM=
+			</data>
+		</dict>
+		<key>REACTIONS_INTEGRATION.md</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			SBTbAHJMG8dGSR8hAb5ZUaCIC3BgllA8ZZy0itslrTc=
 			</data>
 		</dict>
 		<key>README_AUTO_SYNC.md</key>

@@ -1034,6 +1034,136 @@ public struct ValidateInviteCodeResponse : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
+public enum ReactionType : Swift.Codable, Swift.Equatable, Swift.CaseIterable {
+  case like
+  case love
+  case superLike
+  case support
+  case laugh
+  case wow
+  case sad
+  case angry
+  case custom(Swift.String)
+  public var rawValue: Swift.String {
+    get
+  }
+  public init(rawValue: Swift.String)
+  public static var allCases: [ContactsManager.ReactionType] {
+    get
+  }
+  public var displayName: Swift.String {
+    get
+  }
+  public var emoji: Swift.String {
+    get
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+  public static func == (a: ContactsManager.ReactionType, b: ContactsManager.ReactionType) -> Swift.Bool
+  public typealias AllCases = [ContactsManager.ReactionType]
+}
+public struct EventReaction : Swift.Codable, Swift.Identifiable {
+  public let id: Swift.String
+  public let reactionType: ContactsManager.ReactionType
+  public let organizationId: Swift.String
+  public let eventId: Swift.String
+  public let userId: Swift.String
+  public let user: ContactsManager.ReactionUser
+  public let createdAt: Foundation.Date
+  public let updatedAt: Foundation.Date
+  public let metadata: ContactsManager.ReactionMetadata?
+  public typealias ID = Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ReactionUser : Swift.Codable {
+  public let userId: Swift.String
+  public let name: Swift.String?
+  public let avatarUrl: Swift.String?
+  public let reactedAt: Foundation.Date?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ReactionMetadata : Swift.Codable {
+  public let comment: Swift.String?
+  public let intensity: Swift.Int?
+  public let customProperties: [Swift.String : Swift.String]?
+  public init(comment: Swift.String? = nil, intensity: Swift.Int? = nil, customProperties: [Swift.String : Swift.String]? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ReactionTypeSummary : Swift.Codable {
+  public let count: Swift.Int
+  public let recentReactors: [ContactsManager.ReactionUser]
+  public init(count: Swift.Int, recentReactors: [ContactsManager.ReactionUser])
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct EventReactionsSummary : Swift.Codable {
+  public let reactionSummaries: [Swift.String : ContactsManager.ReactionTypeSummary]
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public func count(for reactionType: ContactsManager.ReactionType) -> Swift.Int
+  public var availableReactionTypes: [ContactsManager.ReactionType] {
+    get
+  }
+  public var totalCount: Swift.Int {
+    get
+  }
+  public func summary(for reactionType: ContactsManager.ReactionType) -> ContactsManager.ReactionTypeSummary?
+  public var hasReactions: Swift.Bool {
+    get
+  }
+}
+public struct EventWithReactions : Swift.Codable, Swift.Identifiable {
+  public let event: ContactsManager.SocialEvent
+  public let reactionsSummary: ContactsManager.EventReactionsSummary
+  public var id: Swift.String {
+    get
+  }
+  public typealias ID = Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CreateReactionRequest : Swift.Codable {
+  public let reactionType: ContactsManager.ReactionType
+  public let metadata: ContactsManager.ReactionMetadata?
+  public init(reactionType: ContactsManager.ReactionType, metadata: ContactsManager.ReactionMetadata? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ReactionActionResponse : Swift.Codable {
+  public let reactionId: Swift.String?
+  public let reactionType: ContactsManager.ReactionType?
+  public let wasCreated: Swift.Bool?
+  public let wasRemoved: Swift.Bool?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct PaginatedReactionsList : Swift.Codable {
+  public let total: Swift.Int
+  public let skip: Swift.Int
+  public let limit: Swift.Int
+  public let reactions: [ContactsManager.EventReaction]
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct UserReactionResponse : Swift.Codable {
+  public let reactionType: ContactsManager.ReactionType?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct BatchUserReactionsResponse : Swift.Codable {
+  public let reactions: [Swift.String : ContactsManager.ReactionType?]
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct BatchUserReactionsRequest : Swift.Codable {
+  public let eventIds: [Swift.String]
+  public init(eventIds: [Swift.String])
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
 public struct SocialEvent : Swift.Codable, Swift.Identifiable {
   public let id: Swift.String
   public let organizationId: Swift.String
@@ -1050,6 +1180,20 @@ public struct SocialEvent : Swift.Codable, Swift.Identifiable {
   public let updatedAt: Foundation.Date
   public let userId: Swift.String?
   public let createdBy: ContactsManager.EventCreator?
+  public let reactionsCount: Swift.Int?
+  public let reactionsSummary: ContactsManager.EventReactionsSummary?
+  public let reactionsLastUpdated: Foundation.Date?
+  public let userReaction: ContactsManager.ReactionType?
+  public var hasReactions: Swift.Bool {
+    get
+  }
+  public var reactionsCountText: Swift.String {
+    get
+  }
+  public func userHasReacted(with reactionType: ContactsManager.ReactionType) -> Swift.Bool
+  public var userHasReacted: Swift.Bool {
+    get
+  }
   public typealias ID = Swift.String
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
@@ -1205,6 +1349,8 @@ public struct APIConfig {
   public static let feedEndpoint: Swift.String
   public static let upcomingEventsEndpoint: Swift.String
   public static let forYouEndpoint: Swift.String
+  public static let reactionsEndpoint: Swift.String
+  public static let batchUserReactionsEndpoint: Swift.String
   public static let userInvitesBasePath: Swift.String
   public static let createInviteEndpoint: Swift.String
   public static let redeemInviteEndpoint: Swift.String
@@ -1351,6 +1497,22 @@ public enum SocialServiceError : Foundation.LocalizedError {
   @available(*, deprecated, message: "Use getFeed(matching:kind:skip:limit:) instead")
   public func getForYouFeed(skip: Swift.Int = 0, limit: Swift.Int = 20) async throws -> ContactsManager.PaginatedEventList
   @objc deinit
+}
+extension ContactsManager.SocialService {
+  public func react(eventId: Swift.String, reactionType: ContactsManager.ReactionType, metadata: ContactsManager.ReactionMetadata? = nil) async throws -> ContactsManager.ReactionActionResponse
+  public func react(eventId: Swift.String, reactionType: Swift.String, metadata: ContactsManager.ReactionMetadata? = nil) async throws -> ContactsManager.ReactionActionResponse
+  public func updateReaction(eventId: Swift.String, reactionType: ContactsManager.ReactionType?, metadata: ContactsManager.ReactionMetadata? = nil) async throws -> ContactsManager.ReactionActionResponse
+  public func updateReaction(eventId: Swift.String, reactionType: Swift.String?, metadata: ContactsManager.ReactionMetadata? = nil) async throws -> ContactsManager.ReactionActionResponse
+  public func removeReaction(eventId: Swift.String) async throws -> ContactsManager.ReactionActionResponse
+  public func getReactions(eventId: Swift.String, skip: Swift.Int = 0, limit: Swift.Int = 50) async throws -> ContactsManager.PaginatedReactionsList
+  public func getReactionsSummary(eventId: Swift.String) async throws -> ContactsManager.EventReactionsSummary
+  public func getMyReaction(eventId: Swift.String) async throws -> ContactsManager.ReactionType?
+  public func getUserReaction(eventId: Swift.String, userId: Swift.String) async throws -> ContactsManager.ReactionType?
+  public func getEventWithReactions(eventId: Swift.String) async throws -> ContactsManager.EventWithReactions
+  public func getBatchUserReactions(eventIds: [Swift.String]) async throws -> [Swift.String : ContactsManager.ReactionType?]
+  public func getUserEvents(userId: Swift.String? = nil, reactionTypes: [ContactsManager.ReactionType]? = nil, includeReactions: Swift.Bool = false, skip: Swift.Int = 0, limit: Swift.Int = 20) async throws -> ContactsManager.PaginatedEventList
+  public func getUserEvents(userId: Swift.String? = nil, reactionTypes: [Swift.String]? = nil, includeReactions: Swift.Bool = false, skip: Swift.Int = 0, limit: Swift.Int = 20) async throws -> ContactsManager.PaginatedEventList
+  public func getFeedWithReactions(matching: ContactsManager.FeedMatchingType = .following, eventType: ContactsManager.SocialEventType? = nil, includeReactions: Swift.Bool = true, skip: Swift.Int = 0, limit: Swift.Int = 20) async throws -> ContactsManager.PaginatedEventList
 }
 public enum ContactSelectionMode {
   case single
