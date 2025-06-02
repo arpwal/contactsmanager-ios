@@ -27843,6 +27843,548 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "BulkInviteEmailResponse",
+        "printedName": "BulkInviteEmailResponse",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "success",
+            "printedName": "success",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15ContactsManager23BulkInviteEmailResponseV7successSbvp",
+            "mangledName": "$s15ContactsManager23BulkInviteEmailResponseV7successSbvp",
+            "moduleName": "ContactsManager",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15ContactsManager23BulkInviteEmailResponseV7successSbvg",
+                "mangledName": "$s15ContactsManager23BulkInviteEmailResponseV7successSbvg",
+                "moduleName": "ContactsManager",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "message",
+            "printedName": "message",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15ContactsManager23BulkInviteEmailResponseV7messageSSvp",
+            "mangledName": "$s15ContactsManager23BulkInviteEmailResponseV7messageSSvp",
+            "moduleName": "ContactsManager",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15ContactsManager23BulkInviteEmailResponseV7messageSSvg",
+                "mangledName": "$s15ContactsManager23BulkInviteEmailResponseV7messageSSvg",
+                "moduleName": "ContactsManager",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "totalContacts",
+            "printedName": "totalContacts",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15ContactsManager23BulkInviteEmailResponseV05totalA0Sivp",
+            "mangledName": "$s15ContactsManager23BulkInviteEmailResponseV05totalA0Sivp",
+            "moduleName": "ContactsManager",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15ContactsManager23BulkInviteEmailResponseV05totalA0Sivg",
+                "mangledName": "$s15ContactsManager23BulkInviteEmailResponseV05totalA0Sivg",
+                "moduleName": "ContactsManager",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "emailsSent",
+            "printedName": "emailsSent",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15ContactsManager23BulkInviteEmailResponseV10emailsSentSivp",
+            "mangledName": "$s15ContactsManager23BulkInviteEmailResponseV10emailsSentSivp",
+            "moduleName": "ContactsManager",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15ContactsManager23BulkInviteEmailResponseV10emailsSentSivg",
+                "mangledName": "$s15ContactsManager23BulkInviteEmailResponseV10emailsSentSivg",
+                "moduleName": "ContactsManager",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "failedEmails",
+            "printedName": "failedEmails",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15ContactsManager23BulkInviteEmailResponseV12failedEmailsSaySSGvp",
+            "mangledName": "$s15ContactsManager23BulkInviteEmailResponseV12failedEmailsSaySSGvp",
+            "moduleName": "ContactsManager",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15ContactsManager23BulkInviteEmailResponseV12failedEmailsSaySSGvg",
+                "mangledName": "$s15ContactsManager23BulkInviteEmailResponseV12failedEmailsSaySSGvg",
+                "moduleName": "ContactsManager",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "inviteCode",
+            "printedName": "inviteCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15ContactsManager23BulkInviteEmailResponseV10inviteCodeSSSgvp",
+            "mangledName": "$s15ContactsManager23BulkInviteEmailResponseV10inviteCodeSSSgvp",
+            "moduleName": "ContactsManager",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15ContactsManager23BulkInviteEmailResponseV10inviteCodeSSSgvg",
+                "mangledName": "$s15ContactsManager23BulkInviteEmailResponseV10inviteCodeSSSgvg",
+                "moduleName": "ContactsManager",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "inviteUrl",
+            "printedName": "inviteUrl",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15ContactsManager23BulkInviteEmailResponseV9inviteUrlSSSgvp",
+            "mangledName": "$s15ContactsManager23BulkInviteEmailResponseV9inviteUrlSSSgvp",
+            "moduleName": "ContactsManager",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15ContactsManager23BulkInviteEmailResponseV9inviteUrlSSSgvg",
+                "mangledName": "$s15ContactsManager23BulkInviteEmailResponseV9inviteUrlSSSgvg",
+                "moduleName": "ContactsManager",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(success:message:totalContacts:emailsSent:failedEmails:inviteCode:inviteUrl:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BulkInviteEmailResponse",
+                "printedName": "ContactsManager.BulkInviteEmailResponse",
+                "usr": "s:15ContactsManager23BulkInviteEmailResponseV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15ContactsManager23BulkInviteEmailResponseV7success7message05totalA010emailsSent12failedEmails10inviteCode0N3UrlACSb_SSS2iSaySSGSSSgALtcfc",
+            "mangledName": "$s15ContactsManager23BulkInviteEmailResponseV7success7message05totalA010emailsSent12failedEmails10inviteCode0N3UrlACSb_SSS2iSaySSGSSSgALtcfc",
+            "moduleName": "ContactsManager",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BulkInviteEmailResponse",
+                "printedName": "ContactsManager.BulkInviteEmailResponse",
+                "usr": "s:15ContactsManager23BulkInviteEmailResponseV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15ContactsManager23BulkInviteEmailResponseV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s15ContactsManager23BulkInviteEmailResponseV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "ContactsManager",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15ContactsManager23BulkInviteEmailResponseV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s15ContactsManager23BulkInviteEmailResponseV6encode2toys7Encoder_p_tKF",
+            "moduleName": "ContactsManager",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:15ContactsManager23BulkInviteEmailResponseV",
+        "mangledName": "$s15ContactsManager23BulkInviteEmailResponseV",
+        "moduleName": "ContactsManager",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -39963,6 +40505,101 @@
           },
           {
             "kind": "Var",
+            "name": "bulkInviteEmailEndpoint",
+            "printedName": "bulkInviteEmailEndpoint",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15ContactsManager9APIConfigV23bulkInviteEmailEndpointSSvpZ",
+            "mangledName": "$s15ContactsManager9APIConfigV23bulkInviteEmailEndpointSSvpZ",
+            "moduleName": "ContactsManager",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15ContactsManager9APIConfigV23bulkInviteEmailEndpointSSvgZ",
+                "mangledName": "$s15ContactsManager9APIConfigV23bulkInviteEmailEndpointSSvgZ",
+                "moduleName": "ContactsManager",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "bulkInviteEmailAvailableEndpoint",
+            "printedName": "bulkInviteEmailAvailableEndpoint",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15ContactsManager9APIConfigV32bulkInviteEmailAvailableEndpointSSvpZ",
+            "mangledName": "$s15ContactsManager9APIConfigV32bulkInviteEmailAvailableEndpointSSvpZ",
+            "moduleName": "ContactsManager",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15ContactsManager9APIConfigV32bulkInviteEmailAvailableEndpointSSvgZ",
+                "mangledName": "$s15ContactsManager9APIConfigV32bulkInviteEmailAvailableEndpointSSvgZ",
+                "moduleName": "ContactsManager",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "validateAPIKeyEndpoint",
             "printedName": "validateAPIKeyEndpoint",
             "children": [
@@ -48126,6 +48763,78 @@
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sendBulkInviteEmails",
+            "printedName": "sendBulkInviteEmails(contacts:emailBody:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "ContactsManager.BulkInviteEmailResponse?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BulkInviteEmailResponse",
+                    "printedName": "ContactsManager.BulkInviteEmailResponse",
+                    "usr": "s:15ContactsManager23BulkInviteEmailResponseV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[ContactsManager.Contact]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Contact",
+                    "printedName": "ContactsManager.Contact",
+                    "usr": "s:15ContactsManager7ContactV"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15ContactsManager13InviteServiceC08sendBulkC6Emails8contacts9emailBodyAA0fC13EmailResponseVSgSayAA7ContactVG_SStYaF",
+            "mangledName": "$s15ContactsManager13InviteServiceC08sendBulkC6Emails8contacts9emailBodyAA0fC13EmailResponseVSgSayAA7ContactVG_SStYaF",
+            "moduleName": "ContactsManager",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isBulkInviteEmailAvailable",
+            "printedName": "isBulkInviteEmailAvailable()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15ContactsManager13InviteServiceC06isBulkC14EmailAvailableSbyYaF",
+            "mangledName": "$s15ContactsManager13InviteServiceC06isBulkC14EmailAvailableSbyYaF",
+            "moduleName": "ContactsManager",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -51161,6 +51870,62 @@
       "value": "\"remaining_invites\""
     },
     {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/InviteModels.swift",
+      "kind": "StringLiteral",
+      "offset": 5673,
+      "length": 12,
+      "value": "\"contact_id\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/InviteModels.swift",
+      "kind": "StringLiteral",
+      "offset": 6141,
+      "length": 12,
+      "value": "\"email_body\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/InviteModels.swift",
+      "kind": "StringLiteral",
+      "offset": 6703,
+      "length": 16,
+      "value": "\"total_contacts\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/InviteModels.swift",
+      "kind": "StringLiteral",
+      "offset": 6742,
+      "length": 13,
+      "value": "\"emails_sent\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/InviteModels.swift",
+      "kind": "StringLiteral",
+      "offset": 6780,
+      "length": 15,
+      "value": "\"failed_emails\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/InviteModels.swift",
+      "kind": "StringLiteral",
+      "offset": 6818,
+      "length": 13,
+      "value": "\"invite_code\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/InviteModels.swift",
+      "kind": "StringLiteral",
+      "offset": 6853,
+      "length": 12,
+      "value": "\"invite_url\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/InviteModels.swift",
+      "kind": "Array",
+      "offset": 7000,
+      "length": 2,
+      "value": "[]"
+    },
+    {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Models\/ReactionModels.swift",
       "kind": "StringLiteral",
       "offset": 4258,
@@ -51919,7 +52684,7 @@
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIClient.swift",
       "kind": "IntegerLiteral",
-      "offset": 42235,
+      "offset": 43110,
       "length": 5,
       "value": "86400"
     },
@@ -52423,49 +53188,77 @@
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4235,
+      "offset": 4138,
+      "length": 35,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 4161,
+      "length": 1,
+      "value": "\"\/bulk-email\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 4229,
+      "length": 45,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 4252,
+      "length": 1,
+      "value": "\"\/bulk-email\/available\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 4418,
       "length": 40,
       "value": "\"\/api\/\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4254,
+      "offset": 4437,
       "length": 1,
       "value": "\"\/client\/validate-key\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 4358,
+      "offset": 4541,
       "length": 4,
       "value": "60.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 4413,
+      "offset": 4596,
       "length": 5,
       "value": "180.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4484,
+      "offset": 4667,
       "length": 9,
       "value": "\"\/health\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 4556,
+      "offset": 4739,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Networking\/APIConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4679,
+      "offset": 4862,
       "length": 32,
       "value": "\"https:\/\/www.contactsmanager.io\""
     },

@@ -1034,6 +1034,18 @@ public struct ValidateInviteCodeResponse : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
+public struct BulkInviteEmailResponse : Swift.Codable {
+  public let success: Swift.Bool
+  public let message: Swift.String
+  public let totalContacts: Swift.Int
+  public let emailsSent: Swift.Int
+  public let failedEmails: [Swift.String]
+  public let inviteCode: Swift.String?
+  public let inviteUrl: Swift.String?
+  public init(success: Swift.Bool, message: Swift.String, totalContacts: Swift.Int, emailsSent: Swift.Int, failedEmails: [Swift.String] = [], inviteCode: Swift.String? = nil, inviteUrl: Swift.String? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
 public enum ReactionType : Swift.Codable, Swift.Equatable, Swift.CaseIterable {
   case like
   case love
@@ -1359,6 +1371,8 @@ public struct APIConfig {
   public static let validateInviteEndpoint: Swift.String
   public static let invitedByEndpoint: Swift.String
   public static let publicValidateInviteEndpoint: Swift.String
+  public static let bulkInviteEmailEndpoint: Swift.String
+  public static let bulkInviteEmailAvailableEndpoint: Swift.String
   public static let validateAPIKeyEndpoint: Swift.String
   public static let defaultTimeout: Swift.Double
   public static let uploadTimeout: Swift.Double
@@ -1629,6 +1643,8 @@ extension ContactsManager.ContactsService {
   public func redeemInvite(code inviteCode: Swift.String, for redeemerId: Swift.String) async -> Swift.Bool
   public func getInviteDetails(for code: Swift.String) async -> ContactsManager.ValidateInviteCodeResponse?
   public func createInvite() async -> ContactsManager.InviteResponse?
+  public func sendBulkInviteEmails(contacts: [ContactsManager.Contact], emailBody: Swift.String) async -> ContactsManager.BulkInviteEmailResponse?
+  public func isBulkInviteEmailAvailable() async -> Swift.Bool
   @objc deinit
 }
 public enum ContactMatchingCriteria {
