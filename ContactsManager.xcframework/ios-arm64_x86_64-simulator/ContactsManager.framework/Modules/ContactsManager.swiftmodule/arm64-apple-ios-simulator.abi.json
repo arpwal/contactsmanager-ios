@@ -8726,7 +8726,6 @@
             "static": true,
             "declAttributes": [
               "AccessControl",
-              "Custom",
               "RawDocComment"
             ],
             "isFromExtension": true,
@@ -8773,7 +8772,6 @@
             "static": true,
             "declAttributes": [
               "AccessControl",
-              "Custom",
               "RawDocComment"
             ],
             "isFromExtension": true,
@@ -42249,7 +42247,6 @@
             "declAttributes": [
               "Final",
               "AccessControl",
-              "Custom",
               "RawDocComment"
             ],
             "throwing": true,
@@ -42288,7 +42285,6 @@
             "declAttributes": [
               "Final",
               "AccessControl",
-              "Custom",
               "RawDocComment"
             ],
             "throwing": true,
@@ -50353,14 +50349,14 @@
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Actors\/ContactDatabaseActor.swift",
       "kind": "IntegerLiteral",
-      "offset": 6992,
+      "offset": 7015,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Actors\/ContactDatabaseActor.swift",
       "kind": "IntegerLiteral",
-      "offset": 7012,
+      "offset": 7035,
       "length": 2,
       "value": "50"
     },
@@ -50381,21 +50377,21 @@
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Extensions\/ContactsService\/ContactsService+Fetching.swift",
       "kind": "IntegerLiteral",
-      "offset": 7602,
+      "offset": 6617,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Extensions\/ContactsService\/ContactsService+Fetching.swift",
       "kind": "IntegerLiteral",
-      "offset": 7622,
+      "offset": 6637,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Extensions\/ContactsService\/ContactsService+Fetching.swift",
       "kind": "IntegerLiteral",
-      "offset": 10902,
+      "offset": 9917,
       "length": 2,
       "value": "50"
     },
@@ -53720,14 +53716,14 @@
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Services\/ContactSearchService.swift",
       "kind": "IntegerLiteral",
-      "offset": 2657,
+      "offset": 2591,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Services\/ContactSearchService.swift",
       "kind": "IntegerLiteral",
-      "offset": 2677,
+      "offset": 2611,
       "length": 2,
       "value": "50"
     },

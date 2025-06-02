@@ -68,8 +68,8 @@ extension ContactsManager.Contact {
   }
 }
 extension ContactsManager.Contact {
-  @_Concurrency.MainActor public static func from(cmUser: ContactsManager.CMUser, contactId: Swift.String? = nil, localContactId: Swift.String? = nil) async -> ContactsManager.Contact
-  @_Concurrency.MainActor public static func from(cmUsers: [ContactsManager.CMUser]) async -> [ContactsManager.Contact]
+  public static func from(cmUser: ContactsManager.CMUser, contactId: Swift.String? = nil, localContactId: Swift.String? = nil) async -> ContactsManager.Contact
+  public static func from(cmUsers: [ContactsManager.CMUser]) async -> [ContactsManager.Contact]
   public var isFromCMUser: Swift.Bool {
     get
   }
@@ -1429,8 +1429,8 @@ public enum ContactsAccessStatus : Swift.Equatable {
 @_hasMissingDesignatedInitializers final public class ContactSearchService {
   public static let shared: ContactsManager.ContactSearchService
   final public func getTotalContactsCount() async throws -> Swift.Int
-  @_Concurrency.MainActor final public func searchContacts(query: Swift.String, searchFields: Swift.Set<ContactsManager.ContactSearchService.SearchField> = Set(SearchField.allCases), offset: Swift.Int = 0, limit: Swift.Int = 50) async throws -> (contacts: [ContactsManager.CMContact], totalCount: Swift.Int)
-  @_Concurrency.MainActor final public func quickSearch(_ query: Swift.String) async throws -> [ContactsManager.CMContact]
+  final public func searchContacts(query: Swift.String, searchFields: Swift.Set<ContactsManager.ContactSearchService.SearchField> = Set(SearchField.allCases), offset: Swift.Int = 0, limit: Swift.Int = 50) async throws -> (contacts: [ContactsManager.CMContact], totalCount: Swift.Int)
+  final public func quickSearch(_ query: Swift.String) async throws -> [ContactsManager.CMContact]
   public enum SearchField : Swift.CaseIterable {
     case name
     case email
