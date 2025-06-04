@@ -1493,7 +1493,7 @@ public enum SocialServiceError : Foundation.LocalizedError {
   public func getRelationshipStatus(userId: Swift.String) async throws -> ContactsManager.SocialService.RelationshipStatusResponse
   public func getFollowers(userId: Swift.String? = nil, skip: Swift.Int = 0, limit: Swift.Int = 20) async throws -> ContactsManager.PaginatedFollowList
   public func getFollowing(userId: Swift.String? = nil, skip: Swift.Int = 0, limit: Swift.Int = 20) async throws -> ContactsManager.PaginatedFollowList
-  public func getMutualFollows(skip: Swift.Int = 0, limit: Swift.Int = 20) async throws -> ContactsManager.PaginatedMutualFollowers
+  public func getMutualFollows(userId: Swift.String? = nil, skip: Swift.Int = 0, limit: Swift.Int = 20) async throws -> ContactsManager.PaginatedMutualFollowers
   public func createEvent(eventData: ContactsManager.CreateEventRequest) async throws -> ContactsManager.EventActionResponse
   public func getEvent(eventId: Swift.String) async throws -> ContactsManager.SocialEvent
   public func updateEvent(eventId: Swift.String, eventData: ContactsManager.UpdateEventRequest) async throws -> ContactsManager.EventActionResponse
