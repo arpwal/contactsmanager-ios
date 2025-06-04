@@ -361,15 +361,9 @@ public struct Contact : Swift.Decodable, Swift.Identifiable {
   public var image: Swift.String? {
     get
   }
-  public var imageData: UIKit.UIImage? {
-    get
-  }
-  public var followingStatus: ContactsManager.FollowingStatus? {
-    get
-  }
-  public var localContact: Contacts.CNContact? {
-    get
-  }
+  public func getImageData() async -> UIKit.UIImage?
+  public func getFollowingStatus() async -> ContactsManager.FollowingStatus?
+  public func getLocalContact() async -> Contacts.CNContact?
   public init(from decoder: any Swift.Decoder) throws
   public typealias ID = Swift.String
 }
@@ -1259,6 +1253,7 @@ public struct PaginatedEventList : Swift.Decodable {
 public enum FeedMatchingType : Swift.String, Swift.CaseIterable {
   case following
   case mutualFollowing
+  case all
   public var description: Swift.String {
     get
   }
