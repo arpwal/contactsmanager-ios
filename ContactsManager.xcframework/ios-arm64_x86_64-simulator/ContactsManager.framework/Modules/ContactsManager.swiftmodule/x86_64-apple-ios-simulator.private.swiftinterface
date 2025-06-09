@@ -1314,6 +1314,7 @@ public enum APIError : Swift.Error {
   case unauthorized
   case tokenExpired
   case unknownError
+  case missingToken
   public var localizedDescription: Swift.String {
     get
   }
@@ -1420,6 +1421,7 @@ public struct APIConfig {
     case sourceNotFound
     case jsonEncodingFailure
     case jsonDecodingFailure
+    case missingToken
     public var errorDescription: Swift.String? {
       get
     }
@@ -1714,6 +1716,17 @@ public enum RecommendationType {
     get
   }
 }
+public enum RecommendationError : Swift.Error, Foundation.LocalizedError {
+  case missingToken
+  public var errorDescription: Swift.String? {
+    get
+  }
+  public static func == (a: ContactsManager.RecommendationError, b: ContactsManager.RecommendationError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 public struct ContactRecommendation {
   public let contact: ContactsManager.CMContact
   public let score: Swift.Double
@@ -1759,3 +1772,5 @@ extension ContactsManager.ContactMatchingCriteria : Swift.Equatable {}
 extension ContactsManager.ContactMatchingCriteria : Swift.Hashable {}
 extension ContactsManager.RecommendationType : Swift.Equatable {}
 extension ContactsManager.RecommendationType : Swift.Hashable {}
+extension ContactsManager.RecommendationError : Swift.Equatable {}
+extension ContactsManager.RecommendationError : Swift.Hashable {}
