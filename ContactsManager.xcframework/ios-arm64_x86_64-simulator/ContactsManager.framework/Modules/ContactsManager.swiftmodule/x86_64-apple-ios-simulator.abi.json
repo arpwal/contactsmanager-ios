@@ -49541,6 +49541,31 @@
           },
           {
             "kind": "Function",
+            "name": "forceResyncAllContacts",
+            "printedName": "forceResyncAllContacts()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15ContactsManager0A7ServiceC014forceResyncAllA0SiyYaKF",
+            "mangledName": "$s15ContactsManager0A7ServiceC014forceResyncAllA0SiyYaKF",
+            "moduleName": "ContactsManager",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "requestContactsAccess",
             "printedName": "requestContactsAccess()",
             "children": [
