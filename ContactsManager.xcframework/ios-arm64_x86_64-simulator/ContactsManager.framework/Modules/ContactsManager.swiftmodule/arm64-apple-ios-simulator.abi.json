@@ -1166,6 +1166,13 @@
       },
       {
         "kind": "Import",
+        "name": "OSLog",
+        "printedName": "OSLog",
+        "declKind": "Import",
+        "moduleName": "ContactsManager"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -51984,6 +51991,13 @@
       "offset": 3307,
       "length": 2,
       "value": "30"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Extensions\/Contact+CMUser.swift",
+      "kind": "StringLiteral",
+      "offset": 134,
+      "length": 16,
+      "value": "\"ContactMapping\""
     },
     {
       "filePath": "\/Users\/runner\/work\/contactsmanager\/contactsmanager\/ios\/ContactsManager\/ContactsManager\/Extensions\/UserDefaults+ContactsManager.swift",

@@ -18,7 +18,7 @@
 		</data>
 		<key>Modules/ContactsManager.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		a161bhAig9dPVMkKaWNqBzbr/WI=
+		Vu8oHv4k0OBRz7vZi7mOmw4y2c0=
 		</data>
 		<key>Modules/ContactsManager.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/ContactsManager.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		RtQG4JDecjDsHPmC5q39M+27h9M=
+		8ObL7H5DkR++zViBQzuBlXUCOlI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -81,7 +81,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			V3wXf9DJFvhzpVJss/E2cntJGFJxGjfsfeIHbs/8/7E=
+			oKQNPrhrZTD+B+gXkBO/i7IWKqhl+45k5Z+b0qYSYM8=
 			</data>
 		</dict>
 		<key>Modules/ContactsManager.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -109,7 +109,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2Y48TeeJ3iETNj2IbD0wsex2xWNswQQ2EGePMFNKDQY=
+			7q5P2Kj+x2fYu0mVxNaRrFfKm2tkBkaHlvyg4H3jPg4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
