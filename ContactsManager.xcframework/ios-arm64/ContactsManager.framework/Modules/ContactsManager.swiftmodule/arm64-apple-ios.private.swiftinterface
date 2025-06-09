@@ -1328,12 +1328,44 @@ public enum RuntimeEnvironment : Swift.String {
     get
   }
 }
+public enum CacheType {
+  case userProfiles
+  case socialFeed
+  case followers
+  case recommendations
+  case invites
+  case all
+  public static func == (a: ContactsManager.CacheType, b: ContactsManager.CacheType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum DataFreshness {
+  case cached
+  case fresh
+  case hybrid
+  public static func == (a: ContactsManager.DataFreshness, b: ContactsManager.DataFreshness) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct EndpointConfig {
+}
 public struct APIConfig {
   public static var environment: ContactsManager.RuntimeEnvironment
   public static var baseURL: Foundation.URL {
     get
   }
   public static let apiVersion: Swift.String
+  public static let cacheMemoryCapacity: Swift.Int
+  public static let cacheDiskCapacity: Swift.Int
+  public static let defaultCacheMaxAge: Swift.Double
+  public static let userDataCacheMaxAge: Swift.Double
+  public static let socialDataCacheMaxAge: Swift.Double
+  public static let recommendationCacheMaxAge: Swift.Double
+  public static let inviteDataCacheMaxAge: Swift.Double
   public static let contactsEndpoint: Swift.String
   public static let contactsSyncEndpoint: Swift.String
   public static let contactSourceEndpoint: Swift.String
@@ -1369,9 +1401,15 @@ public struct APIConfig {
   public static let bulkInviteEmailEndpoint: Swift.String
   public static let bulkInviteEmailAvailableEndpoint: Swift.String
   public static let validateAPIKeyEndpoint: Swift.String
+  public static let healthEndpoint: Swift.String
+  public static let endpointConfigs: [Swift.String : ContactsManager.EndpointConfig]
+  public static func configForEndpoint(_ endpoint: Swift.String) -> ContactsManager.EndpointConfig?
+  public static func endpointsForCacheType(_ cacheType: ContactsManager.CacheType) -> [Swift.String]
+  public static func requiresFreshData(_ endpoint: Swift.String) -> Swift.Bool
+  public static func cacheMaxAgeForEndpoint(_ endpoint: Swift.String) -> Foundation.TimeInterval
+  public static func cacheTypeForEndpoint(_ endpoint: Swift.String) -> ContactsManager.CacheType
   public static let defaultTimeout: Swift.Double
   public static let uploadTimeout: Swift.Double
-  public static let healthEndpoint: Swift.String
   public static let maxContactsPerBatch: Swift.Int
   public static let websiteURL: Swift.String
 }
@@ -1491,9 +1529,9 @@ public enum SocialServiceError : Foundation.LocalizedError {
   public func unfollow(userId: Swift.String) async throws -> ContactsManager.FollowActionResponse
   public func isFollowing(userId: Swift.String) async throws -> ContactsManager.FollowStatusResponse
   public func getRelationshipStatus(userId: Swift.String) async throws -> ContactsManager.SocialService.RelationshipStatusResponse
-  public func getFollowers(userId: Swift.String? = nil, skip: Swift.Int = 0, limit: Swift.Int = 20) async throws -> ContactsManager.PaginatedFollowList
-  public func getFollowing(userId: Swift.String? = nil, skip: Swift.Int = 0, limit: Swift.Int = 20) async throws -> ContactsManager.PaginatedFollowList
-  public func getMutualFollows(userId: Swift.String? = nil, skip: Swift.Int = 0, limit: Swift.Int = 20) async throws -> ContactsManager.PaginatedMutualFollowers
+  public func getFollowers(userId: Swift.String? = nil, skip: Swift.Int = 0, limit: Swift.Int = 20, forceRefresh: Swift.Bool = false) async throws -> ContactsManager.PaginatedFollowList
+  public func getFollowing(userId: Swift.String? = nil, skip: Swift.Int = 0, limit: Swift.Int = 20, forceRefresh: Swift.Bool = false) async throws -> ContactsManager.PaginatedFollowList
+  public func getMutualFollows(userId: Swift.String? = nil, skip: Swift.Int = 0, limit: Swift.Int = 20, forceRefresh: Swift.Bool = false) async throws -> ContactsManager.PaginatedMutualFollowers
   public func createEvent(eventData: ContactsManager.CreateEventRequest) async throws -> ContactsManager.EventActionResponse
   public func getEvent(eventId: Swift.String) async throws -> ContactsManager.SocialEvent
   public func updateEvent(eventId: Swift.String, eventData: ContactsManager.UpdateEventRequest) async throws -> ContactsManager.EventActionResponse
@@ -1701,6 +1739,10 @@ extension ContactsManager.SocialEventType : Swift.RawRepresentable {}
 extension ContactsManager.RuntimeEnvironment : Swift.Equatable {}
 extension ContactsManager.RuntimeEnvironment : Swift.Hashable {}
 extension ContactsManager.RuntimeEnvironment : Swift.RawRepresentable {}
+extension ContactsManager.CacheType : Swift.Equatable {}
+extension ContactsManager.CacheType : Swift.Hashable {}
+extension ContactsManager.DataFreshness : Swift.Equatable {}
+extension ContactsManager.DataFreshness : Swift.Hashable {}
 extension ContactsManager.ContactSyncManager.SyncError : Swift.Equatable {}
 extension ContactsManager.ContactSyncManager.SyncError : Swift.Hashable {}
 extension ContactsManager.ContactsAccessStatus : Swift.Hashable {}
