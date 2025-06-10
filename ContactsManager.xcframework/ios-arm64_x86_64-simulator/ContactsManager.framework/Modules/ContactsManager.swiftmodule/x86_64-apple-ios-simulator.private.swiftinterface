@@ -797,6 +797,10 @@ public enum SourceType : Swift.String, Swift.Codable {
     get
     set
   }
+  final public var shouldResync: Swift.Bool {
+    get
+    set
+  }
   final public var lastSyncAt: Swift.Double? {
     get
     set
@@ -1320,6 +1324,20 @@ public enum APIError : Swift.Error {
     get
   }
 }
+public struct SourceResyncStatusResponse : Swift.Codable {
+  public let sourceId: Swift.String
+  public let needsResync: Swift.Bool
+  public let sourceName: Swift.String
+  public let sourceType: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ResetResyncFlagResponse : Swift.Codable {
+  public let sourceId: Swift.String
+  public let shouldResync: Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
 public enum RuntimeEnvironment : Swift.String {
   case development
   case staging
@@ -1403,6 +1421,8 @@ public struct APIConfig {
   public static let bulkInviteEmailEndpoint: Swift.String
   public static let bulkInviteEmailAvailableEndpoint: Swift.String
   public static let validateAPIKeyEndpoint: Swift.String
+  public static let contactSourceResyncStatusEndpoint: Swift.String
+  public static let resetResyncFlagEndpoint: Swift.String
   public static let healthEndpoint: Swift.String
   public static let endpointConfigs: [Swift.String : ContactsManager.EndpointConfig]
   public static func configForEndpoint(_ endpoint: Swift.String) -> ContactsManager.EndpointConfig?
@@ -1492,6 +1512,7 @@ public enum ContactsManagerEvent : Swift.String {
   case contactStoreDidChange
   case appWasTerminated
   case contactsAccessChanged
+  case forceResyncRequired
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
