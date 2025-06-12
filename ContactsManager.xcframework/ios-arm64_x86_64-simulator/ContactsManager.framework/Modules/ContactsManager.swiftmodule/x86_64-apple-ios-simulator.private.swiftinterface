@@ -55,6 +55,8 @@ extension ContactsManager.ContactsService {
   final public func getUsersYouMightKnow(limit: Swift.Int = 30) async throws -> [ContactsManager.CMUser]
 }
 extension ContactsManager.ContactsService {
+  final public func isSyncInProgress() async -> Swift.Bool
+  final public func cancelSync() async
   final public func syncContacts() async throws -> Swift.Int
   final public func forceResyncAllContacts() async throws -> Swift.Int
 }
@@ -1432,7 +1434,8 @@ public struct APIConfig {
   public static func cacheTypeForEndpoint(_ endpoint: Swift.String) -> ContactsManager.CacheType
   public static let defaultTimeout: Swift.Double
   public static let uploadTimeout: Swift.Double
-  public static let maxContactsPerBatch: Swift.Int
+  public static let maxContactsPerBatchServerSync: Swift.Int
+  public static let maxContactsPerBatchLocalSync: Swift.Int
   public static let websiteURL: Swift.String
 }
 @_hasMissingDesignatedInitializers public class ContactSyncManager {
