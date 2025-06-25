@@ -701,8 +701,9 @@ public struct ContactsManagerOptions {
   public let restrictedKeysToFetch: Swift.Set<ContactsManager.ContactFieldType>
   public let verboseLogging: Swift.Bool
   public let autoSyncEnabled: Swift.Bool
+  public let customBaseURL: Foundation.URL?
   public static let `default`: ContactsManager.ContactsManagerOptions
-  public init(restrictedKeysToFetch: Swift.Set<ContactsManager.ContactFieldType> = [], verboseLogging: Swift.Bool = false, autoSyncEnabled: Swift.Bool = true)
+  public init(restrictedKeysToFetch: Swift.Set<ContactsManager.ContactFieldType> = [], verboseLogging: Swift.Bool = false, autoSyncEnabled: Swift.Bool = true, customBaseURL: Foundation.URL? = nil)
 }
 @_hasMissingDesignatedInitializers final public class ContactSocial : Swift.Comparable {
   final public var socialId: Swift.String {
