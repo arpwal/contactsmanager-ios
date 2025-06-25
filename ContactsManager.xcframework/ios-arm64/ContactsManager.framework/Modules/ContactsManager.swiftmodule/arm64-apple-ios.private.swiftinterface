@@ -1744,6 +1744,7 @@ public enum RecommendationType {
 }
 public enum RecommendationError : Swift.Error, Foundation.LocalizedError {
   case missingToken
+  case missingSourceId
   public var errorDescription: Swift.String? {
     get
   }
